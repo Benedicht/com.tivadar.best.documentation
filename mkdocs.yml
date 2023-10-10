@@ -3,6 +3,7 @@ site_name: Best Packages Documentation Hub
 # https://squidfunk.github.io/mkdocs-material/setup/adding-a-git-repository/
 repo_url: https://github.com/Benedicht/com.tivadar.best.documentation
 repo_name: Tivadar/com.tivadar.best.documentation
+edit_uri: edit/main/docs/
 
 copyright: Copyright &copy; 2013 - 2023 Tivadar György Nagy
 
