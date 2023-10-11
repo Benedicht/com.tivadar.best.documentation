@@ -118,8 +118,8 @@ markdown_extensions:
     - tables
     
     - pymdownx.emoji:
-        emoji_index: !!python/name:pymdownx.emoji.twemoji
-        emoji_generator: !!python/name:pymdownx.emoji.to_svg
+        emoji_index: !!python/name:material.extensions.emoji.twemoji
+        emoji_generator: !!python/name:material.extensions.emoji.to_svg
     
     # https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/#caret-mark-tilde
     - pymdownx.caret

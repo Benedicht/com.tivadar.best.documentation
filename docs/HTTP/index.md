@@ -1,4 +1,4 @@
-# HTTP documentation
+# Best HTTP documentation
 
 Welcome to the Best HTTP Documentation! Best HTTP is a comprehensive networking library for Unity that empowers developers to make HTTP and HTTPS requests with ease. 
 Whether you're building web applications, multiplayer games, or real-time communication solutions, Best HTTP has got you covered.
@@ -9,6 +9,7 @@ Whether you're fetching data from remote servers, sending game scores, or updati
 Recognizing the multifaceted needs of Unity developers, Best HTTP is designed to simplify these interactions, providing a streamlined and efficient means to handle web-based communication.
 
 ## Key Features
+- **Supported Unity Versions**: Best HTTP is compatible with Unity versions starting from :fontawesome-brands-unity: **2021.3 onwards**.
 - **HTTP/HTTPS Support**: Best HTTP supports both HTTP and HTTPS protocols, ensuring secure communication for your applications.
 - **HTTP/2 Support**: Benefit from the advantages of HTTP/2, including faster loading times and reduced latency.
 - **Caching**: Implement efficient caching mechanisms to reduce redundant network requests, optimizing your application's performance and data usage.
@@ -18,10 +19,10 @@ Recognizing the multifaceted needs of Unity developers, Best HTTP is designed to
 - **Streaming**: Best HTTP supports streaming for both downloads and uploads. This enables you to stream large files and responses directly to storage when downloading, and stream data from storage when uploading, effectively avoiding memory bottlenecks.
 - **Customization**: Tailor your HTTP requests with customizable headers, timeouts, and other parameters to meet your specific needs.
 - **Cross-Platform:** Best HTTP is designed to work seamlessly across a diverse range of Unity platforms, ensuring versatility for all your development needs. Specifically, it supports:
-    - **Desktop**: Windows, Linux, MacOS
-    - **Mobile**: iOS, Android
-    - **Universal Windows Platform** (UWP)
-    - **Web**: WebGL
+    - :fontawesome-solid-desktop: **Desktop**: Windows, Linux, MacOS
+    - :fontawesome-solid-mobile: **Mobile**: iOS, Android
+    - :material-microsoft-windows: **Universal Windows Platform** (UWP)
+    - :material-web: **Web**: WebGL
     
     This broad platform support means you can confidently use Best HTTP, regardless of your target audience or deployment strategy.
 
@@ -31,7 +32,8 @@ Explore the following sections to learn how to harness the power of Best HTTP in
 
 - [Installation Guide](installation.md): Get started with Best HTTP by installing the package and configuring your project.
 - [Getting Started](guides\getting-started.md): Dive into the basics of making HTTP requests, handling responses, and configuring Best HTTP for your needs.
-- [Advanced Usage](advanced-usage\index.md): Take your skills to the next level with advanced topics, such as authentication, caching, and WebSocket communication.
+- [Advanced Usage](advanced-usage\index.md): Take your skills to the next level with advanced topics, such as authentication, caching, upload/download streaming, and many more.
+- [Upgrade Guide](upgrade-guide.md): If you're transitioning from Best HTTP/2, this guide provides vital information on changes, improvements, and steps to upgrade seamlessly to the latest version.
 - [API Reference](api-reference\index.md): Discover the details of Best HTTP's classes, methods, and properties in the comprehensive API reference.
 
 Whether you're a seasoned developer or just getting started with Unity, this documentation will guide you through the process of leveraging Best HTTP's capabilities to create efficient, feature-rich applications.
