@@ -7,12 +7,12 @@ Explore the documentation for each package below:
 
 ## Best HTTP
 
-- [Best HTTP Documentation](packages\HTTP\index.md): Best HTTP is a comprehensive library for making HTTP and HTTPS requests in Unity. 
+- [Best HTTP Documentation](HTTP\index.md): Best HTTP is a comprehensive library for making HTTP and HTTPS requests in Unity. 
 It offers a wide range of features for handling web communication, including HTTP/2 support, caching, authentication, and more.
 
-	- [Installation Guide](installation-guide.md)
-	- [Getting Started](getting-started.md)
-	- [Advanced Usage](advanced-usage.md)
+	- [Installation Guide](HTTP\installation.md)
+	- [Getting Started](HTTP\guides\getting-started.md)
+	- [Advanced Usage](HTTP\advanced-usage\index.md)
 
 ## Best WebSocket
 

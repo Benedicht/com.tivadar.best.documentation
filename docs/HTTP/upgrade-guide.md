@@ -21,7 +21,10 @@ Instead of one big package the Best
 Solution: Step-by-step guide or advice on how to adapt or fix the change in user projects.
 
 ### HTTPRequest changes
-Description of the breaking change.
+
+1. Removed/changed constructors
+1. New static functions for HTTPRequest creation
+1. Moved fields under settings classes
 
 Solution: Guide or recommendations to tackle this change.
 
@@ -52,5 +55,5 @@ Solution: Guide or recommendations to tackle this change.
 
 ## General Tips
 1. **Stay Updated on Documentation:** Keep an eye on the official documentation for the Best HTTP package. It's regularly updated with new information, tutorials, and solutions to common problems.
-2. **Engage with the Community:** Join discussions on our Community and Support page to share your experiences, ask questions, and get advice on the upgrade process.
+2. **Engage with the Community:** Join discussions on our [Community and Support page](support.md) to share your experiences, ask questions, and get advice on the upgrade process.
 3. **Check for Updates Regularly:** Ensure you always have the latest features, improvements, and bug fixes by regularly checking for updates.
