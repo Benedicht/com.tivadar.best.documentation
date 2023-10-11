@@ -1,64 +1,69 @@
-# Best Packages Documentation Hub
+# Home
 
 Welcome to the _Best Packages Documentation Hub_! Here, you'll find documentation for a suite of powerful networking and communication packages designed to enhance your Unity projects. 
 Whether you're building web applications, multiplayer games, or real-time communication solutions, these packages have got you covered.
 
 Explore the documentation for each package below:
 
-## Best HTTP
+## **Best HTTP**
 
-- [Best HTTP Documentation](HTTP\index.md): Best HTTP is a comprehensive library for making HTTP and HTTPS requests in Unity. 
+[Best HTTP Documentation](HTTP\index.md): Best HTTP is a comprehensive library for making HTTP and HTTPS requests in Unity. 
 It offers a wide range of features for handling web communication, including HTTP/2 support, caching, authentication, and more.
 
-	- [Installation Guide](HTTP\installation.md)
-	- [Getting Started](HTTP\guides\getting-started.md)
-	- [Advanced Usage](HTTP\advanced-usage\index.md)
+- [Installation Guide](HTTP\installation.md)
+- [Getting Started](HTTP\guides\getting-started.md)
+- [Advanced Usage](HTTP\advanced-usage\index.md)
 
-## Best WebSocket
+Don't forget to check out its two addons:
 
-- [Best WebSocket Documentation](link-to-best-websocket-docs): Best WebSocket offers a flexible WebSocket client implementation for Unity. 
+1. **TLS Security Addon**: Take a step further to improve the security of all protocols connecting through a TLS connection with a one line setup.
+2. **cURL Addon**: This addon helps translating cURL commands into Best HTTP code.
+
+## **Best WebSocket**
+
+[Best WebSocket Documentation](link-to-best-websocket-docs): Best WebSocket offers a flexible WebSocket client implementation for Unity. 
 It allows you to establish WebSocket connections for real-time data exchange.
 
-	- [Installation Guide](installation-guide.md)
-	- [Getting Started](getting-started.md)
-	- [Advanced Usage](advanced-usage.md)
+- [Installation Guide](installation-guide.md)
+- [Getting Started](getting-started.md)
+- [Advanced Usage](advanced-usage.md)
 	
-## Best SignalR Core
+## **Best SignalR Core**
 
-- [Best SignalR Core Documentation](link-to-best-signalr-docs): Best SignalR Core enables real-time, bidirectional communication using the SignalR Core protocol. 
+[Best SignalR Core Documentation](link-to-best-signalr-docs): Best SignalR Core enables real-time, bidirectional communication using the SignalR Core protocol. 
 Incorporate real-time features like chat, notifications, and multiplayer gaming into your Unity projects.
 
-	- [Installation Guide](installation-guide.md)
-	- [Getting Started](getting-started.md)
-	- [Advanced Usage](advanced-usage.md)
+- [Installation Guide](installation-guide.md)
+- [Getting Started](getting-started.md)
+- [Advanced Usage](advanced-usage.md)
 
-## Best Socket.IO
+## **Best Socket.IO**
 
-- [Best Socket.IO Documentation](link-to-best-socketio-docs): Best Socket.IO is a library for integrating with Socket.IO, a popular real-time communication framework. 
+[Best Socket.IO Documentation](link-to-best-socketio-docs): Best Socket.IO is a library for integrating with Socket.IO, a popular real-time communication framework. 
 Use it to create WebSocket-based applications and games with ease.
 
-	- [Installation Guide](installation-guide.md)
-	- [Getting Started](getting-started.md)
-	- [Advanced Usage](advanced-usage.md)
+- [Installation Guide](installation-guide.md)
+- [Getting Started](getting-started.md)
+- [Advanced Usage](advanced-usage.md)
 
-## Best Server-Sent Events
+## **Best Server-Sent Events**
 
-- [Best Server-Sent Events Documentation](link-to-best-sse-docs): Best Server-Sent Events provides an efficient and easy-to-use implementation of the Server-Sent Events (SSE) protocol. 
+[Best Server-Sent Events Documentation](link-to-best-sse-docs): Best Server-Sent Events provides an efficient and easy-to-use implementation of the Server-Sent Events (SSE) protocol. 
 Use it to establish real-time, unidirectional communication between your server and Unity application.
 
-	- [Installation Guide](installation-guide.md)
-	- [Getting Started](getting-started.md)
-	- [Advanced Usage](advanced-usage.md)
+- [Installation Guide](installation-guide.md)
+- [Getting Started](getting-started.md)
+- [Advanced Usage](advanced-usage.md)
 
 ---
 
-## Best MQTT
+## **Best MQTT**
 
-- [Best MQTT Documentation](link-to-best-mqtt-docs): Best MQTT is a feature-rich MQTT client library for Unity. Use it to implement MQTT-based communication in your applications, enabling efficient and scalable messaging between devices and servers.
+[Best MQTT Documentation](link-to-best-mqtt-docs): Best MQTT is a feature-rich MQTT client library for Unity. Use it to implement MQTT-based communication in your applications, enabling efficient and scalable messaging between devices and servers.
 
-	- [Installation Guide](installation-guide.md)
-	- [Getting Started](getting-started.md)
-	- [Advanced Usage](advanced-usage.md)
+- [Installation Guide](installation-guide.md)
+- [Getting Started](getting-started.md)
+- [Advanced Usage](advanced-usage.md)
 
 ## Getting Started
 

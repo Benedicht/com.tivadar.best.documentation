@@ -15,11 +15,18 @@ Recognizing the multifaceted needs of Unity developers, Best HTTP is designed to
 - **Authentication**: Easily handle various authentication methods, such as Basic, Digest, and Bearer token authentication.
 - **Cookie Management**: Manage cookies effortlessly, ensuring smooth user experiences in web applications.
 - **Compression**: Compress and decompress data using gzip and deflate algorithms to save bandwidth and improve loading times.
-- **Streaming**: Stream large files and responses directly to storage, avoiding memory bottlenecks.
+- **Streaming**: Best HTTP supports streaming for both downloads and uploads. This enables you to stream large files and responses directly to storage when downloading, and stream data from storage when uploading, effectively avoiding memory bottlenecks.
 - **Customization**: Tailor your HTTP requests with customizable headers, timeouts, and other parameters to meet your specific needs.
-- **Cross-Platform**: Best HTTP is designed to work across various Unity platforms, making it versatile for your development requirements.
+- **Cross-Platform:** Best HTTP is designed to work seamlessly across a diverse range of Unity platforms, ensuring versatility for all your development needs. Specifically, it supports:
+    - **Desktop**: Windows, Linux, MacOS
+    - **Mobile**: iOS, Android
+    - **Universal Windows Platform** (UWP)
+    - **Web**: WebGL
+    
+    This broad platform support means you can confidently use Best HTTP, regardless of your target audience or deployment strategy.
 
 ## Documentation Sections
+
 Explore the following sections to learn how to harness the power of Best HTTP in your Unity projects:
 
 - [Installation Guide](installation.md): Get started with Best HTTP by installing the package and configuring your project.
