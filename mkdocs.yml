@@ -1,12 +1,20 @@
+# Project Information
 site_name: Best Packages Documentation Hub
+site_url: https://bestdocshub.pages.dev/
+site_author: Tivadar György Nagy
+site_description: >-
+    Here, you'll find documentation for a suite of powerful networking and communication packages designed to enhance your Unity projects.
 
+# Repository
 # https://squidfunk.github.io/mkdocs-material/setup/adding-a-git-repository/
 repo_url: https://github.com/Benedicht/com.tivadar.best.documentation
 repo_name: Tivadar/com.tivadar.best.documentation
 edit_uri: edit/main/docs/
 
+# Copyright
 copyright: Copyright &copy; 2013 - 2023 Tivadar György Nagy
 
+# Configuration
 theme:
     name: material
     
@@ -24,7 +32,7 @@ theme:
         - navigation.tabs
         - navigation.tabs.sticky
         #- navigation.expand
-        - navigation.sections
+        #- navigation.sections
         - navigation.indexes
         - toc.follow
         - navigation.top
@@ -69,10 +77,12 @@ theme:
             icon: material/brightness-4
             name: Switch to light mode
         
+# Plugins
 plugins:
     # https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-search/
     - search
     
+# Additional Configuration
 extra:
     # https://squidfunk.github.io/mkdocs-material/setup/setting-up-the-footer/#social-links
     social:
@@ -88,6 +98,7 @@ extra:
         - icon: fontawesome/brands/linkedin
           link: https://www.linkedin.com/in/tivadargyorgy
           
+# Extensions
 # https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown/
 markdown_extensions:
     - abbr
@@ -106,6 +117,10 @@ markdown_extensions:
     # https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown/#tables
     - tables
     
+    - pymdownx.emoji:
+        emoji_index: !!python/name:pymdownx.emoji.twemoji
+        emoji_generator: !!python/name:pymdownx.emoji.to_svg
+    
     # https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/#caret-mark-tilde
     - pymdownx.caret
     - pymdownx.mark
@@ -123,3 +138,7 @@ markdown_extensions:
     - pymdownx.inlinehilite
     - pymdownx.snippets
     - pymdownx.superfences
+    
+    # https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/#tasklist
+    - pymdownx.tasklist:
+        custom_checkbox: true
