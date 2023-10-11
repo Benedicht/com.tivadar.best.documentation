@@ -22,10 +22,10 @@ Recognizing the multifaceted needs of Unity developers, Best HTTP is designed to
 ## Documentation Sections
 Explore the following sections to learn how to harness the power of Best HTTP in your Unity projects:
 
-- [Installation Guide](...): Get started with Best HTTP by installing the package and configuring your project.
-- [Getting Started](...): Dive into the basics of making HTTP requests, handling responses, and configuring Best HTTP for your needs.
-- [Advanced Usage](...): Take your skills to the next level with advanced topics, such as authentication, caching, and WebSocket communication.
-- [API Reference](...): Discover the details of Best HTTP's classes, methods, and properties in the comprehensive API reference.
+- [Installation Guide](installation.md): Get started with Best HTTP by installing the package and configuring your project.
+- [Getting Started](guides\getting-started.md): Dive into the basics of making HTTP requests, handling responses, and configuring Best HTTP for your needs.
+- [Advanced Usage](advanced-usage\index.md): Take your skills to the next level with advanced topics, such as authentication, caching, and WebSocket communication.
+- [API Reference](api-reference\index.md): Discover the details of Best HTTP's classes, methods, and properties in the comprehensive API reference.
 
 Whether you're a seasoned developer or just getting started with Unity, this documentation will guide you through the process of leveraging Best HTTP's capabilities to create efficient, feature-rich applications.
 
