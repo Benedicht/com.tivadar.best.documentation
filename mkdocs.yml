@@ -163,6 +163,10 @@ markdown_extensions:
     - pymdownx.inlinehilite
     - pymdownx.snippets
     - pymdownx.superfences
+
+    # https://squidfunk.github.io/mkdocs-material/reference/content-tabs/
+    - pymdownx.tabbed:
+        alternate_style: true
     
     # https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/#tasklist
     - pymdownx.tasklist:

@@ -29,13 +29,32 @@ However, other classes are now under different namespaces. Here I'll list a few 
 | `HTTPProxy` | `BestHTTP` | `Best.HTTP.Proxies` |
 | `LogLevels` | `BestHTTP.Logger` | `Best.HTTP.Shared.Logger` |
 
-Depending on what IDE you use, deleting old usings it can help finding new ones.
+??? Example
+    === "Old"
+        ```cs
+        using BestHTTP;
+        using BestHTTP.Logger;
+        ```
+
+    === "New"
+        ```cs
+        using Best.HTTP;
+        using Best.HTTP.Shared.Logger;
+        ```
+
+Depending on what IDE you use, deleting old usings first your IDE might help finding the new ones.
 
 ### HTTPRequest changes
 
-1. Removed/changed constructors
-2. New static functions for HTTPRequest creation
-3. Moved fields under settings classes
+1. Removed
+    1. Constructors: Removed constructors with `isKeepAlive` and/or `disableCache` parameters and kept those that set only either of uri/method/callback or all of them.
+    2. Various ways to upload content: 
+
+1. Changed/Moved
+    1. Moved properties under settings classes
+
+1. New 
+    1. static functions for HTTPRequest creation
 
 Solution: Guide or recommendations to tackle this change.
 
