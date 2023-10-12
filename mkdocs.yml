@@ -62,16 +62,18 @@ theme:
         
     # https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/
     # https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/#system-preference
-    palette:     
+    palette:
         # Palette toggle for light mode
         - media: "(prefers-color-scheme: light)"
           scheme: default
+          primary: deep orange
           toggle:
             icon: material/brightness-7
             name: Switch to dark mode
 
         # Palette toggle for dark mode
         - media: "(prefers-color-scheme: dark)"
+          primary: brown
           scheme: slate
           toggle:
             icon: material/brightness-4
@@ -81,6 +83,16 @@ theme:
 plugins:
     # https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-search/
     - search
+
+    # https://github.com/byrnereese/mkdocs-minify-plugin
+    - minify:
+        minify_html: true
+        minify_js: true
+        minify_css: true
+        htmlmin_opts:
+            remove_comments: true
+            remove_empty_space: true
+            reduce_boolean_attributes: true
     
 # Additional Configuration
 extra:
@@ -127,14 +139,27 @@ markdown_extensions:
     - pymdownx.tilde
     - pymdownx.critic
     - pymdownx.details
+    - pymdownx.smartsymbols
+
+    # https://github.com/squidfunk/mkdocs-material/issues/4988
+    # https://facelessuser.github.io/pymdown-extensions/extensions/magiclink/
+    - pymdownx.magiclink:
+        normalize_issue_symbols: true
+        repo_url_shorthand: true
+        user: Benedicht
+        repo: BestHTTP-Issues
     
     # https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/#highlight
     # https://squidfunk.github.io/mkdocs-material/reference/code-blocks/#code-blocks
+    # https://facelessuser.github.io/pymdown-extensions/extensions/highlight/
     - pymdownx.highlight:
+        pygments_style: rrt
         use_pygments: true
         pygments_lang_class: true
         anchor_linenums: true
         line_spans: __span
+        linenums: true
+        auto_title: true
     - pymdownx.inlinehilite
     - pymdownx.snippets
     - pymdownx.superfences
