@@ -2,4 +2,4 @@
 comments: true
 ---
 
-# Getting Started Guide
+# Authentication

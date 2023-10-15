@@ -1,4 +1,5 @@
 ---
 comments: true
 ---
-# Advanced Usage
+
+# Per-Host Settings
