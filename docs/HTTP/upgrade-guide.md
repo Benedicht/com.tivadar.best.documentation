@@ -15,6 +15,8 @@ If you're updating your package, please read through the relevant sections to en
 
 ## ^^List of Breaking Changes^^
 
+I have worked hard to enhance features, fix issues, and introduce new capabilities - here's what you need to know:
+
 ### 1. Namespace changes
 
 Instead of one big package the new version is split into multiple packages. This packaging change is reflected in how the plugins' namespaces are named. 
@@ -320,6 +322,8 @@ Buffering, thread synchronization and memory management is all done by the `Down
     Best.HTTP.Shared.HTTPManager.PerHostSettings.Get("*")
         .RequestSettings.RequestTimeout = TimeSpan.FromSeconds(10);
     ```
+!!! Warning
+    Its default value changed to never time out.
 - **IsCachingDisabled**: Removed without further explanation, caching can be disabled per-request by setting the request's `DownloadSettings.DisableCache` to true.
 - **CookieJarSize**: => `CookieJar.MaximumSize`
 - **EnablePrivateBrowsing**: => `CookieJar.IsSessionOverride`
