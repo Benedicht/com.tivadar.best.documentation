@@ -26,7 +26,7 @@ For instance, if it reads `"392.0 KB"`, it means protocols/packages are actively
 - **Pooled:** This indicates the memory currently held within the `BufferPool` but not actively in use.
 For example, a value of `"456.2 KB"` denotes that there's *456.2 KB* of memory pre-allocated and waiting to be used, ensuring quick response times for future requests that need byte arrays.
 - **Cache Hits:** A cache hit occurs when a request for memory can be satisfied using a byte array from the `BufferPool`, rather than allocating new memory. 
-A higher number of cache hits is generally a positive sign, indicating efficient memory reuse. In the given example, `"3.03k"` cache hits imply that memory reuse occurred *3.03k* times, which potentially means 623 instances where allocation (and eventual deallocation) overheads were avoided.
+A higher number of cache hits is generally a positive sign, indicating efficient memory reuse. In the given example, `"3.03k"` cache hits imply that memory reuse occurred *3.03k* times, which potentially means 30300 instances where allocation (and eventual deallocation) overheads were avoided.
 - **Array Allocations (Cache Misses):** Conversely, cache misses are instances when the `BufferPool` couldn't satisfy a memory request, leading to the allocation of a new byte array. The lower this number, the better. 
 In the example, `"18"` cache misses means there were 18 instances when the buffer pool didn't have a suitable byte array available, prompting new memory allocation.
 
