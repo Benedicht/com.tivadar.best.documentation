@@ -9,7 +9,7 @@ As of the latest update, there are **no known issues** in the Best HTTP package.
 ## Reporting New Issues
 If you encounter a problem or irregularity in the package that isn't documented here, we encourage you to report it. 
 Your feedback helps maintain the quality and integrity of the package. 
-For detailed information on how to report issues and various communication channels available, please visit the [Community and Support page](support.md).
+For detailed information on how to report issues and various communication channels available, please visit the [Community and Support page](../Shared/support.md).
 
 Thank you for your continued support and understanding. 
 We strive to provide the best experience possible and your input plays a crucial role in achieving that!

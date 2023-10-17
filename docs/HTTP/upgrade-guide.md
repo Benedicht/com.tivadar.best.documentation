@@ -210,8 +210,8 @@ The plugin ships with the `CrendetialAuthenticator` and `BearerTokenAuthenticato
 - **VersionMajor/VersionMinor**: Merged them into one `#!cs public Version HTTPVersion { get; protected set; }` property.
 - **IsStreamed**: Removed, every response is streamed into the `HTTPResponse`'s `DownStream`!
 - **IsCacheOnly**: The same information can acquired through the parent `HTTPRequest`.
-- **CacheFileInfo**: The same functionality should be possible with the new `HTTPCache` class, available as `HTTPManager.LocalCache`. [Let me know](support.md) if you relied on it but can't find matching functionality.
-- **IsProxyResponse**: Removed without further explanation. [Let me know](support.md) if you relied on it but can't find matching functionality.
+- **CacheFileInfo**: The same functionality should be possible with the new `HTTPCache` class, available as `HTTPManager.LocalCache`. [Let me know](../Shared/support.md) if you relied on it but can't find matching functionality.
+- **IsProxyResponse**: Removed without further explanation. [Let me know](../Shared/support.md) if you relied on it but can't find matching functionality.
 - **IsClosedManually**: Used by other protocols (Websocket, EventSource), now they are dealing with the connection differently.
 
 #### ^^Changed/Moved^^
@@ -416,7 +416,7 @@ The plugin ships with two IAuthenticator implementations:
 ## General Tips
 
 1. **Stay Updated on Documentation:** Keep an eye on the official documentation for the Best HTTP package. It's regularly updated with new information, tutorials, and solutions to common problems.
-2. **Engage with the Community:** Join discussions on our [Community and Support page](support.md) to share your experiences, ask questions, and get advice on the upgrade process.
+2. **Engage with the Community:** Join discussions on our [Community and Support page](../Shared/support.md) to share your experiences, ask questions, and get advice on the upgrade process.
 3. **Check for Updates Regularly:** Ensure you always have the latest features, improvements, and bug fixes by regularly checking for updates.
 
 

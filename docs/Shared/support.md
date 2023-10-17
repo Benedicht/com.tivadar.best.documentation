@@ -15,7 +15,7 @@ For real-time interactions, our Discord channel offers a space where you can cha
 If you've discovered a bug or want to suggest a feature, the GitHub Issues page is the best place to report and track it. 
 Please check for existing issues before submitting a new one to avoid duplicates.
 
-[Best HTTP GitHub Issues](https://github.com/Benedicht/BestHTTP-Issues/issues)
+[GitHub Issues of my packages](https://github.com/Benedicht/BestHTTP-Issues/issues)
 
 !!! Note
     Please ensure to check for existing reports before submitting a new one to avoid duplicates.
@@ -37,12 +37,12 @@ Connect and engage on various social platforms:
 - :fontawesome-brands-mastodon: Mastodon: For more personal updates and engagements, follow me on Mastodon, the free and open-source social networking platform. [My Personal Mastodon Profile](https://mastodon.gamedev.place/@tivadar)
 
 ## Leave a Review
-Your feedback is invaluable! If you appreciate Best HTTP, consider leaving a review on the Unity Asset Store.
+Your feedback is invaluable! If you appreciate Best HTTP or any of my package, consider leaving a review on the Unity Asset Store.
 Please note, while reviews are greatly appreciated, the Unity Asset Store is not a support channel. 
 For queries and assistance, please utilize the above-listed channels.
 
 ## Support My Work
-If you've found Best HTTP helpful and want to express your gratitude, you can support my work by buying me a coffee. 
+If you've found my packages helpful and want to express your gratitude, you can support my work by buying me a coffee. 
 Every bit helps in maintaining and advancing the project.
 
 [Buy Me a :simple-buymeacoffee:](https://www.buymeacoffee.com/besthttp):

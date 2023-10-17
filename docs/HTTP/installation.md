@@ -33,6 +33,6 @@ In some cases you might have a .unitypackage file containing the plugin.
     Best HTTP also supports other installation methods as documented in Unity's manual for packages. 
     For more advanced installation options, refer to the Unity Manual on [Sharing Packages](https://docs.unity3d.com/Manual/cus-share.html).
 
-That's it! You've now successfully installed Best HTTP in your Unity project. Dive into the [Getting Started guide](guides/getting-started.md) to begin your journey with Best HTTP.
+That's it! You've now successfully installed Best HTTP in your Unity project. Dive into the [Getting Started guide](getting-started/index.md) to begin your journey with Best HTTP.
 
-If you encounter any issues or need further assistance, please visit our [Community and Support page](support.md).
+If you encounter any issues or need further assistance, please visit our [Community and Support page](../Shared/support.md).
