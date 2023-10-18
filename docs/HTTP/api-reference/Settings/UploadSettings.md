@@ -27,18 +27,6 @@ Options for sending the request headers and content, including upload progress m
 : Called periodically when data sent to the server. 
 ### **OnHeadersSent**
 : This event is fired after the headers are sent to the server. 
-### **Created**
-: When the TimingCollector instance created. 
-### **Finished**
-: When the closing Finish event is sent. 
-### **Events**
-: List of added events. 
-### **Name**
-: Name of the event 
-### **Duration**
-: Duration of the event. 
-### **When**
-: When the event occurred. 
 ## **Methods**:
 
 ### **SetupRequest**
@@ -46,12 +34,3 @@ Options for sending the request headers and content, including upload progress m
 
 ### **Dispose**
 : Dispose of resources used by the UploadSettings instance. 
-
-### **Finish**
-: Finish the last event. 
-
-### **Abort**
-: Abort the currently running event. 
-
-### **AddEvent**
-: When the event happened and for how long. 

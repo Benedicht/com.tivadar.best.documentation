@@ -32,12 +32,6 @@ TCPStreamer serves several key functions:
 : Gets or sets the maximum amount of buffered data allowed for reading from the stream. 
 ### **MaxBufferedWriteAmount**
 : Gets or sets the maximum amount of buffered data allowed for writing to the stream. 
-### **IsEnabled**
-: Setting this property to false the pooling mechanism can be disabled. 
-### **RemoveOlderThan**
-: Buffer entries that released back to the pool and older than this value are moved when next maintenance is triggered. 
-### **RunMaintenanceEvery**
-: How often pool maintenance must run. 
 ## **Methods**:
 
 ### **#ctor**
