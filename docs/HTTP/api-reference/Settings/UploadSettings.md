@@ -25,6 +25,8 @@ Options for sending the request headers and content, including upload progress m
 : Set to `false` if the plugin MUST NOT dispose [UploadStream](../Settings/UploadSettings.md#uploadstream) after the request is finished. 
 ### **OnUploadProgress**
 : Called periodically when data sent to the server. 
+### **OnHeadersSent**
+: This event is fired after the headers are sent to the server. 
 ### **Created**
 : When the TimingCollector instance created. 
 ### **Finished**
@@ -38,9 +40,6 @@ Options for sending the request headers and content, including upload progress m
 ### **When**
 : When the event occurred. 
 ## **Methods**:
-
-### ****
-: This event is fired after the headers are sent to the server. 
 
 ### **SetupRequest**
 : Called every time the request is sent out (redirected or retried). 
