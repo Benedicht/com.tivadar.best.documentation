@@ -5,35 +5,49 @@ The BufferPool is a foundational element of the Best HTTP package, aiming to red
 While the BufferPool is housed within the Best HTTP package, its benefits are not limited to just HTTP operations. All protocols and packages integrated with or built upon the Best HTTP package utilize and benefit from the BufferPool. This ensures that memory is used efficiently and performance remains optimal across all integrated components.
 
 ## **Fields**:
+### **NoData**
+: Represents an empty byte array that can be returned for zero-length requests. 
 ### **IsEnabled**
-: Setting this property to false the pooling mechanism can be disabled. 
+: Gets or sets a value indicating whether the buffer pooling mechanism is enabled or disabled. Disabling will also clear all stored entries. 
 ### **RemoveOlderThan**
-: Buffer entries that released back to the pool and older than this value are moved when next maintenance is triggered. 
+: Specifies the duration after which buffer entries, once released back to the pool, are deemed old and will be considered for removal in the next maintenance cycle. 
 ### **RunMaintenanceEvery**
-: How often pool maintenance must run. 
+: Specifies how frequently the maintenance cycle should run to manage old buffers. 
 ### **MinBufferSize**
-: Minimum buffer size that the plugin will allocate when the requested size is smaller than this value, and canBeLarger is set to true. 
+: Specifies the minimum buffer size that will be allocated. If a request is made for a size smaller than this and canBeLarger is `true`,  this size will be used. 
 ### **MaxBufferSize**
-: Maximum size of a buffer that the plugin will store. 
+: Specifies the maximum size of a buffer that the system will consider storing back into the pool. 
 ### **MaxPoolSize**
-: Maximum accumulated size of the stored buffers. 
+: Specifies the maximum total size of all stored buffers. When the buffer reach this threshold, new releases will be declined. 
 ### **RemoveEmptyLists**
-: Whether to remove empty buffer stores from the free list. 
+: Indicates whether to remove buffer stores that don't hold any buffers from the free list. 
 ### **IsDoubleReleaseCheckEnabled**
-: If it set to true and a byte[] is released more than once it will log out an error. 
+: If set to `true`, and a byte array is released back to the pool more than once, an error will be logged. 
+	!!! note ""
+		Error checking is expensive and has a very large overhead! Turn it on with caution!
+
 ## **Methods**:
 
 ### **Get**
-: Get byte[] from the pool. If canBeLarge is true, the returned buffer might be larger than the requested size. 
+: Fetches a byte array from the pool. 
+	!!! note ""
+		Depending on the `canBeLarger` parameter, the returned buffer may be larger than the requested size!
+
+
+### **ReleaseBulk**
+: Releases a list of buffer segments back to the pool in a bulk operation. 
+
+### **ReleaseBulk**
+: Releases a list of buffer segments back to the pool in a bulk operation. 
 
 ### **Release**
-: Release back a byte array to the pool. 
+: Releases a byte array back to the pool. 
 
 ### **Resize**
-: Resize a byte array. It will release the old one to the pool, and the new one is from the pool too. 
+: Resizes a byte array by returning the old one to the pool and fetching (or creating) a new one of the specified size. 
 
 ### **Clear**
-: Remove all stored entries instantly. 
+: Clears all stored entries in the buffer pool instantly, releasing memory. 
 
 ### **Maintain**
-: Internal function called by the plugin to remove old, non-used buffers. 
+: Internal method called by the plugin to remove old, non-used buffers. 
