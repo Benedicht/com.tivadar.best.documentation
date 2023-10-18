@@ -11,8 +11,8 @@ Explore the documentation for each package below:
 It offers a wide range of features for handling web communication, including HTTP/2 support, caching, authentication, and more.
 
 - [Installation Guide](HTTP/installation.md): Quickly set up Best HTTP in your Unity project.
-- [Getting Started](HTTP/guides/getting-started.md): Dive into the basics and make your first HTTP request in Unity.
-- [Advanced Usage](HTTP/advanced-usage/index.md): Delve deeper into advanced features and optimizations available in the library.
+- [Getting Started](HTTP/getting-started/index.md): Dive into the basics and make your first HTTP request in Unity.
+- [Advanced Usage](HTTP/intermediate-topics/index.md): Delve deeper into advanced features and optimizations available in the library.
 - [Upgrade Guide](HTTP/upgrade-guide.md): Seamlessly transition from older versions to the latest features and improvements.
 
 Don't forget to check out its two addons:

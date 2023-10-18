@@ -25,16 +25,6 @@ Options for sending the request headers and content, including upload progress m
 : Set to `false` if the plugin MUST NOT dispose [UploadStream](../Settings/UploadSettings.md#uploadstream) after the request is finished. 
 ### **OnUploadProgress**
 : Called periodically when data sent to the server. 
-### **isDisposed**
-: Whether to send an "`Expect: 100-continue`" header and value when there's content to send ([UploadStream](../Settings/UploadSettings.md#uploadstream) != `null`). By using "`Expect: 100-continue`" the server is able to respond with an error (like `401-unauthorized`, `405-method not allowed`, etc.) or redirect before the client sends the whole payload. 
-	!!! note ""
-		More details can be found here: 
-
-		- [RFC-9110 - Expect header](https://www.rfc-editor.org/rfc/rfc9110#name-expect)
-		- [EXPECT: TWEAKS IN CURL (by Daniel Stenberg)](https://daniel.haxx.se/blog/2020/02/27/expect-tweaks-in-curl/)
-
-
-
 ### **Created**
 : When the TimingCollector instance created. 
 ### **Finished**
