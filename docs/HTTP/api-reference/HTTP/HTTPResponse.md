@@ -54,7 +54,7 @@ The HTTPResponse class represents an HTTP response received from a remote server
 ### **DataAsTexture2D**
 : The data loaded to a Texture2D. 
 ### **DownStream**
-: Reference to the DownloadContentStream instance that contains the downloaded data. 
+: Reference to the [DownloadContentStream](../Response/DownloadContentStream.md) instance that contains the downloaded data. 
 ### **Context**
 : IProtocol.LoggingContext implementation. 
 ### **Request**

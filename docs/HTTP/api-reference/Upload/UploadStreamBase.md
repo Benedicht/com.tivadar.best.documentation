@@ -33,3 +33,9 @@ The return value of **Stream.Read** is treated specially in the plugin:
 : Called before sending out the request's headers. Perform content processing to calculate the final length if possible. In this function the implementor can set headers and other parameters to the request. 
 	!!! note ""
 		Typically called on a thread.
+
+
+### **BeforeSendBody**
+: Called just before sending out the request's body, and saves the [IThreadSignaler](../Connections/IThreadSignaler.md) for signaling when new data is available. 
+	!!! note ""
+		Typically called on a separate thread.

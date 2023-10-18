@@ -39,5 +39,8 @@ The return value of **Stream.Read** is treated specially in the plugin:
 ### **AddStreamField**
 : Adds a stream field to the multipart/form-data stream. 
 
+### **BeforeSendBody**
+: Adds the final boundary to the multipart/form-data stream before sending the request body. 
+
 ### **Read**
 : Reads data from the multipart/form-data stream into the provided buffer. 

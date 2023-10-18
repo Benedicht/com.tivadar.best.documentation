@@ -25,6 +25,9 @@ This implementation is designed to handle scenarios where data may not always be
 ### **BeforeSendHeaders**
 : Sets the necessary headers before sending the request. 
 
+### **BeforeSendBody**
+: Prepares the stream before the request body is sent. 
+
 ### **Read**
 : Reads data from the stream to be uploaded. 
 	!!! note ""
