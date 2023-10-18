@@ -22,7 +22,7 @@ The ProxyConnectParameters struct defines the parameters required when initiatin
 ### **createTunel**
 : Gets or sets a value indicating whether to create a proxy tunnel. 
 	!!! note ""
-		A proxy tunnel, also known as a TCP tunnel, is established when communication between the client and the target server needs to be relayed through the proxy without modification. Setting this field to 		 indicates the intention to create a tunnel, allowing the data to pass through the proxy without interpretation or alteration by the proxy. This is typically used for protocols like HTTPS, where end-to-end encryption is desired, and the proxy should act as a pass-through conduit. 
+		A proxy tunnel, also known as a TCP tunnel, is established when communication between the client and the target server needs to be relayed through the proxy without modification. Setting this field to `true` indicates the intention to create a tunnel, allowing the data to pass through the proxy without interpretation or alteration by the proxy. This is typically used for protocols like HTTPS, where end-to-end encryption is desired, and the proxy should act as a pass-through conduit. 
 
 ### **context**
 : The logging context for debugging purposes. 

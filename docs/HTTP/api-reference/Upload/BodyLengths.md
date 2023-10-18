@@ -4,8 +4,8 @@ Provides constants representing different, special body lengths for HTTP request
 
 ## **Fields**:
 ### **UnknownWithChunkedTransferEncoding**
-: The [UploadStreamBase](../Upload/UploadStreamBase.md)	's length is unknown and the plugin have to send data with '	' transfer-encoding. 
+: The [UploadStreamBase](../Upload/UploadStreamBase.md)'s length is unknown and the plugin have to send data with '`chunked`' transfer-encoding. 
 ### **UnknownRaw**
-: The [UploadStreamBase](../Upload/UploadStreamBase.md)	's length is unknown and the plugin have to send data as-is, without any encoding. 
+: The [UploadStreamBase](../Upload/UploadStreamBase.md)'s length is unknown and the plugin have to send data as-is, without any encoding. 
 ### **NoBody**
 : No content to send. 

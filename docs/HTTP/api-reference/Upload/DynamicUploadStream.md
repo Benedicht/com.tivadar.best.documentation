@@ -4,13 +4,13 @@ A specialized upload stream designed to handle data that's generated on-the-fly 
 
 **Remarks**:
 
-This implementation is designed to handle scenarios where data may not always be immediately available for upload. The request will remain active until the [Complete](../Upload/DynamicUploadStream.md#Complete) method is invoked, ensuring that data can continue to be fed into the stream even if it's temporarily empty during a Read operation. 
+This implementation is designed to handle scenarios where data may not always be immediately available for upload. The request will remain active until the [Complete](../Upload/DynamicUploadStream.md#complete) method is invoked, ensuring that data can continue to be fed into the stream even if it's temporarily empty during a Read operation. 
 
 ## **Fields**:
 ### **Length**
 : Gets the length of the upload stream. 
 	!!! note ""
-		This implementation returns a constant value of 		, indicating that the length of the data to be uploaded is unknown. When the processing connection encounters this value, it should utilize chunked uploading to handle the data transfer. 
+		This implementation returns a constant value of `-1`, indicating that the length of the data to be uploaded is unknown. When the processing connection encounters this value, it should utilize chunked uploading to handle the data transfer. 
 
 ### **BufferedLength**
 : Gets the length of data currently buffered and ready for upload. 
@@ -34,7 +34,7 @@ This implementation is designed to handle scenarios where data may not always be
 		- **0**: The stream has been closed and no more data will be provided.
 		- 
 
-		 Note: A zero return value can come after a -1 return, indicating a transition from waiting to completion. 
+ Note: A zero return value can come after a -1 return, indicating a transition from waiting to completion. 
 
 
 ### **Write**

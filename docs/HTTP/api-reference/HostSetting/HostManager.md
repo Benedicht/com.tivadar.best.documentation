@@ -20,14 +20,14 @@ The [HostManager](../HostSetting/HostManager.md) class acts as a central registr
 
 ## **Fields**:
 ### **hosts**
-: Dictionary to store [HostKey](../HostSetting/HostKey.md)	-[HostVariant](../HostSetting/HostVariant.md)	 mappings. 
+: Dictionary to store [HostKey](../HostSetting/HostKey.md)-[HostVariant](../HostSetting/HostVariant.md) mappings. 
 ## **Methods**:
 
 ### **GetHostVariant**
-: Gets the [HostVariant](../HostSetting/HostVariant.md)	 associated with an HTTP request. 
+: Gets the [HostVariant](../HostSetting/HostVariant.md) associated with an HTTP request. 
 
 ### **GetHostVariant**
-: Gets the [HostVariant](../HostSetting/HostVariant.md)	 associated with a HostKey. 
+: Gets the [HostVariant](../HostSetting/HostVariant.md) associated with a HostKey. 
 
 ### **RemoveAllIdleConnections**
 : Removes all idle connections for all hosts. 

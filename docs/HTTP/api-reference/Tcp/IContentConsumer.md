@@ -13,7 +13,7 @@ Key Functions of IContentConsumer:
 
 ## **Fields**:
 ### **ContentProvider**
-: Gets the [PeekableContentProviderStream](../Streams/PeekableContentProviderStream.md)	 associated with this content consumer, which allows access to incoming content. 
+: Gets the [PeekableContentProviderStream](../Streams/PeekableContentProviderStream.md) associated with this content consumer, which allows access to incoming content. 
 ## **Methods**:
 
 ### **SetBinding**

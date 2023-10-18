@@ -19,4 +19,4 @@ Contains settings that can be associated with a specific host or host variant.
 ### **TLSSettings**
 : Settings related to TLS (Transport Layer Security) behavior. 
 ### **HostVariantSettings**
-: Settings related to [HostVariant](../HostSetting/HostVariant.md)	 behavior. 
+: Settings related to [HostVariant](../HostSetting/HostVariant.md) behavior. 

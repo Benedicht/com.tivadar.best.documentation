@@ -10,13 +10,13 @@ When host-specific settings are not found for a given host variant, the default 
 ## **Methods**:
 
 ### **#ctor**
-: Initializes a new instance of the [HostSettingsManager](../Settings/HostSettingsManager.md)	 class with default settings for all hosts ("*"). 
+: Initializes a new instance of the [HostSettingsManager](../Settings/HostSettingsManager.md) class with default settings for all hosts ("*"). 
 
 ### **AddDefault**
-: Adds default settings for the host part of the specified URI. This is equivalent to calling [Add](../Settings/HostSettingsManager.md#Add)	 with the a new [HostSettings](../Settings/HostSettings.md)	. 
+: Adds default settings for the host part of the specified URI. This is equivalent to calling [Add](../Settings/HostSettingsManager.md#add) with the a new [HostSettings](../Settings/HostSettings.md). 
 
 ### **AddDefault**
-: Adds default settings for the the specified host name. This is equivalent to calling [Add](../Settings/HostSettingsManager.md#Add)	 with the a new [HostSettings](../Settings/HostSettings.md)	. 
+: Adds default settings for the the specified host name. This is equivalent to calling [Add](../Settings/HostSettingsManager.md#add) with the a new [HostSettings](../Settings/HostSettings.md). 
 
 ### **Add**
 : Adds host-specific settings for the host part of the specified URI. 
@@ -25,16 +25,16 @@ When host-specific settings are not found for a given host variant, the default 
 : Adds host-specific settings for the specified hostname. 
 
 ### **Get**
-: Gets [HostSettings](../Settings/HostSettings.md)	 for the host part of the specified [HostVariant](../HostSetting/HostVariant.md)	. Returns the default settings associated with "*" when not found. 
+: Gets [HostSettings](../Settings/HostSettings.md) for the host part of the specified [HostVariant](../HostSetting/HostVariant.md). Returns the default settings associated with "*" when not found. 
 
 ### **Get**
-: Gets [HostSettings](../Settings/HostSettings.md)	 for the host part of the specified [HostKey](../HostSetting/HostKey.md)	. Returns the default settings associated with "*" when not found. 
+: Gets [HostSettings](../Settings/HostSettings.md) for the host part of the specified [HostKey](../HostSetting/HostKey.md). Returns the default settings associated with "*" when not found. 
 
 ### **Get**
-: Gets [HostSettings](../Settings/HostSettings.md)	 for the host part of the specified **Uri**	. Returns the default settings associated with "*" when not found. 
+: Gets [HostSettings](../Settings/HostSettings.md) for the host part of the specified **Uri**. Returns the default settings associated with "*" when not found. 
 
 ### **Get**
-: Gets [HostSettings](../Settings/HostSettings.md)	 for the host part of the specified hostname. Returns the default settings associated with "*" when not found. 
+: Gets [HostSettings](../Settings/HostSettings.md) for the host part of the specified hostname. Returns the default settings associated with "*" when not found. 
 
 ### **Clear**
 : Clears all host-specific settings and resetting the default ("*") with default values. 

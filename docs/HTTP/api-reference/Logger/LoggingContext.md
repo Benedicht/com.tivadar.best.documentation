@@ -15,19 +15,19 @@ The LoggingContext class is used to provide additional context information to lo
 : Initializes a new instance of the LoggingContext class associated with the specified object. 
 
 ### **Add**
-: Adds a 	 value to the logging context. 
+: Adds a `long` value to the logging context. 
 
 ### **Add**
-: Adds a 	 value to the logging context. 
+: Adds a `bool` value to the logging context. 
 
 ### **Add**
-: Adds a 	 value to the logging context. 
+: Adds a `string` value to the logging context. 
 
 ### **Add**
-: Adds a 	 value to the logging context. 
+: Adds a `LoggingContext` value to the logging context. 
 
 ### **GetStringField**
-: Gets the 	 field with the specified name from the logging context. 
+: Gets the `string` field with the specified name from the logging context. 
 
 ### **Remove**
 : Removes a field from the logging context by its key. 

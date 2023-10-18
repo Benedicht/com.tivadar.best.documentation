@@ -10,7 +10,7 @@ The Cookie Jar implementation based on RFC 6265(http://tools.ietf.org/html/rfc62
 ### **AccessThreshold**
 : The plugin will delete cookies that are accessed this threshold ago. Its default value is 7 days. 
 ### **IsSessionOverride**
-: If this property is set to 	, then new cookies treated as session cookies and these cookies are not saved to disk. Its default value is 	. 
+: If this property is set to `true`, then new cookies treated as session cookies and these cookies are not saved to disk. Its default value is `false`. 
 ### **Cookies**
 : List of the Cookies 
 ### **rwLock**

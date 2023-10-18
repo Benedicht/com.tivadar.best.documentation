@@ -14,13 +14,13 @@ Almost immutable, all changes are done in-class in a thread-safe manner.
 ### **ResolvedAt**
 : Gets the timestamp when the entry was last resolved. 
 ### **LastUsed**
-: Gets the timestamp when the entry was last used by calling [GetAddresses](../Cache/DNSCacheEntry.md#GetAddresses)	. 
+: Gets the timestamp when the entry was last used by calling [GetAddresses](../Cache/DNSCacheEntry.md#getaddresses). 
 ### **_resolvedAddresses**
-: Resolved IP addresses. It's private, accesible through the [GetAddresses](../Cache/DNSCacheEntry.md#GetAddresses)	 call only. 
+: Resolved IP addresses. It's private, accesible through the [GetAddresses](../Cache/DNSCacheEntry.md#getaddresses) call only. 
 ### **_isRefreshing**
-: Flag that is set to 	 when the cache is refreshing this host. 
+: Flag that is set to `true` when the cache is refreshing this host. 
 	!!! note ""
-		When set to 		, [IsStalled](../Cache/DNSCacheEntry.md#IsStalled)		 will always return as non-stalled. 
+		When set to `true`, [IsStalled](../Cache/DNSCacheEntry.md#isstalled) will always return as non-stalled. 
 
 ## **Methods**:
 
@@ -33,17 +33,17 @@ Almost immutable, all changes are done in-class in a thread-safe manner.
 ### **IsStalled**
 : Checks if the entry is stalled and needs to be refreshed. 
 	!!! note ""
-		The entry is considered stalled if it is not currently being refreshed (i.e., [_isRefreshing](../DNSCacheEntry/.md#_isRefreshing)		 is false) and the time since the last resolution exceeds the refresh interval specified in [RefreshAfter](../DNSCacheOptions/.md#RefreshAfter)		. 
+		The entry is considered stalled if it is not currently being refreshed (i.e., [_isRefreshing](../DNSCacheEntry/.md#_isrefreshing) is false) and the time since the last resolution exceeds the refresh interval specified in [RefreshAfter](../DNSCacheOptions/.md#refreshafter). 
 
 
 ### **IsReadyToRemove**
 : Checks if the entry is ready to be removed from the cache. 
 	!!! note ""
-		The entry is considered ready for removal if the time since it was last used exceeds the removal interval specified in [RemoveAfter](../DNSCacheOptions/.md#RemoveAfter)		. 
+		The entry is considered ready for removal if the time since it was last used exceeds the removal interval specified in [RemoveAfter](../DNSCacheOptions/.md#removeafter). 
 
 
 ### **Refresh**
-: Refreshes the entry by initiating a DNS prefetch (by calling [Prefetch](../Cache/DNSCache.md#Prefetch)	) for the associated host name. 
+: Refreshes the entry by initiating a DNS prefetch (by calling [Prefetch](../Cache/DNSCache.md#prefetch)) for the associated host name. 
 	!!! note ""
 		This method initiates a DNS prefetch operation for the host name associated with this entry. DNS prefetching is used to resolve and cache DNS records for host names in advance, reducing latency for future network requests. 
 

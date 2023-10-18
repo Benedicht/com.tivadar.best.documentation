@@ -30,7 +30,7 @@ The `HTTPCache` class provides a powerful caching mechanism for HTTP responses i
 ### **CacheSize**
 : Gets the current size of the HTTP cache in bytes. 
 ### **OnBeforeBeginCache**
-: Called before the plugin calls [BeginCache](../Caching/HTTPCache.md#BeginCache)	 to decide whether the content will be cached or not. 
+: Called before the plugin calls [BeginCache](../Caching/HTTPCache.md#begincache) to decide whether the content will be cached or not. 
 ## **Methods**:
 
 ### **#ctor**
@@ -58,7 +58,7 @@ The `HTTPCache` class provides a powerful caching mechanism for HTTP responses i
 : If necessary tries to make enough space in the cache by calling Maintain. 
 
 ### **BeginCache**
-: Initiates the caching process for an HTTP response, creating an [HTTPCacheContentWriter](../Caching/HTTPCacheContentWriter.md)	 if caching is enabled and all predconditions are met. 
+: Initiates the caching process for an HTTP response, creating an [HTTPCacheContentWriter](../Caching/HTTPCacheContentWriter.md) if caching is enabled and all predconditions are met. 
 
 ### **EndCache**
 : Finalizes the caching process and takes appropriate actions based on the completion status. 
@@ -78,7 +78,7 @@ The `HTTPCache` class provides a powerful caching mechanism for HTTP responses i
 ### **CanServeWithoutValidation**
 : Checks whether the caches resource identified by the hash is can be served from the local store with the given error conditions.  
 	!!! note ""
-		This check reflects the very current state, even if it returns 		, a request might just executing to get a write lock on it to refresh the content.
+		This check reflects the very current state, even if it returns `true`, a request might just executing to get a write lock on it to refresh the content.
 
 
 ### **Redirect**

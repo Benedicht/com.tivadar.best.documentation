@@ -4,7 +4,7 @@ An [UploadStreamBase](../Upload/UploadStreamBase.md) implementation representing
 
 **Remarks**:
 
-This stream is used to send data as URL-encoded form data in an HTTP request. It sets the  header to . URL-encoded form data is typically used for submitting form data to a web server. It is commonly used in HTTP POST requests to send data to a server, such as submitting HTML form data.
+This stream is used to send data as URL-encoded form data in an HTTP request. It sets the `"Content-Type"` header to `"application/x-www-form-urlencoded"`. URL-encoded form data is typically used for submitting form data to a web server. It is commonly used in HTTP POST requests to send data to a server, such as submitting HTML form data.
 
 The return value of **Stream.Read** is treated specially in the plugin: 
 
@@ -23,7 +23,7 @@ While it's possible, it's not advised to send binary data url-encoded!
 ## **Methods**:
 
 ### **BeforeSendHeaders**
-: Sets up the HTTP request by adding the 	 header as 	. 
+: Sets up the HTTP request by adding the `"Content-Type"` header as `"application/x-www-form-urlencoded"`. 
 
 ### **AddBinaryData**
 : Adds binary data to the form. It is not advised to send binary data with an URL-encoded form due to the conversion cost of binary to text conversion. 

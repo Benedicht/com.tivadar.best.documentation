@@ -14,18 +14,18 @@ The return value of **Stream.Read** is treated specially in the plugin:
 
 ## **Fields**:
 ### **Signaler**
-: Gets the [IThreadSignaler](../Connections/IThreadSignaler.md)	 object for signaling when new data is available. 
+: Gets the [IThreadSignaler](../Connections/IThreadSignaler.md) object for signaling when new data is available. 
 ### **Length**
 : Length in bytes that the stream will upload. 
 	!!! note ""
 		The return value of Length is treated specially in the plugin: 
 
-		- **-2**: The stream's length is unknown and the plugin have to send data .
-		- **-1**: The stream's length is unknown and the plugin have to send data .
-		- **0**: No content to send. The content-length header will contain zero ().
-		- **>0**: Length of the content is known, will be sent . The content-length header will contain zero ().
+		- **-2**: The stream's length is unknown and the plugin have to send data `with 'chunked' transfer-encoding`.
+		- **-1**: The stream's length is unknown and the plugin have to send data `as-is, without any encoding`.
+		- **0**: No content to send. The content-length header will contain zero (`0`).
+		- **>0**: Length of the content is known, will be sent `as-is, without any encoding`. The content-length header will contain zero (`0`).
 
-		 Constants for the first three points can be found in [BodyLengths](../Upload/BodyLengths.md)		. 
+ Constants for the first three points can be found in [BodyLengths](../Upload/BodyLengths.md). 
 
 ## **Methods**:
 

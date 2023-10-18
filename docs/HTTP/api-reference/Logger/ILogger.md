@@ -10,21 +10,21 @@ Represents a logger for recording log messages.
 ### **IsDiagnostic**
 : Gets a value indicating whether diagnostic logging is enabled. 
 	!!! note ""
-		Diagnostic logging is enabled when the [Level](../ILogger/.md#Level)		 is set to [All](../Loglevels/.md#All)		. 
+		Diagnostic logging is enabled when the [Level](../ILogger/.md#level) is set to [All](../Loglevels/.md#all). 
 
 ## **Methods**:
 
 ### **Verbose**
-: Logs a message with [All](../Loglevels/.md#All)	 level. 
+: Logs a message with [All](../Loglevels/.md#all) level. 
 
 ### **Information**
-: Logs a message with [Information](../Loglevels/.md#Information)	 level. 
+: Logs a message with [Information](../Loglevels/.md#information) level. 
 
 ### **Warning**
-: Logs a message with [Warning](../Loglevels/.md#Warning)	 level. 
+: Logs a message with [Warning](../Loglevels/.md#warning) level. 
 
 ### **Error**
-: Logs a message with [Error](../Loglevels/.md#Error)	 level. 
+: Logs a message with [Error](../Loglevels/.md#error) level. 
 
 ### **Exception**
-: Logs a message with [Exception](../Loglevels/.md#Exception)	 level. 
+: Logs a message with [Exception](../Loglevels/.md#exception) level. 

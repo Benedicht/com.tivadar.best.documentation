@@ -28,16 +28,16 @@ The DownloadContentStream serves as a storage medium for content downloaded duri
 ### **CompletedWith**
 : Gets a reference to an exception if the download completed with an error. 
 ### **Length**
-: Gets the length of the buffered data. Because downloads happen in parallel, a [Read](../Response/DownloadContentStream.md#Read)	 call can return with more data after checking Length. 
+: Gets the length of the buffered data. Because downloads happen in parallel, a [Read](../Response/DownloadContentStream.md#read) call can return with more data after checking Length. 
 ### **MaxBuffered**
 : Gets the maximum size of the internal buffer of this stream. 
 	!!! note ""
 		In some cases, the plugin may put more data into the stream than the specified size.
 
 ### **IsFull**
-: Gets a value indicating whether the internal buffer holds at least the [MaxBuffered](../DownloadContentStream/.md#MaxBuffered)	 amount of data. 
+: Gets a value indicating whether the internal buffer holds at least the [MaxBuffered](../DownloadContentStream/.md#maxbuffered) amount of data. 
 ### **IsDetached**
-: Gets or sets whether the stream is detached from the [HTTPRequest](../HTTP/HTTPRequest.md)	/[HTTPResponse](../HTTP/HTTPResponse.md)	 when [Read](../Response/DownloadContentStream.md#Read)	 is used before the request is finished. When the stream is detached from the response object, their lifetimes are not bound together, meaning that the stream isn't disposed automatically, and the client code is responsible for calling the stream's **Stream.Dispose**	 function. 
+: Gets or sets whether the stream is detached from the [HTTPRequest](../HTTP/HTTPRequest.md)/[HTTPResponse](../HTTP/HTTPResponse.md) when [Read](../Response/DownloadContentStream.md#read) is used before the request is finished. When the stream is detached from the response object, their lifetimes are not bound together, meaning that the stream isn't disposed automatically, and the client code is responsible for calling the stream's **Stream.Dispose** function. 
 ### **_isFullCheckCount**
 : Count of consecutive calls with DoFullCheck that found the stream fully buffered. 
 ## **Methods**:
@@ -52,7 +52,7 @@ The DownloadContentStream serves as a storage medium for content downloaded duri
 : Tries to remove a downloaded segment from the stream. If the stream is empty, it returns immediately with false. 
 
 ### **Read**
-: A non-blocking Read function. When it returns 	, it doesn't mean the download is complete. If the download interrupted before completing, the next Read call can throw an exception. 
+: A non-blocking Read function. When it returns `0`, it doesn't mean the download is complete. If the download interrupted before completing, the next Read call can throw an exception. 
 
 ### **Write**
 : Writes a downloaded data segment to the stream. 

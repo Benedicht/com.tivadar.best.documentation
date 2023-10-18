@@ -28,10 +28,10 @@ The [HostKey](../HostSetting/HostKey.md) struct is designed to uniquely identify
 ## **Methods**:
 
 ### **#ctor**
-: Initializes a new instance of the [HostKey](../HostSetting/HostKey.md)	 struct with the specified URI and proxy settings. 
+: Initializes a new instance of the [HostKey](../HostSetting/HostKey.md) struct with the specified URI and proxy settings. 
 
 ### **From**
-: Creates a [HostKey](../HostSetting/HostKey.md)	 instance from an HTTP request. 
+: Creates a [HostKey](../HostSetting/HostKey.md) instance from an HTTP request. 
 
 ### **From**
-: Creates a [HostKey](../HostSetting/HostKey.md)	 instance from a URI and proxy settings. 
+: Creates a [HostKey](../HostSetting/HostKey.md) instance from a URI and proxy settings. 

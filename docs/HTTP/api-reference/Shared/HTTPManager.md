@@ -34,7 +34,7 @@ Global entry point to access and manage main services of the plugin.
 : Static constructor. Setup default values. 
 
 ### **Setup**
-: Initializes the HTTPManager with default settings. This method should be called on Unity's main thread before using the HTTP plugin. By default it gets called by [HTTPUpdateDelegator](../Shared/HTTPUpdateDelegator.md)	. 
+: Initializes the HTTPManager with default settings. This method should be called on Unity's main thread before using the HTTP plugin. By default it gets called by [HTTPUpdateDelegator](../Shared/HTTPUpdateDelegator.md). 
 
 ### **GetRootSaveFolder**
 : Will return where the various caches should be saved. 

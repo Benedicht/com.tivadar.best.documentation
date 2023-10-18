@@ -14,6 +14,6 @@ Represents the parameters for a negotiation.
 ### **token**
 : Sets the cancellation token for negotiation. 
 ### **hostSettings**
-: Sets the [HostSettings](../Settings/HostSettings.md)	 that can be used during the negotiation process. 
+: Sets the [HostSettings](../Settings/HostSettings.md) that can be used during the negotiation process. 
 ### **context**
 : Optional logging context for debugging purposes. 

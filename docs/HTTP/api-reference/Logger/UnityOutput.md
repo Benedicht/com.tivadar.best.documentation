@@ -6,7 +6,7 @@ Provides an implementation of [ILogOutput](../Logger/ILogOutput.md) that writes 
 ### **AcceptColor**
 : Gets a value indicating whether this log output accepts color codes. 
 	!!! note ""
-		This property returns 		 when running in the Unity Editor and 		 otherwise. 
+		This property returns `true` when running in the Unity Editor and `false` otherwise. 
 
 ## **Methods**:
 

@@ -17,11 +17,11 @@ TCPStreamer serves several key functions:
 
 ## **Fields**:
 ### **ContentConsumer**
-: Gets or sets the content consumer that interacts with this [TCPStreamer](../Tcp/TCPStreamer.md)	 instance, allowing data to be written to the streamer for transmission. 
+: Gets or sets the content consumer that interacts with this [TCPStreamer](../Tcp/TCPStreamer.md) instance, allowing data to be written to the streamer for transmission. 
 ### **Socket**
-: Gets the underlying [Socket](../TCPStreamer/.md#Socket)	 associated with this [TCPStreamer](../Tcp/TCPStreamer.md)	 instance. 
+: Gets the underlying [Socket](../TCPStreamer/.md#socket) associated with this [TCPStreamer](../Tcp/TCPStreamer.md) instance. 
 ### **Context**
-: Gets the optional [LoggingContext](../Logger/LoggingContext.md)	 associated with this [TCPStreamer](../Tcp/TCPStreamer.md)	 instance, facilitating logging and diagnostics. 
+: Gets the optional [LoggingContext](../Logger/LoggingContext.md) associated with this [TCPStreamer](../Tcp/TCPStreamer.md) instance, facilitating logging and diagnostics. 
 ### **IsConnectionClosed**
 : Gets a value indicating whether the TCP connection is closed. 
 ### **MinReceiveBufferSize**
@@ -41,10 +41,10 @@ TCPStreamer serves several key functions:
 ## **Methods**:
 
 ### **#ctor**
-: Initializes a new instance of the TCPStreamer class with the specified **Socket**	 and parent [LoggingContext](../Logger/LoggingContext.md)	. 
+: Initializes a new instance of the TCPStreamer class with the specified **Socket** and parent [LoggingContext](../Logger/LoggingContext.md). 
 
 ### **DequeueReceived**
-: Dequeues received data from the stream's buffer and returns a [BufferSegment](../Memory/BufferSegment.md)	 containing the data. 
+: Dequeues received data from the stream's buffer and returns a [BufferSegment](../Memory/BufferSegment.md) containing the data. 
 
 ### **BeginReceive**
 : Begins receiving data from the TCP connection asynchronously. This method ensures that only one receive operation happens at a time. 
@@ -56,7 +56,7 @@ TCPStreamer serves several key functions:
 : Enqueues data to be sent over the TCP connection. The data is added to the stream's outgoing buffer for transmission. 
 
 ### **Dispose**
-: Disposes of the [TCPStreamer](../Tcp/TCPStreamer.md)	 instance, releasing associated resources. 
+: Disposes of the [TCPStreamer](../Tcp/TCPStreamer.md) instance, releasing associated resources. 
 
 ### **Close**
 : Closes the TCP connection gracefully and performs cleanup operations. 

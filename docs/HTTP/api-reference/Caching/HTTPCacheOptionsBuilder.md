@@ -12,4 +12,4 @@ A builder struct for constructing an instance of [HTTPCacheOptions](../Caching/H
 : Sets the maximum duration for which cached entries will be retained. By default all entities (even stalled ones) are kept cached until they are evicted to make room for new, fresh ones. 
 
 ### **Build**
-: Builds and returns an instance of [HTTPCacheOptions](../Caching/HTTPCacheOptions.md)	 with the specified configuration settings. 
+: Builds and returns an instance of [HTTPCacheOptions](../Caching/HTTPCacheOptions.md) with the specified configuration settings. 

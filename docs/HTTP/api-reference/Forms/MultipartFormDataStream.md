@@ -1,6 +1,6 @@
 # MultipartFormDataStream
 
-An [UploadStreamBase](../Upload/UploadStreamBase.md) based implementation of the  Content-Type. It's very memory-effective, streams are read into memory in chunks. 
+An [UploadStreamBase](../Upload/UploadStreamBase.md) based implementation of the `multipart/form-data` Content-Type. It's very memory-effective, streams are read into memory in chunks. 
 
 **Remarks**:
 

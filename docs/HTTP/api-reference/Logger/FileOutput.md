@@ -4,7 +4,7 @@ Provides an implementation of [ILogOutput](../Logger/ILogOutput.md) that writes 
 
 ## **Fields**:
 ### **AcceptColor**
-: Gets a value indicating whether this log output accepts color codes. Always returns 	. 
+: Gets a value indicating whether this log output accepts color codes. Always returns `false`. 
 ## **Methods**:
 
 ### **#ctor**

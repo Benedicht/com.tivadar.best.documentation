@@ -49,11 +49,11 @@ Represents an HTTP request that allows you to send HTTP requests to remote serve
 ### **Callback**
 : The callback function that will be called after the request is fully processed. 
 ### **IsCancellationRequested**
-: Indicates if [Abort](../HTTP/HTTPRequest.md#Abort)	 is called on this request. 
+: Indicates if [Abort](../HTTP/HTTPRequest.md#abort) is called on this request. 
 ### **CancellationTokenSource**
 : Gets the cancellation token source for this request. 
 ### **OnCancellationRequested**
-: Action called when [Abort](../HTTP/HTTPRequest.md#Abort)	 function is invoked. 
+: Action called when [Abort](../HTTP/HTTPRequest.md#abort) function is invoked. 
 ### **Exception**
 : Stores any exception that occurs during processing of the request or response. 
 ### **Tag**
@@ -65,12 +65,12 @@ Represents an HTTP request that allows you to send HTTP requests to remote serve
 ### **Authenticator**
 : An IAuthenticator implementation that can be used to authenticate the request. 
 	!!! note ""
-		Out-of-the-box included authenticators are [CrendetialAuthenticator](../Authenticators/CrendetialAuthenticator.md)		 and [BearerTokenAuthenticator](../Authenticators/BearerTokenAuthenticator.md)		.
+		Out-of-the-box included authenticators are [CrendetialAuthenticator](../Authenticators/CrendetialAuthenticator.md) and [BearerTokenAuthenticator](../Authenticators/BearerTokenAuthenticator.md).
 
 ### **Context**
 : Logging context of the request. 
 ### **Current**
-: **Current**	 implementation, required for **Coroutine**	 support. 
+: **Current**	 implementation, required for **Coroutine** support. 
 ## **Methods**:
 
 ### **CreateGet**
@@ -140,16 +140,16 @@ Represents an HTTP request that allows you to send HTTP requests to remote serve
 : For the given header name, removes any previously added values and sets the given one. 
 
 ### **RemoveHeader**
-: Removes the specified header and all of its associated values. Returns 	, if the header found and succesfully removed. 
+: Removes the specified header and all of its associated values. Returns `true`, if the header found and succesfully removed. 
 
 ### **HasHeader**
-: Returns 	 if the given head name is already in the [Headers](../HTTPRequest/.md#Headers)	. 
+: Returns `true` if the given head name is already in the [Headers](../HTTPRequest/.md#headers). 
 
 ### **GetFirstHeaderValue**
-: Returns the first header or 	 for the given header name. 
+: Returns the first header or `null` for the given header name. 
 
 ### **GetHeaderValues**
-: Returns all header values for the given header or 	. 
+: Returns all header values for the given header or `null`. 
 
 ### **RemoveHeaders**
 : Removes all headers. 
@@ -170,10 +170,10 @@ Represents an HTTP request that allows you to send HTTP requests to remote serve
 : Resets the request for a state where switching MethodType is possible. 
 
 ### **MoveNext**
-: **IEnumerator.MoveNext**	 implementation, required for **Coroutine**	 support. 
+: **IEnumerator.MoveNext**	 implementation, required for **Coroutine** support. 
 
 ### **Reset**
-: **IEnumerator.MoveNext**	 implementation throwing **NotImplementedException**	, required for **Coroutine**	 support. 
+: **IEnumerator.MoveNext**	 implementation throwing **NotImplementedException**, required for **Coroutine** support. 
 
 ### **Dispose**
 : Disposes of resources used by the HTTPRequest instance. 

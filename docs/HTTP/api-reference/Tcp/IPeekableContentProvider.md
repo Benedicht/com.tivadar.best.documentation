@@ -14,13 +14,13 @@ Key Functions of IPeekableContentProvider:
 
 ## **Fields**:
 ### **Peekable**
-: Gets the [PeekableContentProviderStream](../Streams/PeekableContentProviderStream.md)	 associated with this content provider, which allows peeking at the content without consuming it. 
+: Gets the [PeekableContentProviderStream](../Streams/PeekableContentProviderStream.md) associated with this content provider, which allows peeking at the content without consuming it. 
 ### **Consumer**
-: Gets the [IContentConsumer](../Tcp/IContentConsumer.md)	 implementor that will be notified through [OnContent](../Tcp/IContentConsumer.md#OnContent)	 calls when new data is available in the TCPStreamer. 
+: Gets the [IContentConsumer](../Tcp/IContentConsumer.md) implementor that will be notified through [OnContent](../Tcp/IContentConsumer.md#oncontent) calls when new data is available in the TCPStreamer. 
 ## **Methods**:
 
 ### **SetTwoWayBinding**
-: Sets up a two-way binding between this content provider and an [IContentConsumer](../Tcp/IContentConsumer.md)	. This enables bidirectional communication between the provider and consumer. 
+: Sets up a two-way binding between this content provider and an [IContentConsumer](../Tcp/IContentConsumer.md). This enables bidirectional communication between the provider and consumer. 
 
 ### **Unbind**
 : Unbinds the content provider from its associated content consumer. This terminates the association between the provider and consumer. 
