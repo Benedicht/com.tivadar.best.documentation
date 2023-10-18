@@ -143,7 +143,7 @@ Represents an HTTP request that allows you to send HTTP requests to remote serve
 : Removes the specified header and all of its associated values. Returns `true`, if the header found and succesfully removed. 
 
 ### **HasHeader**
-: Returns `true` if the given head name is already in the [Headers](../HTTPRequest/HTTPRequest.md#headers). 
+: Returns `true` if the given head name is already in the [Headers](../HTTP/HTTPRequest.md#headers). 
 
 ### **GetFirstHeaderValue**
 : Returns the first header or `null` for the given header name. 

@@ -4,7 +4,7 @@ Represents settings related to handling HTTP request redirection.
 
 ## **Fields**:
 ### **IsRedirected**
-: Indicates whether the request has been redirected. A request's IsRedirected might be true while [RedirectCount](../RedirectSettings/RedirectSettings.md#redirectcount) is zero if the redirection is made to the local cache. 
+: Indicates whether the request has been redirected. A request's IsRedirected might be true while [RedirectCount](../Settings/RedirectSettings.md#redirectcount) is zero if the redirection is made to the local cache. 
 ### **RedirectUri**
 : The Uri that the request is redirected to. 
 ### **MaxRedirects**
@@ -20,4 +20,4 @@ Represents settings related to handling HTTP request redirection.
 : Initializes a new instance of the RedirectSettings class with the specified maximum redirections. 
 
 ### **Reset**
-: Resets [IsRedirected](../RedirectSettings/RedirectSettings.md#isredirected) and [RedirectCount](../RedirectSettings/RedirectSettings.md#redirectcount) to their default values. 
+: Resets [IsRedirected](../Settings/RedirectSettings.md#isredirected) and [RedirectCount](../Settings/RedirectSettings.md#redirectcount) to their default values. 

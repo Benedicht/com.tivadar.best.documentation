@@ -19,7 +19,7 @@ TCPStreamer serves several key functions:
 ### **ContentConsumer**
 : Gets or sets the content consumer that interacts with this [TCPStreamer](../Tcp/TCPStreamer.md) instance, allowing data to be written to the streamer for transmission. 
 ### **Socket**
-: Gets the underlying [Socket](../TCPStreamer/TCPStreamer.md#socket) associated with this [TCPStreamer](../Tcp/TCPStreamer.md) instance. 
+: Gets the underlying [Socket](../Tcp/TCPStreamer.md#socket) associated with this [TCPStreamer](../Tcp/TCPStreamer.md) instance. 
 ### **Context**
 : Gets the optional [LoggingContext](../Logger/LoggingContext.md) associated with this [TCPStreamer](../Tcp/TCPStreamer.md) instance, facilitating logging and diagnostics. 
 ### **IsConnectionClosed**
