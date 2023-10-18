@@ -6,8 +6,8 @@ The ITCPStreamerContentConsumer interface represents a specialized content consu
 
 Key Functions of ITCPStreamerContentConsumer: 
 
-- **Data Writing:**: 
-- **Content Handling:**: 
+- **Data Writing:**: Provides methods to write data to the associated [TCPStreamer](../Tcp/TCPStreamer.md) instance, allowing content to be sent over the TCP connection. 
+- **Content Handling:**: Defines event methods for notifying consumers when new content is available, the connection is closed, or errors occur during data transfer. 
 
 
 

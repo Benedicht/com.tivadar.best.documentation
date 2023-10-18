@@ -6,9 +6,9 @@ The IPeekableContentProvider interface defines an abstraction for providing cont
 
 Key Functions of IPeekableContentProvider: 
 
-- **Content Provision:**: 
-- **Two-Way Binding:**: 
-- **Unbinding:**: 
+- **Content Provision:**: It provides content to an associated [IContentConsumer](../Tcp/IContentConsumer.md) without immediately consuming the content. This allows the consumer to examine the data before processing. 
+- **Two-Way Binding:**: Supports establishing a two-way binding between the [IPeekableContentProvider](../Tcp/IPeekableContentProvider.md) and an [IContentConsumer](../Tcp/IContentConsumer.md), enabling bidirectional communication between the provider and consumer. 
+- **Unbinding:**: Provides methods for unbinding a content consumer, terminating the association between the provider and consumer. 
 
 
 

@@ -35,7 +35,7 @@ The DownloadContentStream serves as a storage medium for content downloaded duri
 		In some cases, the plugin may put more data into the stream than the specified size.
 
 ### **IsFull**
-: Gets a value indicating whether the internal buffer holds at least the [MaxBuffered](../DownloadContentStream/.md#maxbuffered) amount of data. 
+: Gets a value indicating whether the internal buffer holds at least the [MaxBuffered](../DownloadContentStream/DownloadContentStream.md#maxbuffered) amount of data. 
 ### **IsDetached**
 : Gets or sets whether the stream is detached from the [HTTPRequest](../HTTP/HTTPRequest.md)/[HTTPResponse](../HTTP/HTTPResponse.md) when [Read](../Response/DownloadContentStream.md#read) is used before the request is finished. When the stream is detached from the response object, their lifetimes are not bound together, meaning that the stream isn't disposed automatically, and the client code is responsible for calling the stream's **Stream.Dispose** function. 
 ### **_isFullCheckCount**

@@ -33,13 +33,13 @@ Almost immutable, all changes are done in-class in a thread-safe manner.
 ### **IsStalled**
 : Checks if the entry is stalled and needs to be refreshed. 
 	!!! note ""
-		The entry is considered stalled if it is not currently being refreshed (i.e., [_isRefreshing](../DNSCacheEntry/.md#_isrefreshing) is false) and the time since the last resolution exceeds the refresh interval specified in [RefreshAfter](../DNSCacheOptions/.md#refreshafter). 
+		The entry is considered stalled if it is not currently being refreshed (i.e., [_isRefreshing](../DNSCacheEntry/DNSCacheEntry.md#_isrefreshing) is false) and the time since the last resolution exceeds the refresh interval specified in [RefreshAfter](../DNSCacheOptions/DNSCacheOptions.md#refreshafter). 
 
 
 ### **IsReadyToRemove**
 : Checks if the entry is ready to be removed from the cache. 
 	!!! note ""
-		The entry is considered ready for removal if the time since it was last used exceeds the removal interval specified in [RemoveAfter](../DNSCacheOptions/.md#removeafter). 
+		The entry is considered ready for removal if the time since it was last used exceeds the removal interval specified in [RemoveAfter](../DNSCacheOptions/DNSCacheOptions.md#removeafter). 
 
 
 ### **Refresh**

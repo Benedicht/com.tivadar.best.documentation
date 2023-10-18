@@ -70,7 +70,7 @@ Represents an HTTP request that allows you to send HTTP requests to remote serve
 ### **Context**
 : Logging context of the request. 
 ### **Current**
-: **Current**	 implementation, required for **Coroutine** support. 
+: **IEnumerator.Current**	 implementation, required for **Coroutine** support. 
 ## **Methods**:
 
 ### **CreateGet**
@@ -143,7 +143,7 @@ Represents an HTTP request that allows you to send HTTP requests to remote serve
 : Removes the specified header and all of its associated values. Returns `true`, if the header found and succesfully removed. 
 
 ### **HasHeader**
-: Returns `true` if the given head name is already in the [Headers](../HTTPRequest/.md#headers). 
+: Returns `true` if the given head name is already in the [Headers](../HTTPRequest/HTTPRequest.md#headers). 
 
 ### **GetFirstHeaderValue**
 : Returns the first header or `null` for the given header name. 

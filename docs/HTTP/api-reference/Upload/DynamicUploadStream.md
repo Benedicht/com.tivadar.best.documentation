@@ -32,7 +32,7 @@ This implementation is designed to handle scenarios where data may not always be
 
 		- **-1**: More data is expected in the future, but isn't currently available. When new data is ready, the IThreadSignaler must be notified.
 		- **0**: The stream has been closed and no more data will be provided.
-		- 
+		- Otherwise it returns with the number bytes copied to the buffer.
 
  Note: A zero return value can come after a -1 return, indicating a transition from waiting to completion. 
 
