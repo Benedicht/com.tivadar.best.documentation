@@ -5,12 +5,13 @@
 __Additions and improvements__
 
 - New namespace hierarchy.
-- Added `DNSCache` implementation to speed up consecutive connection processes.
-- Added support for DNSCache to manually store and retrieve entries.
-- Added new `Negotiator` class help building new plugins that doesn't use HTTP, but require the same lower-level infrastructure.
-- Added new `TCPRingmaster` class to speed up TCP connection process by sending out multiple tcp connection requests and use the first connected one.
+- Added [DNSCache](../Shared/DNS/dns-cache.md) implementation to speed up consecutive connection processes.
+- Added support for [DNSCache](api-reference/Cache/DNSCache.md) to manually store and retrieve entries.
+- Added new [Negotiator](api-reference/Tcp/Negotiator.md) class help building new plugins that doesn't use HTTP, but require the same lower-level infrastructure.
+- Added new [TCPRingmaster](api-reference/Tcp/TCPRingmaster.md) class to speed up TCP connection process by sending out multiple tcp connection requests and use the first connected one.
 - Reimplemented connection logic to use the new DNS cache, negotiator and tcp-ringmaster.
-- Reimplemented `HTTPCache`.
+- Reimplemented network read and write operations. Instead of blocking Reads&Writes, now the plugin uses non-blocking functions. This enabled implementing new ways for downloads and uploads. There's forward and backward feedback between the low level tcp layer and higher level connection layers. If the [download-stream](api-reference/Response/DownloadContentStream.md)'s buffer is full, it can notify the tcp layer that it can resume receiving from the server.
+- Reimplemented [HTTPCache](api-reference/Caching/HTTPCache.md), it's got more robust and future proof.
 - (#69) Now it's possible and easy to populate the local HTTP cache.
 - Added new, cleaner samples for both old and new features.
 
@@ -20,4 +21,4 @@ __Removals__
 
 __Fixes__
 
-- Fixed chaos around different upload sources (RawData, Forms, UploadStream) and unified them in one `UploadStream`.
+- Fixed chaos around different upload sources (RawData, Forms, UploadStream) and unified them in one [UploadStream](getting-started/uploads.md).

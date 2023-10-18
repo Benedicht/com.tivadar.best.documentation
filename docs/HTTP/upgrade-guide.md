@@ -22,7 +22,7 @@ I have worked hard to enhance features, fix issues, and introduce new capabiliti
 Instead of one big package the new version is split into multiple packages. This packaging change is reflected in how the plugins' namespaces are named. 
 For the Best HTTP package this means that its root namespace is `Best.HTTP` instead of `BestHTTP`.
 Upgrading old code might need only an additional dot ('.') in the middle. 
-For a better upgrade experience I kept the most used `HTTPRequest` and `HTTPResponse` classes in the root namespace.
+For a better upgrade experience I kept the most used [HTTPRequest](api-reference/HTTP/HTTPRequest.md) and `HTTPResponse` classes in the root namespace.
 
 However, other classes are now under different namespaces. Here I'll list a few common classes, their old and new namespaces:
 
@@ -51,7 +51,7 @@ However, other classes are now under different namespaces. Here I'll list a few 
 
 Depending on what IDE you use, deleting old usings first your IDE might help finding the new ones.
 
-### 2. HTTPRequest changes
+### 2. [HTTPRequest](api-reference/HTTP/HTTPRequest.md) changes
 
 #### ^^Removed^^
 
@@ -157,11 +157,11 @@ like the plugin's own `JSonDataStream` or `DynamicUploadStream`. For examples ab
 
 #### ^^Changed/Moved^^
 
-- **Moved properties under settings classes**: Over the years as the `HTTPRequest` got more and more features, new properties and callbacks popped up one by one making it 
+- **Moved properties under settings classes**: Over the years as the [HTTPRequest](api-reference/HTTP/HTTPRequest.md) got more and more features, new properties and callbacks popped up one by one making it 
 cluttered, unorganized. In this version, most of the properties and callbacks are still there with the same behavior, but located under setting classes.
 
 ??? Example "Example with UploadStream"
-    So, for example the above mentioned `UploadStream` moved into the `UploadSettings` class and can be accessed through a field with the same name in `HTTPRequest`:
+    So, for example the above mentioned [UploadStream](api-reference/Settings/UploadSettings.md#UploadStream) moved into the [UploadSettings](api-reference/Settings/UploadSettings.md) class and can be accessed through a field with the same name in [HTTPRequest](api-reference/HTTP/HTTPRequest.md):
 
     === "Old"
         ```cs
@@ -181,19 +181,20 @@ Here you can find a non-exhaustive list of these changes:
 
 | Member | Moved under | Accessible as |
 |--------|-------------|---------------|
-| UploadStream | UploadStettings | request.UploadStettings.UploadStream = ...; |
-| OnUploadProgress | UploadSettings | request.UploadSettings.OnUploadProgress += ...; |
-| OnHeadersReceived | DownloadSettings | request.DownloadSettings.OnHeadersReceived += ...; |
-| OnDownloadStarted | DownloadSettings | request.DownloadSettings.OnDownloadStarted += ...; |
-| Timeout | TimeoutSettings | request.TimeoutSettings.Timeout = TimeSpan.FromSeconds(xy); |
-| ConnectTimeout | TimeoutSettings | request.TimeoutSettings.ConnectTimeout = TimeSpan.FromSeconds(xy); |
-| Retries | RetrySettings | request.RetrySettings.Retries = xy; |
-| MaxRetries | RetrySettings | request.RetrySettings.MaxRetries = xy; |
-| MaxRedirects | RedirectSettings | request.RedirectSettings.MaxRedirects = xy; |
-| Proxy | ProxySettings | request.ProxySettings.Proxy = new HTTPProxy(...); |
+| UploadStream | [UploadSettings](api-reference/Settings/UploadSettings.md) | request.UploadStettings.UploadStream = ...; |
+| OnUploadProgress | [UploadSettings](api-reference/Settings/UploadSettings.md) | request.UploadSettings.OnUploadProgress += ...; |
+| OnHeadersReceived | [DownloadSettings](api-reference/Settings/DownloadSettings.md) | request.DownloadSettings.OnHeadersReceived += ...; |
+| OnDownloadStarted | [DownloadSettings](api-reference/Settings/DownloadSettings.md) | request.DownloadSettings.OnDownloadStarted += ...; |
+| Timeout | [TimeoutSettings](api-reference/Settings/TimeoutSettings.md) | request.TimeoutSettings.Timeout = TimeSpan.FromSeconds(xy); |
+| ConnectTimeout | [TimeoutSettings](api-reference/Settings/TimeoutSettings.md) | request.TimeoutSettings.ConnectTimeout = TimeSpan.FromSeconds(xy); |
+| Retries | [RetrySettings](api-reference/Settings/RetrySettings.md) | request.RetrySettings.Retries = xy; |
+| MaxRetries | [RetrySettings](api-reference/Settings/RetrySettings.md) | request.RetrySettings.MaxRetries = xy; |
+| MaxRedirects | [RedirectSettings](api-reference/Settings/RedirectSettings.md) | request.RedirectSettings.MaxRedirects = xy; |
+| Proxy | [ProxySettings](api-reference/Settings/ProxySettings.md) | request.ProxySettings.Proxy = new HTTPProxy(...); |
 
-- **Authententication**: Instead of a single `Credentials` property, starting with this version authentication is implemented with the help of the `IAuthenticator` interface.
-The plugin ships with the `CrendetialAuthenticator` and `BearerTokenAuthenticator` implementations.
+- **Authententication**: Instead of a single [Credentials](api-reference/Authentication/Credentials.md) property, starting with this version authentication is implemented with the help of the [IAuthenticator](api-reference/Authenticators/IAuthenticator.md) interface.
+The plugin ships with the [CrendetialAuthenticator](api-reference/Authenticators/CrendetialAuthenticator.md) and [BearerTokenAuthenticator](api-reference/Authenticators/BearerTokenAuthenticator.md) implementations.
+More details can be found in the [Getting started/Authentication](getting-started/authentication.md) topic!
 
 #### ^^New^^
 
@@ -202,7 +203,7 @@ The plugin ships with the `CrendetialAuthenticator` and `BearerTokenAuthenticato
 - **New constructors**: While I removed a few, I also added a few to support passing URLs as strings, `HTTPRequest` will convert them to `System.Uri` instances.
 - **Authenticator**
 
-### 3. HTTPResponse changes
+### 3. [HTTPResponse](api-reference/HTTP/HTTPResponse.md) changes
 
 #### ^^Removed^^
 
@@ -216,7 +217,7 @@ The plugin ships with the `CrendetialAuthenticator` and `BearerTokenAuthenticato
 
 #### ^^Changed/Moved^^
 
-- **Downloaded data handling (DownloadContentStream DownStream)**: As already [mentioned](#removed), all downloads are streamed downloads downloading into a `DownloadContentStream` instance and its reference is stored int `HTTPResponse`'s `DownStream`.
+- **Downloaded data handling ([DownloadContentStream](api-reference/Response/DownloadContentStream.md) [DownStream](api-reference/HTTP/HTTPResponse.md#downstream))**: As already [mentioned](#removed), all downloads are streamed downloads downloading into a `DownloadContentStream` instance and its reference is stored int `HTTPResponse`'s `DownStream`.
 Buffering, thread synchronization and memory management is all done by the `DownloadContentStream`. For smaller downloads, the `HTTPResponse` still maintains its shortcuts: `DataAsText`, `DataAsTexture2D` and the `Data` property became a shortcut too:
     
     ??? Example
@@ -264,7 +265,7 @@ Buffering, thread synchronization and memory management is all done by the `Down
 
 - **DownStream**: Discussed [above](#changedmoved_1).
 
-### 4. HTTPManager changes
+### 4. [HTTPManager](api-reference/Shared/HTTPManager.md) changes
 
 #### ^^Removed^^
 
@@ -391,7 +392,7 @@ Buffering, thread synchronization and memory management is all done by the `Down
 
 ### 5. Caching changes
 
-HTTP content caching is got completely reimplemented in the `HTTPCache` class. Demoted from a static class, its properties and functions can be accessed through `Best.HTTP.HTTPManager.LocalCache`.
+HTTP content caching is got completely reimplemented in the [HTTPCache](api-reference/Caching/HTTPCache.md) class. Demoted from a static class, its properties and functions can be accessed through `Best.HTTP.HTTPManager.LocalCache`.
 
 Most notable changes/features are:
 
@@ -399,12 +400,12 @@ Most notable changes/features are:
 2. The maximum size of the cache is enforced during caching. In previous versions entries only evicted during maintanance.
 3. Headers and content now stored separately in different files. A file stream can be easily acquired by calling two functions.
 
-### 6. Cookie changes
+### 6. [Cookie](api-reference/Cookies/CookieJar.md) changes
 
 1. Cookies can't be set directly for a `HTTPRequest`, but using `#!cs CookieJar.Set(Uri uri, Cookie cookie)` or `#!cs CookieJar.Set(Cookie cookie)`.
 2. Received cookies aren't stored for each `HTTPResponse` but they can be acquired with the `#!cs CookieJar.Get(Uri uri)` function.
 
-### 7. Authentication changes
+### 7. [Authentication](getting-started/authentication.md) changes
 
 Previous versions supported only HTTP authentication (Basic and Digest) through the Credentials property that allowed only to set a username-password pair.
 Starting with this version, authentication can be done by using an authenticator implementing the `IAuthenticator` interface opening a wide range of possibilities.
