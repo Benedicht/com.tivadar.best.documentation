@@ -4,6 +4,9 @@ comments: true
 
 # How to Report a Bug
 
+!!! tip "*Always ensure you're using the latest version.*"
+	Check your current version by printing the `Best.HTTP.Shared.HTTPManager.UserAgent` variable. Up-to-date versions may have already addressed your concerns.
+
 ## 📚 Documentation First
 
 Before diving into the issue reporting process, please take a moment to read the documentation associated with the package or protocol you're using. 
