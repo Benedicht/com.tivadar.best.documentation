@@ -14,6 +14,8 @@ __Additions and improvements__
 - Reimplemented [HTTPCache](api-reference/Caching/HTTPCache.md), it's got more robust and future proof.
 - (#69) Now it's possible and easy to populate the local HTTP cache.
 - Added new, cleaner samples for both old and new features.
+- Halved active threads per connections.
+- Added [Memory](../Shared/Profiler/memory.md) and [Network](../Shared/Profiler/memory.md) profilers.
 
 __Removals__
 
@@ -22,3 +24,5 @@ __Removals__
 __Fixes__
 
 - Fixed chaos around different upload sources (RawData, Forms, UploadStream) and unified them in one [UploadStream](getting-started/uploads.md).
+
+For API changes and upgrade guides see the [Upgrade Guide topic](upgrade-guide.md).
