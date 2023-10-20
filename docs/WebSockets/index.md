@@ -13,7 +13,7 @@ Whether it's sending instantaneous game state updates, chat messages, or receivi
 Best WebSockets is crafted to effortlessly integrate this technology into your Unity projects, making bi-directional communication straightforward and efficient.
 
 ## Key Features
-- **Supported Unity Versions:** Best WebSockets is compatible with Unity versions starting from :fontawesome-brands-unity: **2021.3 onwards**.
+- **Supported Unity Versions:** Best WebSockets is compatible with Unity versions starting from :fontawesome-brands-unity: **2021.1 onwards**.
 - **Cross-Platform:** Best WebSockets seamlessly operates across a wide variety of Unity platforms, ensuring its applicability for diverse development projects. Specifically, it supports:
     
     - :fontawesome-solid-desktop: **Desktop:** Windows, Linux, MacOS

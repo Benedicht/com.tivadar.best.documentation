@@ -9,7 +9,7 @@ Whether you're fetching data from remote servers, sending game scores, or updati
 Recognizing the multifaceted needs of Unity developers, Best HTTP is designed to simplify these interactions, providing a streamlined and efficient means to handle web-based communication.
 
 ## Key Features
-- **Supported Unity Versions**: Best HTTP is compatible with Unity versions starting from :fontawesome-brands-unity: **2021.3 onwards**.
+- **Supported Unity Versions**: Best HTTP is compatible with Unity versions starting from :fontawesome-brands-unity: **2021.1 onwards**.
 - **Cross-Platform:** Best HTTP is designed to work seamlessly across a diverse range of Unity platforms, ensuring versatility for all your development needs. Specifically, it supports:
     - :fontawesome-solid-desktop: **Desktop**: Windows, Linux, MacOS
     - :fontawesome-solid-mobile: **Mobile**: iOS, Android
