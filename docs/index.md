@@ -7,7 +7,7 @@ Explore the documentation for each package below:
 
 ## **Best HTTP**
 
-Best HTTP is a comprehensive library for making HTTP and HTTPS requests in Unity. 
+[Best HTTP](HTTP/index.md) is a comprehensive library for making HTTP and HTTPS requests in Unity. 
 It offers a wide range of features for handling web communication, including HTTP/2 support, caching, authentication, and more.
 
 - [Installation Guide](HTTP/installation.md): Quickly set up Best HTTP in your Unity project.
@@ -22,7 +22,7 @@ Don't forget to check out its two addons:
 
 ## **Best WebSocket**
 
-Best WebSocket offers a flexible WebSocket client implementation for Unity. 
+[Best WebSocket](WebSockets/index.md) offers a flexible WebSocket client implementation for Unity. 
 It allows you to establish WebSocket connections for real-time data exchange.
 
 - [Installation Guide](WebSockets/installation.md)
@@ -39,14 +39,14 @@ Incorporate real-time features like chat, notifications, and multiplayer gaming 
 - [Getting Started](getting-started.md)
 - [Advanced Usage](advanced-usage.md)
 
-## **Best Socket.IO**
+## **Best Socket.IO** :simple-socketdotio:
 
-[Best Socket.IO Documentation](link-to-best-socketio-docs): Best Socket.IO is a library for integrating with Socket.IO, a popular real-time communication framework. 
+[Best Socket.IO](SocketIO/index.md) is a library for integrating with Socket.IO, a popular real-time communication framework. 
 Use it to create WebSocket-based applications and games with ease.
 
-- [Installation Guide](installation-guide.md)
-- [Getting Started](getting-started.md)
-- [Advanced Usage](advanced-usage.md)
+- [Installation Guide](SocketIO/installation.md)
+- [Getting Started](SocketIO/getting-started/index.md)
+- [Advanced Usage](SocketIO/intermediate-topics/index.md)
 
 ## **Best Server-Sent Events**
 
@@ -74,7 +74,8 @@ Each package's documentation provides detailed information, usage examples, and 
 
 ## Community and Support
 
-If you have questions, need assistance, or want to engage with the Best packages community, feel free to visit the [Community Forum](link-to-community-forum), [discord channel](link-to-discord). A dedicated community and I are always here to assist.
+If you have questions, need assistance, or want to engage with the Best packages community, feel free to visit the [Community and Support page](Shared/support.md).
+A dedicated community and I are always here to assist.
 
 I'm excited to see what you create with my packages. Happy coding!
 
