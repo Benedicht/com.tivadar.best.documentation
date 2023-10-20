@@ -30,6 +30,10 @@ SocketIO got its own namespace `Best.SocketIO`, upgrading namespace usings can b
     === "Best.SocketIO"
         `#!cs var manager = new Best.SocketIO.SocketManager(new Uri(address))`
 
+### Request customization changes
+
+If you had any request customization using [HTTPRequestCustomizationCallback](intermediate-topics/socketoptions.md#httprequestcustomizationcallback), you might want to browse through the [Best HTTP Upgrade Guide](../HTTP/upgrade-guide.md) too.
+
 Simple changes, major upgrades. You're now on the latest version!
 
 ## General Tips

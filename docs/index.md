@@ -57,9 +57,7 @@ Use it to establish real-time, unidirectional communication between your server 
 - [Getting Started](getting-started.md)
 - [Advanced Usage](advanced-usage.md)
 
----
-
-## **Best MQTT**
+## **Best MQTT** :simple-mqtt:
 
 [Best MQTT Documentation](link-to-best-mqtt-docs): Best MQTT is a feature-rich MQTT client library for Unity. Use it to implement MQTT-based communication in your applications, enabling efficient and scalable messaging between devices and servers.
 

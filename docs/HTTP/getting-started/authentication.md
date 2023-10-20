@@ -9,6 +9,7 @@ This is why, starting with this version, changed the way how setting up authenti
 Instead of just be able to set a username-password pair for a request, the `HTTPRequest` class now has a property that accepts an `IAuthenticator` implementation.
 
 The plugin ships with two, ready to use authenticators: `CrendetialAuthenticator` and `BearerTokenAuthenticator`.
+Both authenticator is located in the `Best.HTTP.Request.Authenticators` namespace.
 
 ## CrendetialAuthenticator
 

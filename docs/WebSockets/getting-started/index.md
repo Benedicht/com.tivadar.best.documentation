@@ -16,7 +16,7 @@ Called when connection to the server is established.
 After this event the WebSocket’s IsOpen property will be True until we or the server closes the connection or if an error occurs.
 
 !!! Example
-    ```cs
+    ```cs hl_lines="2 6"
     var webSocket = new WebSocket(new Uri("wss://websocketserver/ws"));
     webSocket.OnOpen += OnWebSocketOpen;
 
@@ -33,7 +33,7 @@ After this event the WebSocket’s IsOpen property will be True until we or the 
 Called when a textual message received from the server.
 
 !!! Example
-    ```cs
+    ```cs hl_lines="2 6"
     var webSocket = new WebSocket(new Uri("wss://websocketserver/ws"));
     webSocket.OnMessage += OnMessageReceived;
 
@@ -51,7 +51,7 @@ Called when a binary blob message received from the server, it receives a [Buffe
 The received bytes can be accessed through the buffer's `Data` field. In most cases `Data` is a larger array then the received message so it's important to use the buffer's `Count` field instead of `Data.Length`!
 
 !!! Example
-    ```cs
+    ```cs hl_lines="2 6 16"
     var webSocket = new WebSocket(new Uri("wss://websocketserver/ws"));
     webSocket.OnBinary += OnBinaryMessageReceived;
 
@@ -81,7 +81,7 @@ When the client closes the connection through the Close function it can provide 
 The server typically will echoes our Code and Message back.
 
 !!! Example
-    ```cs
+    ```cs hl_lines="2 6 10"
     var webSocket = new WebSocket(new Uri("wss://websocketserver/ws"));
     webSocket.OnClosed += OnWebSocketClosed;
 
@@ -125,7 +125,7 @@ webSocket.Open();
 Send has a few overrides, but the most common is to send text or binary.
 
 Sending out text messages:
-```cs
+```cs hl_lines="10"
 var webSocket = new WebSocket(new Uri("wss://websocketserver/ws"));
 webSocket.OnOpen += OnWebSocketOpen;
 
@@ -140,7 +140,7 @@ private void OnWebSocketOpen(WebSocket webSocket)
 ```
 
 Sending out binary messages:
-```cs
+```cs hl_lines="13"
 var webSocket = new WebSocket(new Uri("wss://websocketserver/ws"));
 webSocket.OnOpen += OnWebSocketOpen;
 
@@ -165,7 +165,7 @@ Websocket frames produced by the `Send` methods are placed into an internal queu
 
 Will send data as a text frame and takes owenership over the memory region releasing it to the [BufferPool](../../HTTP/api-reference/Memory/BufferPool.md) as soon as possible.
 
-- ### `SendAsBinary(BufferSegment data)`
+### `SendAsBinary(BufferSegment data)`
 
 Will send the data in one or more binary frame and takes ownership over it calling [BufferPool](../../HTTP/api-reference/Memory/BufferPool.md). Release when sent.
 
@@ -173,7 +173,7 @@ Will send the data in one or more binary frame and takes ownership over it calli
 
 After all communication is done we should close the connection by calling the `Close()` method.
 
-```cs
+```cs hl_lines="10"
 var webSocket = new WebSocket(new Uri("wss://websocketserver/ws"));
 webSocket.OnOpen += OnWebSocketOpen;
 

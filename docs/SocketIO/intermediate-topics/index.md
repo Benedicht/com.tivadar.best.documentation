@@ -12,7 +12,7 @@ As of Socket.IO 4, the connection has an ID and all namespaces (sockets) have a 
 
 The connection's ID can be accessed through the `SocketManager`'s `Handshake` property:
 
-```csharp
+```cs
 var manager = new SocketManager(new Uri("http://localhost:3000"));
 manager.Socket.On("connect", () => Debug.Log(manager.Handshake.Sid));
 ```
@@ -20,7 +20,7 @@ manager.Socket.On("connect", () => Debug.Log(manager.Handshake.Sid));
 ### Socket ID
 
 Per-socket ID, witch is received when the socket is connected, can either be accessed through the connect event as a parameter, or later through the socket instance:
-```csharp
+```cs hl_lines="7 10"
 manager = new SocketManager(new Uri("http://localhost:3000"), options);
 manager.Socket.On<ConnectResponse>(SocketIOEventTypes.Connect, OnConnected);
 
@@ -42,11 +42,11 @@ void OnConnected(ConnectResponse resp)
 
 While the client parses the parameters it can inject the `SocketManager` or the receiving `Socket` instance into the parameter list:
 
-```csharp title="Server"
+```cs title="Server"
 socket.emit('binary', Buffer.from([9, 8, 7, 6, 5, 4, 3, 2, 1]));
 ```
 
-```csharp title="Client"
+```cs title="Client"
 manager.Socket.On<SocketManager, Socket, byte[]>("binary", OnBinaryMessage);
 
 private void OnBinaryMessage(SocketManager manager, Socket socket, byte[] buffer)
@@ -61,7 +61,7 @@ private void OnBinaryMessage(SocketManager manager, Socket socket, byte[] buffer
 
 `connect` and `error` events are special as their type parameters are already defined. `connect` emits a `ConnectResponse` object that has only one field: `sid`
 
-```csharp
+```cs
 manager.Socket.On<ConnectResponse>(SocketIOEventTypes.Connect, OnConnected);
 
 void OnConnected(ConnectResponse resp)
@@ -76,7 +76,7 @@ On the other hand, while `error` has a predefined `Error` type with a `message` 
 
 For example a server-side middleware might want to send additional data other than just a plain text:
 
-```csharp title="Server"
+```cs title="Server"
 io.use((socket, next) => {
     const err = new Error("not authorized");
     err.data = { content: "Please retry later", code: 101 };
@@ -84,7 +84,7 @@ io.use((socket, next) => {
 });
 ```
 
-```csharp title="Client"
+```cs title="Client"
 class ErrorData
 {
     public int code;
@@ -114,7 +114,7 @@ void OnError(CustomError args)
 
 `SocketManager`'s `Socket` property is bound to the root ('/') namespace. Every subscription and event sent through this is sent to the root namespace. 
 New namespaces can be accessed and connected to using the `GetSocket` function:
-```csharp
+```cs
 manager.GetSocket("/customNamespace").On(SocketIOEventTypes.Connect, OnNameSpaceConnected);
 ```
 

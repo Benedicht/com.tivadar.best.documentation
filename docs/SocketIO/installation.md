@@ -37,6 +37,14 @@ If you have a .unitypackage file for Best SocketIO, follow these steps:
     Best SocketIO also supports other installation techniques as documented in Unity's manual for packages. 
     For more advanced installation methods, please see the Unity Manual on [Sharing Packages](https://docs.unity3d.com/Manual/cus-share.html).
 
+## Assembly Definitions and Runtime References
+For developers familiar with Unity's development patterns, it's essential to understand how Best SocketIO incorporates Unity's systems:
+
+- **Assembly Definition Files:** Best SocketIO incorporates [Unity's Assembly Definition files](https://docs.unity3d.com/Manual/ScriptCompilationAssemblyDefinitionFiles.html). It aids in organizing and managing the codebase efficiently.
+- **Auto-Referencing of Runtime DLLs:** The runtime DLLs produced by Best SocketIO are [Auto Referenced](https://docs.unity3d.com/Manual/class-AssemblyDefinitionImporter.html), allowing Unity to automatically recognize and utilize them without manual intervention.
+- **Manual Package Referencing:** Should you need to reference Best SocketIO manually in your project (for advanced setups or specific use cases), you can do so. 
+Simply [reference the package](https://docs.unity3d.com/Manual/ScriptCompilationAssemblyDefinitionFiles.html#reference-another-assembly) by searching for `com.Tivadar.Best.SocketIO`.
+
 Congratulations! You've successfully integrated Best SocketIO into your Unity project. Begin your SocketIO adventure with the [Getting Started guide](getting-started/index.md).
 
 For any issues or additional assistance, please consult the [Community and Support page](../Shared/support.md).

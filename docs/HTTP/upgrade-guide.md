@@ -410,7 +410,8 @@ Most notable changes/features are:
 Previous versions supported only HTTP authentication (Basic and Digest) through the Credentials property that allowed only to set a username-password pair.
 Starting with this version, authentication can be done by using an authenticator implementing the `IAuthenticator` interface opening a wide range of possibilities.
 
-The plugin ships with two IAuthenticator implementations:
+The plugin ships with two IAuthenticator implementations, located in the `Best.HTTP.Request.Authenticators` namespace:
+
 1. `CrendetialAuthenticator` to support the old behavior for Basic and Digest HTTP authentications.
 2. `BearerTokenAuthenticator` to send `Authorization` headers with a Bearer token.
 
