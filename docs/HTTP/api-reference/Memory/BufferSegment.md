@@ -29,3 +29,7 @@ Represents a segment (a continuous section) of a byte array, providing functiona
 : Creates a new segment with the specified offset and count. 
 	!!! note ""
 		The new segment will reference the same underlying byte[] as the original, without creating a copy of the data.
+
+
+### **CopyTo**
+: Copyies the buffer's content to the received array. 
