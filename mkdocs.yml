@@ -116,7 +116,7 @@ extra:
 
 # https://squidfunk.github.io/mkdocs-material/customization/#additional-css
 extra_css:
-  - stylesheets/extra.css
+  - assets/stylesheets/extra.css
 
 # Extensions
 # https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown/
