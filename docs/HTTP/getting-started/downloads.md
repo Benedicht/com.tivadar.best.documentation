@@ -268,6 +268,4 @@ void OnDownloadProgress(HTTPRequest req, long progress, long length)
 
 The handler method receives the originating HTTPRequest itself, the number of bytes downloaded so far and the total length of the content being downloaded, or -1 if the length cannot be determined.
 
-## Download Settings
-
 *[MiB]: 1 Mebibyte = 1024 * 1024 bytes

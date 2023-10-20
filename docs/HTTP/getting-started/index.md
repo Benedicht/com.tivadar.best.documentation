@@ -61,7 +61,7 @@ We can split a `HTTPRequest`'s lifetime into different sections.
 
 ### 1. Create request
 
-Before we can send a HTTP request to the server, we have to create an HTTPRequest object. 
+Before we can send a HTTP request to the server, we have to create an [HTTPRequest](../api-reference/HTTP/HTTPRequest.md) object. 
 Using one of the static functions gives us a quick way to create one and because the method of the request is in its name, it's more explicit about what kind of request we're creating:
 
 === "GET"
@@ -83,6 +83,8 @@ Using constructors it would look like this:
     `#!cs var request = new HTTPRequest("https://example.com/put", HTTPMethods.Put, callback);`
 
 Deciding between constructors or static functions is just a matter of taste.
+
+!!! tip "HTTPRequest supports all major HTTP methods: [GET, POST, PUT, DELETE, HEAD, PATCH, MERGE, OPTIONS, QUERY](../api-reference/HTTP/HTTPMethods.md)!"
 
 ### 2. Setup request
 
