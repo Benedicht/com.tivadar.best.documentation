@@ -43,6 +43,46 @@ This enhancement is instrumental in understanding the performance and network be
 
 		With the integration of this built-in profiler support, developers can not only ensure that their application's network activities are optimized but also make data-driven decisions that enhance both performance and user experience.
 
+## Best HTTP vs. UnityWebRequest: A Feature Matrix Comparison
+
+When choosing a networking solution for your Unity projects, it's essential to have a clear understanding of how different tools compare.
+While Best HTTP offers a comprehensive feature set tailored for various networking needs, you might be wondering how it stands up against Unity's built-in UnityWebRequest. 
+To aid in your decision-making process, I've prepared a feature matrix that compares the capabilities of both tools:
+
+| Feature                                   | Best HTTP                                           | [UnityWebRequest](https://docs.unity3d.com/ScriptReference/Networking.UnityWebRequest.html)                   |
+|-------------------------------------------|-----------------------------------------------------|----------------------------------|
+|**Basic HTTP Requests**               |:material-checkbox-marked-circle: Supports [GET, POST, PUT, DELETE, HEAD, PATCH, MERGE, OPTIONS, QUERY](api-reference/HTTP/HTTPMethods.md) | :material-checkbox-marked-circle: Supports GET, HEAD, POST, PUT, DELETE|
+|**HTTPS Support**                     |:material-checkbox-marked-circle:{ .green } Supports different TLS backends on a per-host basis | :material-checkbox-marked-circle: Basic SSL/TLS support                |
+|**Custom Headers**                    |:material-checkbox-marked-circle: Can add custom headers                            | :material-checkbox-marked-circle: Can add custom headers         |
+|**Timeout Handling**                  |:material-checkbox-marked-circle:{ .green } Supports both connect & request timeouts          | :material-checkbox-marked-circle: Supports request timeouts      |
+|**Progress Reporting**                |:material-checkbox-marked-circle: Provides both [download](getting-started/downloads.md#progress-tracking) and [upload](getting-started/uploads.md#progress-tracking) progress updates | :material-checkbox-marked-circle: Provides progress updates      |
+|**Multi-threading & Concurrency**     |:material-checkbox-marked-circle: Can handle multiple requests concurrently         | :material-checkbox-marked-circle: Can handle multiple requests concurrently|
+|**HTTP/2 Support**                    |:material-checkbox-marked-circle:{ .green } Supported with options for customizations         | :material-checkbox-marked-circle: (Depending on Unity version)   |
+|**Connection Pooling**                |:material-checkbox-marked-circle:{ .green } Supported for both [HTTP/1 and HTTP/2 connections](../Shared/connections/pooling.md)  | Unknown                        |
+|**DNS Caching**                       |:material-checkbox-marked-circle:{ .green } Supported [with prefetching](../Shared/DNS/dns-cache.md) capabilities | :material-minus-box:{ .red } Not Supported |
+|**Download Handling**                 |:material-checkbox-marked-circle:{ .green } Supports [streaming with buffer control](getting-started/downloads.md) for memory-efficient downloads             | :material-checkbox-marked-circle: Basic streaming support        |
+|**Upload Handling**                   |:material-checkbox-marked-circle:{ .green } Advanced control over [upload streams](getting-started/uploads.md)              | :material-checkbox-marked-circle: Supports basic upload handlers       |
+|**Caching**                           |:material-checkbox-marked-circle:{ .green } [Advanced caching](intermediate-topics/caching-internals.md) options                          | :material-checkbox-marked-circle: Only AssetBundles           |
+|**Custom Protocols**                  |:material-checkbox-marked-circle:{ .green } Supports protocol upgrades (like WebSocket)        | :material-minus-box: Not supported              |
+|**Response Handling**                 |:material-checkbox-marked-circle:{ .green } Advanced response processing with support for auth. challanges, trailing headers, etc.                     | :material-checkbox-marked-circle: Basic response processing      |
+|**Blocking Mechanisms**               |:material-checkbox-marked-circle:{ .green } Supports [blocking streams for threaded processing](getting-started/downloads.md#streaming-with-blocking) | :material-minus-box: No built-in support            |
+|**Access downloaded data as a Stream**|:material-checkbox-marked-circle:{ .green } Built-in support | :material-minus-box:{ .red } No built-in support |
+|**Cookie Handling**                   |:material-checkbox-marked-circle:{ .green } Advanced [cookie management](getting-started/cookies.md) | :material-checkbox-marked-circle: Basic cookie support           |
+|**Authentication**                    |:material-checkbox-marked-circle:{ .green } Supports [multiple authentication methods](getting-started/authentication.md) | :material-checkbox-marked-circle: No direct support              |
+|**Proxy Handling**                    |:material-checkbox-marked-circle:{ .green } Advanced proxy settings and authentication | :material-checkbox-marked-circle: Basic proxy support            |
+|**Auto Redirect Handling**            |:material-checkbox-marked-circle:{ .green } Supports automatic redirections with behavior change | :material-checkbox-marked-circle: Supports automatic redirections|
+|**Platform Support**                  |:material-checkbox-marked-circle: Desktop and mobile platforms + WebGL | :material-checkbox-marked-circle:{ .green } Unity's platform support       |
+|**Exception Handling**                |:material-checkbox-marked-circle:{ .green } Detailed [exception handling and reporting](getting-started/error-handling.md) | :material-checkbox-marked-circle: Basic error reporting         |
+|**Extensions & Plugins**              |:material-checkbox-marked-circle:{ .green } Supports adding extensions and plugins | Limited or requires additional packages|
+|**MovieTexture, AudioClip**           |:material-minus-box:{ .red } No support | :material-checkbox-marked-circle: Supported                      |
+|**Source Code**                       |:material-checkbox-marked-circle:{ .green } Included | :material-minus-box: Isn't available               |
+|**Supported programming models**      |:material-checkbox-marked-circle:{ .green } [Callbacks](getting-started/index.md#callbacks), [coroutines](getting-started/index.md#unity-coroutines), [async-await](getting-started/index.md#async-await) | :material-checkbox-marked-circle: Coroutines
+|**Debugging Capabilities**            |:material-checkbox-marked-circle:{ .green } Structured diagnostic [logging](../Shared/logging/index.md)    | :material-minus-box:{ .red } Not supported |
+
+By juxtaposing Best HTTP with UnityWebRequest, it's evident that Best HTTP is designed to offer superior flexibility, extensive features, and refined controls to cater to the diverse needs of Unity developers. Whether you're looking for advanced request handling, native WebSocket support, or in-depth profiling capabilities, Best HTTP is equipped to elevate your networking tasks to the next level.
+
+Is the feature matrix missing something? [Let me know!](../Shared/support.md)
+
 ## Documentation Sections
 
 Explore the following sections to learn how to harness the power of Best HTTP in your Unity projects:
