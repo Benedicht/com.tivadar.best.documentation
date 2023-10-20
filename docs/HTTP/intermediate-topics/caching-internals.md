@@ -58,7 +58,7 @@ flowchart TD
     ReadContent --> ServeContent
     ServeContent --> Done
 
-    TryAcquireReadLock --Can't Lock--> Start
+    TryAcquireReadLock -.Can't Lock.-> Start
 
     CanServeWithoutValidation --No--> SetupValidationHeaders
     SetupValidationHeaders --> WaitForResponse
@@ -92,13 +92,22 @@ This scenario however, requires that the server is sent the content with the rig
 
 ## Advanced Features
 
-Additionally, the OnBeforeBeginCache event offers an additional layer of control to developers. 
-It's called before caching starts, allowing developers to decide whether a specific content should be cached or not.
+Additionally, the OnBeforeBeginCache event offers an additional layer of control. It's called before caching starts, allowing developers to decide whether a specific content should be cached or not.
 
 ## Monitoring and Customization
 
 The HTTPCache is equipped with events and options to provide insights and customization. 
-The OnCacheSizeChanged event gets triggered when the cache size changes, giving a real-time understanding of cache utilization. 
-The Options field, on the other hand, allows developers to tweak and define the cache behavior as per the application's requirements.
+The `OnCacheSizeChanged` event gets triggered when the cache size changes, giving a real-time understanding of cache utilization. 
+Its `Options` field, on the other hand, allows developers to tweak and define the cache behavior as per the application's requirements.
+
+To set new options a new HTTPCache instance have to be created too. It's advised to do it at the start of the application before any other plugin call:
+```cs
+HTTPManager.LocalCache?.Dispose();
+HTTPManager.LocalCache = new HTTPCacheBuilder()
+                                .WithOptions(new HTTPCacheOptionsBuilder()
+                                        .WithMaxCacheSize(128 * 1024 * 1024)
+                                        .Build())
+                                .Build();
+```
 
 [^1]: Freshness is calculated based on the caching headers the server sent. A content can be freshed and can be fetched from the local cache without revalidating its freshness, fresh but revalidation is required or stalled.
