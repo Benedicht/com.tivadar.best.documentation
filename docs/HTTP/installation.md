@@ -12,7 +12,8 @@ Below are step-by-step guides for both methods:
 
 1. **Purchase:** If you haven't previously purchased the package, proceed to do so. Once purchased, Unity will recognize your purchase, and you can install the package directly from within the Unity Editor. If you already own the package, you can skip these steps.
     1. **Visit the Unity Asset Store:** Using your preferred web browser, navigate to the [Unity Asset Store](https://assetstore.unity.com/publishers/4137?aid=1101lfX8E).
-    2. **Search for Best HTTP:** Utilize the search bar on the Unity Asset Store to look for "Best HTTP". Identify the official Best HTTP package in the search results.
+    2. **Search for Best HTTP:** Locate and choose the official Best HTTP package.
+	3. **Buy Best HTTP:** By clicking on the `Buy Now` button go though the purchase process.
 2. **Open Unity & Access the Package Manager:** Launch Unity and open your desired project. Navigate to [Window > Package Manager](https://docs.unity3d.com/Manual/upm-ui.html).
 3. **Select 'My Assets':** In the Package Manager window, switch to the [My Assets](https://docs.unity3d.com/Manual/upm-ui-import.html) tab. This will show all assets you have access to, including ones you've purchased or added to your Asset Store account.
 4. **Find Best HTTP and Download:** Locate "Best HTTP" in the list. Once found, click on it to view the details. If the package isn't already downloaded, you'll see a Download button. Click this button and wait for the package to download. Once downloaded, the button will change to Import.
@@ -32,6 +33,13 @@ In some cases you might have a .unitypackage file containing the plugin.
 !!! Note
     Best HTTP also supports other installation methods as documented in Unity's manual for packages. 
     For more advanced installation options, refer to the Unity Manual on [Sharing Packages](https://docs.unity3d.com/Manual/cus-share.html).
+
+## Assembly Definitions and Runtime References
+For developers familiar with Unity's development patterns, it's essential to understand how Best HTTP incorporates Unity's systems:
+
+- **Assembly Definition Files:** Best HTTP incorporates [Unity's Assembly Definition files](https://docs.unity3d.com/Manual/ScriptCompilationAssemblyDefinitionFiles.html). It aids in organizing and managing the codebase efficiently.
+- **Auto-Referencing of Runtime DLLs:** The runtime DLLs produced by Best HTTP are [Auto Referenced](https://docs.unity3d.com/Manual/class-AssemblyDefinitionImporter.html), allowing Unity to automatically recognize and utilize them without manual intervention.
+- **Manual Package Referencing:** Should you need to reference Best HTTP manually in your project (for advanced setups or specific use cases), you can do so. Simply [reference the package](https://docs.unity3d.com/Manual/ScriptCompilationAssemblyDefinitionFiles.html#reference-another-assembly) by searching for `com.Tivadar.Best.HTTP`.
 
 That's it! You've now successfully installed Best HTTP in your Unity project. Dive into the [Getting Started guide](getting-started/index.md) to begin your journey with Best HTTP.
 
