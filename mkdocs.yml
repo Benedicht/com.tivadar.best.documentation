@@ -34,6 +34,8 @@ theme:
         #- navigation.expand
         #- navigation.sections
         - navigation.indexes
+        # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-pruning
+        - navigation.prune
         - toc.follow
         - navigation.top
         
