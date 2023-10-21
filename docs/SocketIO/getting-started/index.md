@@ -34,7 +34,7 @@ var customNamespace = manager.GetSocket("/my_namespace");
 
 This auto connection can be disabled through a `SocketOptions` instance:
 
-```cs hl_lines="12"
+```cs hl_lines="4 12"
 using Best.SocketIO;
 
 SocketOptions options = new SocketOptions();

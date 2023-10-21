@@ -42,6 +42,7 @@ This enhancement is instrumental in understanding the performance and network be
 		- **DNS Cache Profiling:** With this feature, you can track DNS cache hits and misses, aiding in the fine-tuning of DNS cache strategies and understanding potential network resolution delays.
 
 		With the integration of this built-in profiler support, developers can not only ensure that their application's network activities are optimized but also make data-driven decisions that enhance both performance and user experience.
+- **Debugging and Logging:** Comprehensive logging options enable developers to get insights into the workings of the package and simplify the debugging process.
 
 ## Best HTTP vs. UnityWebRequest: A Feature Matrix Comparison
 
@@ -91,7 +92,6 @@ Explore the following sections to learn how to harness the power of Best HTTP in
 - [Upgrade Guide](upgrade-guide.md): If you're transitioning from Best HTTP/2, this guide provides vital information on changes, improvements, and steps to upgrade seamlessly to the latest version.
 - [Getting Started](getting-started\index.md): Dive into the basics of making HTTP requests, handling responses, and configuring Best HTTP for your needs.
 - [Intermediate Topics](intermediate-topics\index.md): Take your skills to the next level with advanced topics, such as authentication, caching, upload/download streaming, and many more.
-<!-- - [API Reference](api-reference\index.md): Discover the details of Best HTTP's classes, methods, and properties in the comprehensive API reference. -->
 
 Whether you're a seasoned developer or just getting started with Unity, this documentation will guide you through the process of leveraging Best HTTP's capabilities to create efficient, feature-rich applications.
 

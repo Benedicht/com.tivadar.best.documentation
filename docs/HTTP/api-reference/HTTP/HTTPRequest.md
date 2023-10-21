@@ -67,15 +67,6 @@ Represents an HTTP request that allows you to send HTTP requests to remote serve
 	!!! note ""
 		Out-of-the-box included authenticators are [CredentialAuthenticator](../Authenticators/CredentialAuthenticator.md) and [BearerTokenAuthenticator](../Authenticators/BearerTokenAuthenticator.md).
 
-### **WithCredentials**
-: Its value will be set to the XmlHTTPRequest's withCredentials field. Its default value is HTTPManager.IsCookiesEnabled's value. 
-	!!! note ""
-		More details can be found here: 
-
-		- [Mozilla Developer Networks - XMLHttpRequest.withCredentials](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/withCredentials)
-
-
-
 ### **Context**
 : Logging context of the request. 
 ### **Current**

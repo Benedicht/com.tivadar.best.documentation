@@ -14,7 +14,7 @@ From multiplayer game lobbies to instant chat rooms, Socket.IO empowers these in
 Best SocketIO makes it a breeze to incorporate this tech into your Unity endeavours, ensuring dynamic bi-directional exchanges.
 
 ## Key Features
-- **Supported Unity Versions:** Best SocketIO is harmonized with Unity versions starting from :fontawesome-brands-unity: **2021.1 onwards**.
+- **Supported Unity Versions:** Best SocketIO is compatible with Unity versions starting from :fontawesome-brands-unity: **2021.1 onwards**.
 - **Compatibility with Socket.io:** Best SocketIO is fully compatible with the latest version of socket.io, ensuring you're equipped with cutting-edge real-time communication capabilities.
 - **Cross-Platform Excellence:** Best SocketIO is designed for a broad range of Unity-supported platforms, making it versatile for an array of projects. It proudly supports:
     
