@@ -1,3 +1,16 @@
+/* https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#content-area-width */
+.md-grid {
+  max-width: 1900px;
+}
+
+/*
+.md-grid {
+  max-width: initial;
+}
+*/
+
+/* https://squidfunk.github.io/mkdocs-material/reference/icons-emojis/#with-colors */
+
 .red {
   color: #FF0000;
 }
