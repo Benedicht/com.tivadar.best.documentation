@@ -15,8 +15,8 @@ This will reveal a list of available modules.
 This action will add a new tab to your Profiler window, dedicated to the *Best HTTP Memory Profiler Module*.
 4. **View Real-Time Metrics:** Once enabled, the metrics from the Best HTTP Memory Profiler will be displayed alongside other system and application metrics, giving you a comprehensive view of your application's performance.
 
-![Memory Profiler in Action](/assets/images/profiler/memory-light.png#only-light){ loading=lazy }
-![Memory Profiler in Action](/assets/images/profiler/memory-dark.png#only-dark){ loading=lazy }
+![Memory Profiler in Action](media/memory-light.png#only-light){ loading=lazy }
+![Memory Profiler in Action](media/memory-dark.png#only-dark){ loading=lazy }
 
 ## Key Metrics Explained
 In the realm of efficient memory management, being able to gauge and interpret specific metrics is crucial. The Best HTTP Memory Profiler offers several key indicators:

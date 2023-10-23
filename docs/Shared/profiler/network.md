@@ -13,8 +13,8 @@ The Best HTTP Network Profiler is an integrated tool provided within the Best HT
 3. **Select the 'Best - Network' Module:** From the dropdown list, locate and select "Best - Network". This action will add a new tab to your Profiler window, dedicated to the *Best HTTP Network Profiler Module*.
 4. **View Real-Time Metrics:** Once enabled, the metrics from the Best HTTP Network Profiler will be displayed alongside other system and application metrics, giving you a comprehensive view of your application's network performance.
 
-![Network Profiler in Action](/assets/images/profiler/network-light.png#only-light){ loading=lazy }
-![Network Profiler in Action](/assets/images/profiler/network-dark.png#only-dark){ loading=lazy }
+![Network Profiler in Action](media/network-light.png#only-light){ loading=lazy }
+![Network Profiler in Action](media/network-dark.png#only-dark){ loading=lazy }
 
 ## Key Metrics Explained
 
