@@ -43,6 +43,13 @@
     box-shadow: var(--md-shadow-z4);
 }
 
+@media (max-width: 425px) { /* or whatever breakpoint you prefer */
+    .card {
+        flex-basis: 100%; /* card will take up 100% of the container's width */
+        margin: 0; /* resetting margin for smaller screens */
+    }
+}
+
 /* Styles for light theme */
 body[data-md-color-scheme="default"] .card {
     background-color: var(--md-primary-bg-color); /* Using the primary background color */
@@ -60,20 +67,7 @@ body[data-md-color-scheme="slate"] .card {
 }
 
 .card h2 {
+    margin-top: 0px;
     border-bottom: 2px solid rgba(0,0,0,0.12); /* Underline for the header */
     padding-bottom: 10px; /* Some space below the header */
-    margin-bottom: 16px; /* Consistent spacing based on Material guidelines */
 }
-
-.card p {
-    margin-bottom: 16px; /* Consistent spacing based on Material guidelines */
-}
-
-.card ul {
-    list-style-type: none; /* Remove bullet points */
-    padding-left: 0; /* Align list with card content */
-}
-
-    .card ul li {
-        margin-bottom: 8px; /* Half spacing for the list items for a cleaner look */
-    }
