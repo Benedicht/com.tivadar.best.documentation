@@ -26,9 +26,9 @@ WebSockets got its own namespace `Best.WebSockets`, upgrading namespace usings c
 
 ??? Example
     === "BestHTTP"
-        `#!cs new BestHTTP.WebSocket.WebSocket(new Uri(address))`
+        `#!cs new BestHTTP.WebSocket.WebSocket(new Uri(address));`
     === "Best.WebSockets"
-        `#!cs new Best.WebSockets.WebSocket(new Uri(address))`
+        `#!cs new Best.WebSockets.WebSocket(new Uri(address));`
 
 ### 2. Renamed StartPingThread property
 
