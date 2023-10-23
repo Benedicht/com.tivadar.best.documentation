@@ -7,6 +7,11 @@ It's perfect for applications that require real-time, bi-directional communicati
     Best WebSockets relies on the Best HTTP package!
     Ensure you have it installed and set up in your Unity project before diving into Best WebSockets. Learn more about the [installation of Best HTTP](../HTTP/installation.md).
 
+!!! Warning
+	Please be aware that Best WebSockets is a **client-side implementation only**. If you're looking to set up a WebSocket server, you'll need to explore server-side implementations and libraries specific to your programming language and platform.
+
+	Ensure you're deploying the correct component for your needs!
+
 ## Overview
 In the fast-paced digital landscape, real-time communication is crucial for a multitude of applications. 
 Whether it's sending instantaneous game state updates, chat messages, or receiving live feeds, WebSockets provide an edge in facilitating these real-time interactions. 

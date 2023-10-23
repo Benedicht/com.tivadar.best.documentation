@@ -8,6 +8,13 @@ Ideal for dynamic real-time experiences like online multiplayer games, chat syst
     Ensure you've installed and configured both these packages in your Unity project before venturing into Best SocketIO. 
     Explore more about the [installation of Best HTTP](../HTTP/installation.md) and [Best WebSockets](../WebSockets/installation.md).
 
+!!! Warning 
+	Please note that Best SocketIO provided here is a **client-side implementation**. If you're looking for server-side setup and details, you'll want to refer to the official Socket.IO Server Installation Guide.
+	
+	[Official SocketIO Server Installation Guide](https://socket.io/docs/v4/server-installation/)
+	
+	Ensure you're setting up the correct component for your needs!
+
 ## Overview
 In today's interconnected world, maintaining real-time interactions is pivotal for a vast array of applications. 
 From multiplayer game lobbies to instant chat rooms, Socket.IO empowers these interactions with speed and efficiency. 

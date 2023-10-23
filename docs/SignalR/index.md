@@ -8,6 +8,13 @@ Perfect for dynamic real-time experiences like online multiplayer games, chat sy
     Ensure you've installed and configured both these packages in your Unity project before diving into Best SignalR. 
     Explore more about the [installation of Best HTTP](../HTTP/installation.md) and [Best WebSockets](../WebSockets/installation.md).
 
+!!! Warning
+	Please be aware that Best SignalR provided here is a **client-side implementation**. If you're aiming to set up the server-side or need server-specific details, please refer to the Official SignalR Server Installation Guide.
+
+	[Official SignalR Server Installation Guide](https://learn.microsoft.com/en-us/aspnet/core/signalr/introduction)
+	
+	Make sure you're implementing the appropriate component for your requirements!
+
 ## Overview
 In the modern digital realm, real-time interactions have become a cornerstone for a multitude of applications.
 From real-time game updates to live chat systems, the importance of instantaneous communication cannot be overstated. 
