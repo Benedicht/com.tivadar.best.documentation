@@ -1,6 +1,6 @@
 /* https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#content-area-width */
 .md-grid {
-  max-width: 1900px;
+    max-width: 1900px;
 }
 
 /*
@@ -12,44 +12,68 @@
 /* https://squidfunk.github.io/mkdocs-material/reference/icons-emojis/#with-colors */
 
 .red {
-  color: #FF0000;
+    color: #FF0000;
 }
 
 .green {
-  color: #00FF00;
+    color: #00FF00;
 }
 
 /* Container for the cards */
 .cards-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 24px;
+    flex-wrap: wrap; /* This will ensure that cards will wrap to the next line if there are more than two */
+    justify-content: space-between; /* This will evenly space the cards with maximum space in between */
+    gap: 24px; /* Gap creates a consistent space between rows and columns. Supported in newer browsers. */
+}
+
+:root {
+    --md-shadow-z4: 0 4px 10px hsla(0, 0%, 0%, 0.2), 0 0 1px hsla(0, 0%, 0%, 0.35), 0px 0px 25px var(--md-default-fg-color--lighter);
+    --md-shadow-z5: 0 4px 10px hsla(0, 0%, 0%, 0.2), 0 0 1px hsla(0, 0%, 0%, 0.35), 0px 0px 50px var(--md-default-fg-color--light);
 }
 
 /* General Card Styles */
 .card {
-    flex: 0 0 calc(50% - 12px);
-    border-radius: 4px;
-    padding: 24px;
-    margin-bottom: 24px;
+    flex: 0 0 calc(50% - 12px); /* The cards take up 50% width minus half of the gap (for margin) */
+    border-radius: 4px; /* Smaller border-radius for Material Design feel */
+    padding: 24px; /* Material Design specifies 24px padding */
+    margin-bottom: 24px; /* Consistent spacing based on Material guidelines */
 
-    transition: box-shadow 0.3s ease-in-out;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);  /* Default shadow enhanced a bit */
+    transition: box-shadow 0.3s ease-in-out; /* Smooth transition for the shadow */
+    box-shadow: var(--md-shadow-z4);
 }
 
+/* Styles for light theme */
 body[data-md-color-scheme="default"] .card {
-    background-color: var(--md-primary-bg-color--light);
-    color: var(--md-typeset-color);
-    border: 1px solid var(--md-accent-fg-color--dark);   /* Using a darker accent color for border */
+    background-color: var(--md-primary-bg-color); /* Using the primary background color */
+    color: var(--md-typeset-color); /* Using the primary foreground color */
 }
 
+/* Styles for dark theme */
 body[data-md-color-scheme="slate"] .card {
-    background-color: var(--md-primary-bg-color--dark);
-    color: var(--md-typeset-color);
-    border: 1px solid var(--md-accent-fg-color--dark);
+    background-color: var(--md-primary-bg-color--dark); /* Example dark theme variable */
+    color: var(--md-typeset-color); /* Example dark theme variable */
 }
 
 .card:hover {
-    box-shadow: var(--md-shadow-z3);
+    box-shadow: var(--md-shadow-z5);
 }
+
+.card h2 {
+    border-bottom: 2px solid rgba(0,0,0,0.12); /* Underline for the header */
+    padding-bottom: 10px; /* Some space below the header */
+    margin-bottom: 16px; /* Consistent spacing based on Material guidelines */
+}
+
+.card p {
+    margin-bottom: 16px; /* Consistent spacing based on Material guidelines */
+}
+
+.card ul {
+    list-style-type: none; /* Remove bullet points */
+    padding-left: 0; /* Align list with card content */
+}
+
+    .card ul li {
+        margin-bottom: 8px; /* Half spacing for the list items for a cleaner look */
+    }
