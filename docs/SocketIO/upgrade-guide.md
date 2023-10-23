@@ -26,9 +26,9 @@ SocketIO got its own namespace `Best.SocketIO`, upgrading namespace usings can b
 
 !!! Example
     === "BestHTTP"
-        `#!cs var manager = new BestHTTP.SocketIO3.SocketManager(new Uri(address))`
+        `#!cs var manager = new BestHTTP.SocketIO3.SocketManager(new Uri(address));`
     === "Best.SocketIO"
-        `#!cs var manager = new Best.SocketIO.SocketManager(new Uri(address))`
+        `#!cs var manager = new Best.SocketIO.SocketManager(new Uri(address));`
 
 ### Request customization changes
 

@@ -1,6 +1,6 @@
 # Best SocketIO
 
-Welcome to the Best SocketIO Documentation! Best SocketIO is a leading Unity networking library engineered for a smooth integration of the Socket.IO technology. 
+Welcome to the Best SocketIO Documentation! Best SocketIO is a leading Unity networking library engineered for a smooth integration of the [Socket.IO technology](https://socket.io). 
 Ideal for dynamic real-time experiences like online multiplayer games, chat systems, and interactive dashboards.
 
 !!! Warning "**Dependency Alert**"
