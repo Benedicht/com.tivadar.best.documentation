@@ -42,7 +42,7 @@ Incorporate real-time features like chat, notifications, and multiplayer gaming 
 </div>
 
 <div class="card" markdown="block">
-## **Best Socket.IO** :simple-socketdotio:
+## **Best Socket.IO**
 
 [Best Socket.IO](SocketIO/index.md) is a library for integrating with Socket.IO, a popular real-time communication framework. 
 Use it to create WebSocket-based applications and games with ease.
@@ -64,7 +64,7 @@ Use it to establish real-time, unidirectional communication between your server 
 </div>
 
 <div class="card" markdown="block">
-## **Best MQTT** :simple-mqtt:
+## **Best MQTT**
 
 [Best MQTT Documentation](MQTT/index.md): Best MQTT is a feature-rich MQTT client library for Unity. 
 Use it to implement MQTT-based communication in your applications, enabling efficient and scalable messaging between devices and servers.
