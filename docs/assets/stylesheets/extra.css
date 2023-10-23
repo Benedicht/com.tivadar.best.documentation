@@ -18,3 +18,38 @@
 .green {
   color: #00FF00;
 }
+
+/* Container for the cards */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+/* General Card Styles */
+.card {
+    flex: 0 0 calc(50% - 12px);
+    border-radius: 4px;
+    padding: 24px;
+    margin-bottom: 24px;
+
+    transition: box-shadow 0.3s ease-in-out;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);  /* Default shadow enhanced a bit */
+}
+
+body[data-md-color-scheme="default"] .card {
+    background-color: var(--md-primary-bg-color--light);
+    color: var(--md-typeset-color);
+    border: 1px solid var(--md-accent-fg-color--dark);   /* Using a darker accent color for border */
+}
+
+body[data-md-color-scheme="slate"] .card {
+    background-color: var(--md-primary-bg-color--dark);
+    color: var(--md-typeset-color);
+    border: 1px solid var(--md-accent-fg-color--dark);
+}
+
+.card:hover {
+    box-shadow: var(--md-shadow-z3);
+}
