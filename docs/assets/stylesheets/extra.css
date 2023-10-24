@@ -52,13 +52,13 @@
 
 /* Styles for light theme */
 body[data-md-color-scheme="default"] .card {
-    background-color: var(--md-primary-bg-color); /* Using the primary background color */
+    /*background-color: var(--md-primary-bg-color); /* Using the primary background color */
     color: var(--md-typeset-color); /* Using the primary foreground color */
 }
 
 /* Styles for dark theme */
 body[data-md-color-scheme="slate"] .card {
-    background-color: var(--md-primary-bg-color--dark); /* Example dark theme variable */
+    /*background-color: var(--md-primary-bg-color--dark); /* Example dark theme variable */
     color: var(--md-typeset-color); /* Example dark theme variable */
 }
 
