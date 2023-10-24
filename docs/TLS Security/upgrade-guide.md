@@ -22,16 +22,16 @@ I have worked hard to enhance features, fix issues, and introduce new capabiliti
 ### 1. Namespace changes
 
 Instead of one big package the new version is split into multiple packages. This packaging change is reflected in how the plugins' namespaces are named. 
-TLS Security got its own namespace `Best.MQTT`, upgrading namespace usings can be done by replacing `BestMQTT` to `Best.MQTT`.
+TLS Security got its own namespace `Best.TLSSecurity`, upgrading namespace usings can be done by replacing `BestHTTP.Addons.TLSSecurity` to `Best.TLSSecurity`.
 
 ??? Example
-    === "BestHTTP/2"
+    === "Old"
         ```cs 
         using BestHTTP.Addons.TLSSecurity;
 
         TLSSecurity.Setup();
         ```
-    === "Best.MQTT"
+    === "New"
         ```cs 
         using Best.TLSSecurity;
 
@@ -40,7 +40,7 @@ TLS Security got its own namespace `Best.MQTT`, upgrading namespace usings can b
 
 ## General Tips
 
-1. **Stay Updated on Documentation:** Keep an eye on the official documentation for the Best MQTT package. 
+1. **Stay Updated on Documentation:** Keep an eye on the official documentation for the Best TLS Security package. 
 It's regularly updated with new information, tutorials, and solutions to common problems.
 2. **Engage with the Community:** Join discussions on our [Community and Support page](../Shared/support.md) to share your experiences, ask questions, and get advice on the upgrade process.
 3. **Check for Updates Regularly:** Ensure you always have the latest features, improvements, and bug fixes by regularly checking for updates.
