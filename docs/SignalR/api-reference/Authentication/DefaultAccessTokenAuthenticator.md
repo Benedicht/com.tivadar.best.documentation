@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # DefaultAccessTokenAuthenticator
 
 Represents the default access token authenticator that uses the Bearer token scheme for HTTP and WebSockets. 

@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # LockTypes
 
 Possible lock-states a cache-content can be in. 

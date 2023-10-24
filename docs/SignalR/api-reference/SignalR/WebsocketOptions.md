@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # WebsocketOptions
 
 Represents configuration options specific to the WebSocket transport. 

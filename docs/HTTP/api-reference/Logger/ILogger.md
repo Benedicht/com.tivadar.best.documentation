@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # ILogger
 
 Represents a logger for recording log messages. 

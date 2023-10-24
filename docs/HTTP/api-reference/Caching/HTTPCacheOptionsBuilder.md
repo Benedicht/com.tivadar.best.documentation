@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # HTTPCacheOptionsBuilder
 
 A builder struct for constructing an instance of [HTTPCacheOptions](../Caching/HTTPCacheOptions.md) with optional configuration settings. 

@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # BufferSegment
 
 Represents a segment (a continuous section) of a byte array, providing functionalities to  work with a portion of the data without copying. 

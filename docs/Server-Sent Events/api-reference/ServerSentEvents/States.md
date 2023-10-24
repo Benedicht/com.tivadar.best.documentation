@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # States
 
 Represents the possible states of an [EventSource](../ServerSentEvents/EventSource.md) object. 

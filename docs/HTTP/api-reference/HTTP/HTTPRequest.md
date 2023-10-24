@@ -1,8 +1,11 @@
+---
+comments: true
+---
 # HTTPRequest
 
 Represents an HTTP request that allows you to send HTTP requests to remote servers and receive responses asynchronously. 
 
-**Remarks**:
+**Remarks:**
 
 - **Asynchronous HTTP requests**: Utilize a Task-based API for performing HTTP requests asynchronously.
 - **Unity coroutine support**: Seamlessly integrate with Unity's coroutine system for coroutine-based request handling.

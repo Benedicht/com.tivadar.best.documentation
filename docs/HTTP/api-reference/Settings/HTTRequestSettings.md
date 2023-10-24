@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # HTTRequestSettings
 
 Settings for HTTP requests. 

@@ -1,8 +1,11 @@
+---
+comments: true
+---
 # HTTPCache
 
 Manages caching of HTTP responses and associated metadata. 
 
-**Remarks**:
+**Remarks:**
 
 The `HTTPCache` class provides a powerful caching mechanism for HTTP responses in Unity applications.  It allows you to store and retrieve HTTP responses efficiently, reducing network requests and improving  the performance of your application. By utilizing HTTP caching, you can enhance user experience, reduce  bandwidth usage, and optimize loading times. 
 

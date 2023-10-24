@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # HTTPCacheBuilder
 
 A builder struct for constructing an instance of the HTTPCache class with optional configuration options and callbacks. 

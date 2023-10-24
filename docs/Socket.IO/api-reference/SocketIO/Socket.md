@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # Socket
 
 This class represents a Socket.IO namespace. 

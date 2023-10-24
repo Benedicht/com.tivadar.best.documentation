@@ -1,8 +1,11 @@
+---
+comments: true
+---
 # DownloadContentStream
 
 A read-only stream that the plugin uses to store the downloaded content. This stream is designed to buffer downloaded data efficiently and provide it to consumers. 
 
-**Remarks**:
+**Remarks:**
 
 The DownloadContentStream serves as a storage medium for content downloaded during HTTP requests. It buffers the downloaded data in segments and allows clients to read from the buffer as needed. This buffering mechanism is essential for optimizing download performance, especially in scenarios where the download rate may vary or be faster than the rate at which data is consumed. 
 

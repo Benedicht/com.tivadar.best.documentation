@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # ProxyDetectionMode
 
 Possible detection modes the [ProxyDetector](../Autodetect/ProxyDetector.md) can be in. 

@@ -1,8 +1,11 @@
+---
+comments: true
+---
 # IPeekableContentProvider
 
 The IPeekableContentProvider interface defines an abstraction for providing content to an [IContentConsumer](../Tcp/IContentConsumer.md) with the ability to peek at the content without consuming it. It is an essential part of content streaming over a TCP connection. 
 
-**Remarks**:
+**Remarks:**
 
 Key Functions of IPeekableContentProvider: 
 

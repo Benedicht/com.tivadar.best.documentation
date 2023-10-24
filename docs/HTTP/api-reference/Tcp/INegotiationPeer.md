@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # INegotiationPeer
 
 Interface for a peer that participates in the negotiation process. 

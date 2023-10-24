@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # HubConnection
 
 Represents the main entry point for a SignalR Core connection. 

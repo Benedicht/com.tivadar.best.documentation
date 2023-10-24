@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # HostSettings
 
 Contains settings that can be associated with a specific host or host variant. 

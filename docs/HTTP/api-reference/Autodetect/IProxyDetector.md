@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # IProxyDetector
 
 Interface for custom proxy-detection logic. 

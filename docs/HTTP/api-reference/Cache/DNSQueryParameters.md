@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # DNSQueryParameters
 
 Represents parameters for a DNS query, including the host name, address, cancellation token, logging context, callback, and tag. 

@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # StringBuilderPool
 
 Implements pooling logic for **StringBuilder** instances. 

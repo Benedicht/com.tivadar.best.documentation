@@ -1,8 +1,11 @@
+---
+comments: true
+---
 # IContentConsumer
 
 The IContentConsumer interface represents a consumer of content provided by an [IPeekableContentProvider](../Tcp/IPeekableContentProvider.md). It defines methods for handling received content and connection-related events. 
 
-**Remarks**:
+**Remarks:**
 
 Key Functions of IContentConsumer: 
 

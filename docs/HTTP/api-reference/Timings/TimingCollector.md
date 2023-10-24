@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # TimingCollector
 
 Helper class to store, calculate and manage request related events and theirs duration, referenced by [Timing](../HTTP/HTTPRequest.md#timing) field. 

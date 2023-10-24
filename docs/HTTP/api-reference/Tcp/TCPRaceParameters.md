@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # TCPRaceParameters
 
 Contains parameters and settings for a TCP race competition to establish connections. 

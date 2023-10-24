@@ -1,8 +1,11 @@
+---
+comments: true
+---
 # UploadSettings
 
 Options for sending the request headers and content, including upload progress monitoring. 
 
-**Remarks**:
+**Remarks:**
 
 [SetupRequest](../Settings/UploadSettings.md#setuprequest) might be called when redirected or retried!
 

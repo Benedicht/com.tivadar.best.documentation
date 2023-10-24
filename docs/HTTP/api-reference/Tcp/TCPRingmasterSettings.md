@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # TCPRingmasterSettings
 
 Contains settings related to TCP Ringmaster, which manages and optimizes TCP connections. 

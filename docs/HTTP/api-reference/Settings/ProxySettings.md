@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # ProxySettings
 
 Represents settings related to using a proxy server for HTTP requests. 

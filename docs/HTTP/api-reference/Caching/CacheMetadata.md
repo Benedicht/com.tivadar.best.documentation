@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # CacheMetadata
 
 Metadata stored for every cached content. It contains only limited data about the content to help early cache decision making and cache management. 

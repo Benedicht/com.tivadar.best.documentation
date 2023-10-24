@@ -1,8 +1,11 @@
+---
+comments: true
+---
 # JSonDataStream`1
 
 An [UploadStreamBase](../Upload/UploadStreamBase.md) implementation to convert and upload the object as JSON data. It sets the `"Content-Type"` header to `"application/json; charset=utf-8"`. 
 
-**Remarks**:
+**Remarks:**
 
 This stream keeps a reference to the object until the preparation in [BeforeSendHeaders](../Upload/JSonDataStream`1.md#beforesendheaders). This means, changes to the object after passing it to the constructor will be reflected in the sent data too.
 

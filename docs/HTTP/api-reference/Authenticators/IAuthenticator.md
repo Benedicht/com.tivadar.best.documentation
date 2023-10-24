@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # IAuthenticator
 
 Represents an interface for various authentication implementations used in HTTP requests. 

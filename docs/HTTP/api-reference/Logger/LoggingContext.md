@@ -1,8 +1,11 @@
+---
+comments: true
+---
 # LoggingContext
 
 Represents a logging context for categorizing and organizing log messages. 
 
-**Remarks**:
+**Remarks:**
 
 The LoggingContext class is used to provide additional context information to log messages, allowing for better categorization and organization of log output. It can be associated with specific objects or situations to enrich log entries with context-specific data. 
 

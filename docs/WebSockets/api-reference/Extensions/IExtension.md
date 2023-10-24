@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # IExtension
 
 Interface for websocket-extension implementations. 

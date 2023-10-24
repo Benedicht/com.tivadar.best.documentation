@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # IncomingPacket
 
 Represents a packet received from the the Socket.IO server. 

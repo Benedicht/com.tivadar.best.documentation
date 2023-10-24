@@ -1,8 +1,11 @@
+---
+comments: true
+---
 # MultipartFormDataStream
 
 An [UploadStreamBase](../Upload/UploadStreamBase.md) based implementation of the `multipart/form-data` Content-Type. It's very memory-effective, streams are read into memory in chunks. 
 
-**Remarks**:
+**Remarks:**
 
 The return value of **Stream.Read** is treated specially in the plugin: 
 

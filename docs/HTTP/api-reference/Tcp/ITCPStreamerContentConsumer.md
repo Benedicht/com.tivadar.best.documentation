@@ -1,8 +1,11 @@
+---
+comments: true
+---
 # ITCPStreamerContentConsumer
 
 The ITCPStreamerContentConsumer interface represents a specialized content consumer for use with [TCPStreamer](../Tcp/TCPStreamer.md). It offers methods for writing data to the streamer and handling content-related events. 
 
-**Remarks**:
+**Remarks:**
 
 Key Functions of ITCPStreamerContentConsumer: 
 

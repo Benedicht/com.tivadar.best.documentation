@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # HTTPCacheContentWriter
 
 Represents a writer for caching HTTP response content. 

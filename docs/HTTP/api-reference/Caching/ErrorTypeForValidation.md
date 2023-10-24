@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # ErrorTypeForValidation
 
 Types of errors that can occur during cache validation. 

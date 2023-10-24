@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # HTTP1ConnectionSettings
 
 Settings for HTTP/1 connections. 

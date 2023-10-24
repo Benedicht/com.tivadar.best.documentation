@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # SocketIOEventTypes
 
 Event types of the SocketIO protocol. 

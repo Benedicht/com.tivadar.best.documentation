@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # BufferDesc
 
 Helper struct for [BufferPool](../Memory/BufferPool.md). 

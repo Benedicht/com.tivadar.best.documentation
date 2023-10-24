@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # HubOptions
 
 Represents the configuration options for a [HubConnection](../SignalR/HubConnection.md). 

@@ -1,8 +1,11 @@
+---
+comments: true
+---
 # HostManager
 
 The [HostManager](../HostSetting/HostManager.md) class provides centralized management for [HostVariant](../HostSetting/HostVariant.md) objects associated with HTTP requests and connections. 
 
-**Remarks**:
+**Remarks:**
 
 The [HostManager](../HostSetting/HostManager.md) class acts as a central registry for managing [HostVariant](../HostSetting/HostVariant.md) objects, each associated with a unique [HostKey](../HostSetting/HostKey.md). It facilitates the creation, retrieval, and management of [HostVariant](../HostSetting/HostVariant.md) instances based on HTTP requests and connections. 
 

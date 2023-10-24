@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # ITransport
 
 Defines the basic structure and operations for a transport mechanism in a [HubConnection](../SignalR/HubConnection.md) context. Current implemtations are [WebSocketTransport](../Transports/WebSocketTransport.md) and [LongPollingTransport](../Transports/LongPollingTransport.md). 

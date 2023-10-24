@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # Loglevels
 
 Available logging levels. 

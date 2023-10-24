@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # IThreadSignaler
 
 Interface for signaling upload threads. 

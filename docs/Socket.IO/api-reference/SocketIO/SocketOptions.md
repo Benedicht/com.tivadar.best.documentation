@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # SocketOptions
 
 Contains settings for a [SocketManager](../SocketIO/SocketManager.md). 

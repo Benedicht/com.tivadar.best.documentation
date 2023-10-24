@@ -1,8 +1,11 @@
+---
+comments: true
+---
 # HTTPProxy
 
 Represents an HTTP proxy server that can be used to route HTTP requests through. 
 
-**Remarks**:
+**Remarks:**
 
 The HTTPProxy class is an implementation of the [Proxy](../Proxies/Proxy.md) base class, specifically designed for HTTP proxy servers. It provides features such as transparent proxy support, sending the entire URI, and handling proxy authentication. This class is used to configure and manage HTTP proxy settings for HTTP requests. 
 

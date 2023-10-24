@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # DigestStore
 
 Stores and manages already received digest infos. 

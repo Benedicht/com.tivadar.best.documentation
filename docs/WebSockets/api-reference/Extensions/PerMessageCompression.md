@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # PerMessageCompression
 
 Compression Extensions for WebSocket implementation. http://tools.ietf.org/html/rfc7692 

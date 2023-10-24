@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # TransportEvents
 
 States that a transport can goes trough as seen from 'outside'. 

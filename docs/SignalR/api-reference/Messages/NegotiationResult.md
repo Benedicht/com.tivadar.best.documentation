@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # NegotiationResult
 
 Negotiation result of the /negotiation request. https://github.com/dotnet/aspnetcore/blob/master/src/SignalR/docs/specs/TransportProtocols.md#post-endpoint-basenegotiate-request

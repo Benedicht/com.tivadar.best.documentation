@@ -1,8 +1,11 @@
+---
+comments: true
+---
 # UploadStreamBase
 
 Abstract class to serve as a base for non-conventional streams used in HTTP requests. 
 
-**Remarks**:
+**Remarks:**
 
 The return value of **Stream.Read** is treated specially in the plugin: 
 

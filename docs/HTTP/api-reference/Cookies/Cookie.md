@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # Cookie
 
 The Cookie implementation based on [RFC-6265](http://tools.ietf.org/html/rfc6265). 

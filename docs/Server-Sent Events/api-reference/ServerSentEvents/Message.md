@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # Message
 
 Represents a single Server-Sent Event message as specified by the W3C SSE specification. This encapsulates individual data sent over an SSE connection, providing event details, payload data, and related metadata. Each message can represent actual data or comments from the server. 

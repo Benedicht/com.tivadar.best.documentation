@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # TCPRaceResult
 
 Represents the result of a TCP race competition, including the winning socket or an error. 

@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # CacheFlags
 
 Possible caching flags that a `Cache-Control` header can send. 

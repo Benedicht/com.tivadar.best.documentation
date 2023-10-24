@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # IAuthenticationProvider
 
 Interface for authentication providers. 

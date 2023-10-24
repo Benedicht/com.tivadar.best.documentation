@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # IProtocol
 
 Interface for message encoding-decoding protocols used in a SignalR communication. 

@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # Digest
 
 Internal class that stores all information that received from a server in a WWW-Authenticate and need to construct a valid Authorization header. Based on rfc 2617 (http://tools.ietf.org/html/rfc2617). Used only internally by the plugin. 

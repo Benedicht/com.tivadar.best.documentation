@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # EventSource
 
 The EventSource class provides an implementation of the [Server-Sent Events (SSE) standard](https://html.spec.whatwg.org/multipage/server-sent-events.html). SSE is a simple and efficient protocol to receive real-time updates over HTTP. Instead of continually polling the server for changes, clients can open a single connection and receive updates as they happen, making it a powerful tool for building real-time applications.  Why Use EventSource: 
@@ -10,7 +13,7 @@ The EventSource class provides an implementation of the [Server-Sent Events (SSE
 
 This class encapsulates the complexity of the SSE protocol, offering an easy-to-use API for both sending and receiving real-time updates.
 
-**Remarks**:
+**Remarks:**
 
 How It Works: 
 

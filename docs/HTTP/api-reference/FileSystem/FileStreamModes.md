@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # FileStreamModes
 
 These are the different modes that the plugin want's to use a filestream. 

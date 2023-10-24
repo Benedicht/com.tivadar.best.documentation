@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # HTTPRequestAsyncExtensions
 
 A collection of extension methods for working with HTTP requests asynchronously using **Task`1**. 

@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # HTTPCacheOptions
 
 Represents the configuration options for the HTTP cache. 

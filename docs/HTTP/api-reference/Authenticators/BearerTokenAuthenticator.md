@@ -1,8 +1,11 @@
+---
+comments: true
+---
 # BearerTokenAuthenticator
 
 An [IAuthenticator](../Authenticators/IAuthenticator.md) implementation for Bearer Token authentication. 
 
-**Remarks**:
+**Remarks:**
 
 Bearer Token authentication is a method used to access protected resources on a server. It involves including a bearer token in the Authorization header of an HTTP request to prove the identity of the requester. 
 

@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # HostProtocolSupport
 
 An enumeration representing the protocol support for a host. 

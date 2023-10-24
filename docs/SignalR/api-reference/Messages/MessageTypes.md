@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # MessageTypes
 
 Possible message types the SignalR protocol can use. 

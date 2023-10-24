@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # RedirectSettings
 
 Represents settings related to handling HTTP request redirection. 

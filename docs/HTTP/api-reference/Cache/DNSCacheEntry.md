@@ -1,8 +1,11 @@
+---
+comments: true
+---
 # DNSCacheEntry
 
 Represents a cached entry for DNS query results, including resolved IP addresses and metadata. 
 
-**Remarks**:
+**Remarks:**
 
 Almost immutable, all changes are done in-class in a thread-safe manner. 
 

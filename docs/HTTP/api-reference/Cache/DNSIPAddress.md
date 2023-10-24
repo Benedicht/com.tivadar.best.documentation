@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # DNSIPAddress
 
 Represents an IP address obtained from DNS resolution. 

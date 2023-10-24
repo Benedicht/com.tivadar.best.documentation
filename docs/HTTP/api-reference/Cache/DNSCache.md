@@ -1,8 +1,11 @@
+---
+comments: true
+---
 # DNSCache
 
 The DNSCache class is a static utility that manages DNS caching and queries within the Best HTTP library. It helps improve network efficiency by caching DNS query results, reducing the need for redundant DNS resolutions. 
 
-**Remarks**:
+**Remarks:**
 
 By utilizing the DNSCache class and its associated features, you can optimize DNS resolution in your network communication, leading to improved performance and reduced latency in your applications.
 

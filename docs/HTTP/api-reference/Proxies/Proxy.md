@@ -1,8 +1,11 @@
+---
+comments: true
+---
 # Proxy
 
 Base class for proxy implementations, providing common proxy configuration and behavior. 
 
-**Remarks**:
+**Remarks:**
 
 The Proxy class serves as the base class for various proxy client implementations, such as [HTTPProxy](../Proxies/HTTPProxy.md) and [SOCKSProxy](../Proxies/SOCKSProxy.md). It provides a foundation for configuring proxy settings and handling proxy-related functionality common to all proxy types, like connecting to a proxy, setting up a request to go through the proxy and deciding whether an address is usable with the proxy or the plugin must connect directly. 
 

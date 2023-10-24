@@ -1,8 +1,11 @@
+---
+comments: true
+---
 # HostKey
 
 The [HostKey](../HostSetting/HostKey.md) struct represents a unique key for identifying hosts based on their **Uri** and [ProxySettings](../Settings/ProxySettings.md). 
 
-**Remarks**:
+**Remarks:**
 
 The [HostKey](../HostSetting/HostKey.md) struct is designed to uniquely identify a host based on its URI (Uniform Resource Identifier) and optional proxy settings. It provides a way to create, compare, and hash host keys, enabling efficient host variant management in the [HostManager](../HostSetting/HostManager.md). 
 

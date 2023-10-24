@@ -1,8 +1,11 @@
+---
+comments: true
+---
 # FrameworkProxyDetector
 
 This is a detector using the .net framework's implementation. It might work not just under Windows but MacOS and Linux too. 
 
-**Remarks**:
+**Remarks:**
 
 More details can be found here: 
 

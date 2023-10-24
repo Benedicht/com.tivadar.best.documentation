@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # HostVariantSettings
 
 Settings for [HostVariant](../HostSetting/HostVariant.md)s. 

@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # UnityOutput
 
 Provides an implementation of [ILogOutput](../Logger/ILogOutput.md) that writes log messages to the Unity Debug Console. 

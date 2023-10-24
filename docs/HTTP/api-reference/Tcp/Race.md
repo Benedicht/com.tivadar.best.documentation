@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # Race
 
 Represents a TCP race competition with parameters and status. 

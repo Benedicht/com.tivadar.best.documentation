@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # SupportedTransport
 
 Represents a transport with its supported transfer formats, used in the [NegotiationResult](../Messages/NegotiationResult.md). 

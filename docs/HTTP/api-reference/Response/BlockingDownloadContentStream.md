@@ -1,8 +1,11 @@
+---
+comments: true
+---
 # BlockingDownloadContentStream
 
 A blocking variant of the [DownloadContentStream](../Response/DownloadContentStream.md) that allows clients to wait for downloaded data when the buffer is empty but not completed. 
 
-**Remarks**:
+**Remarks:**
 
 The BlockingDownloadContentStream is a specialized variant of the [DownloadContentStream](../Response/DownloadContentStream.md) designed to provide a blocking mechanism for clients waiting for downloaded data. This class is particularly useful when clients need to read from the stream, but the buffer is temporarily empty due to ongoing downloads. 
 

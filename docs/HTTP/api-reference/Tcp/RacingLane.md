@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # RacingLane
 
 Represents a racing lane in a TCP race competition. 

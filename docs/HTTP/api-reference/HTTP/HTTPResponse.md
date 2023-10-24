@@ -1,8 +1,11 @@
+---
+comments: true
+---
 # HTTPResponse
 
 Represents an HTTP response received from a remote server, containing information about the response status, headers, and data. 
 
-**Remarks**:
+**Remarks:**
 
 The HTTPResponse class represents an HTTP response received from a remote server. It contains information about the response status, headers, and the data content. 
 

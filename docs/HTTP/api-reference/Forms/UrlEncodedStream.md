@@ -1,8 +1,11 @@
+---
+comments: true
+---
 # UrlEncodedStream
 
 An [UploadStreamBase](../Upload/UploadStreamBase.md) implementation representing a stream that prepares and sends data as URL-encoded form data in an HTTP request. 
 
-**Remarks**:
+**Remarks:**
 
 This stream is used to send data as URL-encoded form data in an HTTP request. It sets the `"Content-Type"` header to `"application/x-www-form-urlencoded"`. URL-encoded form data is typically used for submitting form data to a web server. It is commonly used in HTTP POST requests to send data to a server, such as submitting HTML form data.
 

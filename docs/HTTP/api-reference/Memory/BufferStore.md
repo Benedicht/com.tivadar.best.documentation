@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # BufferStore
 
 Private data struct that contains the size - byte arrays mapping.  

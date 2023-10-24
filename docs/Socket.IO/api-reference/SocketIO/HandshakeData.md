@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # HandshakeData
 
 Helper class to parse and hold handshake information. 

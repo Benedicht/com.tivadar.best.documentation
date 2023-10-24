@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # ThreadingMode
 
 Threading mode the plugin will use to call HTTPManager.OnUpdate(). 

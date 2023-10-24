@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # FileOutput
 
 Provides an implementation of [ILogOutput](../Logger/ILogOutput.md) that writes log messages to a file. 

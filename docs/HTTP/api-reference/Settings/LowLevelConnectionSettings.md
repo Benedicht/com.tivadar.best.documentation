@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # LowLevelConnectionSettings
 
 Represents the low-level TCP buffer settings for connections. 

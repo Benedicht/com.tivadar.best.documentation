@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # AuthenticationTypes
 
 Authentication types that supported by Best.HTTP. The authentication is defined by the server, so the Basic and Digest are not interchangeable. If you don't know what to use, the preferred way is to choose Unknow. 

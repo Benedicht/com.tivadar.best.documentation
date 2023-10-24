@@ -13,7 +13,7 @@ If you're updating your package, please read through the relevant sections to en
 
 ## Post-upgrade Steps
 - [x] **Update API Calls:** If the new version introduced new methods or altered existing ones, update your calls accordingly.
-- [x] **Test Extensively:** After upgrading, test all functionalities in your project that utilize the Best SignalR package to ensure they work as expected.
+- [x] **Test Extensively:** After upgrading, test all functionalities in your project that utilize the Best MQTT package to ensure they work as expected.
 
 ## ^^List of Breaking Changes^^
 
@@ -22,27 +22,33 @@ I have worked hard to enhance features, fix issues, and introduce new capabiliti
 ### 1. Namespace changes
 
 Instead of one big package the new version is split into multiple packages. This packaging change is reflected in how the plugins' namespaces are named. 
-SignalR got its own namespace `Best.SignalR`, upgrading namespace usings can be done by replacing `BestHTTP.SignalR` to `Best.SignalR`.
+MQTT got its own namespace `Best.MQTT`, upgrading namespace usings can be done by replacing `BestMQTT` to `Best.MQTT`.
 
 ??? Example
-    === "BestHTTP"
+    === "BestMQTT"
         ```cs 
-        using BestHTTP.SignalRCore;
-        using BestHTTP.SignalRCore.Encoders;
+        using BestMQTT;
+        using BestMQTT.Packets.Builders;
 
-        var hub = new HubConnection(new Uri("https://server/hub"), new JsonProtocol(new LitJsonEncoder()));
+        var options = new ConnectionOptionsBuilder()
+                        .WithTCP("broker.emqx.io", 1883)
+                        .Build();
+        var client = new MQTTClient(options);
         ```
-    === "Best.SignalR"
+    === "Best.MQTT"
         ```cs 
-        using Best.SignalR;
-        using Best.SignalR.Encoders;
+        using Best.MQTT;
+        using Best.MQTT.Packets.Builders;
 
-        var hub = new HubConnection(new Uri("https://server/hub"), new JsonProtocol(new LitJsonEncoder()));
+        var options = new ConnectionOptionsBuilder()
+                        .WithTCP("broker.emqx.io", 1883)
+                        .Build();
+        var client = new MQTTClient(options);
         ```
 
 ## General Tips
 
-1. **Stay Updated on Documentation:** Keep an eye on the official documentation for the Best SignalR package. 
+1. **Stay Updated on Documentation:** Keep an eye on the official documentation for the Best MQTT package. 
 It's regularly updated with new information, tutorials, and solutions to common problems.
 2. **Engage with the Community:** Join discussions on our [Community and Support page](../Shared/support.md) to share your experiences, ask questions, and get advice on the upgrade process.
 3. **Check for Updates Regularly:** Ensure you always have the latest features, improvements, and bug fixes by regularly checking for updates.

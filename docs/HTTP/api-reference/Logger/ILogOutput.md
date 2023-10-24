@@ -1,8 +1,11 @@
+---
+comments: true
+---
 # ILogOutput
 
 Represents an output target for log messages. 
 
-**Remarks**:
+**Remarks:**
 
 This interface defines methods for writing log messages to an output target. Implementations of this interface are used to configure where log messages should be written. 
 

@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # TimeoutSettings
 
 Represents settings related to connection-timeouts and processing duration. 

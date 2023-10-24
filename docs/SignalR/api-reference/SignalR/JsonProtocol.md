@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # JsonProtocol
 
 Implementation of the JSON protocol for SignalR communication. 

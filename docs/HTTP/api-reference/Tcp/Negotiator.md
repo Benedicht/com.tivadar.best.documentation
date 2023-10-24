@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # Negotiator
 
 The Negotiator class acts as a central coordinator for the negotiation of network connections, abstracting away the complexities of DNS resolution, TCP socket creation, proxy negotiation, and TLS setup. It allows for customization and extensibility, making it a versatile tool for establishing network connections in a flexible and controlled manner.

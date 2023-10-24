@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # HTTPMethods
 
 Represents the HTTP methods used in HTTP requests. 

@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # HTTPRange
 
 Represents an HTTP range that specifies the byte range of a response content, received as an answer for a range-request. 

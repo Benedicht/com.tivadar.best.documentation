@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # TransportStates
 
 Represents the possible states of a [HubConnection](../SignalR/HubConnection.md)'s transport ([WebSocketTransport](../Transports/WebSocketTransport.md) or [LongPollingTransport](../Transports/LongPollingTransport.md)). 

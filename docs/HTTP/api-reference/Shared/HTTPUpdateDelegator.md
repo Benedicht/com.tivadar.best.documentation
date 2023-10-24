@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # HTTPUpdateDelegator
 
 Will route some U3D calls to the HTTPManager. 

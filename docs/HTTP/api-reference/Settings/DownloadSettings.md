@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # DownloadSettings
 
 Represents settings for configuring an HTTP request's download behavior. 

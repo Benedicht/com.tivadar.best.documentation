@@ -1,8 +1,11 @@
+---
+comments: true
+---
 # ProxyConnectParameters
 
 Represents parameters used when connecting through a proxy server. 
 
-**Remarks**:
+**Remarks:**
 
 The ProxyConnectParameters struct defines the parameters required when initiating a connection through a proxy server. It includes information about the proxy, target URI, and callbacks for success and error handling. This struct is commonly used during the negotiation steps in the [Negotiator](../Tcp/Negotiator.md) class. 
 

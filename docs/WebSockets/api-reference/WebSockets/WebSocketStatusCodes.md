@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # WebSocketStatusCodes
 
 http://tools.ietf.org/html/rfc6455#section-7.4.1

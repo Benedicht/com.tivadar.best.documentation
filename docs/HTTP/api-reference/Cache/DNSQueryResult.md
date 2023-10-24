@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # DNSQueryResult
 
 Represents the result of a DNS query, including the original host name, resolved IP addresses, and any error. 

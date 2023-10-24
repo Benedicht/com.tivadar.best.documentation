@@ -1,8 +1,11 @@
+---
+comments: true
+---
 # HostSettingsManager
 
 Manages host-specific settings for HTTP requests based on hostnames. The HostSettingsManager is a powerful tool for fine-tuning HTTP request and connection behaviors on a per-host basis. It enables you to define custom settings for specific hostnames  while maintaining default settings for all other hosts. This level of granularity allows you to optimize and customize HTTP requests for different endpoints within your application. 
 
-**Remarks**:
+**Remarks:**
 
 When host-specific settings are not found for a given host variant, the default [HostSettings](../Settings/HostSettings.md) associated with the "*" host will be returned. 
 

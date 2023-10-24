@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # BouncyCastleSettings
 
 Settings for Bouncy Castle TLS. 

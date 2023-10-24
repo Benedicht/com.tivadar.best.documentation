@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # PeekableContentProviderStream
 
 A PeekableStream implementation that also implements the [IPeekableContentProvider](../Tcp/IPeekableContentProvider.md) interface too. 

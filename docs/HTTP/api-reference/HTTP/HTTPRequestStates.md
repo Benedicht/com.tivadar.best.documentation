@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # HTTPRequestStates
 
 Possible logical states of a HTTTPRequest object. 

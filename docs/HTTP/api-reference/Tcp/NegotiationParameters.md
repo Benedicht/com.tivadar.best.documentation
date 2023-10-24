@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # NegotiationParameters
 
 Represents the parameters for a negotiation. 

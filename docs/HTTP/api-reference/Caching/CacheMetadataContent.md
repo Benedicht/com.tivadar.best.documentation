@@ -1,8 +1,11 @@
+---
+comments: true
+---
 # CacheMetadataContent
 
 Cached content associated with a [CacheMetadata](../Caching/CacheMetadata.md). 
 
-**Remarks**:
+**Remarks:**
 
 This is NOT the cached content received from the server! It's for storing caching values to decide on how the content can be used.
 

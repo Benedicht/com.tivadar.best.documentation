@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # UploadChannel`2
 
 An upload channel that represents one prameter of a client callable function. It implements the IDisposable interface and calls Finish from the Dispose method. 

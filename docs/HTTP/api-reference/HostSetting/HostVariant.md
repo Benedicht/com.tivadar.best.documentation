@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # HostVariant
 
 The HostVariant class is a critical component in managing HTTP connections and handling HTTP requests for a specific host. It maintains a queue of requests and a list of active connections associated with the host, ensuring efficient utilization of available resources. Additionally, it supports protocol version detection (HTTP/1 or HTTP/2) for optimized communication with the host.

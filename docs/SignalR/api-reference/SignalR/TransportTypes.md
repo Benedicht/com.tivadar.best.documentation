@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # TransportTypes
 
 Specifies the various transport mechanisms that can be used in a [HubConnection](../SignalR/HubConnection.md) context. 

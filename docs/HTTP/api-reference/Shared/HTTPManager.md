@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # HTTPManager
 
 Global entry point to access and manage main services of the plugin. 

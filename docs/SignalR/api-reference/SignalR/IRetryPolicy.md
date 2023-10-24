@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # IRetryPolicy
 
 Defines a contract for implementing retry policies in case of connection failures. 

@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # SocketManager
 
 Manages the connection and associated sockets for a Socket.IO server. 

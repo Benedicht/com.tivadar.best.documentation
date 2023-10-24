@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # DNSCacheOptions
 
 Represents options for configuring the DNS cache behavior. 

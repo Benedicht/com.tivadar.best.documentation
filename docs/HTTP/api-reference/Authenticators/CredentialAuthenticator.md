@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # CredentialAuthenticator
 
 An [IAuthenticator](../Authenticators/IAuthenticator.md) implementation for HTTP Basic or Digest authentication. 

@@ -44,23 +44,23 @@ Incorporate real-time features like chat, notifications, and multiplayer gaming 
 <div class="card" markdown="block">
 ## **Best Socket.IO**
 
-[Best Socket.IO](SocketIO/index.md) is a library for integrating with Socket.IO, a popular real-time communication framework. 
+[Best Socket.IO](Socket.IO/index.md) is a library for integrating with Socket.IO, a popular real-time communication framework. 
 Use it to create WebSocket-based applications and games with ease.
 
-- [Installation Guide](SocketIO/installation.md): Quickly set up Best Socket.IO in your Unity project.
-- [Upgrade Guide](SocketIO/upgrade-guide.md): Seamlessly transition from older versions to the latest features and improvements.
-- [Getting Started](SocketIO/getting-started/index.md): Dive into the basics and make your first SocketIO connection in Unity.
+- [Installation Guide](Socket.IO/installation.md): Quickly set up Best Socket.IO in your Unity project.
+- [Upgrade Guide](Socket.IO/upgrade-guide.md): Seamlessly transition from older versions to the latest features and improvements.
+- [Getting Started](Socket.IO/getting-started/index.md): Dive into the basics and make your first SocketIO connection in Unity.
 </div>
 
 <div class="card" markdown="block">
 ## **Best Server-Sent Events**
 
-[Best Server-Sent Events Documentation](ServerSentEvents/index.md): Best Server-Sent Events provides an efficient and easy-to-use implementation of the Server-Sent Events (SSE) protocol. 
+[Best Server-Sent Events Documentation](Server-Sent Events/index.md): Best Server-Sent Events provides an efficient and easy-to-use implementation of the Server-Sent Events (SSE) protocol. 
 Use it to establish real-time, unidirectional communication between your server and Unity application.
 
-- [Installation Guide](ServerSentEvents/installation.md): Quickly set up Best Server-Sent Events in your Unity project.
-- [Upgrade Guide](ServerSentEvents/upgrade-guide.md): Seamlessly transition from older versions to the latest features and improvements.
-- [Getting Started](ServerSentEvents/getting-started/index.md): Dive into the basics and get your first Server-Sent Events events in Unity.
+- [Installation Guide](Server-Sent Events/installation.md): Quickly set up Best Server-Sent Events in your Unity project.
+- [Upgrade Guide](Server-Sent Events/upgrade-guide.md): Seamlessly transition from older versions to the latest features and improvements.
+- [Getting Started](Server-Sent Events/getting-started/index.md): Dive into the basics and get your first Server-Sent Events events in Unity.
 </div>
 
 <div class="card" markdown="block">

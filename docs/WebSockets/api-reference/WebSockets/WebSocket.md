@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # WebSocket
 
 Implements the WebSocket standard for duplex, two-way communications. 

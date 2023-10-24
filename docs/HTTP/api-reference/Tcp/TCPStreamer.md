@@ -1,8 +1,11 @@
+---
+comments: true
+---
 # TCPStreamer
 
 The TCPStreamer class is a versatile component that abstracts the complexities of TCP communication, making it easier to handle data streaming between networked applications or devices. It ensures reliable and efficient data transfer while handling various aspects of network communication and error management. 
 
-**Remarks**:
+**Remarks:**
 
 TCPStreamer serves several key functions: 
 

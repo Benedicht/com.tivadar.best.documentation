@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # Credentials
 
 Hold all information that required to authenticate to a remote server. 
