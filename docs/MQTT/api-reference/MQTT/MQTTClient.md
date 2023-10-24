@@ -55,15 +55,21 @@ Represents an MQTT client, providing capabilities to connect to MQTT brokers, se
 
 ### **BeginPacketBuffer**
 : With the use of BeginPacketBuffer and EndPacketBuffer sent messages can be buffered and sent in less network packets. It supports nested Begin-EndPacketBuffer calls. 
+	!!! note ""
+		Instead of using [BeginPacketBuffer](../MQTT/MQTTClient.md#beginpacketbuffer) and [EndPacketBuffer](../MQTT/MQTTClient.md#endpacketbuffer) directly, use the [PacketBufferHelper](../MQTT/PacketBufferHelper.md) instead!
+
 
 ### **EndPacketBuffer**
 : Call this after a BeginPacketBuffer. 
+	!!! note ""
+		Instead of using [BeginPacketBuffer](../MQTT/MQTTClient.md#beginpacketbuffer) and [EndPacketBuffer](../MQTT/MQTTClient.md#endpacketbuffer) directly, use the [PacketBufferHelper](../MQTT/PacketBufferHelper.md) instead!
+
 
 ### **CreateConnectPacketBuilder**
 : Creates and returns with a ConnectPacketBuilder instance. 
 
 ### **BeginConnect**
-: Starts connecting to the broker. It's a non-blocking method. 
+: Starts the connection process to the broker. It's a non-blocking method. ConnectPacketBuilderCallback is a function that will be called after a successfully transport connection to negotiate protocol details. 
 
 ### **ConnectAsync**
 : Starts connecting to the broker.  
