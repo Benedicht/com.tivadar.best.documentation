@@ -18,17 +18,5 @@ The Proxy class serves as the base class for various proxy client implementation
 : List of exceptions for which the proxy should not be used. Elements of this list are compared to the Host (DNS or IP address) part of the uri. 
 ## **Methods**:
 
-### **#ctor**
-: Initializes a new instance of the Proxy class with the specified proxy address and credentials. 
-
-### **BeginConnect**
-: Initiates a connection through the proxy server. Used during the negotiation steps. 
-
-### **GetRequestPath**
-: Gets the request path to be used for proxy communication. In some cases with HTTPProxy, the request must send the whole uri as the request path. 
-
-### **SetupRequest**
-: Sets up an HTTP request to use the proxy as needed. 
-
 ### **UseProxyForAddress**
 : Determines whether the proxy should be used for a specific address based on the configured exceptions. 

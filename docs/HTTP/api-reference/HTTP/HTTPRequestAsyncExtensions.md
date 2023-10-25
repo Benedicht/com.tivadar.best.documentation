@@ -25,6 +25,3 @@ A collection of extension methods for working with HTTP requests asynchronously 
 
 ### **GetRawDataAsync**
 : Asynchronously sends an [HTTPRequest](HTTPRequest.md) and retrieves the response content as a `byte[]`. 
-
-### **GetFromJsonResultAsync``1**
-: Asynchronously sends an [HTTPRequest](HTTPRequest.md) and deserializes the response content into an object of type T using JSON deserialization. 

@@ -32,12 +32,3 @@ Contains settings for a [SocketManager](SocketManager.md).
 : Starting with Socket.IO v3, connecting to a namespace a client can send payload data. When the Auth callback function is set, the plugin going to call it when connecting to a namespace. Its return value must be a json string! 
 ### **WebsocketOptions**
 : Customization options for the websocket transport. 
-### **BuiltQueryParams**
-: The cached value of the result of the BuildQueryParams() call. 
-## **Methods**:
-
-### **#ctor**
-: Constructor, setting the default option values. 
-
-### **BuildQueryParams**
-: Builds the keys and values from the AdditionalQueryParams to an key=value form. If AdditionalQueryParams is null or empty, it will return an empty string. 

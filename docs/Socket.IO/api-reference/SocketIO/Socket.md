@@ -16,16 +16,7 @@ This class represents a Socket.IO namespace.
 : True if the socket is connected and open to the server. False otherwise. 
 ## **Methods**:
 
-### **#ctor**
-: Internal constructor. 
-
-### **Best#SocketIO#ISocket#Open**
-: Internal function to start opening the socket. 
-
 ### **Disconnect**
-: Disconnects this socket/namespace. 
-
-### **Best#SocketIO#ISocket#Disconnect**
 : Disconnects this socket/namespace. 
 
 ### **Volatile**
@@ -39,15 +30,3 @@ This class represents a Socket.IO namespace.
 
 ### **Off**
 : Removes all callbacks to the given event. 
-
-### **Best#SocketIO#ISocket#OnPacket**
-: Last call of the OnPacket chain(Transport -> Manager -> Socket), we will dispatch the event if there is any callback 
-
-### **Best#SocketIO#ISocket#EmitEvent**
-: Emits an internal packet-less event to the user level. 
-
-### **Best#SocketIO#ISocket#EmitEvent**
-: Emits an internal packet-less event to the user level. 
-
-### **OnTransportOpen**
-: Called when the underlying transport is connected 

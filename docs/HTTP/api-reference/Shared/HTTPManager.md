@@ -33,9 +33,6 @@ Global entry point to access and manage main services of the plugin.
 : The local content cache, maintained by the plugin. When set to a non-null value, Maintain called immediately on the cache. 
 ## **Methods**:
 
-### **#cctor**
-: Static constructor. Setup default values. 
-
 ### **Setup**
 : Initializes the HTTPManager with default settings. This method should be called on Unity's main thread before using the HTTP plugin. By default it gets called by [HTTPUpdateDelegator](HTTPUpdateDelegator.md). 
 

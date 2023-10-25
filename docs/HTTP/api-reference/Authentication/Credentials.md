@@ -12,10 +12,3 @@ Hold all information that required to authenticate to a remote server.
 : The username to authenticate on the remote server. 
 ### **Password**
 : The password to use in the authentication process. The password will be stored only in this class. 
-## **Methods**:
-
-### **#ctor**
-: Set up the authentication credentials with the username and password. The Type will be set to Unknown. 
-
-### **#ctor**
-: Set up the authentication credentials with the given authentication type, username and password. 

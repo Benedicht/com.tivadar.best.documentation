@@ -10,9 +10,6 @@ Provides an implementation of [ILogOutput](ILogOutput.md) that writes log messag
 : Gets a value indicating whether this log output accepts color codes. Always returns `false`. 
 ## **Methods**:
 
-### **#ctor**
-: Initializes a new instance of the FileOutput class with the specified file name. 
-
 ### **Write**
 : Writes a log message to the file. 
 

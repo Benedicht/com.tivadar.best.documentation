@@ -21,9 +21,7 @@ The [HostManager](HostManager.md) class acts as a central registry for managing 
 
  Usage of the [HostManager](HostManager.md) class is typically transparent to developers and is handled internally by the Best HTTP library. However, it provides a convenient and efficient way to manage connections and requests when needed. 
 
-## **Fields**:
-### **hosts**
-: Dictionary to store [HostKey](HostKey.md)-[HostVariant](HostVariant.md) mappings. 
+
 ## **Methods**:
 
 ### **GetHostVariant**

@@ -21,8 +21,6 @@ While it's possible, it's not advised to send binary data url-encoded!
 ## **Fields**:
 ### **Length**
 : Gets the length of the stream. 
-### **_fields**
-: A list that holds the form's fields. 
 ## **Methods**:
 
 ### **BeforeSendHeaders**

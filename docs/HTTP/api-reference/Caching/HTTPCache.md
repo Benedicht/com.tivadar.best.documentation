@@ -22,8 +22,6 @@ The `HTTPCache` class provides a powerful caching mechanism for HTTP responses i
 
 
 ## **Fields**:
-### **RootFolderName**
-: Constants defining folder and file names used in the HTTP cache storage. 
 ### **CacheHostName**
 : This is the reversed domain the plugin uses for file paths when it have to load content from the local cache. 
 ### **OnCacheSizeChanged**
@@ -35,9 +33,6 @@ The `HTTPCache` class provides a powerful caching mechanism for HTTP responses i
 ### **OnBeforeBeginCache**
 : Called before the plugin calls [BeginCache](HTTPCache.md#begincache) to decide whether the content will be cached or not. 
 ## **Methods**:
-
-### **#ctor**
-: Initializes a new instance of the HTTPCache class with the specified cache options. 
 
 ### **CalculateHash**
 : Calculates a unique hash identifier based on the HTTP method and URI. 
@@ -56,9 +51,6 @@ The `HTTPCache` class provides a powerful caching mechanism for HTTP responses i
 
 ### **SetupValidationHeaders**
 : Sets up validation headers on an HTTP request if a locally cached response exists. 
-
-### **IsThereEnoughSpaceAfterMaintain**
-: If necessary tries to make enough space in the cache by calling Maintain. 
 
 ### **BeginCache**
 : Initiates the caching process for an HTTP response, creating an [HTTPCacheContentWriter](HTTPCacheContentWriter.md) if caching is enabled and all predconditions are met. 

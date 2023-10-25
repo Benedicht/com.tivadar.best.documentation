@@ -14,9 +14,6 @@ Represents the default access token authenticator that uses the Bearer token sch
 : This event is not used because [IsPreAuthRequired](DefaultAccessTokenAuthenticator.md#ispreauthrequired) is `false`. 
 ## **Methods**:
 
-### **#ctor**
-: Initializes a new instance of the DefaultAccessTokenAuthenticator class. 
-
 ### **StartAuthentication**
 : Not used as IsPreAuthRequired is false 
 
@@ -25,9 +22,6 @@ Represents the default access token authenticator that uses the Bearer token sch
 
 ### **PrepareUri**
 : Prepares the URI by appending the access token if necessary. 
-
-### **PrepareUriImpl**
-: Internal method to prepare the URI by appending the access token. 
 
 ### **Cancel**
 : Cancels any ongoing authentication operations. 

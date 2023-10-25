@@ -19,9 +19,6 @@ The return value of **Stream.Read** is treated specially in the plugin:
 
 ## **Methods**:
 
-### **#ctor**
-: Initializes a new instance of the [JSonDataStream`1](JSonDataStream`1.md) class with the specified object. 
-
 ### **BeforeSendHeaders**
 : Called before sending out the request's headers. It sets the `"Content-Type"` header to `"application/json; charset=utf-8"`. 
 

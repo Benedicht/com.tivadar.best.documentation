@@ -18,10 +18,6 @@ Compression Extensions for WebSocket implementation. http://tools.ietf.org/html/
 : The compression level that the client will use to compress the frames. 
 ### **MinimumDataLegthToCompress**
 : What minimum data length will trigger the compression. 
-### **compressorOutputStream**
-: Cached object to support context takeover. 
-### **decompressorInputStream**
-: Cached object to support context takeover. 
 ## **Methods**:
 
 ### **AddNegotiation**
@@ -29,9 +25,3 @@ Compression Extensions for WebSocket implementation. http://tools.ietf.org/html/
 
 ### **Decode**
 : IExtension implementation to possible decompress the data. 
-
-### **Compress**
-: A function to compress and return the data parameter with possible context takeover support (reusing the DeflateStream). 
-
-### **Decompress**
-: A function to decompress and return the data parameter with possible context takeover support (reusing the DeflateStream). 

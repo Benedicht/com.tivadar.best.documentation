@@ -51,6 +51,3 @@ While the BufferPool is housed within the Best HTTP package, its benefits are no
 
 ### **Clear**
 : Clears all stored entries in the buffer pool instantly, releasing memory. 
-
-### **Maintain**
-: Internal method called by the plugin to remove old, non-used buffers. 

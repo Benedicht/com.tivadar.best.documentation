@@ -41,18 +41,7 @@ Implements the WebSocket standard for duplex, two-way communications.
 : Called when the WebSocket connection is closed. 
 ### **Context**
 : Logging context of this websocket instance. 
-### **implementation**
-: The underlying, real implementation. 
 ## **Methods**:
-
-### **#ctor**
-: Creates a WebSocket instance from the given uri. 
-
-### **#ctor**
-: Creates a WebSocket instance from the given uri. 
-
-### **#ctor**
-: Creates a WebSocket instance from the given uri, protocol and origin. 
 
 ### **Open**
 : Start the opening process. 

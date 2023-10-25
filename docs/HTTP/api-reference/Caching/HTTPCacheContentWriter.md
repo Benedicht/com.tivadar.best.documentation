@@ -16,12 +16,7 @@ Represents a writer for caching HTTP response content.
 : Number of bytes written to the cache. 
 ### **Context**
 : Context of this cache writer used for logging. 
-### **_contentStream**
-: Underlying stream the download bytes are written into. 
 ## **Methods**:
 
 ### **Write**
 : Writes content to the underlying stream.  
-
-### **Close**
-: Close the underlying stream and invalidate the hash. 

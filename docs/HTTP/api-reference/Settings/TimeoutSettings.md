@@ -21,6 +21,3 @@ Represents settings related to connection-timeouts and processing duration.
 
 ### **IsTimedOut**
 : Returns `true` if the time has passed the specified Timeout setting since processing started or if the connection has timed out. 
-
-### **#ctor**
-: Initializes a new instance of the TimeoutSettings class for a specific [HTTPRequest](../HTTP/HTTPRequest.md). 

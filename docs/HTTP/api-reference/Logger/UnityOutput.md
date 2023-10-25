@@ -15,6 +15,3 @@ Provides an implementation of [ILogOutput](ILogOutput.md) that writes log messag
 
 ### **Write**
 : Writes a log message to the Unity Debug Console based on the specified log level. 
-
-### **Best#HTTP#Shared#Logger#ILogOutput#Flush**
-: This implementation does nothing. 

@@ -48,12 +48,8 @@ The HTTPResponse class represents an HTTP response received from a remote server
 : The data that downloaded from the server. All Transfer and Content encodings decoded if any(eg. chunked, gzip, deflate). 
 ### **IsUpgraded**
 : The normal HTTP protocol is upgraded to an other. 
-### **dataAsText**
-: Cached, converted data. 
 ### **DataAsText**
 : The data converted to an UTF8 string. 
-### **texture**
-: Cached converted data. 
 ### **DataAsTexture2D**
 : The data loaded to a Texture2D. 
 ### **DownStream**
@@ -84,9 +80,6 @@ The HTTPResponse class represents an HTTP response received from a remote server
 	!!! note ""
 		If the server ignores a byte-range-spec because it is syntactically invalid, the server SHOULD treat the request as if the invalid Range header field did not exist. (Normally, this means return a 200 response containing the full entity). In this case because there are no `'Content-Range'` header values, this function will return `null`. 
 
-
-### **FeedDownloadedContentChunk**
-: Add data to the fragments list. 
 
 ### **Dispose**
 : IDisposable implementation. 

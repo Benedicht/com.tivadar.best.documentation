@@ -6,10 +6,6 @@ comments: true
 https://docs.oasis-open.org/mqtt/mqtt/v5.0/os/mqtt-v5.0-os.html#_Toc3901106 
 
 ## **Fields**:
-### **PacketId**
-: https://docs.oasis-open.org/mqtt/mqtt/v5.0/os/mqtt-v5.0-os.html#_Toc3901108 
-### **SubscriptionId**
-: https://docs.oasis-open.org/mqtt/mqtt/v5.0/os/mqtt-v5.0-os.html#_Toc3901117 
 ### **IsDuplicate**
 : Set to true if it's not the first ocassion the broker sent this application message. 
 ### **QoS**
@@ -22,8 +18,6 @@ https://docs.oasis-open.org/mqtt/mqtt/v5.0/os/mqtt-v5.0-os.html#_Toc3901106
 : Payload type (binary or text). 
 ### **ExpiryInterval**
 : Expiry interval of the application message. 
-### **TopicAlias**
-: Topic alias index the broker used. 
 ### **ResponseTopic**
 : Topic name where the publisher waiting for a response to this application message. 
 ### **CorrelationData**

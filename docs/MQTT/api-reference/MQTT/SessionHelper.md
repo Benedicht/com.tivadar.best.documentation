@@ -8,9 +8,6 @@ Helper class to manage sessions.
 
 ## **Methods**:
 
-### **GetRootSessionsDirectory**
-: Returns with the root directory of the sessions 
-
 ### **CreateNullSession**
 : Creates and returns with a Null session. 
 

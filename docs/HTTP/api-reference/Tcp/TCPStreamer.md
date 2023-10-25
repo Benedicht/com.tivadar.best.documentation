@@ -31,14 +31,7 @@ TCPStreamer serves several key functions:
 : Gets the minimum receive buffer size for the TCP socket. 
 ### **Length**
 : Gets the total length of buffered data for reading from the stream. 
-### **MaxBufferedReadAmount**
-: Gets or sets the maximum amount of buffered data allowed for reading from the stream. 
-### **MaxBufferedWriteAmount**
-: Gets or sets the maximum amount of buffered data allowed for writing to the stream. 
 ## **Methods**:
-
-### **#ctor**
-: Initializes a new instance of the TCPStreamer class with the specified **Socket** and parent [LoggingContext](../Logger/LoggingContext.md). 
 
 ### **DequeueReceived**
 : Dequeues received data from the stream's buffer and returns a [BufferSegment](../Memory/BufferSegment.md) containing the data. 
@@ -54,6 +47,3 @@ TCPStreamer serves several key functions:
 
 ### **Dispose**
 : Disposes of the [TCPStreamer](TCPStreamer.md) instance, releasing associated resources. 
-
-### **Close**
-: Closes the TCP connection gracefully and performs cleanup operations. 

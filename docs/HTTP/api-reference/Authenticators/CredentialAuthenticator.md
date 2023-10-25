@@ -10,9 +10,6 @@ An [IAuthenticator](IAuthenticator.md) implementation for HTTP Basic or Digest a
 : Gets or sets the [Credentials](../Authentication/Credentials.md) associated with this authenticator. 
 ## **Methods**:
 
-### **#ctor**
-: Initializes a new instance of the CrendetialAuthenticator class with the specified [Credentials](../Authentication/Credentials.md). 
-
 ### **SetupRequest**
 : Sets up the required headers for the HTTP request based on the provided credentials. 
 

@@ -22,9 +22,6 @@ Will route some U3D calls to the HTTPManager.
 : Called when the Unity application's foreground state changed. 
 ## **Methods**:
 
-### **ResetSetup**
-: Called after scene loaded to support Configurable Enter Play Mode (https://docs.unity3d.com/2019.3/Documentation/Manual/ConfigurableEnterPlayMode.html) 
-
 ### **CheckInstance**
 : Will create the HTTPUpdateDelegator instance and set it up. 
 

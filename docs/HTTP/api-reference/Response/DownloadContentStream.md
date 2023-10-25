@@ -41,15 +41,7 @@ The DownloadContentStream serves as a storage medium for content downloaded duri
 : Gets a value indicating whether the internal buffer holds at least the [MaxBuffered](DownloadContentStream.md#maxbuffered) amount of data. 
 ### **IsDetached**
 : Gets or sets whether the stream is detached from the [HTTPRequest](../HTTP/HTTPRequest.md)/[HTTPResponse](../HTTP/HTTPResponse.md) when [Read](DownloadContentStream.md#read) is used before the request is finished. When the stream is detached from the response object, their lifetimes are not bound together, meaning that the stream isn't disposed automatically, and the client code is responsible for calling the stream's **Stream.Dispose** function. 
-### **_isFullCheckCount**
-: Count of consecutive calls with DoFullCheck that found the stream fully buffered. 
 ## **Methods**:
-
-### **EmergencyIncreaseMaxBuffered**
-: There are cases where the plugin have to put more data into the buffer than its previously set maximum. For example when the underlying connection is closed, but the content provider still have buffered data, in witch case we have to push all processed data to the user facing download stream. 
-
-### **CompleteAdding**
-: Completes the download stream with an optional error. Called when the download is finished. 
 
 ### **TryTake**
 : Tries to remove a downloaded segment from the stream. If the stream is empty, it returns immediately with false. 
@@ -59,9 +51,6 @@ The DownloadContentStream serves as a storage medium for content downloaded duri
 
 ### **Write**
 : Writes a downloaded data segment to the stream. 
-
-### **DoFullCheck**
-: Checks whether the stream is fully buffered and increases a counter if it's full, resetting it otherwise. 
 
 ### **Dispose**
 : Disposes of the stream, releasing any resources held by it. 

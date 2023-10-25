@@ -16,7 +16,3 @@ Abstract base class for concreate transport implementations.
 : Optional **CancellationToken** for connection cancellation support. 
 ### **Context**
 : Debug context of the transport. 
-### **ReceiveStream**
-: Intermediate stream holding incomplete packet bytes. 
-### **transportEvents**
-: Transport event queue generated on receive/send threads that must be processed on the main thread. 

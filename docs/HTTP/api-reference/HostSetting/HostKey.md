@@ -30,9 +30,6 @@ The [HostKey](HostKey.md) struct is designed to uniquely identify a host based o
 : Gets the host name from the URI or "file" if the URI is a file URI. 
 ## **Methods**:
 
-### **#ctor**
-: Initializes a new instance of the [HostKey](HostKey.md) struct with the specified URI and proxy settings. 
-
 ### **From**
 : Creates a [HostKey](HostKey.md) instance from an HTTP request. 
 

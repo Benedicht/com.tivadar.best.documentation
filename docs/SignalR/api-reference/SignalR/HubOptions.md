@@ -20,7 +20,3 @@ Represents the configuration options for a [HubConnection](HubConnection.md).
 : The maximum time that the plugin allowed to spend trying to connect. Its default value is 1 minute. 
 ### **WebsocketOptions**
 : Customization options for the websocket transport. 
-## **Methods**:
-
-### **#ctor**
-: Initializes a new instance of the HubOptions class with default values. 

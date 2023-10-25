@@ -14,9 +14,6 @@ The LoggingContext class is used to provide additional context information to lo
 : Gets the unique hash value of this logging context. 
 ## **Methods**:
 
-### **#ctor**
-: Initializes a new instance of the LoggingContext class associated with the specified object. 
-
 ### **Add**
 : Adds a `long` value to the logging context. 
 

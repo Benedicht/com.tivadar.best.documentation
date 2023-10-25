@@ -16,9 +16,6 @@ Represents a segment (a continuous section) of a byte array, providing functiona
 : The number of bytes in the segment that contain valid data. 
 ## **Methods**:
 
-### **#ctor**
-: Initializes a new instance of the BufferSegment struct. 
-
 ### **AsAutoRelease**
 : Converts the buffer segment to an AutoReleaseBuffer to use it in a local using statement. 
 

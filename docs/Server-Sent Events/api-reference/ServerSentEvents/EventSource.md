@@ -55,20 +55,6 @@ How It Works:
 : Called when the EventSource object closed. 
 ### **OnStateChanged**
 : Called every time when the State property changed. 
-### **EventTable**
-: A dictionary to store eventName => delegate mapping. 
-### **RetryCount**
-: Number of retry attempts made. 
-### **RetryCalled**
-: When we called the Retry function. We will delay the Open call from here. 
-### **LineBuffer**
-: Buffer for the read data. 
-### **LineBufferPos**
-: Buffer position. 
-### **CurrentMessage**
-: The currently receiving and parsing message 
-### **CompletedMessages**
-: Completed messages that waiting to be dispatched 
 ## **Methods**:
 
 ### **Open**

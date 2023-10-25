@@ -27,9 +27,6 @@ The Negotiator class acts as a central coordinator for the negotiation of networ
 : Gets the peekable content provider stream associated with this negotiator. 
 ## **Methods**:
 
-### **#ctor**
-: Initializes a new instance of the Negotiator class. 
-
 ### **Start**
 : Starts the negotiation process. 
 

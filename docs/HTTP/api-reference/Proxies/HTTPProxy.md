@@ -21,20 +21,3 @@ The HTTPProxy class is an implementation of the [Proxy](Proxy.md) base class, sp
 : Gets or sets whether the plugin will use the proxy as an explicit proxy for secure protocols (HTTPS://, WSS://). 
 	!!! note ""
 		When set to `true`, the plugin will issue a CONNECT request to the proxy for secure protocols, even if the proxy is marked as transparent. This is commonly used for ensuring proper handling of encrypted traffic through the proxy. 
-
-## **Methods**:
-
-### **#ctor**
-: Creates a new instance of the HTTPProxy class with the specified proxy address. 
-
-### **#ctor**
-: Creates a new instance of the HTTPProxy class with the specified proxy address and credentials. 
-
-### **#ctor**
-: Creates a new instance of the HTTPProxy class with the specified proxy address, credentials, and transparency settings. 
-
-### **#ctor**
-: Creates a new instance of the HTTPProxy class with the specified proxy address, credentials, transparency settings, and URI handling. 
-
-### **#ctor**
-: Creates a new instance of the [HTTPProxy](HTTPProxy.md) class with the specified proxy address, credentials, transparency settings, URI handling, and HTTPS behavior. 

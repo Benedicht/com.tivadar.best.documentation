@@ -17,12 +17,7 @@ The return value of **Stream.Read** is treated specially in the plugin:
 ## **Fields**:
 ### **Length**
 : Gets the length of this multipart/form-data stream. 
-### **boundary**
-: A random boundary generated in the constructor. 
 ## **Methods**:
-
-### **#ctor**
-: Initializes a new instance of the MultipartFormDataStream class. 
 
 ### **AddField**
 : Adds a textual field to the multipart/form-data stream. 

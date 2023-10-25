@@ -30,11 +30,5 @@ The class manages Root CAs, Intermediate Certificates, Client Certificates, and 
 ### **UnloadDatabases**
 : Unloads all databases (certificates and OCSP cache). 
 
-### **PostInstallSetupFinishedCallback**
-: Called by the database unpacker. It loads the databases and calls OnSetupFinished. 
-
 ### **WaitForSetupFinish**
 : Blocks the current thread until setup is finished. 
-
-### **CreateClientCredentialsIfNotFound**
-: Creates the client credentials DB if it can't be found in the resources folder. 

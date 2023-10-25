@@ -53,8 +53,6 @@ Represents an HTTP request that allows you to send HTTP requests to remote serve
 : The callback function that will be called after the request is fully processed. 
 ### **IsCancellationRequested**
 : Indicates if [Abort](HTTPRequest.md#abort) is called on this request. 
-### **CancellationTokenSource**
-: Gets the cancellation token source for this request. 
 ### **OnCancellationRequested**
 : Action called when [Abort](HTTPRequest.md#abort) function is invoked. 
 ### **Exception**
@@ -111,30 +109,6 @@ Represents an HTTP request that allows you to send HTTP requests to remote serve
 
 ### **CreatePut**
 : Creates an HTTP PUT request with the specified URI and registers a callback function to be called when the request is fully processed. 
-
-### **#ctor**
-: Creates an HTTP GET request with the specified URL. 
-
-### **#ctor**
-: Creates an HTTP GET request with the specified URL and registers a callback function to be called when the request is fully processed. 
-
-### **#ctor**
-: Creates an HTTP GET request with the specified URL and HTTP method type. 
-
-### **#ctor**
-: Creates an HTTP request with the specified URL, HTTP method type, and registers a callback function to be called when the request is fully processed. 
-
-### **#ctor**
-: Creates an HTTP GET request with the specified URI. 
-
-### **#ctor**
-: Creates an HTTP GET request with the specified URI and registers a callback function to be called when the request is fully processed. 
-
-### **#ctor**
-: Creates an HTTP request with the specified URI and HTTP method type. 
-
-### **#ctor**
-: Creates an HTTP request with the specified URI, HTTP method type, and registers a callback function to be called when the request is fully processed. 
 
 ### **AddHeader**
 : Adds a header-value pair to the Headers. Use it to add custom headers to the request. 

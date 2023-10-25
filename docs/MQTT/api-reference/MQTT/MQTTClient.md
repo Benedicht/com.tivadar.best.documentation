@@ -32,27 +32,6 @@ Represents an MQTT client, providing capabilities to connect to MQTT brokers, se
 : Context of the MQTTClient and all child instances (like its transport, etc.) that can produce log outputs. 
 ## **Methods**:
 
-### **IncrementAndReplenishQueue**
-: https://docs.oasis-open.org/mqtt/mqtt/v5.0/os/mqtt-v5.0-os.html#_Toc3901251 
-
-### **HandlePublishCompletePacket**
-: https://docs.oasis-open.org/mqtt/mqtt/v5.0/os/mqtt-v5.0-os.html#_Toc3901151 
-
-### **HandlePublishReceivedPacket**
-: https://docs.oasis-open.org/mqtt/mqtt/v5.0/os/mqtt-v5.0-os.html#_Toc3901131 
-
-### **HandlePublishReleasePacket**
-: https://docs.oasis-open.org/mqtt/mqtt/v5.0/os/mqtt-v5.0-os.html 
-
-### **HandlePublishPacket**
-: https://docs.oasis-open.org/mqtt/mqtt/v5.0/os/mqtt-v5.0-os.html#_Toc3901100 
-
-### **HandleDisconnectPacket**
-: https://docs.oasis-open.org/mqtt/mqtt/v5.0/os/mqtt-v5.0-os.html#_Toc3901205 
-
-### **MessageDeliveryRetry**
-: When a Client reconnects with Clean Start set to 0 and a session is present, both the Client and Server MUST resend any unacknowledged PUBLISH packets (where QoS > 0) and PUBREL packets using their original Packet Identifiers.  https://docs.oasis-open.org/mqtt/mqtt/v5.0/os/mqtt-v5.0-os.html#_Toc3901238 
-
 ### **BeginPacketBuffer**
 : With the use of BeginPacketBuffer and EndPacketBuffer sent messages can be buffered and sent in less network packets. It supports nested Begin-EndPacketBuffer calls. 
 	!!! note ""

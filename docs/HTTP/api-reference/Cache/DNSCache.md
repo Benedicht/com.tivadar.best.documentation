@@ -36,6 +36,3 @@ By utilizing the DNSCache class and its associated features, you can optimize DN
 
 ### **Query**
 : Performs a DNS query with the specified parameters. It resolves DNS records for a given host name, caching the results to reduce the need for redundant DNS resolutions. 
-
-### **CheckForCanceled**
-: It's plan-b for the case where BeginGetHostAddresses take too long and no reply in time. If the query's Token is canceled it will call the callback if it's still available. 

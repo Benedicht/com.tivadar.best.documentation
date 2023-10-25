@@ -12,9 +12,6 @@ When host-specific settings are not found for a given host variant, the default 
 
 ## **Methods**:
 
-### **#ctor**
-: Initializes a new instance of the [HostSettingsManager](HostSettingsManager.md) class with default settings for all hosts ("*"). 
-
 ### **AddDefault**
 : Adds default settings for the host part of the specified URI. This is equivalent to calling [Add](HostSettingsManager.md#add) with the a new [HostSettings](HostSettings.md). 
 

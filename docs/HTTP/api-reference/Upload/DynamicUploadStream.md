@@ -19,12 +19,6 @@ This implementation is designed to handle scenarios where data may not always be
 : Gets the length of data currently buffered and ready for upload. 
 ## **Methods**:
 
-### **#ctor**
-: Initializes a new instance of the DynamicUploadStream class with an optional content type. 
-	!!! note ""
-		This constructor allows the caller to specify the content type of the data to be uploaded. If not provided, it defaults to a general binary data type. 
-
-
 ### **BeforeSendHeaders**
 : Sets the necessary headers before sending the request. 
 
