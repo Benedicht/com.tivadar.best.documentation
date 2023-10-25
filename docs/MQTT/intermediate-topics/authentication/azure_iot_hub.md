@@ -22,7 +22,8 @@ You can follow different tutorials and guides to set up the IoT Hub and generate
 
 ## Add Client Certificate 
 
-1. To add the device certificate open the [Certificate Manager Window](../../../TLS Security/intermediate-topics/CertificationManagerWindow.md) and at the bottom of the window under [Client Certificates](../../../TLS Security/intermediate-topics/CertificationManagerWindow.md#client-certificates) click on `Add for Domain`. 
+1. To add the device certificate open the [Certificate Manager Window](../../../TLS Security/intermediate-topics/Certification Manager Window/index.md) 
+and at the bottom of the window under [Client Certificates](../../../TLS Security/intermediate-topics/Certification Manager Window/client-certificates.md) click on `Add for Domain`. 
 2. Add the hostname of the IoT Hub endpoint (`xyz.azure-devices.net`) to the `Domain` field 
 3. Click on the `Select Certificate` button, locate and select the device.pfx created in the first step. Click on the `Ok` button and enter the password.
 

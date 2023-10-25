@@ -36,11 +36,11 @@ How It Works:
 ### **LastEventId**
 : Gets the ID of the last successfully received event. 
 ### **IsClosed**
-: Gets a value indicating whether the EventSource is in the [Closed](../ServerSentEvents/States.md#closed) state. 
+: Gets a value indicating whether the EventSource is in the [Closed](States.md#closed) state. 
 ### **LoggingContext**
 : Gets the logging context for the current EventSource instance. 
 ### **InternalRequest**
-: Gets the internal [HTTPRequest](../HTTP/HTTPRequest.md) object used by the EventSource for communication. 
+: Gets the internal [HTTPRequest](../../../HTTP/api-reference/HTTP/HTTPRequest.md) object used by the EventSource for communication. 
 ### **OnOpen**
 : Called when successfully connected to the server. 
 ### **OnMessage**

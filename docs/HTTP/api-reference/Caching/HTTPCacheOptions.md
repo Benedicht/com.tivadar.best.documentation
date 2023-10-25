@@ -13,7 +13,7 @@ Represents the configuration options for the HTTP cache.
 ## **Methods**:
 
 ### **#ctor**
-: Initializes a new instance of the [HTTPCacheOptions](../Caching/HTTPCacheOptions.md) class with default settings. 
+: Initializes a new instance of the [HTTPCacheOptions](HTTPCacheOptions.md) class with default settings. 
 
 ### **#ctor**
-: Initializes a new instance of the [HTTPCacheOptions](../Caching/HTTPCacheOptions.md) class with custom settings. 
+: Initializes a new instance of the [HTTPCacheOptions](HTTPCacheOptions.md) class with custom settings. 

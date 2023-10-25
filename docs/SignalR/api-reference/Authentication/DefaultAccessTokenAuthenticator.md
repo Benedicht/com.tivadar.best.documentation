@@ -9,9 +9,9 @@ Represents the default access token authenticator that uses the Bearer token sch
 ### **IsPreAuthRequired**
 : Indicates that no pre-authentication step is required for this type of authentication. 
 ### **OnAuthenticationSucceded**
-: This event is not used because [IsPreAuthRequired](../Authentication/DefaultAccessTokenAuthenticator.md#ispreauthrequired) is `false`. 
+: This event is not used because [IsPreAuthRequired](DefaultAccessTokenAuthenticator.md#ispreauthrequired) is `false`. 
 ### **OnAuthenticationFailed**
-: This event is not used because [IsPreAuthRequired](../Authentication/DefaultAccessTokenAuthenticator.md#ispreauthrequired) is `false`. 
+: This event is not used because [IsPreAuthRequired](DefaultAccessTokenAuthenticator.md#ispreauthrequired) is `false`. 
 ## **Methods**:
 
 ### **#ctor**

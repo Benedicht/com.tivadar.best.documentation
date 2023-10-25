@@ -11,8 +11,8 @@ This interface defines methods for writing log messages to an output target. Imp
 
  Two of its out-of-the-box implementations are 
 
-- [UnityOutput](../Logger/UnityOutput.md)
-- [FileOutput](../Logger/FileOutput.md)
+- [UnityOutput](UnityOutput.md)
+- [FileOutput](FileOutput.md)
 
 
 

@@ -3,7 +3,7 @@ comments: true
 ---
 # BufferDesc
 
-Helper struct for [BufferPool](../Memory/BufferPool.md). 
+Helper struct for [BufferPool](BufferPool.md). 
 
 ## **Fields**:
 ### **buffer**

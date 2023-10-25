@@ -7,7 +7,7 @@ A specialized upload stream designed to handle data that's generated on-the-fly 
 
 **Remarks:**
 
-This implementation is designed to handle scenarios where data may not always be immediately available for upload. The request will remain active until the [Complete](../Upload/DynamicUploadStream.md#complete) method is invoked, ensuring that data can continue to be fed into the stream even if it's temporarily empty during a Read operation. 
+This implementation is designed to handle scenarios where data may not always be immediately available for upload. The request will remain active until the [Complete](DynamicUploadStream.md#complete) method is invoked, ensuring that data can continue to be fed into the stream even if it's temporarily empty during a Read operation. 
 
 ## **Fields**:
 ### **Length**

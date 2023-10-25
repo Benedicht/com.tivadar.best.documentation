@@ -3,7 +3,7 @@ comments: true
 ---
 # UnityOutput
 
-Provides an implementation of [ILogOutput](../Logger/ILogOutput.md) that writes log messages to the Unity Debug Console. 
+Provides an implementation of [ILogOutput](ILogOutput.md) that writes log messages to the Unity Debug Console. 
 
 ## **Fields**:
 ### **AcceptColor**

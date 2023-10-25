@@ -33,7 +33,7 @@ The `HTTPCache` class provides a powerful caching mechanism for HTTP responses i
 ### **CacheSize**
 : Gets the current size of the HTTP cache in bytes. 
 ### **OnBeforeBeginCache**
-: Called before the plugin calls [BeginCache](../Caching/HTTPCache.md#begincache) to decide whether the content will be cached or not. 
+: Called before the plugin calls [BeginCache](HTTPCache.md#begincache) to decide whether the content will be cached or not. 
 ## **Methods**:
 
 ### **#ctor**
@@ -61,7 +61,7 @@ The `HTTPCache` class provides a powerful caching mechanism for HTTP responses i
 : If necessary tries to make enough space in the cache by calling Maintain. 
 
 ### **BeginCache**
-: Initiates the caching process for an HTTP response, creating an [HTTPCacheContentWriter](../Caching/HTTPCacheContentWriter.md) if caching is enabled and all predconditions are met. 
+: Initiates the caching process for an HTTP response, creating an [HTTPCacheContentWriter](HTTPCacheContentWriter.md) if caching is enabled and all predconditions are met. 
 
 ### **EndCache**
 : Finalizes the caching process and takes appropriate actions based on the completion status. 

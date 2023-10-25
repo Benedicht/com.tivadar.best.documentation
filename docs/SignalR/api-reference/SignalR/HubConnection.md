@@ -11,9 +11,9 @@ Represents the main entry point for a SignalR Core connection.
 ### **State**
 : Gets the current state of this connection. 
 ### **Transport**
-: Gets the current active [ITransport](../SignalR/ITransport.md) instance. 
+: Gets the current active [ITransport](ITransport.md) instance. 
 ### **Protocol**
-: Gets the [IProtocol](../SignalR/IProtocol.md) implementation that will parse, encode, and decode messages. 
+: Gets the [IProtocol](IProtocol.md) implementation that will parse, encode, and decode messages. 
 ### **OnRedirected**
 : Called when the connection is redirected to a new URI. 
 ### **OnConnected**
@@ -31,11 +31,11 @@ Represents the main entry point for a SignalR Core connection.
 ### **OnTransportEvent**
 : Called for transport-related events. 
 ### **AuthenticationProvider**
-: Gets or sets the [IAuthenticationProvider](../SignalR/IAuthenticationProvider.md) implementation that will be used to authenticate the connection. 
+: Gets or sets the [IAuthenticationProvider](IAuthenticationProvider.md) implementation that will be used to authenticate the connection. 
 ### **NegotiationResult**
 : Gets the negotiation response sent by the server. 
 ### **Options**
-: Gets the [HubOptions](../SignalR/HubOptions.md) instance that were used to create the HubConnection. 
+: Gets the [HubOptions](HubOptions.md) instance that were used to create the HubConnection. 
 ### **RedirectCount**
 : Gets how many times this connection has been redirected. 
 ### **ReconnectPolicy**
@@ -58,7 +58,7 @@ Represents the main entry point for a SignalR Core connection.
 : Initializes a new instance of the HubConnection class. 
 
 ### **#ctor**
-: Initializes a new instance of the HubConnection class with specified [HubOptions](../SignalR/HubOptions.md) instance. 
+: Initializes a new instance of the HubConnection class with specified [HubOptions](HubOptions.md) instance. 
 
 ### **StartConnect**
 : Initiates the connection process to the Hub. 

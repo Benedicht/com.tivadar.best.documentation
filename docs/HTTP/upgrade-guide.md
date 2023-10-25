@@ -193,7 +193,7 @@ Here you can find a non-exhaustive list of these changes:
 | Proxy | [ProxySettings](api-reference/Settings/ProxySettings.md) | request.ProxySettings.Proxy = new HTTPProxy(...); |
 
 - **Authententication**: Instead of a single [Credentials](api-reference/Authentication/Credentials.md) property, starting with this version authentication is implemented with the help of the [IAuthenticator](api-reference/Authenticators/IAuthenticator.md) interface.
-The plugin ships with the [CrendetialAuthenticator](api-reference/Authenticators/CrendetialAuthenticator.md) and [BearerTokenAuthenticator](api-reference/Authenticators/BearerTokenAuthenticator.md) implementations.
+The plugin ships with the [CredentialAuthenticator](api-reference/Authenticators/CredentialAuthenticator.md) and [BearerTokenAuthenticator](api-reference/Authenticators/BearerTokenAuthenticator.md) implementations.
 More details can be found in the [Getting started/Authentication](getting-started/authentication.md) topic!
 
 #### ^^New^^

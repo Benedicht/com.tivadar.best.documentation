@@ -28,7 +28,7 @@ The return value of **Stream.Read** is treated specially in the plugin:
 		- **0**: No content to send. The content-length header will contain zero (`0`).
 		- **>0**: Length of the content is known, will be sent `as-is, without any encoding`. The content-length header will contain zero (`0`).
 
- Constants for the first three points can be found in [BodyLengths](../Upload/BodyLengths.md). 
+ Constants for the first three points can be found in [BodyLengths](BodyLengths.md). 
 
 ## **Methods**:
 

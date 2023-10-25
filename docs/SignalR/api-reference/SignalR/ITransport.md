@@ -3,15 +3,15 @@ comments: true
 ---
 # ITransport
 
-Defines the basic structure and operations for a transport mechanism in a [HubConnection](../SignalR/HubConnection.md) context. Current implemtations are [WebSocketTransport](../Transports/WebSocketTransport.md) and [LongPollingTransport](../Transports/LongPollingTransport.md). 
+Defines the basic structure and operations for a transport mechanism in a [HubConnection](HubConnection.md) context. Current implemtations are **WebSocketTransport** and **LongPollingTransport**. 
 
 ## **Fields**:
 ### **TransferMode**
-: Gets the transfer mode used by the transport, which defines whether it's [Binary](../SignalR/TransferModes.md#binary) or [Text](../SignalR/TransferModes.md#text). 
+: Gets the transfer mode used by the transport, which defines whether it's [Binary](TransferModes.md#binary) or [Text](TransferModes.md#text). 
 ### **TransportType**
-: Gets the type of the transport, such as [WebSocket](../SignalR/TransportTypes.md#websocket) or [LongPolling](../SignalR/TransportTypes.md#longpolling). 
+: Gets the type of the transport, such as [WebSocket](TransportTypes.md#websocket) or [LongPolling](TransportTypes.md#longpolling). 
 ### **State**
-: Gets the current [TransportStates](../SignalR/TransportStates.md) of the transport, which could be connecting, connected, closing, etc. 
+: Gets the current **TransportStates** of the transport, which could be connecting, connected, closing, etc. 
 ### **ErrorReason**
 : Gets a string representation of the reason for any errors that might have occurred during the transport's operations. 
 ### **OnStateChanged**
@@ -25,4 +25,4 @@ Defines the basic structure and operations for a transport mechanism in a [HubCo
 : Initiates the process to close the transport's connection. 
 
 ### **Send**
-: Sends data over the transport using the provided [BufferSegment](../Memory/BufferSegment.md). 
+: Sends data over the transport using the provided [BufferSegment](../../../HTTP/api-reference/Memory/BufferSegment.md). 

@@ -3,7 +3,7 @@ comments: true
 ---
 # SocketOptions
 
-Contains settings for a [SocketManager](../SocketIO/SocketManager.md). 
+Contains settings for a [SocketManager](SocketManager.md). 
 
 ## **Fields**:
 ### **ConnectWith**

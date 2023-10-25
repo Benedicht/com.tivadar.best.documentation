@@ -3,11 +3,11 @@ comments: true
 ---
 # ConnectionOptionsBuilder
 
-Builder class to help creating [ConnectionOptions](../MQTT/ConnectionOptions.md) instances. 
+Builder class to help creating [ConnectionOptions](ConnectionOptions.md) instances. 
 
 ## Examples
 !!! Example
-	 The following example creates a [ConnectionOptions](../MQTT/ConnectionOptions.md) to connect to localhost on port 1883 using the TCP transport and MQTT protocol version v3.1.1. 
+	 The following example creates a [ConnectionOptions](ConnectionOptions.md) to connect to localhost on port 1883 using the TCP transport and MQTT protocol version v3.1.1. 
 	```cs
 	var options = new ConnectionOptionsBuilder()
 	        .WithTCP("localhost", 1883)
@@ -17,7 +17,7 @@ Builder class to help creating [ConnectionOptions](../MQTT/ConnectionOptions.md)
 	    var client = new MQTTClient(options);
 	```
 !!! Example
-	 This is the same as the previous example, but the builder creates the [MQTTClient](../MQTT/MQTTClient.md) too. 
+	 This is the same as the previous example, but the builder creates the [MQTTClient](MQTTClient.md) too. 
 	```cs
 	var client = new ConnectionOptionsBuilder()
 	        .WithTCP("localhost", 1883)

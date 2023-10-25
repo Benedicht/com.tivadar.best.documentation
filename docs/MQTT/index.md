@@ -56,7 +56,7 @@ Embark on your Best MQTT journey:
 - [Installation Guide:](installation.md) Begin with Best MQTT, get the package set up, and tailor your Unity environment.
 - [Upgrade Guide:](upgrade-guide.md) Upgrading from an older version? Familiarize yourself with the latest enhancements and streamline your upgrade process.
 - [Getting Started:](getting-started/index.md) Launch your MQTT adventure, master the fundamentals, and mold Best MQTT to your project's core.
-- [Advanced Topics:](intermediate-topics/index.md) Dive into intricate MQTT aspects, spanning from event handling to advanced messaging strategies.
+- [Advanced Topics:](intermediate-topics/optimization_tips_tricks.md) Dive into intricate MQTT aspects, spanning from event handling to advanced messaging strategies.
 
 This documentation is designed for developers of all backgrounds and expertise. 
 Whether you're a Unity novice or a seasoned expert, these guides are here to help you harness the full potential of Best MQTT.

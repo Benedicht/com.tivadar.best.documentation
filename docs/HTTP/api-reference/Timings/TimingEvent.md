@@ -3,7 +3,7 @@ comments: true
 ---
 # TimingEvent
 
-Struct to hold information about one timing event recorded for a [HTTPRequest](../HTTP/HTTPRequest.md). Timing events are managed by the [TimingCollector](../Timings/TimingCollector.md). 
+Struct to hold information about one timing event recorded for a [HTTPRequest](../HTTP/HTTPRequest.md). Timing events are managed by the [TimingCollector](TimingCollector.md). 
 
 ## **Fields**:
 ### **Name**

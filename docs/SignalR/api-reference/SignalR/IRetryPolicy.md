@@ -9,4 +9,4 @@ Defines a contract for implementing retry policies in case of connection failure
 ## **Methods**:
 
 ### **GetNextRetryDelay**
-: Determines the delay duration before the next connection attempt based on the given [RetryContext](../SignalR/RetryContext.md). 
+: Determines the delay duration before the next connection attempt based on the given [RetryContext](RetryContext.md). 

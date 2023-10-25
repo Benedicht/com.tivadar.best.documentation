@@ -17,4 +17,4 @@ Negotiation result of the /negotiation request. https://github.com/dotnet/aspnet
 ### **AccessToken**
 : The accessToken which is an optional bearer token for accessing the specified url. 
 ### **NegotiationResponse**
-: The [HTTPResponse](../HTTP/HTTPResponse.md) instance the negotiation-response received with. 
+: The [HTTPResponse](../../../HTTP/api-reference/HTTP/HTTPResponse.md) instance the negotiation-response received with. 

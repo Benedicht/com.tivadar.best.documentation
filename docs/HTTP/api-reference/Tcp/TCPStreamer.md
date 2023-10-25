@@ -14,17 +14,17 @@ TCPStreamer serves several key functions:
 - **Asynchronous Communication:**: Utilizing asynchronous communication patterns, it supports non-blocking operations, essential for applications requiring concurrent data processing. 
 - **Error Handling:**: Comprehensive error-handling mechanisms address exceptions that may occur during TCP communication, enhancing robustness in the face of network issues or errors. 
 - **Resource Management:**: It handles memory buffer management and resource disposal when the TCP connection is closed or the class is disposed. 
-- **Integration with Heartbeat:**: Implementing the [IHeartbeat](../Extensions/IHeartbeat.md) interface, it can be seamlessly integrated into systems using heartbeat mechanisms for network connection monitoring and management. 
+- **Integration with Heartbeat:**: Implementing the **IHeartbeat** interface, it can be seamlessly integrated into systems using heartbeat mechanisms for network connection monitoring and management. 
 
 
 
 ## **Fields**:
 ### **ContentConsumer**
-: Gets or sets the content consumer that interacts with this [TCPStreamer](../Tcp/TCPStreamer.md) instance, allowing data to be written to the streamer for transmission. 
+: Gets or sets the content consumer that interacts with this [TCPStreamer](TCPStreamer.md) instance, allowing data to be written to the streamer for transmission. 
 ### **Socket**
-: Gets the underlying [Socket](../Tcp/TCPStreamer.md#socket) associated with this [TCPStreamer](../Tcp/TCPStreamer.md) instance. 
+: Gets the underlying [Socket](TCPStreamer.md#socket) associated with this [TCPStreamer](TCPStreamer.md) instance. 
 ### **Context**
-: Gets the optional [LoggingContext](../Logger/LoggingContext.md) associated with this [TCPStreamer](../Tcp/TCPStreamer.md) instance, facilitating logging and diagnostics. 
+: Gets the optional [LoggingContext](../Logger/LoggingContext.md) associated with this [TCPStreamer](TCPStreamer.md) instance, facilitating logging and diagnostics. 
 ### **IsConnectionClosed**
 : Gets a value indicating whether the TCP connection is closed. 
 ### **MinReceiveBufferSize**
@@ -53,7 +53,7 @@ TCPStreamer serves several key functions:
 : Enqueues data to be sent over the TCP connection. The data is added to the stream's outgoing buffer for transmission. 
 
 ### **Dispose**
-: Disposes of the [TCPStreamer](../Tcp/TCPStreamer.md) instance, releasing associated resources. 
+: Disposes of the [TCPStreamer](TCPStreamer.md) instance, releasing associated resources. 
 
 ### **Close**
 : Closes the TCP connection gracefully and performs cleanup operations. 

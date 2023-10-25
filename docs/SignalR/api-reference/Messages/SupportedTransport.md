@@ -3,7 +3,7 @@ comments: true
 ---
 # SupportedTransport
 
-Represents a transport with its supported transfer formats, used in the [NegotiationResult](../Messages/NegotiationResult.md). 
+Represents a transport with its supported transfer formats, used in the [NegotiationResult](NegotiationResult.md). 
 
 ## **Fields**:
 ### **Name**

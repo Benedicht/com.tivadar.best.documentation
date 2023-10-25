@@ -52,11 +52,11 @@ Represents an HTTP request that allows you to send HTTP requests to remote serve
 ### **Callback**
 : The callback function that will be called after the request is fully processed. 
 ### **IsCancellationRequested**
-: Indicates if [Abort](../HTTP/HTTPRequest.md#abort) is called on this request. 
+: Indicates if [Abort](HTTPRequest.md#abort) is called on this request. 
 ### **CancellationTokenSource**
 : Gets the cancellation token source for this request. 
 ### **OnCancellationRequested**
-: Action called when [Abort](../HTTP/HTTPRequest.md#abort) function is invoked. 
+: Action called when [Abort](HTTPRequest.md#abort) function is invoked. 
 ### **Exception**
 : Stores any exception that occurs during processing of the request or response. 
 ### **Tag**
@@ -146,7 +146,7 @@ Represents an HTTP request that allows you to send HTTP requests to remote serve
 : Removes the specified header and all of its associated values. Returns `true`, if the header found and succesfully removed. 
 
 ### **HasHeader**
-: Returns `true` if the given head name is already in the [Headers](../HTTP/HTTPRequest.md#headers). 
+: Returns `true` if the given head name is already in the [Headers](HTTPRequest.md#headers). 
 
 ### **GetFirstHeaderValue**
 : Returns the first header or `null` for the given header name. 

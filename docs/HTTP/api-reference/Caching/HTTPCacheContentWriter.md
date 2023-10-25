@@ -9,7 +9,7 @@ Represents a writer for caching HTTP response content.
 ### **Cache**
 : Gets the parent HTTPCache instance associated with this content writer. 
 ### **Hash**
-: Hash identifying the resource. If [Write](../Caching/HTTPCacheContentWriter.md#write) fails, it becomes an invalid one. 
+: Hash identifying the resource. If [Write](HTTPCacheContentWriter.md#write) fails, it becomes an invalid one. 
 ### **ExpectedLength**
 : Expected length of the content. Has a non-zero value only when the server is sending a "content-length" header. 
 ### **ProcessedLength**

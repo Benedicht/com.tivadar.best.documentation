@@ -11,11 +11,11 @@ The HTTPResponse class represents an HTTP response received from a remote server
 
  Key Features: 
 
-- **Response Properties:**: Provides access to various properties such as [HTTPVersion](../HTTP/HTTPResponse.md#httpversion), [StatusCode](../HTTP/HTTPResponse.md#statuscode), [Message](../HTTP/HTTPResponse.md#message), and more, to inspect the response details.
+- **Response Properties:**: Provides access to various properties such as [HTTPVersion](HTTPResponse.md#httpversion), [StatusCode](HTTPResponse.md#statuscode), [Message](HTTPResponse.md#message), and more, to inspect the response details.
 - **Data Access:**: Allows access to the response data in various forms, including raw bytes, UTF-8 text, and as a **Texture2D** for image data.
 - **Header Management:**: Provides methods to add, retrieve, and manipulate HTTP headers associated with the response, making it easy to inspect and work with header information.
 - **Caching Support:**: Supports response caching, enabling the storage of downloaded data in local cache storage for future use.
-- **Stream Management:**: Manages the download process and data streaming through a [DownloadContentStream](../Response/DownloadContentStream.md) ([DownStream](../HTTP/HTTPResponse.md#downstream)) to optimize memory usage and ensure efficient handling of large response bodies.
+- **Stream Management:**: Manages the download process and data streaming through a [DownloadContentStream](../Response/DownloadContentStream.md) ([DownStream](HTTPResponse.md#downstream)) to optimize memory usage and ensure efficient handling of large response bodies.
 
 
 
@@ -40,7 +40,7 @@ The HTTPResponse class represents an HTTP response received from a remote server
 		- Retrieves the first value for a given header name as received from the server.
 		- Checks if a header with the specified name and value exists in the response headers.
 		- Checks if a header with the specified name exists in the response headers.
-		- Parses the 'Content-Range' header's value and returns a [HTTPRange](../HTTP/HTTPRange.md) object representing the byte range of the response content.
+		- Parses the 'Content-Range' header's value and returns a [HTTPRange](HTTPRange.md) object representing the byte range of the response content.
 
 
 
@@ -80,7 +80,7 @@ The HTTPResponse class represents an HTTP response received from a remote server
 : Checks if a header with the specified name exists in the response headers. 
 
 ### **GetRange**
-: Parses the `'Content-Range'` header's value and returns a [HTTPRange](../HTTP/HTTPRange.md) object representing the byte range of the response content. 
+: Parses the `'Content-Range'` header's value and returns a [HTTPRange](HTTPRange.md) object representing the byte range of the response content. 
 	!!! note ""
 		If the server ignores a byte-range-spec because it is syntactically invalid, the server SHOULD treat the request as if the invalid Range header field did not exist. (Normally, this means return a 200 response containing the full entity). In this case because there are no `'Content-Range'` header values, this function will return `null`. 
 

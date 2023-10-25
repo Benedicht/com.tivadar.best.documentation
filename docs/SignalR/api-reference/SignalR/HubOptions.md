@@ -3,7 +3,7 @@ comments: true
 ---
 # HubOptions
 
-Represents the configuration options for a [HubConnection](../SignalR/HubConnection.md). 
+Represents the configuration options for a [HubConnection](HubConnection.md). 
 
 ## **Fields**:
 ### **SkipNegotiation**

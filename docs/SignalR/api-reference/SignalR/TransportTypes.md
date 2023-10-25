@@ -3,7 +3,7 @@ comments: true
 ---
 # TransportTypes
 
-Specifies the various transport mechanisms that can be used in a [HubConnection](../SignalR/HubConnection.md) context. 
+Specifies the various transport mechanisms that can be used in a [HubConnection](HubConnection.md) context. 
 
 ## **Fields**:
 ### **WebSocket**

@@ -3,7 +3,7 @@ comments: true
 ---
 # BearerTokenAuthenticator
 
-An [IAuthenticator](../Authenticators/IAuthenticator.md) implementation for Bearer Token authentication. 
+An [IAuthenticator](IAuthenticator.md) implementation for Bearer Token authentication. 
 
 **Remarks:**
 

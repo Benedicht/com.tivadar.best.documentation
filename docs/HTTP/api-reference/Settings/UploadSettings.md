@@ -7,7 +7,7 @@ Options for sending the request headers and content, including upload progress m
 
 **Remarks:**
 
-[SetupRequest](../Settings/UploadSettings.md#setuprequest) might be called when redirected or retried!
+[SetupRequest](UploadSettings.md#setuprequest) might be called when redirected or retried!
 
 ## **Fields**:
 ### **UploadChunkSize**
@@ -25,7 +25,7 @@ Options for sending the request headers and content, including upload progress m
 
 
 ### **DisposeStream**
-: Set to `false` if the plugin MUST NOT dispose [UploadStream](../Settings/UploadSettings.md#uploadstream) after the request is finished. 
+: Set to `false` if the plugin MUST NOT dispose [UploadStream](UploadSettings.md#uploadstream) after the request is finished. 
 ### **OnUploadProgress**
 : Called periodically when data sent to the server. 
 ### **OnHeadersSent**

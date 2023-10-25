@@ -3,7 +3,7 @@ comments: true
 ---
 # CacheMetadataContent
 
-Cached content associated with a [CacheMetadata](../Caching/CacheMetadata.md). 
+Cached content associated with a [CacheMetadata](CacheMetadata.md). 
 
 **Remarks:**
 

@@ -8,7 +8,7 @@ The broker will distribute this last-will **only** when the client goes offline 
 
 ## Creating a Last-Will
 
-A last-will can be created in the [connect packget builder callback](index.md#connecting) using [ConnectPacketBuilder's WithLastWill](../api-reference/Builders/ConnectPacketBuilder.md#withlastwilllastwillbuilder-lastwillbuilder) and a new [LastWillBuilder](../api-reference/Builders/LastWillBuilder.md). 
+A last-will can be created in the [connect packget builder callback](../getting-started/index.md#connecting) using [ConnectPacketBuilder's WithLastWill](../api-reference/Builders/ConnectPacketBuilder.md#withlastwilllastwillbuilder-lastwillbuilder) and a new [LastWillBuilder](../api-reference/Builders/LastWillBuilder.md). 
 The following code creates a last-will that will be published to the `"client/last-will"` topic `60` seconds after the client gone offline.
 
 ```cs
