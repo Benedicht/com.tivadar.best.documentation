@@ -8,7 +8,8 @@ comments: true
 After importing the package call `#!cs TLSSecurity.Setup();` somewhere in your startup code:
 
 ```cs
-/* (1)! */ #if !UNITY_WEBGL || UNITY_EDITOR
+/* (1)! */
+#if !UNITY_WEBGL || UNITY_EDITOR
 using BestHTTP.Addons.TLSSecurity;
 
 TLSSecurity.Setup();
