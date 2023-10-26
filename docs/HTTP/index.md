@@ -8,6 +8,11 @@ In today's digital era, efficient and reliable web communication forms the backb
 Whether you're fetching data from remote servers, sending game scores, or updating user profiles, HTTP requests are indispensable. 
 Recognizing the multifaceted needs of Unity developers, Best HTTP is designed to simplify these interactions, providing a streamlined and efficient means to handle web-based communication.
 
+## :fontawesome-solid-fire-flame-curved:{.red} Core Dependency for Extended Functionality :fontawesome-solid-fire-flame-curved:{.red}
+Best HTTP stands as the backbone for a multitude of specialized networking assets. 
+Its robust and efficient architecture serves as a fundamental dependency, powering numerous other packages like Best WebSockets, Best MQTT, Best Socket.IO, Best SignalR and more. 
+This central role ensures that when you invest in Best HTTP, you're not just getting a standalone package, but a gateway to a suite of advanced networking tools, all unified in their reliability and performance.
+
 [Buy Now on :fontawesome-brands-unity: Asset Store](https://assetstore.unity.com/packages/slug/267636?aid=1101lfX8E){ .md-button .md-button--primary }
 
 ## Key Features
@@ -74,17 +79,17 @@ To aid in your decision-making process, I've prepared a feature matrix that comp
 |**Caching**                           |:material-checkbox-marked-circle:{ .green } [Advanced caching](intermediate-topics/caching-internals.md) options                          | :material-checkbox-marked-circle: Only AssetBundles           |
 |**Custom Protocols**                  |:material-checkbox-marked-circle:{ .green } Supports protocol upgrades (like WebSocket)        | :material-minus-box:{ .red } Not supported              |
 |**Response Handling**                 |:material-checkbox-marked-circle:{ .green } Advanced response processing with support for auth. challanges, trailing headers, etc.                     | :material-checkbox-marked-circle: Basic response processing      |
-|**Blocking Mechanisms**               |:material-checkbox-marked-circle:{ .green } Supports [blocking streams for threaded processing](getting-started/downloads.md#streaming-with-blocking) | :material-minus-box: No built-in support            |
+|**Blocking Mechanisms**               |:material-checkbox-marked-circle:{ .green } Supports [blocking streams for threaded processing](getting-started/downloads.md#streaming-with-blocking) | :material-minus-box:{ .red } No built-in support            |
 |**Access downloaded data as a Stream**|:material-checkbox-marked-circle:{ .green } Built-in support | :material-minus-box:{ .red } No built-in support |
 |**Cookie Handling**                   |:material-checkbox-marked-circle:{ .green } Advanced [cookie management](getting-started/cookies.md) | :material-checkbox-marked-circle: Basic cookie support           |
-|**Authentication**                    |:material-checkbox-marked-circle:{ .green } Supports [multiple authentication methods](getting-started/authentication.md) | :material-checkbox-marked-circle: No direct support              |
+|**Authentication**                    |:material-checkbox-marked-circle:{ .green } Supports [multiple authentication methods](getting-started/authentication.md) | :material-minus-box:{ .red } No direct support              |
 |**Proxy Handling**                    |:material-checkbox-marked-circle:{ .green } Advanced proxy settings and authentication | :material-checkbox-marked-circle: Basic proxy support            |
 |**Auto Redirect Handling**            |:material-checkbox-marked-circle:{ .green } Supports automatic redirections with behavior change | :material-checkbox-marked-circle: Supports automatic redirections|
 |**Platform Support**                  |:material-checkbox-marked-circle: Desktop and mobile platforms + WebGL | :material-checkbox-marked-circle:{ .green } Unity's platform support       |
 |**Exception Handling**                |:material-checkbox-marked-circle:{ .green } Detailed [exception handling and reporting](getting-started/error-handling.md) | :material-checkbox-marked-circle: Basic error reporting         |
 |**Extensions & Plugins**              |:material-checkbox-marked-circle:{ .green } Supports adding extensions and plugins | Limited or requires additional packages|
 |**MovieTexture, AudioClip**           |:material-minus-box:{ .red } No support | :material-checkbox-marked-circle: Supported                      |
-|**Source Code**                       |:material-checkbox-marked-circle:{ .green } Included | :material-minus-box: Isn't available               |
+|**Source Code**                       |:material-checkbox-marked-circle:{ .green } Included | :material-minus-box:{ .red } Isn't available               |
 |**Supported programming models**      |:material-checkbox-marked-circle:{ .green } [Callbacks](getting-started/index.md#callbacks), [coroutines](getting-started/index.md#unity-coroutines), [async-await](getting-started/index.md#async-await) | :material-checkbox-marked-circle: Coroutines
 |**Debugging Capabilities**            |:material-checkbox-marked-circle:{ .green } Structured diagnostic [logging](../Shared/logging/index.md)    | :material-minus-box:{ .red } Not supported |
 

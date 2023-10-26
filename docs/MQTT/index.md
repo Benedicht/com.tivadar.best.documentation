@@ -39,16 +39,18 @@ It's optimized for strong bi-directional communication, ensuring your users bene
 
 - **Seamless Integration:** With intuitive APIs and comprehensive documentation, integrating into any Unity project becomes straightforward.
 - **Performance Optimized:** Engineered for top-tier performance, ensuring swift data transfers ideal for real-time scenarios.
+- **Extensive Protocol Version Support:** Whether you're using **MQTT v3.1.1, or v5.0**, Best MQTT has got you covered.
 - **Lightweight and Efficient:** Minimized overheads make it perfect for scenarios with constrained bandwidth.
 - **Bi-directional Communications:** Engage in two-way data exchanges effortlessly, enhancing application responsiveness.
-- **Reliable Message Delivery:** Ensures messages reach their intended recipients due to its robust delivery mechanisms.
-- **Support for Unreliable Networks:** Even in environments with fluctuating connectivity, the library remains steadfast.
-- **Topic Subscriptions:** Manage your MQTT subscriptions smoothly, defining channels suited to your application needs.
+- **Efficient Message Handling:** Ensures messages reach their intended recipients due to its robust delivery mechanisms. With support for **QoS 0, 1, and 2**, you can decide the level of message delivery assurance you need.
+- **Last Will:** Define messages to be sent out if your client unexpectedly disconnects.
+- **Topic Subscriptions:** Manage your MQTT subscriptions smoothly, defining channels suited to your application needs. Includes support for MQTT **wildcard** topic subscriptions, allowing for more flexible and dynamic topic monitoring.
 - **Event-Driven Communication:** Capitalize on event-based communication paradigms to keep your applications engaging and current.
-- **Secure Communications:** With support for encrypted connections, your data transmissions are safeguarded.
+- **Secure Communications:** With built-in TLS support, your messages remain encrypted and secure.
 - **Profiler Integration:** Leverage the comprehensive [Best HTTP profiler](../Shared/profiler/index.md) integration:
-    - **Memory Profiler:** Assess memory usage patterns, boost performance, and pinpoint potential memory bottlenecks.
+    - **Memory Profiler:** Assess memory usage patterns and pinpoint potential memory bottlenecks.
     - **Network Profiler:** Monitor network behavior, analyzing data transfers, connection health, and more.
+- **Customizable:** Extensive configuration options ensure Best MQTT fits precisely into your project's needs.
 - **Effective Data Models:** With support for both JSON and binary data, the library offers flexibility in data interactions.
 - **Debugging and Logging:** Robust logging tools assist developers in understanding the library's workings and facilitate debugging.
 

@@ -3,10 +3,6 @@
 Welcome to the Best WebSockets Documentation! Best WebSockets is a premier networking library for Unity, tailored specifically for seamless WebSocket integration. 
 It's perfect for applications that require real-time, bi-directional communication such as chat applications, multiplayer games, and live interactive systems.
 
-!!! Warning "**Dependency Alert**"
-    Best WebSockets relies on the Best HTTP package!
-    Ensure you have it installed and set up in your Unity project before diving into Best WebSockets. Learn more about the [installation of Best HTTP](../HTTP/installation.md).
-
 !!! Warning
 	Please be aware that Best WebSockets is a **client-side implementation only**. If you're looking to set up a WebSocket server, you'll need to explore server-side implementations and libraries specific to your programming language and platform.
 
@@ -16,6 +12,11 @@ It's perfect for applications that require real-time, bi-directional communicati
 In the fast-paced digital landscape, real-time communication is crucial for a multitude of applications. 
 Whether it's sending instantaneous game state updates, chat messages, or receiving live feeds, WebSockets provide an edge in facilitating these real-time interactions. 
 Best WebSockets is crafted to effortlessly integrate this technology into your Unity projects, making bi-directional communication straightforward and efficient.
+
+## :fontawesome-solid-fire-flame-curved:{.red} Essential Dependency :fontawesome-solid-fire-flame-curved:{.red}
+Best WebSockets is built upon and necessarily requires the [Best HTTP package](../HTTP/index.md). 
+This foundational package not only provides the core mechanisms for the asset but also bestows its renowned reliability and top-tier performance. 
+Before diving into Best WebSockets, ensure the Best HTTP dependency is correctly integrated into your Unity project, guaranteeing a seamless and high-performance networking journey.
 
 [Buy Now on :fontawesome-brands-unity: Asset Store](https://assetstore.unity.com/packages/slug/268757?aid=1101lfX8E){ .md-button .md-button--primary }
 
@@ -30,6 +31,7 @@ Best WebSockets is crafted to effortlessly integrate this technology into your U
 
     This vast platform compatibility assures that Best WebSockets is an excellent choice for any project, regardless of your target platform or audience.
 
+- **🔥Support for WebSockets Over HTTP/2:** Sharing a single TCP connection for both WebSocket and HTTP requests ensures efficient network resource utilization, reduces connection establishment overhead, and simplifies server-side handling, enhancing overall application responsiveness.
 - **Persistent Connections:** Unlike traditional request-response communication, WebSockets offer a persistent, low-latency connection that's perfect for applications that need instant communication.
 - **Binary and Text Data:** Whether you're sending textual messages or binary data like images and files, Best WebSockets is equipped to handle both with ease.
 - **Secure Communication:** With support for WSS:// (WebSocket over TLS), your application's data remains secure and encrypted.

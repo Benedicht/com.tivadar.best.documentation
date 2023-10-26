@@ -2,7 +2,7 @@
 
 Welcome to the Best TLS Security Documentation! 
 Best TLS Security is a paramount security library for Unity, intricately designed for solid Transport Layer Security (TLS) implementation. 
-Enhancing the security of the Best suite of packages (including HTTP, Socket.IO, WebSockets, SignalR and Server-Sent Events), 
+Enhancing the security of the Best suite of packages (including [HTTP](https://assetstore.unity.com/packages/slug/267636?aid=1101lfX8E), [Socket.IO](https://assetstore.unity.com/packages/slug/268759?aid=1101lfX8E), [WebSockets](https://assetstore.unity.com/packages/slug/268757?aid=1101lfX8E), [SignalR](https://assetstore.unity.com/packages/slug/268760?aid=1101lfX8E) and [Server-Sent Events](https://assetstore.unity.com/packages/slug/268758?aid=1101lfX8E)), 
 it's ideal for applications necessitating strict security measures, ensuring data confidentiality, integrity, and authentication.
 
 !!! Warning "Dependency Alert"
@@ -23,8 +23,9 @@ Best TLS Security arms your Unity projects with state-of-the-art security protoc
     - :fontawesome-solid-mobile:  **Mobile:** iOS, Android
     - :material-microsoft-windows: **Universal Windows Platform (UWP)**
 
-    !!! Warning
-        Best TLS Security does not support WebGL.
+    !!! Note
+        The Best TLS Security package does not function under WebGL. 
+        When deploying to this platform, the underlying browser handles communication responsibilities, ensuring established security protocols are adhered to.
 
 - **Certificate Chain Verification:** Adheres to [RFC 3280](https://tools.ietf.org/html/rfc3280), offering meticulous certificate chain verification.
 - **Revocation Checking:** Checks the validity of leaf certificates using OCSP. Both soft and hard fail options available.
