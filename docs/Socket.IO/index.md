@@ -20,6 +20,8 @@ In today's interconnected world, maintaining real-time interactions is pivotal f
 From multiplayer game lobbies to instant chat rooms, Socket.IO empowers these interactions with speed and efficiency. 
 Best SocketIO makes it a breeze to incorporate this tech into your Unity endeavours, ensuring dynamic bi-directional exchanges.
 
+[Buy Now on :fontawesome-brands-unity: Asset Store](https://assetstore.unity.com/packages/slug/268759?aid=1101lfX8E){ .md-button .md-button--primary }
+
 ## Key Features
 - **Supported Unity Versions:** Best SocketIO is compatible with Unity versions starting from :fontawesome-brands-unity: **2021.1 onwards**.
 - **Compatibility with Socket.io:** Best SocketIO is fully compatible with the latest version of socket.io, ensuring you're equipped with cutting-edge real-time communication capabilities.
@@ -43,6 +45,8 @@ Best SocketIO makes it a breeze to incorporate this tech into your Unity endeavo
 - **Extensible Rooms and Namespaces:** Organize your SocketIO communications with ease, creating distinct rooms[^1] and namespaces tailored to your app's needs.
 - **Efficient Data Formats:** With support for both JSON and binary data, manage your data formats effectively.
 - **Debugging and Logging:** Comprehensive logging options enable developers to get insights into the workings of the package and simplify the debugging process.
+
+[Buy Now on :fontawesome-brands-unity: Asset Store](https://assetstore.unity.com/packages/slug/268759?aid=1101lfX8E){ .md-button .md-button--primary }
 
 ## Documentation Sections
 Embark on your journey with Best SocketIO:
