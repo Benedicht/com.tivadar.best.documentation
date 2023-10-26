@@ -3,6 +3,8 @@
 Welcome to the Best HTTP Documentation! Best HTTP is a comprehensive networking library for Unity that empowers developers to make HTTP and HTTPS requests with ease. 
 Whether you're building web applications, multiplayer games, or real-time communication solutions, Best HTTP has got you covered.
 
+[Buy Now on :fontawesome-brands-unity: Asset Store](#){ .md-button .md-button--primary }
+
 ## Overview
 In today's digital era, efficient and reliable web communication forms the backbone of many applications. 
 Whether you're fetching data from remote servers, sending game scores, or updating user profiles, HTTP requests are indispensable. 
@@ -48,6 +50,8 @@ This enhancement is instrumental in understanding the performance and network be
 		With the integration of this built-in profiler support, developers can not only ensure that their application's network activities are optimized but also make data-driven decisions that enhance both performance and user experience.
 - **Debugging and Logging:** Comprehensive logging options enable developers to get insights into the workings of the package and simplify the debugging process.
 
+[Buy Now on :fontawesome-brands-unity: Asset Store](#){ .md-button .md-button--primary }
+
 ## Best HTTP vs. UnityWebRequest: A Feature Matrix Comparison
 
 When choosing a networking solution for your Unity projects, it's essential to have a clear understanding of how different tools compare.
@@ -68,7 +72,7 @@ To aid in your decision-making process, I've prepared a feature matrix that comp
 |**Download Handling**                 |:material-checkbox-marked-circle:{ .green } Supports [streaming with buffer control](getting-started/downloads.md) for memory-efficient downloads             | :material-checkbox-marked-circle: Basic streaming support        |
 |**Upload Handling**                   |:material-checkbox-marked-circle:{ .green } Advanced control over [upload streams](getting-started/uploads.md)              | :material-checkbox-marked-circle: Supports basic upload handlers       |
 |**Caching**                           |:material-checkbox-marked-circle:{ .green } [Advanced caching](intermediate-topics/caching-internals.md) options                          | :material-checkbox-marked-circle: Only AssetBundles           |
-|**Custom Protocols**                  |:material-checkbox-marked-circle:{ .green } Supports protocol upgrades (like WebSocket)        | :material-minus-box: Not supported              |
+|**Custom Protocols**                  |:material-checkbox-marked-circle:{ .green } Supports protocol upgrades (like WebSocket)        | :material-minus-box:{ .red } Not supported              |
 |**Response Handling**                 |:material-checkbox-marked-circle:{ .green } Advanced response processing with support for auth. challanges, trailing headers, etc.                     | :material-checkbox-marked-circle: Basic response processing      |
 |**Blocking Mechanisms**               |:material-checkbox-marked-circle:{ .green } Supports [blocking streams for threaded processing](getting-started/downloads.md#streaming-with-blocking) | :material-minus-box: No built-in support            |
 |**Access downloaded data as a Stream**|:material-checkbox-marked-circle:{ .green } Built-in support | :material-minus-box:{ .red } No built-in support |
@@ -87,6 +91,8 @@ To aid in your decision-making process, I've prepared a feature matrix that comp
 By juxtaposing Best HTTP with UnityWebRequest, it's evident that Best HTTP is designed to offer superior flexibility, extensive features, and refined controls to cater to the diverse needs of Unity developers. Whether you're looking for advanced request handling, native WebSocket support, or in-depth profiling capabilities, Best HTTP is equipped to elevate your networking tasks to the next level.
 
 Is the feature matrix missing something? [Let me know!](../Shared/support.md)
+
+[Buy Now on :fontawesome-brands-unity: Asset Store](#){ .md-button .md-button--primary }
 
 ## Documentation Sections
 
