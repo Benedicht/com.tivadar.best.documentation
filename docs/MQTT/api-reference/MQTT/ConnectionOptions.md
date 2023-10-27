@@ -19,15 +19,15 @@ Connection related options to pass to the MQTTClient.
 	var client = new MQTTClient(options);
 	```
 ## **Fields**:
-### **Host**
+### **[String](https://learn.microsoft.com/en-us/dotnet/api/System.String) Host**
 : Host name or IP address of the broker. 
-### **Port**
+### **[Int32](https://learn.microsoft.com/en-us/dotnet/api/System.Int32) Port**
 : Port number where the broker is listening on. 
-### **UseTLS**
+### **[Boolean](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean) UseTLS**
 : Whether to use a secure protocol (TLS over TCP or wss://). 
-### **Transport**
+### **[SupportedTransports](SupportedTransports.md) Transport**
 : Selected transport to connect with. 
-### **Path**
+### **[String](https://learn.microsoft.com/en-us/dotnet/api/System.String) Path**
 : Optional path for websocket, its default is "/mqtt". 
-### **ProtocolVersion**
+### **[SupportedProtocolVersions](SupportedProtocolVersions.md) ProtocolVersion**
 : The protocol version that the plugin has to use to connect with to the server. 

@@ -6,9 +6,9 @@ comments: true
 Settings for TLS. 
 
 ## **Fields**:
-### **TLSHandler**
+### **[TLSHandlers](TLSHandlers.md) TLSHandler**
 : The selected TLS handler. 
-### **BouncyCastleSettings**
+### **[BouncyCastleSettings](BouncyCastleSettings.md) BouncyCastleSettings**
 : Settings for Bouncy Castle. 
-### **FrameworkTLSSettings**
+### **[FrameworkTLSSettings](FrameworkTLSSettings.md) FrameworkTLSSettings**
 : .NET's SslStream settings. 

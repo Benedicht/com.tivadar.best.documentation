@@ -18,13 +18,13 @@ The OCSPOptions class provides settings that dictate behavior for:
  The class enables granular control over OCSP operations, ensuring that applications can fine-tune their security and performance behaviors  with regard to certificate revocation checks. 
 
 ## **Fields**:
-### **EnableOCSPQueries**
+### **[Boolean](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean) EnableOCSPQueries**
 : Enable or disable sending out OCSP requests for revocation checking. 
-### **ShortLifeSpanThreshold**
+### **[TimeSpan](https://learn.microsoft.com/en-us/dotnet/api/System.TimeSpan) ShortLifeSpanThreshold**
 : The plugin not going to check revocation status for short lifespan certificates. 
-### **FailHard**
+### **[Boolean](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean) FailHard**
 : Treat unknown revocation statuses (unknown OCSP status or unreachable servers) as revoked and abort the TLS negotiation. 
-### **FailOnMissingCertStatusWhenMustStaplePresent**
+### **[Boolean](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean) FailOnMissingCertStatusWhenMustStaplePresent**
 : Treat the TLS connection failed if the leaf certificate has the must-staple flag, but the server doesn't send certificate status. 
-### **OCSPCache**
+### **[OCSPCacheOptions](OCSPCacheOptions.md) OCSPCache**
 : OCSP Cache Options 

@@ -6,7 +6,7 @@ comments: true
 Provides an implementation of [ILogOutput](ILogOutput.md) that writes log messages to the Unity Debug Console. 
 
 ## **Fields**:
-### **AcceptColor**
+### **[Boolean](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean) AcceptColor**
 : Gets a value indicating whether this log output accepts color codes. 
 	!!! note ""
 		This property returns `true` when running in the Unity Editor and `false` otherwise. 

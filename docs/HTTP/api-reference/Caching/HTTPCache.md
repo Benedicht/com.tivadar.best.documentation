@@ -22,16 +22,16 @@ The `HTTPCache` class provides a powerful caching mechanism for HTTP responses i
 
 
 ## **Fields**:
-### **CacheHostName**
+### **[String](https://learn.microsoft.com/en-us/dotnet/api/System.String) `#!cs HTTPCache.CacheHostName`**
 : This is the reversed domain the plugin uses for file paths when it have to load content from the local cache. 
-### **OnCacheSizeChanged**
+### **[OnCacheSizeChangedDelegate](OnCacheSizeChangedDelegate.md) OnCacheSizeChanged**
 : Event that is triggered when the size of the cache changes. 
-### **Options**
+### **[HTTPCacheOptions](HTTPCacheOptions.md) Options**
 : Gets the options that define the behavior of the HTTP cache. 
-### **CacheSize**
+### **[Int64](https://learn.microsoft.com/en-us/dotnet/api/System.Int64) CacheSize**
 : Gets the current size of the HTTP cache in bytes. 
-### **OnBeforeBeginCache**
-: Called before the plugin calls [BeginCache](HTTPCache.md#begincache) to decide whether the content will be cached or not. 
+### **[OnBeforeBeginCacheDelegate](OnBeforeBeginCacheDelegate.md) OnBeforeBeginCache**
+: Called before the plugin calls [BeginCache](#begincache) to decide whether the content will be cached or not. 
 ## **Methods**:
 
 ### **CalculateHash**

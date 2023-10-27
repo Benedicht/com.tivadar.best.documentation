@@ -6,13 +6,13 @@ comments: true
 This class represents a Socket.IO namespace. 
 
 ## **Fields**:
-### **Manager**
+### **[SocketManager](SocketManager.md) Manager**
 : The SocketManager instance that created this socket. 
-### **Namespace**
+### **[String](https://learn.microsoft.com/en-us/dotnet/api/System.String) Namespace**
 : The namespace that this socket is bound to. 
-### **Id**
+### **[String](https://learn.microsoft.com/en-us/dotnet/api/System.String) Id**
 : Unique Id of the socket. 
-### **IsOpen**
+### **[Boolean](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean) IsOpen**
 : True if the socket is connected and open to the server. False otherwise. 
 ## **Methods**:
 

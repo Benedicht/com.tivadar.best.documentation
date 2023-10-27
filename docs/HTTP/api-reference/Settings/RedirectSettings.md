@@ -6,17 +6,17 @@ comments: true
 Represents settings related to handling HTTP request redirection. 
 
 ## **Fields**:
-### **IsRedirected**
-: Indicates whether the request has been redirected. A request's IsRedirected might be true while [RedirectCount](RedirectSettings.md#redirectcount) is zero if the redirection is made to the local cache. 
-### **RedirectUri**
+### **[Boolean](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean) IsRedirected**
+: Indicates whether the request has been redirected. A request's IsRedirected might be true while [RedirectCount](#int32-redirectcount) is zero if the redirection is made to the local cache. 
+### **[Uri](https://learn.microsoft.com/en-us/dotnet/api/System.Uri) RedirectUri**
 : The Uri that the request is redirected to. 
-### **MaxRedirects**
+### **[Int32](https://learn.microsoft.com/en-us/dotnet/api/System.Int32) MaxRedirects**
 : How many redirection is supported for this request. The default is 10. Zero or a negative value means no redirections are supported. 
-### **RedirectCount**
+### **[Int32](https://learn.microsoft.com/en-us/dotnet/api/System.Int32) RedirectCount**
 : Gets the number of times the request has been redirected. 
-### **OnBeforeRedirection**
+### **[OnBeforeRedirectionDelegate](OnBeforeRedirectionDelegate.md) OnBeforeRedirection**
 : Occurs before the plugin makes a new request to the new URI during redirection. The return value of this event handler controls whether the redirection is aborted (`false`) or allowed (`true`). This event is called on a thread other than the main Unity thread. 
 ## **Methods**:
 
 ### **Reset**
-: Resets [IsRedirected](RedirectSettings.md#isredirected) and [RedirectCount](RedirectSettings.md#redirectcount) to their default values. 
+: Resets [IsRedirected](#boolean-isredirected) and [RedirectCount](#int32-redirectcount) to their default values. 

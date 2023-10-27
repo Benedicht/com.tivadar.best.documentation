@@ -6,13 +6,13 @@ comments: true
 Represents a segment (a continuous section) of a byte array, providing functionalities to  work with a portion of the data without copying. 
 
 ## **Fields**:
-### **Empty**
+### **[BufferSegment]() `#!cs BufferSegment.Empty`**
 : Represents an empty buffer segment. 
-### **Data**
+### **[Byte[]](https://learn.microsoft.com/en-us/dotnet/api/System.Byte[]) Data**
 : The underlying data of the buffer segment. 
-### **Offset**
+### **[Int32](https://learn.microsoft.com/en-us/dotnet/api/System.Int32) Offset**
 : The starting offset of the segment within the data. 
-### **Count**
+### **[Int32](https://learn.microsoft.com/en-us/dotnet/api/System.Int32) Count**
 : The number of bytes in the segment that contain valid data. 
 ## **Methods**:
 

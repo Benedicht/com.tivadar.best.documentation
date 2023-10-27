@@ -6,13 +6,13 @@ comments: true
 Abstract base class for concreate transport implementations. 
 
 ## **Fields**:
-### **State**
+### **[TransportStates](TransportStates.md) State**
 : State of the transport. 
-### **Parent**
+### **[MQTTClient](../MQTT/MQTTClient.md) Parent**
 : Parent MQTTClient instance that the transport is created for. 
-### **IncomingPackets**
+### **[ConcurrentQueue](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Concurrent.ConcurrentQueue-1)&lt;[Packet](../Packets/Packet.md)&gt; IncomingPackets**
 : Received and parsed packets, sent by the server. 
-### **ConnectCancellationToken**
-: Optional **CancellationToken** for connection cancellation support. 
-### **Context**
+### **[CancellationToken](https://learn.microsoft.com/en-us/dotnet/api/System.Threading.CancellationToken) ConnectCancellationToken**
+: Optional [CancellationToken](https://learn.microsoft.com/en-us/dotnet/api/System.Threading.CancellationToken) for connection cancellation support. 
+### **[LoggingContext](../../../HTTP/api-reference/Logger/LoggingContext.md) Context**
 : Debug context of the transport. 

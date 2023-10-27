@@ -6,7 +6,7 @@ comments: true
 Settings for HTTP requests. 
 
 ## **Fields**:
-### **ConnectTimeout**
+### **[TimeSpan](https://learn.microsoft.com/en-us/dotnet/api/System.TimeSpan) ConnectTimeout**
 : The timeout for establishing a connection. 
-### **RequestTimeout**
+### **[TimeSpan](https://learn.microsoft.com/en-us/dotnet/api/System.TimeSpan) RequestTimeout**
 : The maximum time allowed for the request to complete. 

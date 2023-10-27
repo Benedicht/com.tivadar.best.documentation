@@ -6,15 +6,15 @@ comments: true
 Available logging levels. 
 
 ## **Fields**:
-### **All**
+### **Loglevels.All**
 : All message will be logged. 
-### **Information**
+### **Loglevels.Information**
 : Only Informations and above will be logged. 
-### **Warning**
+### **Loglevels.Warning**
 : Only Warnings and above will be logged. 
-### **Error**
+### **Loglevels.Error**
 : Only Errors and above will be logged. 
-### **Exception**
+### **Loglevels.Exception**
 : Only Exceptions will be logged. 
-### **None**
+### **Loglevels.None**
 : No logging will occur. 

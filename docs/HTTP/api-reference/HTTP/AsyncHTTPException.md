@@ -3,10 +3,10 @@ comments: true
 ---
 # AsyncHTTPException
 
-Represents an exception thrown during or as a result of a **Task`1**-based asynchronous HTTP operations. 
+Represents an exception thrown during or as a result of a [Task`1](https://learn.microsoft.com/en-us/dotnet/api/System.Threading.Tasks.Task`1)-based asynchronous HTTP operations. 
 
 ## **Fields**:
-### **StatusCode**
+### **[Int32](https://learn.microsoft.com/en-us/dotnet/api/System.Int32) StatusCode**
 : Gets the status code of the server's response. 
-### **Content**
+### **[String](https://learn.microsoft.com/en-us/dotnet/api/System.String) Content**
 : Gets the content sent by the server. This is usually an error page for 4xx or 5xx responses. 

@@ -6,25 +6,25 @@ comments: true
 https://docs.oasis-open.org/mqtt/mqtt/v5.0/os/mqtt-v5.0-os.html#_Toc3901106 
 
 ## **Fields**:
-### **IsDuplicate**
+### **[Boolean](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean) IsDuplicate**
 : Set to true if it's not the first ocassion the broker sent this application message. 
-### **QoS**
+### **[QoSLevels](../Packets/QoSLevels.md) QoS**
 : QoS this application message sent with. 
-### **Retain**
+### **[Boolean](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean) Retain**
 : Set to true if this is a retained application message. 
-### **Topic**
+### **[String](https://learn.microsoft.com/en-us/dotnet/api/System.String) Topic**
 : The topic's name this application message is publish to. 
-### **PayloadFormat**
+### **[PayloadTypes](../Packets/PayloadTypes.md) PayloadFormat**
 : Payload type (binary or text). 
-### **ExpiryInterval**
+### **[TimeSpan](https://learn.microsoft.com/en-us/dotnet/api/System.TimeSpan) ExpiryInterval**
 : Expiry interval of the application message. 
-### **ResponseTopic**
+### **[String](https://learn.microsoft.com/en-us/dotnet/api/System.String) ResponseTopic**
 : Topic name where the publisher waiting for a response to this application message. 
-### **CorrelationData**
+### **[BufferSegment](../../../HTTP/api-reference/Memory/BufferSegment.md) CorrelationData**
 : Arbitrary data sent with the application message. 
-### **UserProperties**
+### **[List](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1)&lt;[KeyValuePair](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.KeyValuePair-2)&lt;[String](https://learn.microsoft.com/en-us/dotnet/api/System.String), [String](https://learn.microsoft.com/en-us/dotnet/api/System.String)&gt;&gt; UserProperties**
 : Key-value pairs sent with the application message. 
-### **ContentType**
+### **[String](https://learn.microsoft.com/en-us/dotnet/api/System.String) ContentType**
 : Arbitrary value set by the publisher. 
-### **Payload**
+### **[BufferSegment](../../../HTTP/api-reference/Memory/BufferSegment.md) Payload**
 : Payload of the application message. 

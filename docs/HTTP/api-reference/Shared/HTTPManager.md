@@ -6,30 +6,30 @@ comments: true
 Global entry point to access and manage main services of the plugin. 
 
 ## **Fields**:
-### **OnSetupFinished**
+### **[OnSetupFinishedDelegate](OnSetupFinishedDelegate.md) `#!cs HTTPManager.OnSetupFinished`**
 : Delegate for the setup finished event. 
-### **PerHostSettings**
+### **[HostSettingsManager](../Settings/HostSettingsManager.md) `#!cs HTTPManager.PerHostSettings`**
 : Instance of the per-host settings manager. 
-### **CurrentFrameDateTime**
+### **[DateTime](https://learn.microsoft.com/en-us/dotnet/api/System.DateTime) `#!cs HTTPManager.CurrentFrameDateTime`**
 : Cached DateTime value for cases where high resolution isn't needed. 
 	!!! note ""
 		Warning!! It must be used only on the main update thread!
 
-### **RootSaveFolderProvider**
+### **[Func](https://learn.microsoft.com/en-us/dotnet/api/System.Func-1)&lt;[String](https://learn.microsoft.com/en-us/dotnet/api/System.String)&gt; RootSaveFolderProvider**
 : By default the plugin will save all cache and cookie data under the path returned by Application.persistentDataPath. You can assign a function to this delegate to return a custom root path to define a new path. 
-### **Proxy**
+### **[Proxy](../Proxies/Proxy.md) `#!cs HTTPManager.Proxy`**
 : The global, default proxy for all HTTPRequests. The HTTPRequest's Proxy still can be changed per-request. Default value is null. 
-### **Heartbeats**
+### **HeartbeatManager `#!cs HTTPManager.Heartbeats`**
 : Heartbeat manager to use less threads in the plugin. The heartbeat updates are called from the OnUpdate function. 
-### **Logger**
+### **[ILogger](../Logger/ILogger.md) `#!cs HTTPManager.Logger`**
 : A basic Best.HTTP.Logger.ILogger implementation to be able to log intelligently additional informations about the plugin's internal mechanism. 
-### **IOService**
+### **[IIOService](../FileSystem/IIOService.md) `#!cs HTTPManager.IOService`**
 : An IIOService implementation to handle filesystem operations. 
-### **UserAgent**
+### **[String](https://learn.microsoft.com/en-us/dotnet/api/System.String) `#!cs HTTPManager.UserAgent`**
 : User-agent string that will be sent with each requests. 
-### **IsQuitting**
+### **[Boolean](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean) `#!cs HTTPManager.IsQuitting`**
 : It's true if the application is quitting and the plugin is shutting down itself. 
-### **LocalCache**
+### **[HTTPCache](../Caching/HTTPCache.md) `#!cs HTTPManager.LocalCache`**
 : The local content cache, maintained by the plugin. When set to a non-null value, Maintain called immediately on the cache. 
 ## **Methods**:
 

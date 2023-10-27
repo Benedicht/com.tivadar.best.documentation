@@ -6,13 +6,13 @@ comments: true
 States that a transport can goes trough as seen from 'outside'. 
 
 ## **Fields**:
-### **SelectedToConnect**
+### **TransportEvents.SelectedToConnect**
 : Transport is selected to try to connect to the server 
-### **FailedToConnect**
+### **TransportEvents.FailedToConnect**
 : Transport failed to connect to the server. This event can occur after SelectedToConnect, when already connected and an error occurs it will be a ClosedWithError one. 
-### **Connected**
+### **TransportEvents.Connected**
 : The transport successfully connected to the server. 
-### **Closed**
+### **TransportEvents.Closed**
 : Transport gracefully terminated. 
-### **ClosedWithError**
+### **TransportEvents.ClosedWithError**
 : Unexpected error occured and the transport can't recover from it. 

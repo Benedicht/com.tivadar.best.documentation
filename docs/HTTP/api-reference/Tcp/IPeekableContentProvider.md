@@ -9,16 +9,16 @@ The IPeekableContentProvider interface defines an abstraction for providing cont
 
 Key Functions of IPeekableContentProvider: 
 
-- **Content Provision:**: It provides content to an associated [IContentConsumer](IContentConsumer.md) without immediately consuming the content. This allows the consumer to examine the data before processing. 
-- **Two-Way Binding:**: Supports establishing a two-way binding between the [IPeekableContentProvider](IPeekableContentProvider.md) and an [IContentConsumer](IContentConsumer.md), enabling bidirectional communication between the provider and consumer. 
-- **Unbinding:**: Provides methods for unbinding a content consumer, terminating the association between the provider and consumer. 
+- **Content Provision**: It provides content to an associated [IContentConsumer](IContentConsumer.md) without immediately consuming the content. This allows the consumer to examine the data before processing. 
+- **Two-Way Binding**: Supports establishing a two-way binding between the [IPeekableContentProvider]() and an [IContentConsumer](IContentConsumer.md), enabling bidirectional communication between the provider and consumer. 
+- **Unbinding**: Provides methods for unbinding a content consumer, terminating the association between the provider and consumer. 
 
 
 
 ## **Fields**:
-### **Peekable**
+### **[PeekableContentProviderStream](../Streams/PeekableContentProviderStream.md) Peekable**
 : Gets the [PeekableContentProviderStream](../Streams/PeekableContentProviderStream.md) associated with this content provider, which allows peeking at the content without consuming it. 
-### **Consumer**
+### **[IContentConsumer](IContentConsumer.md) Consumer**
 : Gets the [IContentConsumer](IContentConsumer.md) implementor that will be notified through [OnContent](IContentConsumer.md#oncontent) calls when new data is available in the TCPStreamer. 
 ## **Methods**:
 

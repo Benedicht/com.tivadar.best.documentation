@@ -24,36 +24,36 @@ How It Works:
 
 
 ## **Fields**:
-### **Uri**
+### **[Uri](https://learn.microsoft.com/en-us/dotnet/api/System.Uri) Uri**
 : Gets the URI of the remote endpoint. 
-### **State**
+### **[States](States.md) State**
 : Gets the current state of the EventSource object. 
-### **ReconnectionTime**
+### **[TimeSpan](https://learn.microsoft.com/en-us/dotnet/api/System.TimeSpan) ReconnectionTime**
 : Gets or sets the duration to wait before attempting a reconnection. Defaults to 2 seconds. 
 	!!! note ""
 		The server can override this setting.
 
-### **LastEventId**
+### **[String](https://learn.microsoft.com/en-us/dotnet/api/System.String) LastEventId**
 : Gets the ID of the last successfully received event. 
-### **IsClosed**
-: Gets a value indicating whether the EventSource is in the [Closed](States.md#closed) state. 
-### **LoggingContext**
+### **[Boolean](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean) IsClosed**
+: Gets a value indicating whether the EventSource is in the [Closed](States.md#statesclosed) state. 
+### **[LoggingContext](../../../HTTP/api-reference/Logger/LoggingContext.md) LoggingContext**
 : Gets the logging context for the current EventSource instance. 
-### **InternalRequest**
+### **[HTTPRequest](../../../HTTP/api-reference/HTTP/HTTPRequest.md) InternalRequest**
 : Gets the internal [HTTPRequest](../../../HTTP/api-reference/HTTP/HTTPRequest.md) object used by the EventSource for communication. 
-### **OnOpen**
+### **[OnGeneralEventDelegate](OnGeneralEventDelegate.md) OnOpen**
 : Called when successfully connected to the server. 
-### **OnMessage**
+### **[OnMessageDelegate](OnMessageDelegate.md) OnMessage**
 : Called on every message received from the server. 
-### **OnError**
+### **[OnErrorDelegate](OnErrorDelegate.md) OnError**
 : Called when an error occurs. 
-### **OnRetry**
+### **[OnRetryDelegate](OnRetryDelegate.md) OnRetry**
 : Called when the EventSource will try to do a retry attempt. If this function returns with false, it will cancel the attempt. 
-### **OnComment**
+### **[OnCommentDelegate](OnCommentDelegate.md) OnComment**
 : This event is called for comments received from the server. 
-### **OnClosed**
+### **[OnGeneralEventDelegate](OnGeneralEventDelegate.md) OnClosed**
 : Called when the EventSource object closed. 
-### **OnStateChanged**
+### **[OnStateChangedDelegate](OnStateChangedDelegate.md) OnStateChanged**
 : Called every time when the State property changed. 
 ## **Methods**:
 

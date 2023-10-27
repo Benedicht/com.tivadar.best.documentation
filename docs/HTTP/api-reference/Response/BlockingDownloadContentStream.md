@@ -11,13 +11,13 @@ The BlockingDownloadContentStream is a specialized variant of the [DownloadConte
 
  Key Features: 
 
-- **Blocking Data Retrieval:**: Provides a blocking [Take](BlockingDownloadContentStream.md#take) method that allows clients to wait for data if the buffer is empty but not yet completed.
-- **Timeout Support:**: The [Take](BlockingDownloadContentStream.md#take) method accepts a timeout parameter, allowing clients to set a maximum wait time for data availability.
-- **Exception Handling:**: Handles exceptions and errors that occur during download, ensuring that clients receive any relevant exception information.
+- **Blocking Data Retrieval**: Provides a blocking [Take](#take) method that allows clients to wait for data if the buffer is empty but not yet completed.
+- **Timeout Support**: The [Take](#take) method accepts a timeout parameter, allowing clients to set a maximum wait time for data availability.
+- **Exception Handling**: Handles exceptions and errors that occur during download, ensuring that clients receive any relevant exception information.
 
 
 
- Clients can use the [Take](BlockingDownloadContentStream.md#take) method to retrieve data from the stream, and if the buffer is empty, the method will block until new data is downloaded or a timeout occurs. This blocking behavior is particularly useful in scenarios where clients need to consume data sequentially but can't proceed until data is available. 
+ Clients can use the [Take](#take) method to retrieve data from the stream, and if the buffer is empty, the method will block until new data is downloaded or a timeout occurs. This blocking behavior is particularly useful in scenarios where clients need to consume data sequentially but can't proceed until data is available. 
 
  When the download is completed or if an error occurs during download, this stream allows clients to inspect the completion status and any associated exceptions, just like the base [DownloadContentStream](DownloadContentStream.md). 
 
@@ -41,6 +41,6 @@ The BlockingDownloadContentStream is a specialized variant of the [DownloadConte
 ### **Read**
 : Reads a sequence of bytes from the current stream and advances the position within the stream by the number of bytes read. 
 	!!! note ""
-		This override of the [Read](BlockingDownloadContentStream.md#read) method provides blocking behavior, meaning if there are no bytes available in the stream, the method will block until new data is downloaded or until the stream completes. Once data is available, or if the stream completes, the method will return with the number of bytes read. 
+		This override of the [Read](#read) method provides blocking behavior, meaning if there are no bytes available in the stream, the method will block until new data is downloaded or until the stream completes. Once data is available, or if the stream completes, the method will return with the number of bytes read. 
 
 				 This behavior ensures that consumers of the stream can continue reading data sequentially, even if the stream's internal buffer is temporarily empty due to ongoing downloads. 

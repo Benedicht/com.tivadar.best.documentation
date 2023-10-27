@@ -6,42 +6,42 @@ comments: true
 Represents an MQTT client, providing capabilities to connect to MQTT brokers, send and receive messages, and handle various MQTT events. This class is the central component for managing MQTT communications in an MQTT capable application. 
 
 ## **Fields**:
-### **Options**
+### **[ConnectionOptions](ConnectionOptions.md) Options**
 : Connection related options. 
-### **OnConnected**
+### **[OnConnectedDelegate](OnConnectedDelegate.md) OnConnected**
 : Called when the client successfully connected to the broker. 
-### **OnServerConnectAckMessage**
+### **[OnServerConnectAckMessageDelegate](OnServerConnectAckMessageDelegate.md) OnServerConnectAckMessage**
 : Called when the broker acknowledged the client's connect packet. 
-### **OnApplicationMessage**
+### **[OnApplicationMessageDelegate](OnApplicationMessageDelegate.md) OnApplicationMessage**
 : Called for every application message sent by the broker. 
-### **OnAuthenticationMessage**
+### **[OnAuthenticationMessageDelegate](OnAuthenticationMessageDelegate.md) OnAuthenticationMessage**
 : Called when an authentication packet is received from the broker as part of the extended authentication process. 
-### **OnError**
+### **[OnErrorDelegate](OnErrorDelegate.md) OnError**
 : Called when an unexpected, unrecoverable error happens. After this event an OnDisconnect event is called too. 
-### **OnDisconnect**
+### **[OnDisconnectDelegate](OnDisconnectDelegate.md) OnDisconnect**
 : Called after the client disconnects from the broker. 
-### **OnStateChanged**
+### **[OnStateChangedDelegate](OnStateChangedDelegate.md) OnStateChanged**
 : Called for every internal state change of the client. 
-### **State**
+### **[ClientStates](ClientStates.md) State**
 : Current state of the client. State changed events are emitted through the OnStateChanged event. 
-### **NegotiatedOptions**
+### **[NegotiatedOptions](NegotiatedOptions.md) NegotiatedOptions**
 : Options negotiated with the broker. 
-### **Session**
+### **[Session](Session.md) Session**
 : Session instance to persist QoS data. 
-### **Context**
+### **[LoggingContext](../../../HTTP/api-reference/Logger/LoggingContext.md) Context**
 : Context of the MQTTClient and all child instances (like its transport, etc.) that can produce log outputs. 
 ## **Methods**:
 
 ### **BeginPacketBuffer**
 : With the use of BeginPacketBuffer and EndPacketBuffer sent messages can be buffered and sent in less network packets. It supports nested Begin-EndPacketBuffer calls. 
 	!!! note ""
-		Instead of using [BeginPacketBuffer](MQTTClient.md#beginpacketbuffer) and [EndPacketBuffer](MQTTClient.md#endpacketbuffer) directly, use the [PacketBufferHelper](PacketBufferHelper.md) instead!
+		Instead of using [BeginPacketBuffer](#beginpacketbuffer) and [EndPacketBuffer](#endpacketbuffer) directly, use the [PacketBufferHelper](PacketBufferHelper.md) instead!
 
 
 ### **EndPacketBuffer**
 : Call this after a BeginPacketBuffer. 
 	!!! note ""
-		Instead of using [BeginPacketBuffer](MQTTClient.md#beginpacketbuffer) and [EndPacketBuffer](MQTTClient.md#endpacketbuffer) directly, use the [PacketBufferHelper](PacketBufferHelper.md) instead!
+		Instead of using [BeginPacketBuffer](#beginpacketbuffer) and [EndPacketBuffer](#endpacketbuffer) directly, use the [PacketBufferHelper](PacketBufferHelper.md) instead!
 
 
 ### **CreateConnectPacketBuilder**

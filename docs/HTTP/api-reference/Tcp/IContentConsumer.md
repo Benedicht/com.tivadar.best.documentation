@@ -9,13 +9,13 @@ The IContentConsumer interface represents a consumer of content provided by an [
 
 Key Functions of IContentConsumer: 
 
-- **Content Handling:**: Defines methods for handling incoming content, allowing consumers to process data as it becomes available. 
-- **Connection Management:**: Provides event methods to notify consumers of connection closure and error conditions, facilitating graceful handling of connection-related issues. 
+- **Content Handling**: Defines methods for handling incoming content, allowing consumers to process data as it becomes available. 
+- **Connection Management**: Provides event methods to notify consumers of connection closure and error conditions, facilitating graceful handling of connection-related issues. 
 
 
 
 ## **Fields**:
-### **ContentProvider**
+### **[PeekableContentProviderStream](../Streams/PeekableContentProviderStream.md) ContentProvider**
 : Gets the [PeekableContentProviderStream](../Streams/PeekableContentProviderStream.md) associated with this content consumer, which allows access to incoming content. 
 ## **Methods**:
 

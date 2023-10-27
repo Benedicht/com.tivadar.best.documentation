@@ -8,23 +8,23 @@ The BufferPool is a foundational element of the Best HTTP package, aiming to red
 While the BufferPool is housed within the Best HTTP package, its benefits are not limited to just HTTP operations. All protocols and packages integrated with or built upon the Best HTTP package utilize and benefit from the BufferPool. This ensures that memory is used efficiently and performance remains optimal across all integrated components.
 
 ## **Fields**:
-### **NoData**
+### **[Byte[]](https://learn.microsoft.com/en-us/dotnet/api/System.Byte[]) `#!cs BufferPool.NoData`**
 : Represents an empty byte array that can be returned for zero-length requests. 
-### **IsEnabled**
+### **[Boolean](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean) `#!cs BufferPool.IsEnabled`**
 : Gets or sets a value indicating whether the buffer pooling mechanism is enabled or disabled. Disabling will also clear all stored entries. 
-### **RemoveOlderThan**
+### **[TimeSpan](https://learn.microsoft.com/en-us/dotnet/api/System.TimeSpan) `#!cs BufferPool.RemoveOlderThan`**
 : Specifies the duration after which buffer entries, once released back to the pool, are deemed old and will be considered for removal in the next maintenance cycle. 
-### **RunMaintenanceEvery**
+### **[TimeSpan](https://learn.microsoft.com/en-us/dotnet/api/System.TimeSpan) `#!cs BufferPool.RunMaintenanceEvery`**
 : Specifies how frequently the maintenance cycle should run to manage old buffers. 
-### **MinBufferSize**
+### **[Int64](https://learn.microsoft.com/en-us/dotnet/api/System.Int64) `#!cs BufferPool.MinBufferSize`**
 : Specifies the minimum buffer size that will be allocated. If a request is made for a size smaller than this and canBeLarger is `true`,  this size will be used. 
-### **MaxBufferSize**
+### **[Int64](https://learn.microsoft.com/en-us/dotnet/api/System.Int64) `#!cs BufferPool.MaxBufferSize`**
 : Specifies the maximum size of a buffer that the system will consider storing back into the pool. 
-### **MaxPoolSize**
+### **[Int64](https://learn.microsoft.com/en-us/dotnet/api/System.Int64) `#!cs BufferPool.MaxPoolSize`**
 : Specifies the maximum total size of all stored buffers. When the buffer reach this threshold, new releases will be declined. 
-### **RemoveEmptyLists**
+### **[Boolean](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean) `#!cs BufferPool.RemoveEmptyLists`**
 : Indicates whether to remove buffer stores that don't hold any buffers from the free list. 
-### **IsDoubleReleaseCheckEnabled**
+### **[Boolean](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean) `#!cs BufferPool.IsDoubleReleaseCheckEnabled`**
 : If set to `true`, and a byte array is released back to the pool more than once, an error will be logged. 
 	!!! note ""
 		Error checking is expensive and has a very large overhead! Turn it on with caution!

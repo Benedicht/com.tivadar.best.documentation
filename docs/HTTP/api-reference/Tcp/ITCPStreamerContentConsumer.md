@@ -9,8 +9,8 @@ The ITCPStreamerContentConsumer interface represents a specialized content consu
 
 Key Functions of ITCPStreamerContentConsumer: 
 
-- **Data Writing:**: Provides methods to write data to the associated [TCPStreamer](TCPStreamer.md) instance, allowing content to be sent over the TCP connection. 
-- **Content Handling:**: Defines event methods for notifying consumers when new content is available, the connection is closed, or errors occur during data transfer. 
+- **Data Writing**: Provides methods to write data to the associated [TCPStreamer](TCPStreamer.md) instance, allowing content to be sent over the TCP connection. 
+- **Content Handling**: Defines event methods for notifying consumers when new content is available, the connection is closed, or errors occur during data transfer. 
 
 
 
@@ -30,4 +30,4 @@ Key Functions of ITCPStreamerContentConsumer:
 : Called when the connection is closed by the remote peer. It notifies the content consumer about the connection closure. 
 
 ### **OnError**
-: Called when an error occurs during content processing or connection handling. It provides the [TCPStreamer](TCPStreamer.md) instance and the **Exception** that caused the error. 
+: Called when an error occurs during content processing or connection handling. It provides the [TCPStreamer](TCPStreamer.md) instance and the [Exception](https://learn.microsoft.com/en-us/dotnet/api/System.Exception) that caused the error. 

@@ -6,15 +6,15 @@ comments: true
 Represents a writer for caching HTTP response content. 
 
 ## **Fields**:
-### **Cache**
+### **[HTTPCache](HTTPCache.md) Cache**
 : Gets the parent HTTPCache instance associated with this content writer. 
-### **Hash**
-: Hash identifying the resource. If [Write](HTTPCacheContentWriter.md#write) fails, it becomes an invalid one. 
-### **ExpectedLength**
+### **[Hash128](https://docs.unity3d.com/ScriptReference/Hash128.html) Hash**
+: Hash identifying the resource. If [Write](#write) fails, it becomes an invalid one. 
+### **[UInt64](https://learn.microsoft.com/en-us/dotnet/api/System.UInt64) ExpectedLength**
 : Expected length of the content. Has a non-zero value only when the server is sending a "content-length" header. 
-### **ProcessedLength**
+### **[UInt64](https://learn.microsoft.com/en-us/dotnet/api/System.UInt64) ProcessedLength**
 : Number of bytes written to the cache. 
-### **Context**
+### **[LoggingContext](../Logger/LoggingContext.md) Context**
 : Context of this cache writer used for logging. 
 ## **Methods**:
 

@@ -17,7 +17,7 @@ This interface defines methods for writing log messages to an output target. Imp
 
 
 ## **Fields**:
-### **AcceptColor**
+### **[Boolean](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean) AcceptColor**
 : Gets a value indicating whether the log output supports colored text. 
 ## **Methods**:
 

@@ -9,7 +9,7 @@ An [UploadStreamBase](../Upload/UploadStreamBase.md) implementation representing
 
 This stream is used to send data as URL-encoded form data in an HTTP request. It sets the `"Content-Type"` header to `"application/x-www-form-urlencoded"`. URL-encoded form data is typically used for submitting form data to a web server. It is commonly used in HTTP POST requests to send data to a server, such as submitting HTML form data.
 
-The return value of **Stream.Read** is treated specially in the plugin: 
+The return value of [Stream](https://learn.microsoft.com/en-us/dotnet/api/System.IO.Stream) is treated specially in the plugin: 
 
 - **Less than zero(-1) value**:  indicates that no data is currently available but more is expected in the future. In this case, when new data becomes available the IThreadSignaler object must be signaled.
 - **Zero (0)**:  means that the stream is closed, no more data can be expected.
@@ -19,7 +19,7 @@ The return value of **Stream.Read** is treated specially in the plugin:
 While it's possible, it's not advised to send binary data url-encoded!
 
 ## **Fields**:
-### **Length**
+### **[Int64](https://learn.microsoft.com/en-us/dotnet/api/System.Int64) Length**
 : Gets the length of the stream. 
 ## **Methods**:
 

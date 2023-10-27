@@ -6,7 +6,7 @@ comments: true
 Provides an implementation of [ILogOutput](ILogOutput.md) that writes log messages to a file. 
 
 ## **Fields**:
-### **AcceptColor**
+### **[Boolean](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean) AcceptColor**
 : Gets a value indicating whether this log output accepts color codes. Always returns `false`. 
 ## **Methods**:
 

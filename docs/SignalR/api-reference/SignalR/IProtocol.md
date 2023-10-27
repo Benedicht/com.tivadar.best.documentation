@@ -6,13 +6,13 @@ comments: true
 Interface for message encoding-decoding protocols used in a SignalR communication. 
 
 ## **Fields**:
-### **Name**
+### **[String](https://learn.microsoft.com/en-us/dotnet/api/System.String) Name**
 : Name of the protocol. This name must be known by the server. 
-### **Type**
-: Type of the encoded message, it can be [Binary](TransferModes.md#binary) or [Text](TransferModes.md#text). 
-### **Encoder**
+### **[TransferModes](TransferModes.md) Type**
+: Type of the encoded message, it can be [Binary](TransferModes.md#transfermodesbinary) or [Text](TransferModes.md#transfermodestext). 
+### **[IEncoder](IEncoder.md) Encoder**
 : An optional [IEncoder](IEncoder.md) implementation if the implementation requires one. With its help, the protocol implementor is able to support different encoders for the same protocol (like a json protocol with pluggable LitJson or JSON .NET encoders). 
-### **Connection**
+### **[HubConnection](HubConnection.md) Connection**
 : The parent [HubConnection](HubConnection.md) instance that the implementation can use to access type informations. 
 ## **Methods**:
 

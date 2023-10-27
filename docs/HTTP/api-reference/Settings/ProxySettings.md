@@ -6,7 +6,7 @@ comments: true
 Represents settings related to using a proxy server for HTTP requests. 
 
 ## **Fields**:
-### **Proxy**
+### **[Proxy](../Proxies/Proxy.md) Proxy**
 : Gets or sets the proxy object used for the request. 
 ## **Methods**:
 

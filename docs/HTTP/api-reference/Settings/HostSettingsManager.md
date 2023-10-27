@@ -13,10 +13,10 @@ When host-specific settings are not found for a given host variant, the default 
 ## **Methods**:
 
 ### **AddDefault**
-: Adds default settings for the host part of the specified URI. This is equivalent to calling [Add](HostSettingsManager.md#add) with the a new [HostSettings](HostSettings.md). 
+: Adds default settings for the host part of the specified URI. This is equivalent to calling [Add](#add) with the a new [HostSettings](HostSettings.md). 
 
 ### **AddDefault**
-: Adds default settings for the the specified host name. This is equivalent to calling [Add](HostSettingsManager.md#add) with the a new [HostSettings](HostSettings.md). 
+: Adds default settings for the the specified host name. This is equivalent to calling [Add](#add) with the a new [HostSettings](HostSettings.md). 
 
 ### **Add**
 : Adds host-specific settings for the host part of the specified URI. 
@@ -31,7 +31,7 @@ When host-specific settings are not found for a given host variant, the default 
 : Gets [HostSettings](HostSettings.md) for the host part of the specified [HostKey](../HostSetting/HostKey.md). Returns the default settings associated with "*" when not found. 
 
 ### **Get**
-: Gets [HostSettings](HostSettings.md) for the host part of the specified **Uri**. Returns the default settings associated with "*" when not found. 
+: Gets [HostSettings](HostSettings.md) for the host part of the specified [Uri](https://learn.microsoft.com/en-us/dotnet/api/System.Uri). Returns the default settings associated with "*" when not found. 
 
 ### **Get**
 : Gets [HostSettings](HostSettings.md) for the host part of the specified hostname. Returns the default settings associated with "*" when not found. 

@@ -6,7 +6,7 @@ comments: true
 Encoding modes a transport is capable to communicate with. 
 
 ## **Fields**:
-### **Binary**
+### **TransferModes.Binary**
 : The protocol is able to send and/or receive byte arrays. Usually the most performant mode. 
-### **Text**
+### **TransferModes.Text**
 : The protocol can send and/or receive textual representation of the messages. 

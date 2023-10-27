@@ -6,17 +6,17 @@ comments: true
 Compression Extensions for WebSocket implementation. http://tools.ietf.org/html/rfc7692 
 
 ## **Fields**:
-### **ClientNoContextTakeover**
+### **[Boolean](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean) ClientNoContextTakeover**
 : By including this extension parameter in an extension negotiation offer, a client informs the peer server of a hint that even if the server doesn't include the "client_no_context_takeover" extension parameter in the corresponding extension negotiation response to the offer, the client is not going to use context takeover. 
-### **ServerNoContextTakeover**
+### **[Boolean](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean) ServerNoContextTakeover**
 : By including this extension parameter in an extension negotiation offer, a client prevents the peer server from using context takeover. 
-### **ClientMaxWindowBits**
+### **[Int32](https://learn.microsoft.com/en-us/dotnet/api/System.Int32) ClientMaxWindowBits**
 : This parameter indicates the base-2 logarithm of the LZ77 sliding window size of the client context. 
-### **ServerMaxWindowBits**
+### **[Int32](https://learn.microsoft.com/en-us/dotnet/api/System.Int32) ServerMaxWindowBits**
 : This parameter indicates the base-2 logarithm of the LZ77 sliding window size of the server context. 
-### **Level**
+### **CompressionLevel Level**
 : The compression level that the client will use to compress the frames. 
-### **MinimumDataLegthToCompress**
+### **[Int32](https://learn.microsoft.com/en-us/dotnet/api/System.Int32) MinimumDataLegthToCompress**
 : What minimum data length will trigger the compression. 
 ## **Methods**:
 

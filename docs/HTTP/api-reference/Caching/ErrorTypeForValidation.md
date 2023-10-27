@@ -6,9 +6,9 @@ comments: true
 Types of errors that can occur during cache validation. 
 
 ## **Fields**:
-### **None**
+### **ErrorTypeForValidation.None**
 : Indicates that no error has occurred during validation. 
-### **ServerError**
+### **ErrorTypeForValidation.ServerError**
 : Indicates a server error has occurred during validation. 
-### **ConnectionError**
+### **ErrorTypeForValidation.ConnectionError**
 : Indicates a connection error has occurred during validation. 

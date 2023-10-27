@@ -6,15 +6,15 @@ comments: true
 Possible states of the MQTTClient. 
 
 ## **Fields**:
-### **Initial**
+### **ClientStates.Initial**
 : State right after constructing the MQTTClient. 
-### **TransportConnecting**
+### **ClientStates.TransportConnecting**
 : Connection process initiated. 
-### **TransportConnected**
+### **ClientStates.TransportConnected**
 : Transport successfully connected to the broker. 
-### **Connected**
+### **ClientStates.Connected**
 : Connect packet sent and acknowledgement received. 
-### **Disconnecting**
+### **ClientStates.Disconnecting**
 : Disconnect process initiated. 
-### **Disconnected**
+### **ClientStates.Disconnected**
 : Client disconnected from the broker. This could be the result either of a graceful termination or an unexpected error. 

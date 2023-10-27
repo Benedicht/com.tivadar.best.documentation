@@ -17,13 +17,13 @@ The Negotiator class acts as a central coordinator for the negotiation of networ
 
 
 ## **Fields**:
-### **Peer**
+### **[INegotiationPeer](INegotiationPeer.md) Peer**
 : Gets the negotiation peer associated with this negotiator. 
-### **Parameters**
+### **[NegotiationParameters](NegotiationParameters.md) Parameters**
 : Gets the negotiation parameters for this negotiator. 
-### **Streamer**
+### **[TCPStreamer](TCPStreamer.md) Streamer**
 : Gets the TCP streamer associated with this negotiator. 
-### **Stream**
+### **[PeekableContentProviderStream](../Streams/PeekableContentProviderStream.md) Stream**
 : Gets the peekable content provider stream associated with this negotiator. 
 ## **Methods**:
 

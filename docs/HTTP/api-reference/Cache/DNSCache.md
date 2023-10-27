@@ -21,7 +21,7 @@ By utilizing the DNSCache class and its associated features, you can optimize DN
 
 
 ## **Fields**:
-### **Options**
+### **[DNSCacheOptions](DNSCacheOptions.md) `#!cs DNSCache.Options`**
 : Options for configuring the DNS cache behavior, including refresh intervals and maintenance frequency. 
 ## **Methods**:
 

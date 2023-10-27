@@ -6,7 +6,7 @@ comments: true
 Specifies the various transport mechanisms that can be used in a [HubConnection](HubConnection.md) context. 
 
 ## **Fields**:
-### **WebSocket**
+### **TransportTypes.WebSocket**
 : Represents the WebSocket transport mechanism. 
-### **LongPolling**
+### **TransportTypes.LongPolling**
 : Represents the LongPolling transport mechanism. 

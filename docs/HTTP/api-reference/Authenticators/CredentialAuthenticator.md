@@ -6,7 +6,7 @@ comments: true
 An [IAuthenticator](IAuthenticator.md) implementation for HTTP Basic or Digest authentication. 
 
 ## **Fields**:
-### **Credentials**
+### **[Credentials](../Authentication/Credentials.md) Credentials**
 : Gets or sets the [Credentials](../Authentication/Credentials.md) associated with this authenticator. 
 ## **Methods**:
 

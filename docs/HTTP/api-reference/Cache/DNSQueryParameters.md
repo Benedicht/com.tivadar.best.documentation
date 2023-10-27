@@ -6,19 +6,19 @@ comments: true
 Represents parameters for a DNS query, including the host name, address, cancellation token, logging context, callback, and tag. 
 
 ## **Fields**:
-### **Key**
+### **[Hash128](https://docs.unity3d.com/ScriptReference/Hash128.html) Key**
 : The hash key associated with the DNS query. 
-### **Hostname**
+### **[String](https://learn.microsoft.com/en-us/dotnet/api/System.String) Hostname**
 : The host name used in the DNS query. 
-### **Address**
+### **[Uri](https://learn.microsoft.com/en-us/dotnet/api/System.Uri) Address**
 : The URI address used in the DNS query. 
-### **Token**
+### **[CancellationToken](https://learn.microsoft.com/en-us/dotnet/api/System.Threading.CancellationToken) Token**
 : The cancellation token used to cancel the DNS query. 
-### **Context**
+### **[LoggingContext](../Logger/LoggingContext.md) Context**
 : Optional logging context. 
-### **Callback**
+### **[Action](https://learn.microsoft.com/en-us/dotnet/api/System.Action-2)&lt;[DNSQueryParameters](), [DNSQueryResult](DNSQueryResult.md)&gt; Callback**
 : The callback to be invoked upon completion of the DNS query. 
-### **Tag**
+### **[Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object) Tag**
 : An optional object reference associated with the DNS query. 
-### **IsPrefetch**
+### **[Boolean](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean) IsPrefetch**
 : Indicates whether the DNS query is a prefetch query. 

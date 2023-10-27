@@ -7,15 +7,15 @@ A specialized upload stream designed to handle data that's generated on-the-fly 
 
 **Remarks:**
 
-This implementation is designed to handle scenarios where data may not always be immediately available for upload. The request will remain active until the [Complete](DynamicUploadStream.md#complete) method is invoked, ensuring that data can continue to be fed into the stream even if it's temporarily empty during a Read operation. 
+This implementation is designed to handle scenarios where data may not always be immediately available for upload. The request will remain active until the [Complete](#complete) method is invoked, ensuring that data can continue to be fed into the stream even if it's temporarily empty during a Read operation. 
 
 ## **Fields**:
-### **Length**
+### **[Int64](https://learn.microsoft.com/en-us/dotnet/api/System.Int64) Length**
 : Gets the length of the upload stream. 
 	!!! note ""
 		This implementation returns a constant value of `-1`, indicating that the length of the data to be uploaded is unknown. When the processing connection encounters this value, it should utilize chunked uploading to handle the data transfer. 
 
-### **BufferedLength**
+### **[Int64](https://learn.microsoft.com/en-us/dotnet/api/System.Int64) BufferedLength**
 : Gets the length of data currently buffered and ready for upload. 
 ## **Methods**:
 

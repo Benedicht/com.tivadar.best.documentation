@@ -6,5 +6,5 @@ comments: true
 Settings for Bouncy Castle TLS. 
 
 ## **Fields**:
-### **TlsClientFactory**
+### **[TlsClientFactoryDelegate](TlsClientFactoryDelegate.md) TlsClientFactory**
 : Delegate for creating a TLS 1.3 client instance using Bouncy Castle. 

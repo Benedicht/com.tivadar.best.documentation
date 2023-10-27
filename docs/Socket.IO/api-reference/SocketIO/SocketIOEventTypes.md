@@ -6,17 +6,17 @@ comments: true
 Event types of the SocketIO protocol. 
 
 ## **Fields**:
-### **Connect**
+### **SocketIOEventTypes.Connect**
 : Connect to a namespace, or we connected to a namespace 
-### **Disconnect**
+### **SocketIOEventTypes.Disconnect**
 : Disconnect a namespace, or we disconnected from a namespace. 
-### **Event**
+### **SocketIOEventTypes.Event**
 : A general event. The event's name is in the payload. 
-### **Ack**
+### **SocketIOEventTypes.Ack**
 : Acknowledgment of an event. 
-### **Error**
+### **SocketIOEventTypes.Error**
 : Error sent by the server, or by the plugin 
-### **BinaryEvent**
+### **SocketIOEventTypes.BinaryEvent**
 : A general event with binary attached to the packet. The event's name is in the payload. 
-### **BinaryAck**
+### **SocketIOEventTypes.BinaryAck**
 : Acknowledgment of a binary event. 

@@ -10,17 +10,17 @@ A static class responsible for handling TLS security operations including setup,
 The class manages Root CAs, Intermediate Certificates, Client Certificates, and provides functionality for the setup process.  
 
 ## **Fields**:
-### **trustedRootCertificates**
+### **X509Database `#!cs TLSSecurity.trustedRootCertificates`**
 : Database of Root CAs that trusted by the client. 
-### **trustedIntermediateCertificates**
+### **X509Database `#!cs TLSSecurity.trustedIntermediateCertificates`**
 : Database of Intermediate Certificates that trusted by the client. 
-### **ClientCredentials**
+### **ClientCredentialDatabase `#!cs TLSSecurity.ClientCredentials`**
 : Database of Client Certificates that's available to send when the server requests it. 
-### **IsSetupCalled**
+### **[Boolean](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean) `#!cs TLSSecurity.IsSetupCalled`**
 : True if Setup already called. 
-### **IsSetupFinished**
+### **[Boolean](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean) `#!cs TLSSecurity.IsSetupFinished`**
 : True if setup process finished successfully. 
-### **OnSetupFinished**
+### **[Action](https://learn.microsoft.com/en-us/dotnet/api/System.Action) `#!cs TLSSecurity.OnSetupFinished`**
 : Called when all databases are in place and loaded. 
 ## **Methods**:
 

@@ -6,13 +6,13 @@ comments: true
 Represents settings related to connection-timeouts and processing duration. 
 
 ## **Fields**:
-### **QueuedAt**
+### **[DateTime](https://learn.microsoft.com/en-us/dotnet/api/System.DateTime) QueuedAt**
 : Gets the timestamp when the request was queued for processing. 
-### **ProcessingStarted**
+### **[DateTime](https://learn.microsoft.com/en-us/dotnet/api/System.DateTime) ProcessingStarted**
 : Gets the timestamp when the processing of the request started by a connection. 
-### **ConnectTimeout**
+### **[TimeSpan](https://learn.microsoft.com/en-us/dotnet/api/System.TimeSpan) ConnectTimeout**
 : Gets or sets the maximum time to wait for establishing the connection to the target server. If set to `TimeSpan.Zero` or lower, no connect timeout logic is executed. Default value is 20 seconds. 
-### **Timeout**
+### **[TimeSpan](https://learn.microsoft.com/en-us/dotnet/api/System.TimeSpan) Timeout**
 : Gets or sets the maximum time to wait for the request to finish after the connection is established. 
 ## **Methods**:
 

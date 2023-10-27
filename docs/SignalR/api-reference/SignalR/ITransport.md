@@ -3,18 +3,18 @@ comments: true
 ---
 # ITransport
 
-Defines the basic structure and operations for a transport mechanism in a [HubConnection](HubConnection.md) context. Current implemtations are **WebSocketTransport** and **LongPollingTransport**. 
+Defines the basic structure and operations for a transport mechanism in a [HubConnection](HubConnection.md) context. Current implemtations are `WebSocketTransport` and `LongPollingTransport`. 
 
 ## **Fields**:
-### **TransferMode**
-: Gets the transfer mode used by the transport, which defines whether it's [Binary](TransferModes.md#binary) or [Text](TransferModes.md#text). 
-### **TransportType**
-: Gets the type of the transport, such as [WebSocket](TransportTypes.md#websocket) or [LongPolling](TransportTypes.md#longpolling). 
-### **State**
-: Gets the current **TransportStates** of the transport, which could be connecting, connected, closing, etc. 
-### **ErrorReason**
+### **[TransferModes](TransferModes.md) TransferMode**
+: Gets the transfer mode used by the transport, which defines whether it's [Binary](TransferModes.md#transfermodesbinary) or [Text](TransferModes.md#transfermodestext). 
+### **[TransportTypes](TransportTypes.md) TransportType**
+: Gets the type of the transport, such as [WebSocket](TransportTypes.md#transporttypeswebsocket) or [LongPolling](TransportTypes.md#transporttypeslongpolling). 
+### **TransportStates State**
+: Gets the current `TransportStates` of the transport, which could be connecting, connected, closing, etc. 
+### **[String](https://learn.microsoft.com/en-us/dotnet/api/System.String) ErrorReason**
 : Gets a string representation of the reason for any errors that might have occurred during the transport's operations. 
-### **OnStateChanged**
+### **[Action](https://learn.microsoft.com/en-us/dotnet/api/System.Action-2)&lt;`TransportStates`, `TransportStates`&gt; OnStateChanged**
 : An event that's triggered whenever the state of the transport changes. It provides the previous state and the new state as its parameters. 
 ## **Methods**:
 

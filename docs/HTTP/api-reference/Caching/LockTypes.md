@@ -6,9 +6,9 @@ comments: true
 Possible lock-states a cache-content can be in. 
 
 ## **Fields**:
-### **Unlocked**
+### **LockTypes.Unlocked**
 : No reads or writes are happening on the cached content. 
-### **Write**
+### **LockTypes.Write**
 : There's one writer operating on the cached content. No other writes or reads allowed while this lock is held on the content. 
-### **Read**
+### **LockTypes.Read**
 : There's at least one read operation happening on the cached content. No writes allowed while this lock is held on the content. 

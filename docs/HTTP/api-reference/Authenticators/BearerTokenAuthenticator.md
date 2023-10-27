@@ -10,7 +10,7 @@ An [IAuthenticator](IAuthenticator.md) implementation for Bearer Token authentic
 Bearer Token authentication is a method used to access protected resources on a server. It involves including a bearer token in the Authorization header of an HTTP request to prove the identity of the requester. 
 
 ## **Fields**:
-### **Token**
+### **[String](https://learn.microsoft.com/en-us/dotnet/api/System.String) Token**
 : Initializes a new instance of the BearerTokenAuthenticator class with the specified Bearer Token. 
 ## **Methods**:
 

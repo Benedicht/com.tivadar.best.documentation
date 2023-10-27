@@ -6,9 +6,9 @@ comments: true
 Struct to hold information about one timing event recorded for a [HTTPRequest](../HTTP/HTTPRequest.md). Timing events are managed by the [TimingCollector](TimingCollector.md). 
 
 ## **Fields**:
-### **Name**
+### **[String](https://learn.microsoft.com/en-us/dotnet/api/System.String) Name**
 : Name of the event 
-### **Duration**
+### **[TimeSpan](https://learn.microsoft.com/en-us/dotnet/api/System.TimeSpan) Duration**
 : Duration of the event. 
-### **When**
+### **[DateTime](https://learn.microsoft.com/en-us/dotnet/api/System.DateTime) When**
 : When the event occurred. 

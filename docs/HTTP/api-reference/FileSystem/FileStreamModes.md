@@ -6,11 +6,11 @@ comments: true
 These are the different modes that the plugin want's to use a filestream. 
 
 ## **Fields**:
-### **Create**
+### **FileStreamModes.Create**
 : Create a new file. 
-### **OpenRead**
+### **FileStreamModes.OpenRead**
 : Open an existing file for reading. 
-### **OpenReadWrite**
+### **FileStreamModes.OpenReadWrite**
 : Open or create a file for read and write. 
-### **Append**
+### **FileStreamModes.Append**
 : Open an existing file for writing to the end. 

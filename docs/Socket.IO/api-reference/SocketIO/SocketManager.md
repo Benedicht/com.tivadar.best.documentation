@@ -6,31 +6,31 @@ comments: true
 Manages the connection and associated sockets for a Socket.IO server. 
 
 ## **Fields**:
-### **ProtocolVersion**
+### **[Int32](https://learn.microsoft.com/en-us/dotnet/api/System.Int32) ProtocolVersion**
 : Supported Socket.IO protocol version 
-### **State**
+### **States State**
 : The current state of this Socket.IO manager. 
-### **Options**
+### **[SocketOptions](SocketOptions.md) Options**
 : The SocketOptions instance that this manager will use. 
-### **Uri**
+### **[Uri](https://learn.microsoft.com/en-us/dotnet/api/System.Uri) Uri**
 : The Uri to the Socket.IO endpoint. 
-### **Handshake**
+### **[HandshakeData](HandshakeData.md) Handshake**
 : The server sent and parsed Handshake data. 
-### **Transport**
+### **ITransport Transport**
 : The currently used main transport instance. 
-### **RequestCounter**
+### **[UInt64](https://learn.microsoft.com/en-us/dotnet/api/System.UInt64) RequestCounter**
 : The Request counter for request-based transports. 
-### **Socket**
+### **[Socket](Socket.md) Socket**
 : The root("/") Socket. 
-### **Item**
+### **[Socket](Socket.md) Item**
 : Indexer to access socket associated to the given namespace. 
-### **ReconnectAttempts**
+### **[Int32](https://learn.microsoft.com/en-us/dotnet/api/System.Int32) ReconnectAttempts**
 : How many reconnect attempts made. 
-### **Parser**
+### **[IParser](../Parsers/IParser.md) Parser**
 : Parser to encode and decode messages and create strongly typed objects. 
-### **Context**
+### **[LoggingContext](../../../HTTP/api-reference/Logger/LoggingContext.md) Context**
 : Logging context of this socket.io connection. 
-### **OnIncomingPacket**
+### **[Action](https://learn.microsoft.com/en-us/dotnet/api/System.Action-2)&lt;[SocketManager](), [IncomingPacket](IncomingPacket.md)&gt; OnIncomingPacket**
 : Called for every packet received from the server. 
 ## **Methods**:
 

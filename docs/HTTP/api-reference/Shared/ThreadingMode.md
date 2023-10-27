@@ -6,9 +6,9 @@ comments: true
 Threading mode the plugin will use to call HTTPManager.OnUpdate(). 
 
 ## **Fields**:
-### **UnityUpdate**
+### **ThreadingMode.UnityUpdate**
 : HTTPManager.OnUpdate() is called from the HTTPUpdateDelegator's Update functions (Unity's main thread). 
-### **Threaded**
+### **ThreadingMode.Threaded**
 : The plugin starts a dedicated thread to call HTTPManager.OnUpdate() periodically. 
-### **None**
+### **ThreadingMode.None**
 : HTTPManager.OnUpdate() will not be called automatically. 

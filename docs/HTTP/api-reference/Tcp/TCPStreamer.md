@@ -9,27 +9,27 @@ The TCPStreamer class is a versatile component that abstracts the complexities o
 
 TCPStreamer serves several key functions: 
 
-- **Data Streaming:**: It enables the streaming of data between two endpoints over a TCP connection, ideal for scenarios involving the transfer of large data volumes in manageable chunks. 
-- **Buffer Management:**: The class efficiently manages buffering for both incoming and outgoing data, ensuring smooth and efficient data transfer. 
-- **Asynchronous Communication:**: Utilizing asynchronous communication patterns, it supports non-blocking operations, essential for applications requiring concurrent data processing. 
-- **Error Handling:**: Comprehensive error-handling mechanisms address exceptions that may occur during TCP communication, enhancing robustness in the face of network issues or errors. 
-- **Resource Management:**: It handles memory buffer management and resource disposal when the TCP connection is closed or the class is disposed. 
-- **Integration with Heartbeat:**: Implementing the **IHeartbeat** interface, it can be seamlessly integrated into systems using heartbeat mechanisms for network connection monitoring and management. 
+- **Data Streaming**: It enables the streaming of data between two endpoints over a TCP connection, ideal for scenarios involving the transfer of large data volumes in manageable chunks. 
+- **Buffer Management**: The class efficiently manages buffering for both incoming and outgoing data, ensuring smooth and efficient data transfer. 
+- **Asynchronous Communication**: Utilizing asynchronous communication patterns, it supports non-blocking operations, essential for applications requiring concurrent data processing. 
+- **Error Handling**: Comprehensive error-handling mechanisms address exceptions that may occur during TCP communication, enhancing robustness in the face of network issues or errors. 
+- **Resource Management**: It handles memory buffer management and resource disposal when the TCP connection is closed or the class is disposed. 
+- **Integration with Heartbeat**: Implementing the `IHeartbeat` interface, it can be seamlessly integrated into systems using heartbeat mechanisms for network connection monitoring and management. 
 
 
 
 ## **Fields**:
-### **ContentConsumer**
-: Gets or sets the content consumer that interacts with this [TCPStreamer](TCPStreamer.md) instance, allowing data to be written to the streamer for transmission. 
-### **Socket**
-: Gets the underlying [Socket](TCPStreamer.md#socket) associated with this [TCPStreamer](TCPStreamer.md) instance. 
-### **Context**
-: Gets the optional [LoggingContext](../Logger/LoggingContext.md) associated with this [TCPStreamer](TCPStreamer.md) instance, facilitating logging and diagnostics. 
-### **IsConnectionClosed**
+### **[ITCPStreamerContentConsumer](ITCPStreamerContentConsumer.md) ContentConsumer**
+: Gets or sets the content consumer that interacts with this [TCPStreamer]() instance, allowing data to be written to the streamer for transmission. 
+### **[Socket](https://learn.microsoft.com/en-us/dotnet/api/System.Net.Sockets.Socket) Socket**
+: Gets the underlying [Socket](#socket-socket) associated with this [TCPStreamer]() instance. 
+### **[LoggingContext](../Logger/LoggingContext.md) Context**
+: Gets the optional [LoggingContext](../Logger/LoggingContext.md) associated with this [TCPStreamer]() instance, facilitating logging and diagnostics. 
+### **[Boolean](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean) IsConnectionClosed**
 : Gets a value indicating whether the TCP connection is closed. 
-### **MinReceiveBufferSize**
+### **[Int32](https://learn.microsoft.com/en-us/dotnet/api/System.Int32) MinReceiveBufferSize**
 : Gets the minimum receive buffer size for the TCP socket. 
-### **Length**
+### **[Int64](https://learn.microsoft.com/en-us/dotnet/api/System.Int64) Length**
 : Gets the total length of buffered data for reading from the stream. 
 ## **Methods**:
 
@@ -46,4 +46,4 @@ TCPStreamer serves several key functions:
 : Enqueues data to be sent over the TCP connection. The data is added to the stream's outgoing buffer for transmission. 
 
 ### **Dispose**
-: Disposes of the [TCPStreamer](TCPStreamer.md) instance, releasing associated resources. 
+: Disposes of the [TCPStreamer]() instance, releasing associated resources. 

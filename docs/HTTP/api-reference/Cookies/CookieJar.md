@@ -6,13 +6,13 @@ comments: true
 The Cookie Jar implementation based on RFC 6265(http://tools.ietf.org/html/rfc6265). 
 
 ## **Fields**:
-### **MaximumSize**
+### **[UInt32](https://learn.microsoft.com/en-us/dotnet/api/System.UInt32) `#!cs CookieJar.MaximumSize`**
 : Maximum size of the Cookie Jar in bytes. It's default value is 10485760 (10 MB). 
-### **IsSavingSupported**
+### **[Boolean](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean) `#!cs CookieJar.IsSavingSupported`**
 : Returns true if File apis are supported. 
-### **AccessThreshold**
+### **[TimeSpan](https://learn.microsoft.com/en-us/dotnet/api/System.TimeSpan) `#!cs CookieJar.AccessThreshold`**
 : The plugin will delete cookies that are accessed this threshold ago. Its default value is 7 days. 
-### **IsSessionOverride**
+### **[Boolean](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean) `#!cs CookieJar.IsSessionOverride`**
 : If this property is set to `true`, then new cookies treated as session cookies and these cookies are not saved to disk. Its default value is `false`. 
 ## **Methods**:
 

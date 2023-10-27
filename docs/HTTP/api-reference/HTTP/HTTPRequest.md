@@ -22,93 +22,96 @@ Represents an HTTP request that allows you to send HTTP requests to remote serve
 
 
 ## **Fields**:
-### **MethodNames**
+### **[String[]](https://learn.microsoft.com/en-us/dotnet/api/System.String[]) `#!cs HTTPRequest.MethodNames`**
 : Cached uppercase values to save some cpu cycles and GC alloc per request. 
-### **MethodType**
+### **[HTTPMethods](HTTPMethods.md) MethodType**
 : The method that how we want to process our request the server. 
-### **Uri**
+### **[Uri](https://learn.microsoft.com/en-us/dotnet/api/System.Uri) Uri**
 : The original request's Uri. 
-### **CurrentUri**
+### **[Uri](https://learn.microsoft.com/en-us/dotnet/api/System.Uri) CurrentUri**
 : If redirected it contains the RedirectUri. 
-### **CurrentHostKey**
+### **[HostKey](../HostSetting/HostKey.md) CurrentHostKey**
 : A host-key that can be used to find the right host-variant for the request. 
-### **Response**
+### **[HTTPResponse](HTTPResponse.md) Response**
 : The response received from the server. 
 	!!! note ""
 		If an exception occurred during reading of the response stream or can't connect to the server, this will be null!
 
-### **DownloadSettings**
+### **[DownloadSettings](../Settings/DownloadSettings.md) DownloadSettings**
 : Download related options and settings. 
-### **UploadSettings**
+### **[UploadSettings](../Settings/UploadSettings.md) UploadSettings**
 : Upload related options and settings. 
-### **TimeoutSettings**
+### **[TimeoutSettings](../Settings/TimeoutSettings.md) TimeoutSettings**
 : Timeout settings for the request. 
-### **RetrySettings**
+### **[RetrySettings](../Settings/RetrySettings.md) RetrySettings**
 : Retry settings for the request. 
-### **ProxySettings**
+### **[ProxySettings](../Settings/ProxySettings.md) ProxySettings**
 : Proxy settings for the request. 
-### **RedirectSettings**
+### **[RedirectSettings](../Settings/RedirectSettings.md) RedirectSettings**
 : Redirect settings for the request. 
-### **Callback**
+### **[OnRequestFinishedDelegate](OnRequestFinishedDelegate.md) Callback**
 : The callback function that will be called after the request is fully processed. 
-### **IsCancellationRequested**
-: Indicates if [Abort](HTTPRequest.md#abort) is called on this request. 
-### **OnCancellationRequested**
-: Action called when [Abort](HTTPRequest.md#abort) function is invoked. 
-### **Exception**
+### **[Boolean](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean) IsCancellationRequested**
+: Indicates if [Abort](#abort) is called on this request. 
+### **[Action](https://learn.microsoft.com/en-us/dotnet/api/System.Action-1)&lt;[HTTPRequest]()&gt; OnCancellationRequested**
+: Action called when [Abort](#abort) function is invoked. 
+### **[Exception](https://learn.microsoft.com/en-us/dotnet/api/System.Exception) Exception**
 : Stores any exception that occurs during processing of the request or response. 
-### **Tag**
+	!!! note ""
+		This property if for debugging purposes as [seen here](https://github.com/Benedicht/BestHTTP-Issues/issues/174)!
+
+### **[Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object) Tag**
 : Any user-object that can be passed with the request. 
-### **State**
+### **[HTTPRequestStates](HTTPRequestStates.md) State**
 : Current state of this request. 
-### **Timing**
+### **[TimingCollector](../Timings/TimingCollector.md) Timing**
 : Timing information about the request. 
-### **Authenticator**
+### **[IAuthenticator](../Authenticators/IAuthenticator.md) Authenticator**
 : An IAuthenticator implementation that can be used to authenticate the request. 
 	!!! note ""
 		Out-of-the-box included authenticators are [CredentialAuthenticator](../Authenticators/CredentialAuthenticator.md) and [BearerTokenAuthenticator](../Authenticators/BearerTokenAuthenticator.md).
 
-### **Context**
+### **[LoggingContext](../Logger/LoggingContext.md) Context**
 : Logging context of the request. 
-### **Current**
-: **IEnumerator.Current**	 implementation, required for **Coroutine** support. 
+### **[Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object) Current**
+: [IEnumerator](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.IEnumerator)	 implementation, required for [Coroutine](https://docs.unity3d.com/ScriptReference/Coroutine.html) support. 
 ## **Methods**:
 
 ### **CreateGet**
-: Creates an HTTP GET request with the specified URL. 
+: Creates an [Get](HTTPMethods.md#httpmethodsget) request with the specified URL. 
 
 ### **CreateGet**
-: Creates an HTTP GET request with the specified URI. 
+: Creates an [Get](HTTPMethods.md#httpmethodsget) request with the specified URI. 
 
 ### **CreateGet**
-: Creates an HTTP GET request with the specified URL and registers a callback function to be called when the request is fully processed. 
+: Creates an [Get](HTTPMethods.md#httpmethodsget) request with the specified URL and registers a callback function to be called when the request is fully processed. 
 
 ### **CreateGet**
-: Creates an HTTP GET request with the specified URI and registers a callback function to be called when the request is fully processed. 
+: Creates an [Get](HTTPMethods.md#httpmethodsget) request with the specified URI and registers a callback function to be called when the request is fully processed. 
 
 ### **CreatePost**
-: Creates an HTTP POST request with the specified URL. 
+: Creates an [Post](HTTPMethods.md#httpmethodspost) request with the specified URL. 
 
 ### **CreatePost**
-: Creates an HTTP POST request with the specified URI. 
+: Creates an [Post](HTTPMethods.md#httpmethodspost) request with the specified URI. 
 
 ### **CreatePost**
-: Creates an HTTP POST request with the specified URL and registers a callback function to be called when the request is fully processed. 
+: Creates an [Post](HTTPMethods.md#httpmethodspost) request with the specified URL and registers a callback function to be called when the request is fully processed. 
 
 ### **CreatePost**
-: Creates an HTTP POST request with the specified URI and registers a callback function to be called when the request is fully processed. 
+: Creates an [Post](HTTPMethods.md#httpmethodspost) request with the specified URI and registers a callback function to be called when the request is fully processed. 
 
 ### **CreatePut**
-: Creates an HTTP PUT request with the specified URL. 
+: Creates an [Put](HTTPMethods.md#httpmethodsput) request with the specified URL. 
 
 ### **CreatePut**
-: Creates an HTTP PUT request with the specified URI. 
+: Creates an [Put](HTTPMethods.md#httpmethodsput) request with the specified URI. 
 
 ### **CreatePut**
-: Creates an HTTP PUT request with the specified URL and registers a callback function to be called when the request is fully processed. 
+: Creates an [Put](HTTPMethods.md#httpmethodsput) request with the specified URL and registers a callback function to be called when the request is fully processed. 
 
 ### **CreatePut**
-: Creates an HTTP PUT request with the specified URI and registers a callback function to be called when the request is fully processed. 
+: Creates an [Put](HTTPMethods.md#httpmethodsput) request with the specified URI and registers a callback function to be called when the request is fully processed. 
 
 ### **AddHeader**
 : Adds a header-value pair to the Headers. Use it to add custom headers to the request. 
@@ -120,7 +123,7 @@ Represents an HTTP request that allows you to send HTTP requests to remote serve
 : Removes the specified header and all of its associated values. Returns `true`, if the header found and succesfully removed. 
 
 ### **HasHeader**
-: Returns `true` if the given head name is already in the [Headers](HTTPRequest.md#headers). 
+: Returns `true` if the given head name is already in the `HTTPRequest.Headers`. 
 
 ### **GetFirstHeaderValue**
 : Returns the first header or `null` for the given header name. 
@@ -147,10 +150,10 @@ Represents an HTTP request that allows you to send HTTP requests to remote serve
 : Resets the request for a state where switching MethodType is possible. 
 
 ### **MoveNext**
-: **IEnumerator.MoveNext**	 implementation, required for **Coroutine** support. 
+: [IEnumerator](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.IEnumerator)	 implementation, required for [Coroutine](https://docs.unity3d.com/ScriptReference/Coroutine.html) support. 
 
 ### **Reset**
-: **IEnumerator.MoveNext**	 implementation throwing **NotImplementedException**, required for **Coroutine** support. 
+: [IEnumerator](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.IEnumerator)	 implementation throwing [NotImplementedException](https://learn.microsoft.com/en-us/dotnet/api/System.NotImplementedException), required for [Coroutine](https://docs.unity3d.com/ScriptReference/Coroutine.html) support. 
 
 ### **Dispose**
 : Disposes of resources used by the HTTPRequest instance. 

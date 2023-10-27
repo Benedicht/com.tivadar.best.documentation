@@ -7,7 +7,7 @@ Abstract class to serve as a base for non-conventional streams used in HTTP requ
 
 **Remarks:**
 
-The return value of **Stream.Read** is treated specially in the plugin: 
+The return value of [Stream](https://learn.microsoft.com/en-us/dotnet/api/System.IO.Stream) is treated specially in the plugin: 
 
 - **Less than zero(-1)**:  indicates that no data is currently available but more is expected in the future. In this case, when new data becomes available the IThreadSignaler object must be signaled.
 - **Zero (0)**:  means that the stream is closed, no more data can be expected.
@@ -16,9 +16,9 @@ The return value of **Stream.Read** is treated specially in the plugin:
  A zero value to signal stream closure can follow a less than zero value. 
 
 ## **Fields**:
-### **Signaler**
+### **[IThreadSignaler](../Connections/IThreadSignaler.md) Signaler**
 : Gets the [IThreadSignaler](../Connections/IThreadSignaler.md) object for signaling when new data is available. 
-### **Length**
+### **[Int64](https://learn.microsoft.com/en-us/dotnet/api/System.Int64) Length**
 : Length in bytes that the stream will upload. 
 	!!! note ""
 		The return value of Length is treated specially in the plugin: 

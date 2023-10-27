@@ -6,7 +6,7 @@ comments: true
 Available TLS handlers. 
 
 ## **Fields**:
-### **BouncyCastle**
+### **TLSHandlers.BouncyCastle**
 : To use the 3rd party BouncyCastle implementation. 
-### **Framework**
+### **TLSHandlers.Framework**
 : To use .net's SslStream. 

@@ -6,13 +6,13 @@ comments: true
 An upload channel that represents one prameter of a client callable function. It implements the IDisposable interface and calls Finish from the Dispose method. 
 
 ## **Fields**:
-### **Controller**
+### **IUPloadItemController&lt;&gt; Controller**
 : The associated upload controller 
-### **ParamIdx**
+### **[Int32](https://learn.microsoft.com/en-us/dotnet/api/System.Int32) ParamIdx**
 : What parameter is bound to. 
-### **IsFinished**
+### **[Boolean](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean) IsFinished**
 : Returns true if Finish() or Cancel() is already called. 
-### **StreamingId**
+### **[String](https://learn.microsoft.com/en-us/dotnet/api/System.String) StreamingId**
 : The unique generated id of this parameter channel. 
 ## **Methods**:
 

@@ -6,12 +6,12 @@ comments: true
 Represents the default access token authenticator that uses the Bearer token scheme for HTTP and WebSockets. 
 
 ## **Fields**:
-### **IsPreAuthRequired**
+### **[Boolean](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean) IsPreAuthRequired**
 : Indicates that no pre-authentication step is required for this type of authentication. 
-### **OnAuthenticationSucceded**
-: This event is not used because [IsPreAuthRequired](DefaultAccessTokenAuthenticator.md#ispreauthrequired) is `false`. 
-### **OnAuthenticationFailed**
-: This event is not used because [IsPreAuthRequired](DefaultAccessTokenAuthenticator.md#ispreauthrequired) is `false`. 
+### **[OnAuthenticationSuccededDelegate](../SignalR/OnAuthenticationSuccededDelegate.md) OnAuthenticationSucceded**
+: This event is not used because [IsPreAuthRequired](#boolean-ispreauthrequired) is `false`. 
+### **[OnAuthenticationFailedDelegate](../SignalR/OnAuthenticationFailedDelegate.md) OnAuthenticationFailed**
+: This event is not used because [IsPreAuthRequired](#boolean-ispreauthrequired) is `false`. 
 ## **Methods**:
 
 ### **StartAuthentication**

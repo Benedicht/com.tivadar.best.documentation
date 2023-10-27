@@ -6,19 +6,19 @@ comments: true
 Will route some U3D calls to the HTTPManager. 
 
 ## **Fields**:
-### **Instance**
+### **[HTTPUpdateDelegator]() `#!cs HTTPUpdateDelegator.Instance`**
 : The singleton instance of the HTTPUpdateDelegator 
-### **IsCreated**
+### **[Boolean](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean) `#!cs HTTPUpdateDelegator.IsCreated`**
 : True, if the Instance property should hold a valid value. 
-### **IsThreadRunning**
+### **[Boolean](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean) `#!cs HTTPUpdateDelegator.IsThreadRunning`**
 : It's true if the dispatch thread running. 
-### **CurrentThreadingMode**
+### **[ThreadingMode](ThreadingMode.md) CurrentThreadingMode**
 : The current threading mode the plugin is in. 
-### **ThreadFrequencyInMS**
+### **[Int32](https://learn.microsoft.com/en-us/dotnet/api/System.Int32) `#!cs HTTPUpdateDelegator.ThreadFrequencyInMS`**
 : How much time the plugin should wait between two update call. Its default value 100 ms. 
-### **OnBeforeApplicationQuit**
+### **[Func](https://learn.microsoft.com/en-us/dotnet/api/System.Func-1)&lt;[Boolean](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean)&gt; OnBeforeApplicationQuit**
 : Called in the OnApplicationQuit function. If this function returns False, the plugin will not start to shut down itself. 
-### **OnApplicationForegroundStateChanged**
+### **[Action](https://learn.microsoft.com/en-us/dotnet/api/System.Action-1)&lt;[Boolean](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean)&gt; OnApplicationForegroundStateChanged**
 : Called when the Unity application's foreground state changed. 
 ## **Methods**:
 

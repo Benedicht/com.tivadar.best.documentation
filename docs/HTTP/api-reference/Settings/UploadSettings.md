@@ -7,15 +7,15 @@ Options for sending the request headers and content, including upload progress m
 
 **Remarks:**
 
-[SetupRequest](UploadSettings.md#setuprequest) might be called when redirected or retried!
+[SetupRequest](#setuprequest) might be called when redirected or retried!
 
 ## **Fields**:
-### **UploadChunkSize**
+### **[Int32](https://learn.microsoft.com/en-us/dotnet/api/System.Int32) UploadChunkSize**
 : Size of the internal buffer, and upload progress will be fired when this size of data sent to the wire. Its default value is 4 KiB. 
-### **UploadStream**
+### **[Stream](https://learn.microsoft.com/en-us/dotnet/api/System.IO.Stream) UploadStream**
 : The stream that the plugin will use to send data to the server. 
 	!!! note ""
-		The stream can be any regular **Stream** implementation or a specialized one inheriting from [UploadStreamBase](../Upload/UploadStreamBase.md): 
+		The stream can be any regular [Stream](https://learn.microsoft.com/en-us/dotnet/api/System.IO.Stream) implementation or a specialized one inheriting from [UploadStreamBase](../Upload/UploadStreamBase.md): 
 
 		- A specialized [UploadStreamBase](../Upload/UploadStreamBase.md) for data generated on-the-fly or periodically. The request remains active until the [Complete](../Upload/DynamicUploadStream.md#complete) method is invoked, ensuring continuous data feed even during temporary empty states.
 		- An [UploadStreamBase](../Upload/UploadStreamBase.md) implementation to convert and upload the object as JSON data. It sets the `"Content-Type"` header to `"application/json; charset=utf-8"`.
@@ -24,11 +24,11 @@ Options for sending the request headers and content, including upload progress m
 
 
 
-### **DisposeStream**
-: Set to `false` if the plugin MUST NOT dispose [UploadStream](UploadSettings.md#uploadstream) after the request is finished. 
-### **OnUploadProgress**
+### **[Boolean](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean) DisposeStream**
+: Set to `false` if the plugin MUST NOT dispose [UploadStream](#stream-uploadstream) after the request is finished. 
+### **[OnProgressDelegate](OnProgressDelegate.md) OnUploadProgress**
 : Called periodically when data sent to the server. 
-### **OnHeadersSent**
+### **[OnHeadersSentDelegate](OnHeadersSentDelegate.md) OnHeadersSent**
 : This event is fired after the headers are sent to the server. 
 ## **Methods**:
 
