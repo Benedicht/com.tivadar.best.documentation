@@ -22,19 +22,19 @@ Will route some U3D calls to the HTTPManager.
 : Called when the Unity application's foreground state changed. 
 ## **Methods**:
 
-### **CheckInstance**
+### [HTTPUpdateDelegator]() HTTPUpdateDelegator.CheckInstance()
 : Will create the HTTPUpdateDelegator instance and set it up. 
 
-### **IsMainThread**
+### [Boolean](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean) IsMainThread()
 : Return true if the call happens on the Unity main thread. Setup must be called before to save the thread id! 
 
-### **SetThreadingMode**
+### Void SetThreadingMode([ThreadingMode](ThreadingMode.md))
 : Set directly the threading mode to use. 
 
-### **SwapThreadingMode**
+### Void SwapThreadingMode()
 : Swaps threading mode between Unity's Update function or a distinct thread. 
 
-### **PingUpdateThread**
+### Void PingUpdateThread()
 : Pings the update thread to call HTTPManager.OnUpdate immediately. 
 	!!! note ""
 		Works only when the current threading mode is Threaded!

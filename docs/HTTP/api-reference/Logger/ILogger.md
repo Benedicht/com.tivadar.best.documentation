@@ -17,17 +17,17 @@ Represents a logger for recording log messages.
 
 ## **Methods**:
 
-### **Verbose**
+### Void Verbose([String](https://learn.microsoft.com/en-us/dotnet/api/System.String), [String](https://learn.microsoft.com/en-us/dotnet/api/System.String), [LoggingContext](LoggingContext.md))
 : Logs a message with [All](Loglevels.md#loglevelsall) level. 
 
-### **Information**
+### Void Information([String](https://learn.microsoft.com/en-us/dotnet/api/System.String), [String](https://learn.microsoft.com/en-us/dotnet/api/System.String), [LoggingContext](LoggingContext.md))
 : Logs a message with [Information](Loglevels.md#loglevelsinformation) level. 
 
-### **Warning**
+### Void Warning([String](https://learn.microsoft.com/en-us/dotnet/api/System.String), [String](https://learn.microsoft.com/en-us/dotnet/api/System.String), [LoggingContext](LoggingContext.md))
 : Logs a message with [Warning](Loglevels.md#loglevelswarning) level. 
 
-### **Error**
+### Void Error([String](https://learn.microsoft.com/en-us/dotnet/api/System.String), [String](https://learn.microsoft.com/en-us/dotnet/api/System.String), [LoggingContext](LoggingContext.md))
 : Logs a message with [Error](Loglevels.md#loglevelserror) level. 
 
-### **Exception**
+### Void Exception([String](https://learn.microsoft.com/en-us/dotnet/api/System.String), [String](https://learn.microsoft.com/en-us/dotnet/api/System.String), [Exception](https://learn.microsoft.com/en-us/dotnet/api/System.Exception), [LoggingContext](LoggingContext.md))
 : Logs a message with [Exception](Loglevels.md#loglevelsexception) level. 

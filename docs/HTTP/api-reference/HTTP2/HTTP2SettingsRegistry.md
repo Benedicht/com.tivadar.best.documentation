@@ -16,8 +16,8 @@ Represents a registry for HTTP/2 settings.
 : Gets a value indicating whether any setting has changed. 
 ## **Methods**:
 
-### **Merge**
+### Merge(HTTP2Settings, UInt32}})
 : Merges the specified settings into the current registry. 
 
-### **Merge**
+### Void Merge([HTTP2SettingsRegistry]())
 : Merges settings from another HTTP2SettingsRegistry into the current registry. 

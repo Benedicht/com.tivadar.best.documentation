@@ -39,5 +39,5 @@ The Cookie implementation based on [RFC-6265](http://tools.ietf.org/html/rfc6265
 
 ## **Methods**:
 
-### **GuessSize**
+### [UInt32](https://learn.microsoft.com/en-us/dotnet/api/System.UInt32) GuessSize()
 : Guess the storage size of the cookie. 

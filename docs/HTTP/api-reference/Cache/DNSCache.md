@@ -25,14 +25,14 @@ By utilizing the DNSCache class and its associated features, you can optimize DN
 : Options for configuring the DNS cache behavior, including refresh intervals and maintenance frequency. 
 ## **Methods**:
 
-### **Prefetch**
+### Void DNSCache.Prefetch([String](https://learn.microsoft.com/en-us/dotnet/api/System.String))
 : Initiates a DNS prefetch operation for the specified host name. DNS prefetching is used to resolve and cache DNS records for host names in advance, reducing latency for future network requests. 
 
-### **ReportAsNonWorking**
+### Void DNSCache.ReportAsNonWorking([String](https://learn.microsoft.com/en-us/dotnet/api/System.String), [IPAddress](https://learn.microsoft.com/en-us/dotnet/api/System.Net.IPAddress), [LoggingContext](../Logger/LoggingContext.md))
 : Reports an IP address as non-working for the specified host name. In cases where a previously resolved IP address is determined to be non-functional, this method updates the cache to mark the IP address as non-working. 
 
-### **Clear**
+### Void DNSCache.Clear()
 : Clears the DNS cache, removing all cached DNS records. This operation can be used to reset the cache and remove all stored DNS resolutions. 
 
-### **Query**
+### Void DNSCache.Query([DNSQueryParameters](DNSQueryParameters.md))
 : Performs a DNS query with the specified parameters. It resolves DNS records for a given host name, caching the results to reduce the need for redundant DNS resolutions. 

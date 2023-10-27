@@ -27,23 +27,23 @@ Builder class to help creating [ConnectionOptions](ConnectionOptions.md) instanc
 
 ## **Methods**:
 
-### **WithTCP**
+### [ConnectionOptionsBuilder]() WithTCP([String](https://learn.microsoft.com/en-us/dotnet/api/System.String), [Int32](https://learn.microsoft.com/en-us/dotnet/api/System.Int32))
 : Add options for a TCP connection. 
 
-### **WithWebSocket**
+### [ConnectionOptionsBuilder]() WithWebSocket([String](https://learn.microsoft.com/en-us/dotnet/api/System.String), [Int32](https://learn.microsoft.com/en-us/dotnet/api/System.Int32))
 : Add options for a WebSocket connection. 
 
-### **WithTLS**
+### [ConnectionOptionsBuilder]() WithTLS()
 : When used MQTTClient going to use TLS to secure the communication. 
 
-### **WithPath**
+### [ConnectionOptionsBuilder]() WithPath([String](https://learn.microsoft.com/en-us/dotnet/api/System.String))
 : Used by the WebSocket transport to connect to the given path. 
 
-### **WithProtocolVersion**
+### [ConnectionOptionsBuilder]() WithProtocolVersion([SupportedProtocolVersions](SupportedProtocolVersions.md))
 : The protocol version that the plugin has to use to connect with to the server. 
 
-### **CreateClient**
+### [MQTTClient](MQTTClient.md) CreateClient()
 : Creates an MQTTClient object with the already set options. 
 
-### **Build**
+### [ConnectionOptions](ConnectionOptions.md) Build()
 : Creates the final ConnectionOptions instance. 

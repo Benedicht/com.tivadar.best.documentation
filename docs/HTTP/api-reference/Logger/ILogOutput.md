@@ -21,8 +21,8 @@ This interface defines methods for writing log messages to an output target. Imp
 : Gets a value indicating whether the log output supports colored text. 
 ## **Methods**:
 
-### **Write**
+### Void Write([Loglevels](Loglevels.md), [String](https://learn.microsoft.com/en-us/dotnet/api/System.String))
 : Writes a log entry to the output. 
 
-### **Flush**
+### Void Flush()
 : Flushes any buffered log entries to the output. 

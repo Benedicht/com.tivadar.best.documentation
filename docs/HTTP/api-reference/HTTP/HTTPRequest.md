@@ -52,9 +52,9 @@ Represents an HTTP request that allows you to send HTTP requests to remote serve
 ### **[OnRequestFinishedDelegate](OnRequestFinishedDelegate.md) Callback**
 : The callback function that will be called after the request is fully processed. 
 ### **[Boolean](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean) IsCancellationRequested**
-: Indicates if [Abort](#abort) is called on this request. 
+: Indicates if [Abort](#void-abort) is called on this request. 
 ### **[Action](https://learn.microsoft.com/en-us/dotnet/api/System.Action-1)&lt;[HTTPRequest]()&gt; OnCancellationRequested**
-: Action called when [Abort](#abort) function is invoked. 
+: Action called when [Abort](#void-abort) function is invoked. 
 ### **[Exception](https://learn.microsoft.com/en-us/dotnet/api/System.Exception) Exception**
 : Stores any exception that occurs during processing of the request or response. 
 	!!! note ""
@@ -77,83 +77,83 @@ Represents an HTTP request that allows you to send HTTP requests to remote serve
 : [IEnumerator](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.IEnumerator)	 implementation, required for [Coroutine](https://docs.unity3d.com/ScriptReference/Coroutine.html) support. 
 ## **Methods**:
 
-### **CreateGet**
-: Creates an [Get](HTTPMethods.md#httpmethodsget) request with the specified URL. 
+### [HTTPRequest]() HTTPRequest.CreateGet([String](https://learn.microsoft.com/en-us/dotnet/api/System.String))
+: Creates an [HTTP GET](HTTPMethods.md#httpmethodsget) request with the specified URL. 
 
-### **CreateGet**
-: Creates an [Get](HTTPMethods.md#httpmethodsget) request with the specified URI. 
+### [HTTPRequest]() HTTPRequest.CreateGet([Uri](https://learn.microsoft.com/en-us/dotnet/api/System.Uri))
+: Creates an [HTTP GET](HTTPMethods.md#httpmethodsget) request with the specified URI. 
 
-### **CreateGet**
-: Creates an [Get](HTTPMethods.md#httpmethodsget) request with the specified URL and registers a callback function to be called when the request is fully processed. 
+### [HTTPRequest]() HTTPRequest.CreateGet([String](https://learn.microsoft.com/en-us/dotnet/api/System.String), [OnRequestFinishedDelegate](OnRequestFinishedDelegate.md))
+: Creates an [HTTP GET](HTTPMethods.md#httpmethodsget) request with the specified URL and registers a callback function to be called when the request is fully processed. 
 
-### **CreateGet**
-: Creates an [Get](HTTPMethods.md#httpmethodsget) request with the specified URI and registers a callback function to be called when the request is fully processed. 
+### [HTTPRequest]() HTTPRequest.CreateGet([Uri](https://learn.microsoft.com/en-us/dotnet/api/System.Uri), [OnRequestFinishedDelegate](OnRequestFinishedDelegate.md))
+: Creates an [HTTP GET](HTTPMethods.md#httpmethodsget) request with the specified URI and registers a callback function to be called when the request is fully processed. 
 
-### **CreatePost**
-: Creates an [Post](HTTPMethods.md#httpmethodspost) request with the specified URL. 
+### [HTTPRequest]() HTTPRequest.CreatePost([String](https://learn.microsoft.com/en-us/dotnet/api/System.String))
+: Creates an [HTTP POST](HTTPMethods.md#httpmethodspost) request with the specified URL. 
 
-### **CreatePost**
-: Creates an [Post](HTTPMethods.md#httpmethodspost) request with the specified URI. 
+### [HTTPRequest]() HTTPRequest.CreatePost([Uri](https://learn.microsoft.com/en-us/dotnet/api/System.Uri))
+: Creates an [HTTP POST](HTTPMethods.md#httpmethodspost) request with the specified URI. 
 
-### **CreatePost**
-: Creates an [Post](HTTPMethods.md#httpmethodspost) request with the specified URL and registers a callback function to be called when the request is fully processed. 
+### [HTTPRequest]() HTTPRequest.CreatePost([String](https://learn.microsoft.com/en-us/dotnet/api/System.String), [OnRequestFinishedDelegate](OnRequestFinishedDelegate.md))
+: Creates an [HTTP POST](HTTPMethods.md#httpmethodspost) request with the specified URL and registers a callback function to be called when the request is fully processed. 
 
-### **CreatePost**
-: Creates an [Post](HTTPMethods.md#httpmethodspost) request with the specified URI and registers a callback function to be called when the request is fully processed. 
+### [HTTPRequest]() HTTPRequest.CreatePost([Uri](https://learn.microsoft.com/en-us/dotnet/api/System.Uri), [OnRequestFinishedDelegate](OnRequestFinishedDelegate.md))
+: Creates an [HTTP POST](HTTPMethods.md#httpmethodspost) request with the specified URI and registers a callback function to be called when the request is fully processed. 
 
-### **CreatePut**
-: Creates an [Put](HTTPMethods.md#httpmethodsput) request with the specified URL. 
+### [HTTPRequest]() HTTPRequest.CreatePut([String](https://learn.microsoft.com/en-us/dotnet/api/System.String))
+: Creates an [HTTP PUT](HTTPMethods.md#httpmethodsput) request with the specified URL. 
 
-### **CreatePut**
-: Creates an [Put](HTTPMethods.md#httpmethodsput) request with the specified URI. 
+### [HTTPRequest]() HTTPRequest.CreatePut([Uri](https://learn.microsoft.com/en-us/dotnet/api/System.Uri))
+: Creates an [HTTP PUT](HTTPMethods.md#httpmethodsput) request with the specified URI. 
 
-### **CreatePut**
-: Creates an [Put](HTTPMethods.md#httpmethodsput) request with the specified URL and registers a callback function to be called when the request is fully processed. 
+### [HTTPRequest]() HTTPRequest.CreatePut([String](https://learn.microsoft.com/en-us/dotnet/api/System.String), [OnRequestFinishedDelegate](OnRequestFinishedDelegate.md))
+: Creates an [HTTP PUT](HTTPMethods.md#httpmethodsput) request with the specified URL and registers a callback function to be called when the request is fully processed. 
 
-### **CreatePut**
-: Creates an [Put](HTTPMethods.md#httpmethodsput) request with the specified URI and registers a callback function to be called when the request is fully processed. 
+### [HTTPRequest]() HTTPRequest.CreatePut([Uri](https://learn.microsoft.com/en-us/dotnet/api/System.Uri), [OnRequestFinishedDelegate](OnRequestFinishedDelegate.md))
+: Creates an [HTTP PUT](HTTPMethods.md#httpmethodsput) request with the specified URI and registers a callback function to be called when the request is fully processed. 
 
-### **AddHeader**
+### Void AddHeader([String](https://learn.microsoft.com/en-us/dotnet/api/System.String), [String](https://learn.microsoft.com/en-us/dotnet/api/System.String))
 : Adds a header-value pair to the Headers. Use it to add custom headers to the request. 
 
-### **SetHeader**
+### Void SetHeader([String](https://learn.microsoft.com/en-us/dotnet/api/System.String), [String](https://learn.microsoft.com/en-us/dotnet/api/System.String))
 : For the given header name, removes any previously added values and sets the given one. 
 
-### **RemoveHeader**
+### [Boolean](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean) RemoveHeader([String](https://learn.microsoft.com/en-us/dotnet/api/System.String))
 : Removes the specified header and all of its associated values. Returns `true`, if the header found and succesfully removed. 
 
-### **HasHeader**
+### [Boolean](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean) HasHeader([String](https://learn.microsoft.com/en-us/dotnet/api/System.String))
 : Returns `true` if the given head name is already in the `HTTPRequest.Headers`. 
 
-### **GetFirstHeaderValue**
+### [String](https://learn.microsoft.com/en-us/dotnet/api/System.String) GetFirstHeaderValue([String](https://learn.microsoft.com/en-us/dotnet/api/System.String))
 : Returns the first header or `null` for the given header name. 
 
-### **GetHeaderValues**
+### [List](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1)&lt;[String](https://learn.microsoft.com/en-us/dotnet/api/System.String)&gt; GetHeaderValues([String](https://learn.microsoft.com/en-us/dotnet/api/System.String))
 : Returns all header values for the given header or `null`. 
 
-### **RemoveHeaders**
+### Void RemoveHeaders()
 : Removes all headers. 
 
-### **SetRangeHeader**
+### Void SetRangeHeader([Int64](https://learn.microsoft.com/en-us/dotnet/api/System.Int64))
 : Sets the Range header to download the content from the given byte position. See http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.35 
 
-### **SetRangeHeader**
+### Void SetRangeHeader([Int64](https://learn.microsoft.com/en-us/dotnet/api/System.Int64), [Int64](https://learn.microsoft.com/en-us/dotnet/api/System.Int64))
 : Sets the Range header to download the content from the given byte position to the given last position. See http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.35 
 
-### **Send**
+### [HTTPRequest]() Send()
 : Starts processing the request. 
 
-### **Abort**
+### Void Abort()
 : Cancels any further processing of the HTTP request. 
 
-### **Clear**
+### Void Clear()
 : Resets the request for a state where switching MethodType is possible. 
 
-### **MoveNext**
+### [Boolean](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean) MoveNext()
 : [IEnumerator](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.IEnumerator)	 implementation, required for [Coroutine](https://docs.unity3d.com/ScriptReference/Coroutine.html) support. 
 
-### **Reset**
+### Void Reset()
 : [IEnumerator](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.IEnumerator)	 implementation throwing [NotImplementedException](https://learn.microsoft.com/en-us/dotnet/api/System.NotImplementedException), required for [Coroutine](https://docs.unity3d.com/ScriptReference/Coroutine.html) support. 
 
-### **Dispose**
+### Void Dispose()
 : Disposes of resources used by the HTTPRequest instance. 

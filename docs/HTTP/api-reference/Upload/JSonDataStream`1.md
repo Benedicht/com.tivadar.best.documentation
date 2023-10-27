@@ -7,7 +7,7 @@ An [UploadStreamBase](UploadStreamBase.md) implementation to convert and upload 
 
 **Remarks:**
 
-This stream keeps a reference to the object until the preparation in [BeforeSendHeaders](#beforesendheaders). This means, changes to the object after passing it to the constructor will be reflected in the sent data too.
+This stream keeps a reference to the object until the preparation in [BeforeSendHeaders](#void-beforesendheadershttprequest). This means, changes to the object after passing it to the constructor will be reflected in the sent data too.
 
 The return value of [Stream](https://learn.microsoft.com/en-us/dotnet/api/System.IO.Stream) is treated specially in the plugin: 
 
@@ -19,11 +19,11 @@ The return value of [Stream](https://learn.microsoft.com/en-us/dotnet/api/System
 
 ## **Methods**:
 
-### **BeforeSendHeaders**
+### Void BeforeSendHeaders([HTTPRequest](../HTTP/HTTPRequest.md))
 : Called before sending out the request's headers. It sets the `"Content-Type"` header to `"application/json; charset=utf-8"`. 
 
-### **Read**
+### Read(Byte[], Int32, Int32)
 : Reads a sequence of bytes from the current stream and advances the position within the stream by the number of bytes read. 
 
-### **Dispose**
+### Dispose(Boolean)
 : Releases the unmanaged resources used by the [JSonDataStream`1]() and optionally releases the managed resources. 

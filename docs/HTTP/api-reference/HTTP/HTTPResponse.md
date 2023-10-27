@@ -60,26 +60,26 @@ The HTTPResponse class represents an HTTP response received from a remote server
 : The original request that this response is created for. 
 ## **Methods**:
 
-### **AddHeader**
+### Void AddHeader([String](https://learn.microsoft.com/en-us/dotnet/api/System.String), [String](https://learn.microsoft.com/en-us/dotnet/api/System.String))
 : Adds an HTTP header with the specified name and value to the response headers. 
 
-### **GetHeaderValues**
+### [List](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1)&lt;[String](https://learn.microsoft.com/en-us/dotnet/api/System.String)&gt; GetHeaderValues([String](https://learn.microsoft.com/en-us/dotnet/api/System.String))
 : Retrieves the list of values for a given header name as received from the server. 
 
-### **GetFirstHeaderValue**
+### [String](https://learn.microsoft.com/en-us/dotnet/api/System.String) GetFirstHeaderValue([String](https://learn.microsoft.com/en-us/dotnet/api/System.String))
 : Retrieves the first value for a given header name as received from the server. 
 
-### **HasHeaderWithValue**
+### [Boolean](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean) HasHeaderWithValue([String](https://learn.microsoft.com/en-us/dotnet/api/System.String), [String](https://learn.microsoft.com/en-us/dotnet/api/System.String))
 : Checks if a header with the specified name and value exists in the response headers. 
 
-### **HasHeader**
+### [Boolean](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean) HasHeader([String](https://learn.microsoft.com/en-us/dotnet/api/System.String))
 : Checks if a header with the specified name exists in the response headers. 
 
-### **GetRange**
+### [HTTPRange](HTTPRange.md) GetRange()
 : Parses the `'Content-Range'` header's value and returns a [HTTPRange](HTTPRange.md) object representing the byte range of the response content. 
 	!!! note ""
 		If the server ignores a byte-range-spec because it is syntactically invalid, the server SHOULD treat the request as if the invalid Range header field did not exist. (Normally, this means return a 200 response containing the full entity). In this case because there are no `'Content-Range'` header values, this function will return `null`. 
 
 
-### **Dispose**
+### Void Dispose()
 : IDisposable implementation. 

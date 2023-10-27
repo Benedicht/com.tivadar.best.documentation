@@ -24,20 +24,20 @@ The [HostManager]() class acts as a central registry for managing [HostVariant](
 
 ## **Methods**:
 
-### **GetHostVariant**
+### [HostVariant](HostVariant.md) HostManager.GetHostVariant([HTTPRequest](../HTTP/HTTPRequest.md))
 : Gets the [HostVariant](HostVariant.md) associated with an HTTP request. 
 
-### **GetHostVariant**
+### [HostVariant](HostVariant.md) HostManager.GetHostVariant([HostKey](HostKey.md))
 : Gets the [HostVariant](HostVariant.md) associated with a HostKey. 
 
-### **RemoveAllIdleConnections**
+### Void HostManager.RemoveAllIdleConnections()
 : Removes all idle connections for all hosts. 
 
-### **TryToSendQueuedRequests**
+### Void HostManager.TryToSendQueuedRequests()
 : Tries to send queued requests for all hosts. 
 
-### **Shutdown**
+### Void HostManager.Shutdown()
 : Shuts down all connections for all hosts. 
 
-### **Clear**
+### Void HostManager.Clear()
 : Clears all hosts and their associated variants. 

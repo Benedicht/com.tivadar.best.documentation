@@ -20,8 +20,8 @@ Compression Extensions for WebSocket implementation. http://tools.ietf.org/html/
 : What minimum data length will trigger the compression. 
 ## **Methods**:
 
-### **AddNegotiation**
+### Void AddNegotiation([HTTPRequest](../../../HTTP/api-reference/HTTP/HTTPRequest.md))
 : This will start the permessage-deflate negotiation process. 
 
-### **Decode**
+### [BufferSegment](../../../HTTP/api-reference/Memory/BufferSegment.md) Decode([Byte](https://learn.microsoft.com/en-us/dotnet/api/System.Byte), [BufferSegment](../../../HTTP/api-reference/Memory/BufferSegment.md))
 : IExtension implementation to possible decompress the data. 

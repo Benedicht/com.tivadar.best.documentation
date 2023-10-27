@@ -8,5 +8,5 @@ Builder class to make MQTTClient creation easier.
 
 ## **Methods**:
 
-### **CreateClient**
+### [MQTTClient](MQTTClient.md) CreateClient()
 : Creates an MQTTClient instance. 

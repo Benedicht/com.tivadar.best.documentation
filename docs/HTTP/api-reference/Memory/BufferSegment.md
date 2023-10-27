@@ -16,20 +16,20 @@ Represents a segment (a continuous section) of a byte array, providing functiona
 : The number of bytes in the segment that contain valid data. 
 ## **Methods**:
 
-### **AsAutoRelease**
+### [AutoReleaseBuffer](AutoReleaseBuffer.md) AsAutoRelease()
 : Converts the buffer segment to an AutoReleaseBuffer to use it in a local using statement. 
 
-### **Slice**
+### [BufferSegment]() Slice([Int32](https://learn.microsoft.com/en-us/dotnet/api/System.Int32))
 : Creates a new segment starting from the specified offset. 
 	!!! note ""
 		The new segment will reference the same underlying byte[] as the original, without creating a copy of the data.
 
 
-### **Slice**
+### [BufferSegment]() Slice([Int32](https://learn.microsoft.com/en-us/dotnet/api/System.Int32), [Int32](https://learn.microsoft.com/en-us/dotnet/api/System.Int32))
 : Creates a new segment with the specified offset and count. 
 	!!! note ""
 		The new segment will reference the same underlying byte[] as the original, without creating a copy of the data.
 
 
-### **CopyTo**
+### CopyTo(Byte[])
 : Copyies the buffer's content to the received array. 

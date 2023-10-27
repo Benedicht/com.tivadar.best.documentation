@@ -30,8 +30,8 @@ The [HostKey]() struct is designed to uniquely identify a host based on its URI 
 : Gets the host name from the URI or "file" if the URI is a file URI. 
 ## **Methods**:
 
-### **From**
+### [HostKey]() HostKey.From([HTTPRequest](../HTTP/HTTPRequest.md))
 : Creates a [HostKey]() instance from an HTTP request. 
 
-### **From**
+### [HostKey]() HostKey.From([Uri](https://learn.microsoft.com/en-us/dotnet/api/System.Uri), [ProxySettings](../Settings/ProxySettings.md))
 : Creates a [HostKey]() instance from a URI and proxy settings. 

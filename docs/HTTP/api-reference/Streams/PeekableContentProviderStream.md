@@ -8,8 +8,8 @@ A PeekableStream implementation that also implements the [IPeekableContentProvid
 
 ## **Methods**:
 
-### **Unbind**
+### Void Unbind()
 : This will set Consumer to null. 
 
-### **UnbindIf**
+### Void UnbindIf([IContentConsumer](../Tcp/IContentConsumer.md))
 : Set Consumer to null if the current one is the one passed in the parameter.  

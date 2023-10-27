@@ -16,8 +16,8 @@ Internal class that stores all information that received from a server in a WWW-
 : List of URIs, as specified in RFC XURI, that define the protection space. If a URI is an abs_path, it is relative to the canonical root URL (see section 1.2 above) of the server being accessed. An absoluteURI in this list may refer to a different server than the one being accessed. The client can use this list to determine the set of URIs for which the same authentication information may be sent: any URI that has a URI in this list as a prefix (after both have been made absolute) may be assumed to be in the same protection space. If this directive is omitted or its value is empty, the client should assume that the protection space consists of all URIs on the responding server. 
 ## **Methods**:
 
-### **ParseChallange**
+### Void ParseChallange([String](https://learn.microsoft.com/en-us/dotnet/api/System.String))
 : Parses a WWW-Authenticate header's value to retrive all information. 
 
-### **GenerateResponseHeader**
+### [String](https://learn.microsoft.com/en-us/dotnet/api/System.String) GenerateResponseHeader([Credentials](Credentials.md), [Boolean](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean), [HTTPMethods](../HTTP/HTTPMethods.md), [Uri](https://learn.microsoft.com/en-us/dotnet/api/System.Uri))
 : Generates a string that can be set to an Authorization header. 

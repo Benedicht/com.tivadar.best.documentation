@@ -24,11 +24,11 @@ The class manages Root CAs, Intermediate Certificates, Client Certificates, and 
 : Called when all databases are in place and loaded. 
 ## **Methods**:
 
-### **Setup**
+### Void TLSSecurity.Setup()
 : Initiates the setup process of the TLS Security package. 
 
-### **UnloadDatabases**
+### Void TLSSecurity.UnloadDatabases()
 : Unloads all databases (certificates and OCSP cache). 
 
-### **WaitForSetupFinish**
+### Void TLSSecurity.WaitForSetupFinish()
 : Blocks the current thread until setup is finished. 

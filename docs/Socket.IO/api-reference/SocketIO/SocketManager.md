@@ -34,17 +34,17 @@ Manages the connection and associated sockets for a Socket.IO server.
 : Called for every packet received from the server. 
 ## **Methods**:
 
-### **GetSocket**
+### [Socket](Socket.md) GetSocket()
 : Returns with the "/" namespace, the same as the Socket property. 
 
-### **GetSocket**
+### [Socket](Socket.md) GetSocket([String](https://learn.microsoft.com/en-us/dotnet/api/System.String))
 : Returns with the specified namespace 
 
-### **Open**
+### Void Open()
 : This function will begin to open the Socket.IO connection by sending out the handshake request. If the Options' AutoConnect is true, it will be called automatically. 
 
-### **Close**
+### Void Close()
 : Closes this Socket.IO connection. 
 
-### **EmitAll**
+### EmitAll(String, Object[])
 : Sends an event to all available namespaces. 

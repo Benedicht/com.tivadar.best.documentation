@@ -8,5 +8,5 @@ Helper class to contain, manage and execute logic to detect available proxy on t
 
 ## **Methods**:
 
-### **Detach**
+### Void Detach()
 : Call Detach() to disable ProxyDetector's logic to find and set a proxy. 

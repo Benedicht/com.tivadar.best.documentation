@@ -10,11 +10,11 @@ Provides an implementation of [ILogOutput](ILogOutput.md) that writes log messag
 : Gets a value indicating whether this log output accepts color codes. Always returns `false`. 
 ## **Methods**:
 
-### **Write**
+### Void Write([Loglevels](Loglevels.md), [String](https://learn.microsoft.com/en-us/dotnet/api/System.String))
 : Writes a log message to the file. 
 
-### **Flush**
+### Void Flush()
 : Flushes any buffered log messages to the file. 
 
-### **Dispose**
+### Void Dispose()
 : Releases any resources used by the FileOutput instance. 

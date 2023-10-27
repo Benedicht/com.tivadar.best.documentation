@@ -16,17 +16,17 @@ This class represents a Socket.IO namespace.
 : True if the socket is connected and open to the server. False otherwise. 
 ## **Methods**:
 
-### **Disconnect**
+### Void Disconnect()
 : Disconnects this socket/namespace. 
 
-### **Volatile**
+### [EmitBuilder](EmitBuilder.md) Volatile()
 : By emitting a volatile event, if the transport isn't ready the event is going to be discarded. 
 
-### **Off**
+### Void Off()
 : Remove all callbacks for all events. 
 
-### **Off**
+### Void Off([String](https://learn.microsoft.com/en-us/dotnet/api/System.String))
 : Removes all callbacks to the given event. 
 
-### **Off**
+### Void Off([SocketIOEventTypes](SocketIOEventTypes.md))
 : Removes all callbacks to the given event. 

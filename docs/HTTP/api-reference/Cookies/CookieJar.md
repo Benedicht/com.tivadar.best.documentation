@@ -16,20 +16,20 @@ The Cookie Jar implementation based on RFC 6265(http://tools.ietf.org/html/rfc62
 : If this property is set to `true`, then new cookies treated as session cookies and these cookies are not saved to disk. Its default value is `false`. 
 ## **Methods**:
 
-### **Get**
+### [List](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1)&lt;[Cookie](Cookie.md)&gt; CookieJar.Get([Uri](https://learn.microsoft.com/en-us/dotnet/api/System.Uri))
 : Returns all Cookies that corresponds to the given Uri. 
 
-### **Set**
+### Void CookieJar.Set([Uri](https://learn.microsoft.com/en-us/dotnet/api/System.Uri), [Cookie](Cookie.md))
 : Will add a new, or overwrite an old cookie if already exists. 
 
-### **Set**
+### Void CookieJar.Set([Cookie](Cookie.md))
 : Will add a new, or overwrite an old cookie if already exists. 
 
-### **Clear**
+### Void CookieJar.Clear()
 : Deletes all cookies from the Jar. 
 
-### **Clear**
+### Void CookieJar.Clear([TimeSpan](https://learn.microsoft.com/en-us/dotnet/api/System.TimeSpan))
 : Removes cookies that older than the given parameter. 
 
-### **Clear**
+### Void CookieJar.Clear([String](https://learn.microsoft.com/en-us/dotnet/api/System.String))
 : Removes cookies that matches to the given domain. 

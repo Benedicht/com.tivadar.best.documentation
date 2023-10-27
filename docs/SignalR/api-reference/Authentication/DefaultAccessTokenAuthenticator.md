@@ -14,14 +14,14 @@ Represents the default access token authenticator that uses the Bearer token sch
 : This event is not used because [IsPreAuthRequired](#boolean-ispreauthrequired) is `false`. 
 ## **Methods**:
 
-### **StartAuthentication**
+### Void StartAuthentication()
 : Not used as IsPreAuthRequired is false 
 
-### **PrepareRequest**
+### Void PrepareRequest([HTTPRequest](../../../HTTP/api-reference/HTTP/HTTPRequest.md))
 : Prepares the HTTP request by adding appropriate authentication headers or query parameters based on the request type. 
 
-### **PrepareUri**
+### [Uri](https://learn.microsoft.com/en-us/dotnet/api/System.Uri) PrepareUri([Uri](https://learn.microsoft.com/en-us/dotnet/api/System.Uri))
 : Prepares the URI by appending the access token if necessary. 
 
-### **Cancel**
+### Void Cancel()
 : Cancels any ongoing authentication operations. 

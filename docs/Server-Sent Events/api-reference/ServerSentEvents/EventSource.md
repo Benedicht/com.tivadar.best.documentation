@@ -57,16 +57,16 @@ How It Works:
 : Called every time when the State property changed. 
 ## **Methods**:
 
-### **Open**
+### Void Open()
 : Start to connect to the remote server. 
 
-### **Close**
+### Void Close()
 : Start to close the connection. 
 
-### **On**
+### Void On([String](https://learn.microsoft.com/en-us/dotnet/api/System.String), [OnEventDelegate](OnEventDelegate.md))
 : With this function an event handler can be subscribed for an event name. 
 
-### **Off**
+### Void Off([String](https://learn.microsoft.com/en-us/dotnet/api/System.String))
 : With this function the event handler can be removed for the given event name. 
 	!!! note ""
 		The event is still will be sent by the server and processed by the client.

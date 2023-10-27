@@ -3,7 +3,7 @@ comments: true
 ---
 # NegotiationResult
 
-Negotiation result of the /negotiation request. https://github.com/dotnet/aspnetcore/blob/master/src/SignalR/docs/specs/TransportProtocols.md#post-endpoint-basenegotiate-request
+Negotiation result of the /negotiation request. [https://github.com/dotnet/aspnetcore/blob/master/src/SignalR/docs/specs/TransportProtocols.md#post-endpoint-basenegotiate-request](https://github.com/dotnet/aspnetcore/blob/master/src/SignalR/docs/specs/TransportProtocols.md#post-endpoint-basenegotiate-request)
 
 ## **Fields**:
 ### **[String](https://learn.microsoft.com/en-us/dotnet/api/System.String) ConnectionToken**

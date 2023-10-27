@@ -31,23 +31,23 @@ While the BufferPool is housed within the Best HTTP package, its benefits are no
 
 ## **Methods**:
 
-### **Get**
+### [Byte[]](https://learn.microsoft.com/en-us/dotnet/api/System.Byte[]) BufferPool.Get([Int64](https://learn.microsoft.com/en-us/dotnet/api/System.Int64), [Boolean](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean), [LoggingContext](../Logger/LoggingContext.md))
 : Fetches a byte array from the pool. 
 	!!! note ""
 		Depending on the `canBeLarger` parameter, the returned buffer may be larger than the requested size!
 
 
-### **ReleaseBulk**
+### ReleaseBulk(ConcurrentQueue)
 : Releases a list of buffer segments back to the pool in a bulk operation. 
 
-### **ReleaseBulk**
+### ReleaseBulk(List)
 : Releases a list of buffer segments back to the pool in a bulk operation. 
 
-### **Release**
+### Release(Byte[])
 : Releases a byte array back to the pool. 
 
-### **Resize**
+### Resize(Byte[]@, Int32, Boolean, Boolean, LoggingContext)
 : Resizes a byte array by returning the old one to the pool and fetching (or creating) a new one of the specified size. 
 
-### **Clear**
+### Void BufferPool.Clear()
 : Clears all stored entries in the buffer pool instantly, releasing memory. 

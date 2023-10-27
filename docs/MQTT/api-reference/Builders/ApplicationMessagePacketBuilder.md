@@ -3,40 +3,40 @@ comments: true
 ---
 # ApplicationMessagePacketBuilder
 
-Builder to create an application message. https://docs.oasis-open.org/mqtt/mqtt/v5.0/os/mqtt-v5.0-os.html#_Toc3901100
+Builder to create an application message. [https://docs.oasis-open.org/mqtt/mqtt/v5.0/os/mqtt-v5.0-os.html#_Toc3901100](https://docs.oasis-open.org/mqtt/mqtt/v5.0/os/mqtt-v5.0-os.html#_Toc3901100)
 
 
 ## **Methods**:
 
-### **WithQoS**
+### [ApplicationMessagePacketBuilder]() WithQoS([QoSLevels](../Packets/QoSLevels.md))
 : Build the packet with the given QoS level. 
 
-### **WithRetain**
+### [ApplicationMessagePacketBuilder]() WithRetain([Boolean](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean))
 : Build the packet with the given retain flag. 
 
-### **WithPayloadFormatIndicator**
+### [ApplicationMessagePacketBuilder]() WithPayloadFormatIndicator([PayloadTypes](../Packets/PayloadTypes.md))
 : Build the packet with the given payload format indicator. 
 
-### **WithMessageExpiryInterval**
+### [ApplicationMessagePacketBuilder]() WithMessageExpiryInterval([UInt32](https://learn.microsoft.com/en-us/dotnet/api/System.UInt32))
 : Set the application message's expiry interval (it's in seconds). 
 
-### **WithResponseTopic**
+### [ApplicationMessagePacketBuilder]() WithResponseTopic([String](https://learn.microsoft.com/en-us/dotnet/api/System.String))
 : Set the application message's response topic. 
 
-### **WithCorrelationData**
+### WithCorrelationData(Byte[])
 : Optional data sent with the application message. 
 
-### **WithUserProperty**
+### [ApplicationMessagePacketBuilder]() WithUserProperty([String](https://learn.microsoft.com/en-us/dotnet/api/System.String), [String](https://learn.microsoft.com/en-us/dotnet/api/System.String))
 : Optional key value pairs that will be sent with the application message. 
 
-### **WithContentType**
+### [ApplicationMessagePacketBuilder]() WithContentType([String](https://learn.microsoft.com/en-us/dotnet/api/System.String))
 : Optional Content-Type value to help process the application message's payload. 
 
-### **WithPayload**
+### WithPayload(Byte[])
 : Set the application message's payload. 
 
-### **WithPayload**
+### [ApplicationMessagePacketBuilder]() WithPayload([String](https://learn.microsoft.com/en-us/dotnet/api/System.String))
 : Set the application message's payload. It also sets the payload format indicator to PayloadTypes.UTF8. 
 
-### **BeginPublish**
+### Void BeginPublish()
 : Begin sending the application message to the broker. 

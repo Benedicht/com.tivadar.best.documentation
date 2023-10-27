@@ -3,7 +3,7 @@ comments: true
 ---
 # ServerConnectAckMessage
 
-Container for a server-sent Connect acknowledgement message. https://docs.oasis-open.org/mqtt/mqtt/v5.0/os/mqtt-v5.0-os.html#_Toc3901074
+Container for a server-sent Connect acknowledgement message. [https://docs.oasis-open.org/mqtt/mqtt/v5.0/os/mqtt-v5.0-os.html#_Toc3901074](https://docs.oasis-open.org/mqtt/mqtt/v5.0/os/mqtt-v5.0-os.html#_Toc3901074)
 
 ## **Fields**:
 ### **[Boolean](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean) SessionPresent**

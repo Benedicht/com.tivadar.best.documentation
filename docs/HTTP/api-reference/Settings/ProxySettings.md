@@ -10,14 +10,14 @@ Represents settings related to using a proxy server for HTTP requests.
 : Gets or sets the proxy object used for the request. 
 ## **Methods**:
 
-### **HasProxyFor**
+### [Boolean](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean) HasProxyFor([Uri](https://learn.microsoft.com/en-us/dotnet/api/System.Uri))
 : Checks if there is a proxy configured for the given URI. 
 
-### **SetupRequest**
+### Void SetupRequest([HTTPRequest](../HTTP/HTTPRequest.md))
 : Sets up the HTTP request for passing through a proxy server. 
 
-### **Handle407**
+### [Boolean](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean) Handle407([HTTPRequest](../HTTP/HTTPRequest.md))
 : Handles the proxy's response with status code `407`. 
 
-### **AddToHash**
+### AddToHash(Uri, Hash128@)
 : Adds the proxy address to a hash for the given request URI. 

@@ -7,7 +7,7 @@ A specialized upload stream designed to handle data that's generated on-the-fly 
 
 **Remarks:**
 
-This implementation is designed to handle scenarios where data may not always be immediately available for upload. The request will remain active until the [Complete](#complete) method is invoked, ensuring that data can continue to be fed into the stream even if it's temporarily empty during a Read operation. 
+This implementation is designed to handle scenarios where data may not always be immediately available for upload. The request will remain active until the [Complete](#void-complete) method is invoked, ensuring that data can continue to be fed into the stream even if it's temporarily empty during a Read operation. 
 
 ## **Fields**:
 ### **[Int64](https://learn.microsoft.com/en-us/dotnet/api/System.Int64) Length**
@@ -19,13 +19,13 @@ This implementation is designed to handle scenarios where data may not always be
 : Gets the length of data currently buffered and ready for upload. 
 ## **Methods**:
 
-### **BeforeSendHeaders**
+### Void BeforeSendHeaders([HTTPRequest](../HTTP/HTTPRequest.md))
 : Sets the necessary headers before sending the request. 
 
-### **BeforeSendBody**
+### Void BeforeSendBody([HTTPRequest](../HTTP/HTTPRequest.md), [IThreadSignaler](../Connections/IThreadSignaler.md))
 : Prepares the stream before the request body is sent. 
 
-### **Read**
+### Read(Byte[], Int32, Int32)
 : Reads data from the stream to be uploaded. 
 	!!! note ""
 		The returned value indicates the state of the stream: 
@@ -37,19 +37,19 @@ This implementation is designed to handle scenarios where data may not always be
  Note: A zero return value can come after a -1 return, indicating a transition from waiting to completion. 
 
 
-### **Write**
+### Write(Byte[], Int32, Int32)
 : Writes data to the stream, making it available for upload. 
 	!!! note ""
 		After writing data to the stream using this method, the connection is signaled that data is available to send. 
 
 
-### **Write**
+### Void Write([BufferSegment](../Memory/BufferSegment.md))
 : Writes a segment of data to the stream, making it available for upload. 
 	!!! note ""
 		After writing a segment to the stream using this method, the connection is signaled that data is available to send. 
 
 
-### **Complete**
+### Void Complete()
 : Marks the stream as complete, signaling that no more data will be added. 
 	!!! note ""
 		All remaining buffered data will be sent to the server. 

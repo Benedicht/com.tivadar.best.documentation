@@ -31,53 +31,53 @@ The `HTTPCache` class provides a powerful caching mechanism for HTTP responses i
 ### **[Int64](https://learn.microsoft.com/en-us/dotnet/api/System.Int64) CacheSize**
 : Gets the current size of the HTTP cache in bytes. 
 ### **[OnBeforeBeginCacheDelegate](OnBeforeBeginCacheDelegate.md) OnBeforeBeginCache**
-: Called before the plugin calls [BeginCache](#begincache) to decide whether the content will be cached or not. 
+: Called before the plugin calls [BeginCache](#begincache(httpmethods,-uri,-int32,-string,-list,-loggingcontext)) to decide whether the content will be cached or not. 
 ## **Methods**:
 
-### **CalculateHash**
+### [Hash128](https://docs.unity3d.com/ScriptReference/Hash128.html) HTTPCache.CalculateHash([HTTPMethods](../HTTP/HTTPMethods.md), [Uri](https://learn.microsoft.com/en-us/dotnet/api/System.Uri))
 : Calculates a unique hash identifier based on the HTTP method and URI. 
 
-### **GetHashDirectory**
+### [String](https://learn.microsoft.com/en-us/dotnet/api/System.String) GetHashDirectory([Hash128](https://docs.unity3d.com/ScriptReference/Hash128.html))
 : Generates the directory path based on the given hash where cached content is stored. 
 
-### **GetHeaderPathFromHash**
+### [String](https://learn.microsoft.com/en-us/dotnet/api/System.String) GetHeaderPathFromHash([Hash128](https://docs.unity3d.com/ScriptReference/Hash128.html))
 : Generates the file path for the header cache associated with the given hash. 
 
-### **GetContentPathFromHash**
+### [String](https://learn.microsoft.com/en-us/dotnet/api/System.String) GetContentPathFromHash([Hash128](https://docs.unity3d.com/ScriptReference/Hash128.html))
 : Generates the file path for the content cache associated with the given hash. 
 
-### **AreCacheFilesExists**
+### [Boolean](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean) AreCacheFilesExists([Hash128](https://docs.unity3d.com/ScriptReference/Hash128.html))
 : Checks whether cache files (header and content) associated with the given hash exist. 
 
-### **SetupValidationHeaders**
+### Void SetupValidationHeaders([HTTPRequest](../HTTP/HTTPRequest.md))
 : Sets up validation headers on an HTTP request if a locally cached response exists. 
 
-### **BeginCache**
+### BeginCache(HTTPMethods, Uri, Int32, String, List, LoggingContext)
 : Initiates the caching process for an HTTP response, creating an [HTTPCacheContentWriter](HTTPCacheContentWriter.md) if caching is enabled and all predconditions are met. 
 
-### **EndCache**
+### Void EndCache([HTTPCacheContentWriter](HTTPCacheContentWriter.md), [Boolean](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean), [LoggingContext](../Logger/LoggingContext.md))
 : Finalizes the caching process and takes appropriate actions based on the completion status. 
 
-### **BeginReadContent**
+### [Stream](https://learn.microsoft.com/en-us/dotnet/api/System.IO.Stream) BeginReadContent([Hash128](https://docs.unity3d.com/ScriptReference/Hash128.html), [LoggingContext](../Logger/LoggingContext.md))
 : Initiates the process of reading cached content associated with a given hash. Call BeginReadContent to acquire a Stream object that points to the cached resource. 
 
-### **EndReadContent**
+### Void EndReadContent([Hash128](https://docs.unity3d.com/ScriptReference/Hash128.html), [LoggingContext](../Logger/LoggingContext.md))
 : Finalizes the process of reading cached content associated with a given hash. 
 
-### **Delete**
+### Void Delete([Hash128](https://docs.unity3d.com/ScriptReference/Hash128.html), [LoggingContext](../Logger/LoggingContext.md))
 : Deletes a cached entry identified by the given hash, including its associated header and content files. 
 
-### **RefreshHeaders**
+### RefreshHeaders(Hash128, String, List, LoggingContext)
 : Refreshes the headers of a cached HTTP response with new headers. 
 
-### **CanServeWithoutValidation**
+### [Boolean](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean) CanServeWithoutValidation([Hash128](https://docs.unity3d.com/ScriptReference/Hash128.html), [ErrorTypeForValidation](ErrorTypeForValidation.md), [LoggingContext](../Logger/LoggingContext.md))
 : Checks whether the caches resource identified by the hash is can be served from the local store with the given error conditions.  
 	!!! note ""
 		This check reflects the very current state, even if it returns `true`, a request might just executing to get a write lock on it to refresh the content.
 
 
-### **Redirect**
+### Void Redirect([HTTPRequest](../HTTP/HTTPRequest.md), [Hash128](https://docs.unity3d.com/ScriptReference/Hash128.html))
 : Redirects a request to a cached entity. 
 
-### **Clear**
+### Void Clear()
 : Clears the HTTP cache by removing all cached entries and associated metadata. 

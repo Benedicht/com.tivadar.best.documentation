@@ -13,5 +13,5 @@ Provides an implementation of [ILogOutput](ILogOutput.md) that writes log messag
 
 ## **Methods**:
 
-### **Write**
+### Void Write([Loglevels](Loglevels.md), [String](https://learn.microsoft.com/en-us/dotnet/api/System.String))
 : Writes a log message to the Unity Debug Console based on the specified log level. 

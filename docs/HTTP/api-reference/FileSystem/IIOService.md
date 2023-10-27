@@ -8,23 +8,23 @@ Interface for file-system abstraction.
 
 ## **Methods**:
 
-### **DirectoryCreate**
+### Void DirectoryCreate([String](https://learn.microsoft.com/en-us/dotnet/api/System.String))
 : Create a directory for the given path. 
 
-### **DirectoryExists**
+### [Boolean](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean) DirectoryExists([String](https://learn.microsoft.com/en-us/dotnet/api/System.String))
 : Return true if the directory exists for the given path. 
 
-### **DirectoryDelete**
+### Void DirectoryDelete([String](https://learn.microsoft.com/en-us/dotnet/api/System.String))
 : Delete the directory. 
 
-### **GetFiles**
+### [String[]](https://learn.microsoft.com/en-us/dotnet/api/System.String[]) GetFiles([String](https://learn.microsoft.com/en-us/dotnet/api/System.String))
 : Return with the file names for the given path. 
 
-### **FileDelete**
+### Void FileDelete([String](https://learn.microsoft.com/en-us/dotnet/api/System.String))
 : Delete the file for the given path. 
 
-### **FileExists**
+### [Boolean](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean) FileExists([String](https://learn.microsoft.com/en-us/dotnet/api/System.String))
 : Return true if the file exists on the given path. 
 
-### **CreateFileStream**
+### [Stream](https://learn.microsoft.com/en-us/dotnet/api/System.IO.Stream) CreateFileStream([String](https://learn.microsoft.com/en-us/dotnet/api/System.String), [FileStreamModes](FileStreamModes.md))
 : Create a stream that can read and/or write a file on the given path. 

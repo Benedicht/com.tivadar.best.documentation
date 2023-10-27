@@ -16,8 +16,8 @@ Represents settings related to connection-timeouts and processing duration.
 : Gets or sets the maximum time to wait for the request to finish after the connection is established. 
 ## **Methods**:
 
-### **IsConnectTimedOut**
+### [Boolean](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean) IsConnectTimedOut([DateTime](https://learn.microsoft.com/en-us/dotnet/api/System.DateTime))
 : Returns `true` if the request has been stuck in the connection phase for too long. 
 
-### **IsTimedOut**
+### [Boolean](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean) IsTimedOut([DateTime](https://learn.microsoft.com/en-us/dotnet/api/System.DateTime))
 : Returns `true` if the time has passed the specified Timeout setting since processing started or if the connection has timed out. 

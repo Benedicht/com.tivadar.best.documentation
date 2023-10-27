@@ -8,14 +8,14 @@ A builder struct for constructing an instance of the HTTPCache class with option
 
 ## **Methods**:
 
-### **WithOptions**
+### [HTTPCacheBuilder]() WithOptions([HTTPCacheOptions](HTTPCacheOptions.md))
 : Sets the configuration options for the HTTP cache. 
 
-### **WithOptions**
+### [HTTPCacheBuilder]() WithOptions([HTTPCacheOptionsBuilder](HTTPCacheOptionsBuilder.md))
 : Sets the configuration options for the HTTP cache using an [HTTPCacheOptionsBuilder](HTTPCacheOptionsBuilder.md). 
 
-### **WithBeforeBeginCacheCallback**
+### [HTTPCacheBuilder]() WithBeforeBeginCacheCallback([OnBeforeBeginCacheDelegate](OnBeforeBeginCacheDelegate.md))
 : Sets a callback delegate to be executed before caching of an entity begins. 
 
-### **Build**
+### [HTTPCache](HTTPCache.md) Build()
 : Builds and returns an instance of the [HTTPCache](HTTPCache.md) with the specified configuration options and callback delegate. 

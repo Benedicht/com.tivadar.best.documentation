@@ -44,29 +44,29 @@ Represents the main entry point for a SignalR Core connection.
 : Logging context of this HubConnection instance. 
 ## **Methods**:
 
-### **StartConnect**
+### Void StartConnect()
 : Initiates the connection process to the Hub. 
 
-### **ConnectAsync**
+### [Task](https://learn.microsoft.com/en-us/dotnet/api/System.Threading.Tasks.Task-1)&lt;[HubConnection]()&gt; ConnectAsync()
 : Initiates an asynchronous connection to the Hub and returns a task representing the operation. 
 
-### **StartClose**
+### Void StartClose()
 : Begins the process to gracefully close the connection. 
 
-### **CloseAsync**
+### [Task](https://learn.microsoft.com/en-us/dotnet/api/System.Threading.Tasks.Task-1)&lt;[HubConnection]()&gt; CloseAsync()
 : Initiates an asynchronous close operation for the connection and returns a task representing the operation. 
 
-### **Send**
+### Send(String, Object[])
 : Invokes the specified method on the server without expecting a return value. 
 
-### **SendAsync**
+### SendAsync(String, Object[])
 : Invokes the specified method on the server without expecting a return value. 
 
-### **SendAsync**
+### SendAsync(String, CancellationToken, Object[])
 : Invokes the specified method on the server without expecting a return value, with an option to cancel. 
 
-### **On**
+### Void On([String](https://learn.microsoft.com/en-us/dotnet/api/System.String), [Action](https://learn.microsoft.com/en-us/dotnet/api/System.Action))
 : Registers a callback to be invoked when the server calls the specified method with no parameters. 
 
-### **Remove**
+### Void Remove([String](https://learn.microsoft.com/en-us/dotnet/api/System.String))
 : Remove all event handlers for  that subscribed with an On call. 

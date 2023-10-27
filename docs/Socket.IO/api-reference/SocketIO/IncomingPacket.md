@@ -30,5 +30,5 @@ Represents a packet received from the the Socket.IO server.
 : In case of JSon serialization, it's the json payload sent by the server. 
 ## **Methods**:
 
-### **ToString**
+### [String](https://learn.microsoft.com/en-us/dotnet/api/System.String) ToString()
 : Returns with the Payload of this packet. 

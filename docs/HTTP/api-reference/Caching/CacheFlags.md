@@ -13,7 +13,7 @@ Possible caching flags that a `Cache-Control` header can send.
 	!!! note ""
 		More details can be found here: 
 
-		- https://www.rfc-editor.org/rfc/rfc9111.html#name-must-revalidate
+		- [https://www.rfc-editor.org/rfc/rfc9111.html#name-must-revalidate](https://www.rfc-editor.org/rfc/rfc9111.html#name-must-revalidate)
 
 
 
@@ -22,6 +22,6 @@ Possible caching flags that a `Cache-Control` header can send.
 	!!! note ""
 		More details can be found here: 
 
-		- https://www.rfc-editor.org/rfc/rfc9111.html#name-no-cache-2
+		- [https://www.rfc-editor.org/rfc/rfc9111.html#name-no-cache-2](https://www.rfc-editor.org/rfc/rfc9111.html#name-no-cache-2)
 
 

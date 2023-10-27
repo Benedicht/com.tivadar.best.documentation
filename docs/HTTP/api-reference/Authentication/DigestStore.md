@@ -8,5 +8,5 @@ Stores and manages already received digest infos.
 
 ## **Methods**:
 
-### **GetOrCreate**
+### [Digest](Digest.md) DigestStore.GetOrCreate([Uri](https://learn.microsoft.com/en-us/dotnet/api/System.Uri))
 : It will retrieve or create a new Digest for the given Uri. 

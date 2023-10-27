@@ -8,23 +8,23 @@ TODO:
 
 ## **Methods**:
 
-### **WithTopic**
+### [LastWillBuilder]() WithTopic([String](https://learn.microsoft.com/en-us/dotnet/api/System.String))
 : Set the topic the last-will will be published. 
 
-### **WithPayload**
+### WithPayload(Byte[])
 : Binary payload of the last-will. 
 
-### **WithPayload**
+### [LastWillBuilder]() WithPayload([String](https://learn.microsoft.com/en-us/dotnet/api/System.String))
 : Textual payload of the last-will. It also sets the Payload Format Indicator to UTF8. 
 
-### **WithQoS**
+### [LastWillBuilder]() WithQoS([QoSLevels](../Packets/QoSLevels.md))
 : QoS level of the last-will. 
 
-### **WithRetain**
+### [LastWillBuilder]() WithRetain([Boolean](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean))
 : Retain flag. 
 
-### **WithDelayInterval**
+### [LastWillBuilder]() WithDelayInterval([UInt32](https://learn.microsoft.com/en-us/dotnet/api/System.UInt32))
 : Delay before the broker will publish the last-will 
 
-### **WithPayloadFormatIndicator**
+### [LastWillBuilder]() WithPayloadFormatIndicator([PayloadTypes](../Packets/PayloadTypes.md))
 : Type of the payload, binary or textual. 

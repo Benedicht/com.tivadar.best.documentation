@@ -13,5 +13,5 @@ Interface for signaling upload threads.
 
 ## **Methods**:
 
-### **SignalThread**
+### Void SignalThread()
 : Signals the associated thread to resume or wake up. 

@@ -23,8 +23,8 @@ While it's possible, it's not advised to send binary data url-encoded!
 : Gets the length of the stream. 
 ## **Methods**:
 
-### **BeforeSendHeaders**
+### Void BeforeSendHeaders([HTTPRequest](../HTTP/HTTPRequest.md))
 : Sets up the HTTP request by adding the `"Content-Type"` header as `"application/x-www-form-urlencoded"`. 
 
-### **AddBinaryData**
+### AddBinaryData(String, Byte[])
 : Adds binary data to the form. It is not advised to send binary data with an URL-encoded form due to the conversion cost of binary to text conversion. 

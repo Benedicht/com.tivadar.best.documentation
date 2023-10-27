@@ -33,17 +33,17 @@ TCPStreamer serves several key functions:
 : Gets the total length of buffered data for reading from the stream. 
 ## **Methods**:
 
-### **DequeueReceived**
+### [BufferSegment](../Memory/BufferSegment.md) DequeueReceived()
 : Dequeues received data from the stream's buffer and returns a [BufferSegment](../Memory/BufferSegment.md) containing the data. 
 
-### **BeginReceive**
+### Void BeginReceive()
 : Begins receiving data from the TCP connection asynchronously. This method ensures that only one receive operation happens at a time. 
 	!!! note ""
 		When calling this method, it ensures that there is only one active receive operation at a time, preventing overlapping receives. This optimization helps prevent data loss and improves the reliability of the receive process. 
 
 
-### **EnqueueToSend**
+### Void EnqueueToSend([BufferSegment](../Memory/BufferSegment.md))
 : Enqueues data to be sent over the TCP connection. The data is added to the stream's outgoing buffer for transmission. 
 
-### **Dispose**
+### Void Dispose()
 : Disposes of the [TCPStreamer]() instance, releasing associated resources. 

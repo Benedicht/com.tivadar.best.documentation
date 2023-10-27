@@ -43,29 +43,29 @@ Implements the WebSocket standard for duplex, two-way communications.
 : Logging context of this websocket instance. 
 ## **Methods**:
 
-### **Open**
+### Void Open()
 : Start the opening process. 
 	!!! note ""
 		It's a non-blocking call. To get notified when the WebSocket instance is considered open and can send/receive, use the [OnOpen](#onwebsocketopendelegate-onopen) event.
 
 
-### **Send**
+### Void Send([String](https://learn.microsoft.com/en-us/dotnet/api/System.String))
 : It will send the given textual message to the remote server. 
 
-### **Send**
+### Send(Byte[])
 : It will send the given binary message to the remote server. 
 
-### **Send**
+### Send(Byte[], UInt64, UInt64)
 : It will send the given binary message to the remote server. 
 
-### **SendAsBinary**
+### Void SendAsBinary([BufferSegment](../../../HTTP/api-reference/Memory/BufferSegment.md))
 : Will send the data in one or more binary frame and takes ownership over it calling BufferPool.Release when the data sent. 
 
-### **SendAsText**
+### Void SendAsText([BufferSegment](../../../HTTP/api-reference/Memory/BufferSegment.md))
 : Will send data as a text frame and takes owenership over the memory region releasing it to the BufferPool as soon as possible. 
 
-### **Close**
+### Void Close()
 : It will initiate the closing of the connection to the server. 
 
-### **Close**
+### Void Close([WebSocketStatusCodes](WebSocketStatusCodes.md), [String](https://learn.microsoft.com/en-us/dotnet/api/System.String))
 : It will initiate the closing of the connection to the server sending the given code and message. 

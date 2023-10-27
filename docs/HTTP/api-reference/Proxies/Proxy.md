@@ -18,5 +18,5 @@ The Proxy class serves as the base class for various proxy client implementation
 : List of exceptions for which the proxy should not be used. Elements of this list are compared to the Host (DNS or IP address) part of the uri. 
 ## **Methods**:
 
-### **UseProxyForAddress**
+### [Boolean](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean) UseProxyForAddress([Uri](https://learn.microsoft.com/en-us/dotnet/api/System.Uri))
 : Determines whether the proxy should be used for a specific address based on the configured exceptions. 

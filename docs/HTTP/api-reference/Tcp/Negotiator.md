@@ -27,8 +27,8 @@ The Negotiator class acts as a central coordinator for the negotiation of networ
 : Gets the peekable content provider stream associated with this negotiator. 
 ## **Methods**:
 
-### **Start**
+### Void Start()
 : Starts the negotiation process. 
 
-### **OnCancellationRequested**
+### Void OnCancellationRequested()
 : Handles cancellation requests during negotiation. 

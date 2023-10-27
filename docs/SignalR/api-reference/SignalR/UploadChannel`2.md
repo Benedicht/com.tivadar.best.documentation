@@ -16,11 +16,11 @@ An upload channel that represents one prameter of a client callable function. It
 : The unique generated id of this parameter channel. 
 ## **Methods**:
 
-### **Upload**
+### Upload(`1)
 : Uploads a parameter value to the server. 
 
-### **Cancel**
+### Void Cancel()
 : Calling this function cancels the call itself, not just a parameter upload channel. 
 
-### **Finish**
+### Void Finish()
 : Finishes the channel by telling the server that no more uplode items will follow. 

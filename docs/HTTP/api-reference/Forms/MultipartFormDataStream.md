@@ -19,26 +19,26 @@ The return value of [Stream](https://learn.microsoft.com/en-us/dotnet/api/System
 : Gets the length of this multipart/form-data stream. 
 ## **Methods**:
 
-### **AddField**
+### [MultipartFormDataStream]() AddField([String](https://learn.microsoft.com/en-us/dotnet/api/System.String), [String](https://learn.microsoft.com/en-us/dotnet/api/System.String))
 : Adds a textual field to the multipart/form-data stream. 
 
-### **AddField**
+### [MultipartFormDataStream]() AddField([String](https://learn.microsoft.com/en-us/dotnet/api/System.String), [String](https://learn.microsoft.com/en-us/dotnet/api/System.String), [Encoding](https://learn.microsoft.com/en-us/dotnet/api/System.Text.Encoding))
 : Adds a textual field to the multipart/form-data stream. 
 
-### **AddField**
+### AddField(String, Byte[])
 : Adds a stream field to the multipart/form-data stream. 
 
-### **AddStreamField**
+### [MultipartFormDataStream]() AddStreamField([String](https://learn.microsoft.com/en-us/dotnet/api/System.String), [Stream](https://learn.microsoft.com/en-us/dotnet/api/System.IO.Stream))
 : Adds a stream field to the multipart/form-data stream. 
 
-### **AddStreamField**
+### [MultipartFormDataStream]() AddStreamField([String](https://learn.microsoft.com/en-us/dotnet/api/System.String), [Stream](https://learn.microsoft.com/en-us/dotnet/api/System.IO.Stream), [String](https://learn.microsoft.com/en-us/dotnet/api/System.String))
 : Adds a stream field to the multipart/form-data stream. 
 
-### **AddStreamField**
+### [MultipartFormDataStream]() AddStreamField([String](https://learn.microsoft.com/en-us/dotnet/api/System.String), [Stream](https://learn.microsoft.com/en-us/dotnet/api/System.IO.Stream), [String](https://learn.microsoft.com/en-us/dotnet/api/System.String), [String](https://learn.microsoft.com/en-us/dotnet/api/System.String))
 : Adds a stream field to the multipart/form-data stream. 
 
-### **BeforeSendBody**
+### Void BeforeSendBody([HTTPRequest](../HTTP/HTTPRequest.md), [IThreadSignaler](../Connections/IThreadSignaler.md))
 : Adds the final boundary to the multipart/form-data stream before sending the request body. 
 
-### **Read**
+### Read(Byte[], Int32, Int32)
 : Reads data from the multipart/form-data stream into the provided buffer. 

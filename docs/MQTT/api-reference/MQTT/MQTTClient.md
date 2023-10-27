@@ -32,47 +32,47 @@ Represents an MQTT client, providing capabilities to connect to MQTT brokers, se
 : Context of the MQTTClient and all child instances (like its transport, etc.) that can produce log outputs. 
 ## **Methods**:
 
-### **BeginPacketBuffer**
+### Void BeginPacketBuffer()
 : With the use of BeginPacketBuffer and EndPacketBuffer sent messages can be buffered and sent in less network packets. It supports nested Begin-EndPacketBuffer calls. 
 	!!! note ""
-		Instead of using [BeginPacketBuffer](#beginpacketbuffer) and [EndPacketBuffer](#endpacketbuffer) directly, use the [PacketBufferHelper](PacketBufferHelper.md) instead!
+		Instead of using [BeginPacketBuffer](#void-beginpacketbuffer) and [EndPacketBuffer](#void-endpacketbuffer) directly, use the [PacketBufferHelper](PacketBufferHelper.md) instead!
 
 
-### **EndPacketBuffer**
+### Void EndPacketBuffer()
 : Call this after a BeginPacketBuffer. 
 	!!! note ""
-		Instead of using [BeginPacketBuffer](#beginpacketbuffer) and [EndPacketBuffer](#endpacketbuffer) directly, use the [PacketBufferHelper](PacketBufferHelper.md) instead!
+		Instead of using [BeginPacketBuffer](#void-beginpacketbuffer) and [EndPacketBuffer](#void-endpacketbuffer) directly, use the [PacketBufferHelper](PacketBufferHelper.md) instead!
 
 
-### **CreateConnectPacketBuilder**
+### [ConnectPacketBuilder](../Builders/ConnectPacketBuilder.md) CreateConnectPacketBuilder()
 : Creates and returns with a ConnectPacketBuilder instance. 
 
-### **BeginConnect**
+### Void BeginConnect([ConnectPacketBuilderDelegate](ConnectPacketBuilderDelegate.md), [CancellationToken](https://learn.microsoft.com/en-us/dotnet/api/System.Threading.CancellationToken))
 : Starts the connection process to the broker. It's a non-blocking method. ConnectPacketBuilderCallback is a function that will be called after a successfully transport connection to negotiate protocol details. 
 
-### **ConnectAsync**
+### [Task](https://learn.microsoft.com/en-us/dotnet/api/System.Threading.Tasks.Task-1)&lt;[MQTTClient]()&gt; ConnectAsync([ConnectPacketBuilderDelegate](ConnectPacketBuilderDelegate.md), [CancellationToken](https://learn.microsoft.com/en-us/dotnet/api/System.Threading.CancellationToken))
 : Starts connecting to the broker.  
 
-### **CreateDisconnectPacketBuilder**
+### [DisconnectPacketBuilder](../Builders/DisconnectPacketBuilder.md) CreateDisconnectPacketBuilder()
 : Creates and returns with a DisconnectPacketBuilder instance. 
 
-### **CreateSubscriptionBuilder**
+### [SubscribePacketBuilder](../Builders/SubscribePacketBuilder.md) CreateSubscriptionBuilder([String](https://learn.microsoft.com/en-us/dotnet/api/System.String))
 : Creates and returns with a SubscribePacketBuilder.  
 
-### **CreateBulkSubscriptionBuilder**
+### [BulkSubscribePacketBuilder](../Builders/BulkSubscribePacketBuilder.md) CreateBulkSubscriptionBuilder()
 : Creates and returns with a BulkSubscribePacketBuilder instance. 
 
-### **CreateUnsubscribePacketBuilder**
+### [UnsubscribePacketBuilder](../Builders/UnsubscribePacketBuilder.md) CreateUnsubscribePacketBuilder([String](https://learn.microsoft.com/en-us/dotnet/api/System.String))
 : Creates and returns with an UnsubscribePacketBuilder instance. 
 
-### **CreateBulkUnsubscribePacketBuilder**
+### [BulkUnsubscribePacketBuilder](../Builders/BulkUnsubscribePacketBuilder.md) CreateBulkUnsubscribePacketBuilder()
 : Creates and returns with a BulkUnsubscribePacketBuilder instance. 
 
-### **AddTopicAlias**
+### Void AddTopicAlias([String](https://learn.microsoft.com/en-us/dotnet/api/System.String))
 : Adds a new topic alias. 
 
-### **CreateApplicationMessageBuilder**
+### [ApplicationMessagePacketBuilder](../Builders/ApplicationMessagePacketBuilder.md) CreateApplicationMessageBuilder([String](https://learn.microsoft.com/en-us/dotnet/api/System.String))
 : Creates and returns with an ApplicationMessagePacketBuilder instance. 
 
-### **CreateAuthenticationPacketBuilder**
+### [AuthenticationPacketBuilder](../Builders/AuthenticationPacketBuilder.md) CreateAuthenticationPacketBuilder()
 : Creates and returns with an AuthenticationPacketBuilder instance. 

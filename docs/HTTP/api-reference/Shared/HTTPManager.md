@@ -33,17 +33,17 @@ Global entry point to access and manage main services of the plugin.
 : The local content cache, maintained by the plugin. When set to a non-null value, Maintain called immediately on the cache. 
 ## **Methods**:
 
-### **Setup**
+### Void HTTPManager.Setup()
 : Initializes the HTTPManager with default settings. This method should be called on Unity's main thread before using the HTTP plugin. By default it gets called by [HTTPUpdateDelegator](HTTPUpdateDelegator.md). 
 
-### **GetRootSaveFolder**
+### [String](https://learn.microsoft.com/en-us/dotnet/api/System.String) HTTPManager.GetRootSaveFolder()
 : Will return where the various caches should be saved. 
 
-### **OnUpdate**
+### Void HTTPManager.OnUpdate()
 : Updates the HTTPManager. This method should be called regularly from a Unity event (e.g., Update, LateUpdate). It processes various events and callbacks and manages internal tasks. 
 
-### **OnQuit**
+### Void HTTPManager.OnQuit()
 : Shuts down the HTTPManager and performs cleanup operations. This method should be called when the application is quitting. 
 
-### **AbortAll**
+### Void HTTPManager.AbortAll()
 : Aborts all ongoing HTTP requests and performs an immediate shutdown of the HTTPManager. 

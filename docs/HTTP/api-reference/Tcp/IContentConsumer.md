@@ -19,17 +19,17 @@ Key Functions of IContentConsumer:
 : Gets the [PeekableContentProviderStream](../Streams/PeekableContentProviderStream.md) associated with this content consumer, which allows access to incoming content. 
 ## **Methods**:
 
-### **SetBinding**
+### Void SetBinding([PeekableContentProviderStream](../Streams/PeekableContentProviderStream.md))
 : This method should not be called directly. It is used internally to set the binding between the content consumer and its associated content provider. 
 
-### **UnsetBinding**
+### Void UnsetBinding()
 : This method should not be called directly. It is used internally to unset the binding between the content consumer and its associated content provider. 
 
-### **OnContent**
+### Void OnContent()
 : Called when new content is available from the associated content provider. 
 
-### **OnConnectionClosed**
+### Void OnConnectionClosed()
 : Called when the connection is closed by the remote peer. It notifies the content consumer about the connection closure. 
 
-### **OnError**
+### Void OnError([Exception](https://learn.microsoft.com/en-us/dotnet/api/System.Exception))
 : Called when an error occurs during content processing or connection handling. It provides the exception that caused the error. 

@@ -8,17 +8,17 @@ Helper class to manage sessions.
 
 ## **Methods**:
 
-### **CreateNullSession**
+### [Session](Session.md) SessionHelper.CreateNullSession([String](https://learn.microsoft.com/en-us/dotnet/api/System.String))
 : Creates and returns with a Null session. 
 
-### **GetSessions**
+### [IEnumerable](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1)&lt;[Session](Session.md)&gt; SessionHelper.GetSessions([String](https://learn.microsoft.com/en-us/dotnet/api/System.String))
 : Returns with all the current sessions. 
 
-### **HasAny**
+### [Boolean](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean) SessionHelper.HasAny([String](https://learn.microsoft.com/en-us/dotnet/api/System.String))
 : Returns true if there's at least one stored session for the given host. 
 
-### **Get**
+### [Session](Session.md) SessionHelper.Get([String](https://learn.microsoft.com/en-us/dotnet/api/System.String), [String](https://learn.microsoft.com/en-us/dotnet/api/System.String))
 : Loads the session with the matching clientId, or creates a new one with this id. 
 
-### **Delete**
+### Void SessionHelper.Delete([String](https://learn.microsoft.com/en-us/dotnet/api/System.String), [Session](Session.md))
 : Delete session from the store and all of its related files. 

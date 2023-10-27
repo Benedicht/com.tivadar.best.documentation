@@ -14,7 +14,7 @@ Bearer Token authentication is a method used to access protected resources on a 
 : Initializes a new instance of the BearerTokenAuthenticator class with the specified Bearer Token. 
 ## **Methods**:
 
-### **HandleChallange**
+### [Boolean](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean) HandleChallange([HTTPRequest](../HTTP/HTTPRequest.md), [HTTPResponse](../HTTP/HTTPResponse.md))
 : Handles the server response with a 401 (Unauthorized) status code and a WWW-Authenticate header. This authenticator does not handle challenges and always returns `false`. 
 	!!! note ""
 		Bearer Token authentication typically does not require handling challenges, as the Bearer Token is included directly in the Authorization header of the request. This method always returns `false`, as no additional challenge processing is needed. 
