@@ -17,6 +17,7 @@ If the [download-stream](api-reference/Response/DownloadContentStream.md)'s buff
 - Added new, cleaner samples for both old and new features.
 - Halved active threads per connections.
 - Added [Memory](../Shared/profiler/memory.md) and [Network](../Shared/profiler/network.md) profilers.
+- (#126) Added [UniTask](https://github.com/Cysharp/UniTask) integration
 
 __Removals__
 

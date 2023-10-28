@@ -9,3 +9,4 @@ comments: true
 __Additions and improvements__
 
 - Now uses the Best HTTP package and all of its relevant features
+- (#167) Added [UniTask](https://github.com/Cysharp/UniTask) integration
