@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Best SignalR
 
 Welcome to the Best SignalR Documentation! Best SignalR is a leading Unity networking library, engineered for seamless integration of the [SignalR technology](https://learn.microsoft.com/en-us/aspnet/core/signalr/introduction). 
@@ -28,7 +32,8 @@ Moreover, SignalR takes care of all the complexities involved in real-time commu
 Best SignalR simplifies the process of integrating this innovative technology into your Unity projects.
 It's tailored to ensure robust and efficient bi-directional communication, providing your users with a dynamic and responsive application experience.
 
-[Buy Now on :fontawesome-brands-unity: Asset Store](https://assetstore.unity.com/packages/slug/268760?aid=1101lfX8E){ .md-button .md-button--primary }
+<!--[Buy Now on :fontawesome-brands-unity: Asset Store](https://assetstore.unity.com/packages/slug/268760?aid=1101lfX8E){ .md-button .md-button--primary }-->
+[Best Value: Grab the Bundle & Save {{ bundles.SignalR_off }}%!](https://assetstore.unity.com/packages/slug/268836?aid=1101lfX8E){ .md-button .md-button--primary }
 
 ## Key Features
 - **Supported Unity Versions:** Best SignalR is compatible with Unity versions starting from :fontawesome-brands-unity: **2021.1 onwards**.
@@ -55,10 +60,11 @@ If WebSockets aren't availabe due to specific constraints, SignalR seamlessly fa
     - **Memory Profiler:** Evaluate internal memory usages, enhance performance, and spot potential memory challenges.
     - **Network Profiler:** Keep a tab on your network dynamics, studying data flow, connection statuses, and more.
 - **Group and Hub Extensibility:** Classify your SignalR interactions effortlessly, curating distinct groups and hubs suited to your application's landscape.
-- **Effective Data Models:** Best SignalR supports both JSON and binary data, granting you flexibility in data management.
+- **Effective Data Models:** With support for both [JSON and MessagePack](intermediate-topics/encoders.md) encoding, grants you both flexibility in data management and performance in decoding.
 - **Debugging and Logging:** Extensive logging capabilities empower developers to delve into the nuances of the package and simplify the debugging trajectory.
 
-[Buy Now on :fontawesome-brands-unity: Asset Store](https://assetstore.unity.com/packages/slug/268760?aid=1101lfX8E){ .md-button .md-button--primary }
+<!--[Buy Now on :fontawesome-brands-unity: Asset Store](https://assetstore.unity.com/packages/slug/268760?aid=1101lfX8E){ .md-button .md-button--primary }-->
+[Best Value: Grab the Bundle & Save {{ bundles.SignalR_off }}%!](https://assetstore.unity.com/packages/slug/268836?aid=1101lfX8E){ .md-button .md-button--primary }
 
 ## Documentation Sections
 Embark on your Best SignalR odyssey:

@@ -18,7 +18,8 @@ In our rapidly updating digital world, delivering real-time data straight to use
 From live news updates to real-time scoreboards, *Server-Sent Events* empower these updates with consistency and simplicity. 
 Best SSE simplifies integrating this technology into your Unity projects, ensuring dynamic **one-way** data streams from server to client.
 
-[Buy Now on :fontawesome-brands-unity: Asset Store](https://assetstore.unity.com/packages/slug/268758?aid=1101lfX8E){ .md-button .md-button--primary }
+<!--[Buy Now on :fontawesome-brands-unity: Asset Store](https://assetstore.unity.com/packages/slug/268758?aid=1101lfX8E){ .md-button .md-button--primary }-->
+[Special Bundle Offer: {{ bundles.SSE_off }}% Discount!](https://assetstore.unity.com/packages/slug/268839?aid=1101lfX8E){ .md-button .md-button--primary }
 
 ## Key Features
 - **Supported Unity Versions:** Best SSE is compatible with Unity versions starting from :fontawesome-brands-unity: **2021.1 onwards**.
@@ -32,6 +33,7 @@ Best SSE simplifies integrating this technology into your Unity projects, ensuri
     
     This broad platform support means you can confidently use Best SSE, regardless of your target audience or deployment strategy.
 
+- **Auto-Reconnection:** Best Server-Sent Events handles automatic reconnections, guaranteeing continuous user experiences even amidst unstable network scenarios.
 - **Seamless Integration:** With intuitive APIs and extensive documentation, integrating Best SSE into any Unity project is hassle-free.
 - **Easy-to-Use API:** Designed with simplicity in mind, Best Server-Sent Events offers an intuitive API, making integration and utilization straightforward for newcomers.
 - **Performance Optimized:** Best SSE is designed for top-tier performance, ensuring quick data streams with real-time interactions.
@@ -42,7 +44,8 @@ Best SSE simplifies integrating this technology into your Unity projects, ensuri
     - **Network Profiler:** Oversee your networking nuances, studying data streams and connection statuses.
 - **Debugging and Logging:** Comprehensive logging options enable developers to get insights into the workings of the package and simplify the debugging process.
 
-[Buy Now on :fontawesome-brands-unity: Asset Store](https://assetstore.unity.com/packages/slug/268758?aid=1101lfX8E){ .md-button .md-button--primary }
+<!--[Buy Now on :fontawesome-brands-unity: Asset Store](https://assetstore.unity.com/packages/slug/268758?aid=1101lfX8E){ .md-button .md-button--primary }-->
+[Special Bundle Offer: {{ bundles.SSE_off }}% Discount!](https://assetstore.unity.com/packages/slug/268839?aid=1101lfX8E){ .md-button .md-button--primary }
 
 ## Documentation Sections
 Begin your exploration with Best SSE:

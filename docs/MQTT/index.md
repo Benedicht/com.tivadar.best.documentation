@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Best MQTT
 
 Welcome to the Best MQTT Documentation!
@@ -24,7 +28,8 @@ Unlike the traditional request-response model, MQTT operates on a publisher-subs
 Best MQTT makes the task of integrating this powerful protocol into your Unity projects straightforward. 
 It's optimized for strong bi-directional communication, ensuring your users benefit from a responsive and live data exchange experience.
 
-[Buy Now on :fontawesome-brands-unity: Asset Store](https://assetstore.unity.com/packages/slug/268762?aid=1101lfX8E){ .md-button .md-button--primary }
+<!--[Buy Now on :fontawesome-brands-unity: Asset Store](https://assetstore.unity.com/packages/slug/268762?aid=1101lfX8E){ .md-button .md-button--primary }-->
+[Smart Choice: Choose the Bundle, Save {{ bundles.MQTT_off }}%!](https://assetstore.unity.com/packages/slug/268837?aid=1101lfX8E){ .md-button .md-button--primary }
 
 ## Key Features
 - **Supported Unity Versions:** Compatible with Unity versions starting from :fontawesome-brands-unity: **2021.1 onwards**.
@@ -51,10 +56,10 @@ It's optimized for strong bi-directional communication, ensuring your users bene
     - **Memory Profiler:** Assess memory usage patterns and pinpoint potential memory bottlenecks.
     - **Network Profiler:** Monitor network behavior, analyzing data transfers, connection health, and more.
 - **Customizable:** Extensive configuration options ensure Best MQTT fits precisely into your project's needs.
-- **Effective Data Models:** With support for both JSON and binary data, the library offers flexibility in data interactions.
 - **Debugging and Logging:** Robust logging tools assist developers in understanding the library's workings and facilitate debugging.
 
-[Buy Now on :fontawesome-brands-unity: Asset Store](https://assetstore.unity.com/packages/slug/268762?aid=1101lfX8E){ .md-button .md-button--primary }
+<!--[Buy Now on :fontawesome-brands-unity: Asset Store](https://assetstore.unity.com/packages/slug/268762?aid=1101lfX8E){ .md-button .md-button--primary }-->
+[Smart Choice: Choose the Bundle, Save {{ bundles.MQTT_off }}%!](https://assetstore.unity.com/packages/slug/268837?aid=1101lfX8E){ .md-button .md-button--primary }
 
 ## Documentation Sections
 Embark on your Best MQTT journey:

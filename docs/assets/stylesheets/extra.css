@@ -41,6 +41,9 @@
 
     transition: box-shadow 0.3s ease-in-out; /* Smooth transition for the shadow */
     box-shadow: var(--md-shadow-z4);
+	
+	display: flex;
+    flex-direction: column;  /* Stack children vertically */
 }
 
 @media (max-width: 425px) { /* or whatever breakpoint you prefer */
@@ -48,6 +51,23 @@
         flex-basis: 100%; /* card will take up 100% of the container's width */
         margin: 0; /* resetting margin for smaller screens */
     }
+}
+
+.card-content {  /* This is a new wrapper div for your main content */
+    flex-grow: 1;  /* It will take up all available space */
+    /*padding: 24px;  /* We move the padding here from .card */
+	overflow: auto;  /* This will ensure content doesn't overflow the card. */
+}
+
+.card-footer {
+    display: flex;
+    justify-content: center;
+    padding: 2px 2px; 
+    border-top: 1px solid rgba(0, 0, 0, 0.12);  /* Optional, to separate the footer from the main content */
+}
+
+.card-footer .md-button:not(:last-child) {
+    margin-right: 10px;    /* Adds right margin to all buttons except the last one */
 }
 
 /* Styles for light theme */

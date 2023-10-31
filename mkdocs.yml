@@ -88,6 +88,9 @@ plugins:
     # https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-search/
     - search
     
+    # https://mkdocs-macros-plugin.readthedocs.io/en/latest/
+    - macros
+    
     # https://squidfunk.github.io/mkdocs-material/reference/images/
     - glightbox:
         auto_caption: true
@@ -117,6 +120,15 @@ extra:
           
         - icon: fontawesome/brands/linkedin
           link: https://www.linkedin.com/in/tivadargyorgy
+
+    bundles:
+        HTTP_off: 25
+        SocketIO_off: 50
+        SignalR_off: 44
+        MQTT_off: 44
+        WebSockets_off: 50
+        SSE_off: 40
+        Ultimate_off: 33
 
 # https://squidfunk.github.io/mkdocs-material/customization/#additional-css
 extra_css:

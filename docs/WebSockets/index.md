@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Best WebSockets
 
 Welcome to the Best WebSockets Documentation! Best WebSockets is a premier networking library for Unity, tailored specifically for seamless WebSocket integration. 
@@ -18,7 +22,8 @@ Best WebSockets is built upon and necessarily requires the [Best HTTP package](.
 This foundational package not only provides the core mechanisms for the asset but also bestows its renowned reliability and top-tier performance. 
 Before diving into Best WebSockets, ensure the Best HTTP dependency is correctly integrated into your Unity project, guaranteeing a seamless and high-performance networking journey.
 
-[Buy Now on :fontawesome-brands-unity: Asset Store](https://assetstore.unity.com/packages/slug/268757?aid=1101lfX8E){ .md-button .md-button--primary }
+<!--[Buy Now on :fontawesome-brands-unity: Asset Store](https://assetstore.unity.com/packages/slug/268757?aid=1101lfX8E){ .md-button .md-button--primary }-->
+[{{ bundles.WebSockets_off }}% Off: Maximize Value with the Bundle!](https://assetstore.unity.com/packages/slug/268838?aid=1101lfX8E){ .md-button .md-button--primary }
 
 ## Key Features
 - **Supported Unity Versions:** Best WebSockets is compatible with Unity versions starting from :fontawesome-brands-unity: **2021.1 onwards**.
@@ -41,7 +46,8 @@ Before diving into Best WebSockets, ensure the Best HTTP dependency is correctly
 - **Custom Protocols:** Easily extend and adapt your WebSocket communication with custom protocols, allowing for versatile application-specific communication styles.
 - **Compression:** Data compression capabilities ensure efficient bandwidth usage, leading to faster data transfers and reduced latency.
 
-[Buy Now on :fontawesome-brands-unity: Asset Store](https://assetstore.unity.com/packages/slug/268757?aid=1101lfX8E){ .md-button .md-button--primary }
+<!--[Buy Now on :fontawesome-brands-unity: Asset Store](https://assetstore.unity.com/packages/slug/268757?aid=1101lfX8E){ .md-button .md-button--primary }-->
+[{{ bundles.WebSockets_off }}% Off: Maximize Value with the Bundle!](https://assetstore.unity.com/packages/slug/268838?aid=1101lfX8E){ .md-button .md-button--primary }
 
 ## Documentation Sections
 Delve into the details and start using Best WebSockets in your projects:

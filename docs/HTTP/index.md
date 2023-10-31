@@ -1,4 +1,8 @@
-# Best HTTP documentation
+---
+comments: true
+---
+
+# Best HTTP
 
 Welcome to the Best HTTP Documentation! Best HTTP is a comprehensive networking library for Unity that empowers developers to make HTTP and HTTPS requests with ease. 
 Whether you're building web applications, multiplayer games, or real-time communication solutions, Best HTTP has got you covered.
@@ -13,7 +17,8 @@ Best HTTP stands as the backbone for a multitude of specialized networking asset
 Its robust and efficient architecture serves as a fundamental dependency, powering numerous other packages like Best WebSockets, Best MQTT, Best Socket.IO, Best SignalR and more. 
 This central role ensures that when you invest in Best HTTP, you're not just getting a standalone package, but a gateway to a suite of advanced networking tools, all unified in their reliability and performance.
 
-[Buy Now on :fontawesome-brands-unity: Asset Store](https://assetstore.unity.com/packages/slug/267636?aid=1101lfX8E){ .md-button .md-button--primary }
+<!--[Buy Now on :fontawesome-brands-unity: Asset Store](https://assetstore.unity.com/packages/slug/267636?aid=1101lfX8E){ .md-button .md-button--primary }-->
+[Bundle & Save {{ bundles.HTTP_off }}% Now!](https://assetstore.unity.com/packages/slug/268834?aid=1101lfX8E){ .md-button .md-button--primary }
 
 ## Key Features
 - **Supported Unity Versions**: Best HTTP is compatible with Unity versions starting from :fontawesome-brands-unity: **2021.1 onwards**.
@@ -38,7 +43,7 @@ You don't need to worry about specific server configurations or additional setup
 With Best HTTP, you gain the freedom to focus on your application's functionality, knowing that the underlying HTTP communications will work consistently across all server solutions.
 - **HTTP/HTTPS Support**: Best HTTP supports both HTTP and HTTPS protocols, ensuring secure communication for your applications.
 - **HTTP/2 Support**: Benefit from the advantages of HTTP/2, including faster loading times, reduced latency and **trailing headers** for advanced scenarios like **GRPC**.
-- **Caching**: Implement efficient caching mechanisms to reduce redundant network requests, optimizing your application's performance and data usage.
+- **HTTP Caching**: Implement efficient caching mechanisms to reduce redundant network requests, optimizing your application's performance and data usage.
 - **Authentication**: Easily handle various authentication methods, such as Basic, Digest, and Bearer token authentication.
 - **Cookie Management**: Manage cookies effortlessly, ensuring smooth user experiences in web applications.
 - **Compression**: Compress and decompress data using gzip and deflate algorithms to save bandwidth and improve loading times.
@@ -55,7 +60,8 @@ This enhancement is instrumental in understanding the performance and network be
 		With the integration of this built-in profiler support, developers can not only ensure that their application's network activities are optimized but also make data-driven decisions that enhance both performance and user experience.
 - **Debugging and Logging:** Comprehensive logging options enable developers to get insights into the workings of the package and simplify the debugging process.
 
-[Buy Now on :fontawesome-brands-unity: Asset Store](https://assetstore.unity.com/packages/slug/267636?aid=1101lfX8E){ .md-button .md-button--primary }
+<!--[Buy Now on :fontawesome-brands-unity: Asset Store](https://assetstore.unity.com/packages/slug/267636?aid=1101lfX8E){ .md-button .md-button--primary }-->
+[Bundle & Save {{ bundles.HTTP_off }}% Now!](https://assetstore.unity.com/packages/slug/268834?aid=1101lfX8E){ .md-button .md-button--primary }
 
 ## Best HTTP vs. UnityWebRequest: A Feature Matrix Comparison
 
@@ -76,7 +82,7 @@ To aid in your decision-making process, I've prepared a feature matrix that comp
 |**DNS Caching**                       |:material-checkbox-marked-circle:{ .green } Supported [with prefetching](../Shared/DNS/dns-cache.md) capabilities | :material-minus-box:{ .red } Not Supported |
 |**Download Handling**                 |:material-checkbox-marked-circle:{ .green } Supports [streaming with buffer control](getting-started/downloads.md) for memory-efficient downloads             | :material-checkbox-marked-circle: Basic streaming support        |
 |**Upload Handling**                   |:material-checkbox-marked-circle:{ .green } Advanced control over [upload streams](getting-started/uploads.md)              | :material-checkbox-marked-circle: Supports basic upload handlers       |
-|**Caching**                           |:material-checkbox-marked-circle:{ .green } [Advanced caching](intermediate-topics/caching-internals.md) options                          | :material-checkbox-marked-circle: Only AssetBundles           |
+|**HTTP Caching**                      |:material-checkbox-marked-circle:{ .green } [Advanced caching](intermediate-topics/caching-internals.md) options                          | :material-checkbox-marked-circle: Only AssetBundles           |
 |**Custom Protocols**                  |:material-checkbox-marked-circle:{ .green } Supports protocol upgrades (like WebSocket)        | :material-minus-box:{ .red } Not supported              |
 |**Response Handling**                 |:material-checkbox-marked-circle:{ .green } Advanced response processing with support for auth. challanges, trailing headers, etc.                     | :material-checkbox-marked-circle: Basic response processing      |
 |**Blocking Mechanisms**               |:material-checkbox-marked-circle:{ .green } Supports [blocking streams for threaded processing](getting-started/downloads.md#streaming-with-blocking) | :material-minus-box:{ .red } No built-in support            |
@@ -97,7 +103,8 @@ By juxtaposing Best HTTP with UnityWebRequest, it's evident that Best HTTP is de
 
 Is the feature matrix missing something? [Let me know!](../Shared/support.md)
 
-[Buy Now on :fontawesome-brands-unity: Asset Store](https://assetstore.unity.com/packages/slug/267636?aid=1101lfX8E){ .md-button .md-button--primary }
+<!--[Buy Now on :fontawesome-brands-unity: Asset Store](https://assetstore.unity.com/packages/slug/267636?aid=1101lfX8E){ .md-button .md-button--primary }-->
+[Bundle & Save {{ bundles.HTTP_off }}% Now!](https://assetstore.unity.com/packages/slug/268834?aid=1101lfX8E){ .md-button .md-button--primary }
 
 ## Documentation Sections
 

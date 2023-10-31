@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Best SocketIO
 
 Welcome to the Best SocketIO Documentation! Best SocketIO is a leading Unity networking library engineered for a smooth integration of the [Socket.IO technology](https://socket.io). 
@@ -20,7 +24,8 @@ In today's interconnected world, maintaining real-time interactions is pivotal f
 From multiplayer game lobbies to instant chat rooms, Socket.IO empowers these interactions with speed and efficiency. 
 Best SocketIO makes it a breeze to incorporate this tech into your Unity endeavours, ensuring dynamic bi-directional exchanges.
 
-[Buy Now on :fontawesome-brands-unity: Asset Store](https://assetstore.unity.com/packages/slug/268759?aid=1101lfX8E){ .md-button .md-button--primary }
+<!--[Buy Now on :fontawesome-brands-unity: Asset Store](https://assetstore.unity.com/packages/slug/268759?aid=1101lfX8E){ .md-button .md-button--primary }-->
+[Why Buy One? Bundle & Save {{ bundles.SocketIO_off }}%!](https://assetstore.unity.com/packages/slug/268835?aid=1101lfX8E){ .md-button .md-button--primary }
 
 ## Key Features
 - **Supported Unity Versions:** Best SocketIO is compatible with Unity versions starting from :fontawesome-brands-unity: **2021.1 onwards**.
@@ -43,10 +48,11 @@ Best SocketIO makes it a breeze to incorporate this tech into your Unity endeavo
     - **Memory Profiler:** Assess the internal memory allocations, optimizing performance and detecting potential memory issues.
     - **Network Profiler:** Monitor your networking intricacies, observing data exchanges, connection states, and more.
 - **Extensible Rooms and Namespaces:** Organize your SocketIO communications with ease, creating distinct rooms[^1] and namespaces tailored to your app's needs.
-- **Efficient Data Formats:** With support for both JSON and binary data, manage your data formats effectively.
+- **Efficient Data Formats:** With support for both [JSON and MessagePack](intermediate-topics/parsers.md) encoding, grants you both flexibility in data management and performance in decoding.
 - **Debugging and Logging:** Comprehensive logging options enable developers to get insights into the workings of the package and simplify the debugging process.
 
-[Buy Now on :fontawesome-brands-unity: Asset Store](https://assetstore.unity.com/packages/slug/268759?aid=1101lfX8E){ .md-button .md-button--primary }
+<!--[Buy Now on :fontawesome-brands-unity: Asset Store](https://assetstore.unity.com/packages/slug/268759?aid=1101lfX8E){ .md-button .md-button--primary }-->
+[Why Buy One? Bundle & Save {{ bundles.SocketIO_off }}%!](https://assetstore.unity.com/packages/slug/268835?aid=1101lfX8E){ .md-button .md-button--primary }
 
 ## Documentation Sections
 Embark on your journey with Best SocketIO:
