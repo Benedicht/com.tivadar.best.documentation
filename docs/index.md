@@ -9,6 +9,24 @@ Explore the documentation for each package below:
 
 <div class="cards-container" markdown>
 
+<div class="card card--full-width" markdown="block">
+<div class="card-content" markdown="block">
+## :fireworks: **The ULTIMATE Best Bundle** :fireworks:
+
+Discover the pinnacle of Unity communication tools with The Ultimate Best Bundle. 
+Packing all my prized packages and protocols, it's the one-stop solution for all your connectivity needs. 
+Dive into web-centric interactions, embrace real-time data exchange and ensure top-notch security across the board. 
+All-inclusive, all-powerful and all ready to elevate your projects.
+
+When it comes to connecting your Unity projects with the world, this is the only asset you'll ever need, packed with full protocol power!
+</div>
+
+<div class="card-footer" markdown="block">
+[All-in-One: Get the Full Bundle & Save {{ bundles.Ultimate_off }}%!](https://assetstore.unity.com/packages/slug/268840?aid=1101lfX8E){ .md-button .md-button--primary }
+</div>
+
+</div>
+
 <div class="card" markdown="block">
 <div class="card-content" markdown="block">
 ## **Best HTTP**
@@ -87,25 +105,6 @@ Use it to create WebSocket-based applications and games with ease.
 
 <div class="card" markdown="block">
 <div class="card-content" markdown="block">
-## **Best Server-Sent Events**
-
-[Best Server-Sent Events Documentation](Server-Sent Events/index.md): Best Server-Sent Events provides an efficient and easy-to-use implementation of the Server-Sent Events (SSE) protocol. 
-Use it to establish real-time, unidirectional communication between your server and Unity application.
-
-- [Installation Guide](Server-Sent Events/installation.md): Quickly set up Best Server-Sent Events in your Unity project.
-- [Upgrade Guide](Server-Sent Events/upgrade-guide.md): Seamlessly transition from older versions to the latest features and improvements.
-- [Getting Started](Server-Sent Events/getting-started/index.md): Dive into the basics and get your first Server-Sent Events events in Unity.
-</div>
-
-<div class="card-footer" markdown="block">
-<!--[Buy Now on :fontawesome-brands-unity: Asset Store](https://assetstore.unity.com/packages/slug/268758?aid=1101lfX8E){ .md-button .md-button--primary }-->
-[Special Bundle Offer: {{ bundles.SSE_off }}% Discount!](https://assetstore.unity.com/packages/slug/268839?aid=1101lfX8E){ .md-button .md-button--primary }
-</div>
-
-</div>
-
-<div class="card" markdown="block">
-<div class="card-content" markdown="block">
 ## **Best MQTT**
 
 [Best MQTT Documentation](MQTT/index.md): Best MQTT is a feature-rich MQTT client library for Unity. 
@@ -125,6 +124,25 @@ Use it to implement MQTT-based communication in your applications, enabling effi
 
 <div class="card" markdown="block">
 <div class="card-content" markdown="block">
+## **Best Server-Sent Events**
+
+[Best Server-Sent Events Documentation](Server-Sent Events/index.md): Best Server-Sent Events provides an efficient and easy-to-use implementation of the Server-Sent Events (SSE) protocol. 
+Use it to establish real-time, unidirectional communication between your server and Unity application.
+
+- [Installation Guide](Server-Sent Events/installation.md): Quickly set up Best Server-Sent Events in your Unity project.
+- [Upgrade Guide](Server-Sent Events/upgrade-guide.md): Seamlessly transition from older versions to the latest features and improvements.
+- [Getting Started](Server-Sent Events/getting-started/index.md): Dive into the basics and get your first Server-Sent Events events in Unity.
+</div>
+
+<div class="card-footer" markdown="block">
+<!--[Buy Now on :fontawesome-brands-unity: Asset Store](https://assetstore.unity.com/packages/slug/268758?aid=1101lfX8E){ .md-button .md-button--primary }-->
+[Special Bundle Offer: {{ bundles.SSE_off }}% Discount!](https://assetstore.unity.com/packages/slug/268839?aid=1101lfX8E){ .md-button .md-button--primary }
+</div>
+
+</div>
+
+<div class="card" markdown="block">
+<div class="card-content" markdown="block">
 ## **Best TLS Security**
 
 [Best TLS Security Documentation](TLS Security/index.md): Take a step further to improve the security of all protocols connecting through a TLS connection with a one line setup.
@@ -136,24 +154,6 @@ Use it to implement MQTT-based communication in your applications, enabling effi
 
 <div class="card-footer" markdown="block">
 [Buy Now on :fontawesome-brands-unity: Asset Store](https://assetstore.unity.com/packages/slug/268761?aid=1101lfX8E){ .md-button .md-button--primary }
-</div>
-
-</div>
-
-<div class="card" markdown="block">
-<div class="card-content" markdown="block">
-## :fireworks: **The ULTIMATE Best Bundle** :fireworks:
-
-Discover the pinnacle of Unity communication tools with The Ultimate Best Bundle. 
-Packing all my prized packages and protocols, it's the one-stop solution for all your connectivity needs. 
-Dive into web-centric interactions, embrace real-time data exchange and ensure top-notch security across the board. 
-All-inclusive, all-powerful and all ready to elevate your projects.
-
-When it comes to connecting your Unity projects with the world, this is the only asset you'll ever need, packed with full protocol power!
-</div>
-
-<div class="card-footer" markdown="block">
-[All-in-One: Get the Full Bundle & Save {{ bundles.Ultimate_off }}%!](https://assetstore.unity.com/packages/slug/268840?aid=1101lfX8E){ .md-button .md-button--primary }
 </div>
 
 </div>

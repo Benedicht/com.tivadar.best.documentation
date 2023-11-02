@@ -70,6 +70,10 @@
     margin-right: 10px;    /* Adds right margin to all buttons except the last one */
 }
 
+.card--full-width {
+    flex: 0 0 calc(100% - 24px); /* Takes the full width minus the gap */
+}
+
 /* Styles for light theme */
 body[data-md-color-scheme="default"] .card {
     /*background-color: var(--md-primary-bg-color); /* Using the primary background color */
