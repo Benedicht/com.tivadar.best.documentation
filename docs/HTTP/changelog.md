@@ -4,6 +4,8 @@
 
 __Additions and improvements__
 
+!!! Note "The Best HTTP package has been modularized to exclusively include HTTP protocols (HTTP/1.1 & HTTP/2) and a shared infrastructure that other protocols and packages can utilize. For a comprehensive list of these protocols, please visit the [main page](../index.md)."
+
 - New namespace hierarchy.
 - Added [DNSCache](../Shared/DNS/dns-cache.md) implementation to speed up consecutive connection processes.
 - Added support for [DNSCache](api-reference/Cache/DNSCache.md) to manually store and retrieve entries.
