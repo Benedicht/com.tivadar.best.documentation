@@ -180,6 +180,8 @@ It's done, we now have a working streaming download!
 
 #### Streaming With blocking
 
+!!! Note "The download itself is **always** done on a non-Unity main thread, it doesn't affect the running game logic and rendering!"
+
 In this section we start over using only the code from the '[The `OnDownloadStarted` event](#the-ondownloadstarted-event)' section.
 
 Because `DownloadContentStream` is non-blocking, we have to use a different kind of stream, a `BlockingDownloadContentStream`! Modify the request setup part, to include the following, highlighted code:
