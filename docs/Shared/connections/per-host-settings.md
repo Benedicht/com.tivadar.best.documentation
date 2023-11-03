@@ -4,9 +4,9 @@ comments: true
 
 # Per-Host Settings
 
-The [HostSettingsManager](../api-reference/Settings/HostSettingsManager.md) class in the `Best.HTTP.Hosts.Settings` namespace is a comprehensive solution for managing host-specific settings for HTTP requests. 
+The [HostSettingsManager](../../HTTP/api-reference/Settings/HostSettingsManager.md) class in the `Best.HTTP.Hosts.Settings` namespace is a comprehensive solution for managing host-specific settings for HTTP requests. 
 This guide will help you grasp its functionality, understand its relevance, and employ it efficiently in your applications.
-It can be accessed via [HTTPManager.PerHostSettings](../api-reference/Shared/HTTPManager.md).
+It can be accessed via [HTTPManager.PerHostSettings](../../HTTP/api-reference/Shared/HTTPManager.md).
 
 ## What Does It Do?
 The HostSettingsManager allows you to fine-tune HTTP request and connection behaviors based on the hostname. 
@@ -27,9 +27,9 @@ This can be beneficial when interacting with multiple endpoints, each requiring 
 
 ### Initializing
 
-The manager instance is accessible through [HTTPManager.PerHostSettings](../api-reference/Shared/HTTPManager.md) with default settings for the root/fallback/default configuration (`*`).
+The manager instance is accessible through [HTTPManager.PerHostSettings](../../HTTP/api-reference/Shared/HTTPManager.md) with default settings for the root/fallback/default configuration (`*`).
 
-There are multiple ways to add new configurations, but the most straightforward is to use [AddDefault](../api-reference/Settings/HostSettingsManager.md#adddefault) and alter its fields:
+There are multiple ways to add new configurations, but the most straightforward is to use [AddDefault](../../HTTP/api-reference/Settings/HostSettingsManager.md#adddefault) and alter its fields:
 ```cs
 var settings = HTTPManager.PerHostSettings.AddDefault("example.com");
 settings.RequestSettings.RequestTimeout = TimeSpan.FromSeconds(20);
