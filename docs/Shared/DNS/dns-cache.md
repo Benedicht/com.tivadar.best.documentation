@@ -19,6 +19,33 @@ The `DNSCache` class in the Best HTTP offers:
 - **Cache Behavior Configuration:** Uses the DNSCacheOptions class to set cache behavior parameters, including refresh intervals and cancellation check granularity.
 - **Benefit for Protocols/Packages:** All protocols and packages built on top of Best HTTP automatically benefit from this DNS cache system, ensuring consistently fast connections across the board.
 
+## Deeper-Dive
+
+Here's a high-level view about the algorithm:
+
+```mermaid
+graph
+    Start(Start)
+    Start --> A
+
+    subgraph DNS [DNSCache]
+        A(Query/Prefetch) --> B(Check DNS Cache)
+        B -->|Cache Hit| L[Return Cached Entry]
+        B -->|Cache Miss| C(DNS Query)
+        C .->|Wait for underlying system| D[Cache DNS Result]
+        D --> L[Return Cached Entry]
+    end
+
+    L --> End(End)
+```
+
+The DNS Cache further maintains cached entries by:
+
+1. refreshing them periodically in the background to try to keep them fresh and
+1. after a timeout, deleting unused ones to free up resources.
+
+The DNS Cache is part of a wider improvement over the old algorithm, for more insight visit the [Connections/Racing](../connections/racing.md) topic.
+
 ## How to Use the DNSCache Class
 
 !!! note "All protocols and packages built on top of Best HTTP automatically utilize the `DNSCache`, eliminating the need for any additional setup or calls!"
@@ -30,8 +57,8 @@ DNSCache.Prefetch("www.example.com");
 ```
 
 ```cs title="Report Non-Working IP Addresses"
-IPAddress nonWorkingAddress = IPAddress.Parse("192.0.2.44");
-DNSCache.ReportAsNonWorking("www.example.com", nonWorkingAddress, loggingContext);
+IPAddress nonWorkingAddress = IPAddress.Parse("123.456.78.9");
+DNSCache.ReportAsNonWorking("www.example.com", nonWorkingAddress, null);
 ```
 
 ```cs title="Clear the DNS Cache"

@@ -38,15 +38,15 @@ graph TD
             F{Are there multiple IP addresses?} -->|Yes| M
             M[Shuffle Addresses] --> G
             F -->|No| H[Single Connection Attempt]
-            G[Parallel Connection Attempts] -->|1| Q
-            G[Parallel Connection Attempts] -->|2| Q
-            G[Parallel Connection Attempts] -->|3| Q
-            G[Parallel Connection Attempts] -->|4| Q
+            G[Parallel Connection Attempts] --> Q
+            G[Parallel Connection Attempts] --> Q
+            G[Parallel Connection Attempts] --> Q
+            G[Parallel Connection Attempts] --> Q
             Q{"Connection Success?"} -->|Yes| J
             Q -->|No| K
             N{Has More Address?} -->|Yes| I
             H --> Q
-            J["Select First Returning (Fastest) Connection"]
+            J["Select First (Fastest) Connection"]
             K[Mark IP Failure] --> N
             I[Try Next IP Address] --> Q
         end
