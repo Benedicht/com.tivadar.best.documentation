@@ -8,7 +8,9 @@ comments: true
 
 __Additions and improvements__
 
-- New namespace hierarchy, instead of `BestHTTP.WebSocket` the WebSocket class is in the `Best.Websockets` namespace.
+- Added modularity: previously bundled within a larger asset, the Best WebSockets functionality has been separated out, creating a dedicated package that builds upon the core capabilities of the Best HTTP package for streamlined and focused WebSocket communication.
+- Enhanced connection capabilities: utilizes the improved connection mechanisms provided by the Best HTTP package for [faster connections](../Shared/connections/racing.md).
+- New namespace hierarchy: WebSockets-related classes have been moved from `BestHTTP.WebSocket` to the `Best.Websockets` namespace.
 - The `OnBinary` event now receives a `BufferSegment` and the memory will be reused after the event.
 - The `OnClosed` event now receives an [WebSocketStatusCodes](api-reference/WebSockets/WebSocketStatusCodes.md) enum as its status code.
 

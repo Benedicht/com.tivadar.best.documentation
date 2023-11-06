@@ -8,4 +8,7 @@ comments: true
 
 __Additions and improvements__
 
-- Now uses the Best HTTP package and all of its relevant features
+- Added modularity: previously bundled within a larger asset, the Best MQTT functionality has been separated out, 
+creating a dedicated package that builds upon the core capabilities of the Best HTTP package for streamlined and focused MQTT communication.
+- Enhanced connection capabilities: utilizes the improved connection mechanisms provided by the Best HTTP package for [faster connections](../Shared/connections/racing.md).
+- New namespace hierarchy: MQTT-related classes have been moved from `BestMQTT` to the `Best.MQTT` namespace.
