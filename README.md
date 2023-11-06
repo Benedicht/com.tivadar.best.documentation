@@ -1,6 +1,6 @@
-# Best HTTP Suite Documentation Source
+# Best Documentation Source
 
-This repository is the source for the documentation of the Best HTTP Suite, which includes the Best HTTP, Best TLS Security, Best WebSockets, Best MQTT, Best Socket.IO, and Best SignalR packages available on the Unity Asset Store.
+This repository is the source for the documentation of the Best-suite, which includes the Best HTTP, Best TLS Security, Best WebSockets, Best MQTT, Best Socket.IO, and Best SignalR packages, available on the Unity Asset Store.
 
 ## Documentation Links
 
