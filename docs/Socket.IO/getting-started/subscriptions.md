@@ -98,6 +98,29 @@ Complex objects can be sent and subscribed to, too:
     }
     ```
 
+!!! Warning
+    If a type is used only in subscriptions, [Managed Code Stripping](https://docs.unity3d.com/Manual/ManagedCodeStripping.html) can remove its default constructor causing errors in builds.
+    To prevent these kind of errors, types can be annotated with the [Preserve attribute](https://docs.unity3d.com/Manual/ManagedCodeStripping.html#PreserveAttribute).
+
+    Using the previous example, we can annotate the `UserInfo` class to support even the highest stripping level:
+    ```cs title="Client" hl_lines="1"
+    [UnityEngine.Scripting.Preserve]
+    class UserInfo
+    {
+        public string[] users;
+        public byte[] buff;
+    }
+
+    manager.Socket.On<UserInfo>("user-info", OnUserInfo);
+
+    private void OnUserInfo(UserInfo userInfo)
+    {
+        Debug.Log($"user-info: {string.Join(",", userInfo.users)}, buff: {userInfo.buff.Length}");
+    }
+    ```
+
+    In this case `users` and `buff` doesn't need to be annotated, because the Unity linker will know that they are used in the `OnUserInfo` so it will not consider it to remove them.
+
 !!! Note "By default, any additional fields present in the receiving type that have no corresponding field in the JSON will be initialized to their default value."
 
 Binary data can be sent too:
