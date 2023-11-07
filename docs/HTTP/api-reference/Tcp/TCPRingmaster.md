@@ -17,3 +17,6 @@ Additionally it includes logic for optimizing the order in which connection atte
 
 ### Void TCPRingmaster.StartCompetion([TCPRaceParameters](TCPRaceParameters.md))
 : Starts a TCP race competition to establish connections based on the provided parameters. 
+
+### ShuffleAddresses(DNSIPAddress[])
+: Inplace shuffles addresses. 

@@ -14,7 +14,7 @@ Builder to create an application message. [https://docs.oasis-open.org/mqtt/mqtt
 ### [ApplicationMessagePacketBuilder]() WithRetain([Boolean](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean))
 : Build the packet with the given retain flag. 
 
-### [ApplicationMessagePacketBuilder]() WithPayloadFormatIndicator([PayloadTypes](../Packets/PayloadTypes.md))
+### [ApplicationMessagePacketBuilder]() WithPayloadFormatIndicator(PayloadTypes)
 : Build the packet with the given payload format indicator. 
 
 ### [ApplicationMessagePacketBuilder]() WithMessageExpiryInterval([UInt32](https://learn.microsoft.com/en-us/dotnet/api/System.UInt32))

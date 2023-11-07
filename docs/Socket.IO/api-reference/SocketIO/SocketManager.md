@@ -26,7 +26,7 @@ Manages the connection and associated sockets for a Socket.IO server.
 : Indexer to access socket associated to the given namespace. 
 ### **[Int32](https://learn.microsoft.com/en-us/dotnet/api/System.Int32) ReconnectAttempts**
 : How many reconnect attempts made. 
-### **[IParser](../Parsers/IParser.md) Parser**
+### **IParser Parser**
 : Parser to encode and decode messages and create strongly typed objects. 
 ### **[LoggingContext](../../../HTTP/api-reference/Logger/LoggingContext.md) Context**
 : Logging context of this socket.io connection. 

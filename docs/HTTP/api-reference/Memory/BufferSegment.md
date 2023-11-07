@@ -16,7 +16,7 @@ Represents a segment (a continuous section) of a byte array, providing functiona
 : The number of bytes in the segment that contain valid data. 
 ## **Methods**:
 
-### [AutoReleaseBuffer](AutoReleaseBuffer.md) AsAutoRelease()
+### AutoReleaseBuffer AsAutoRelease()
 : Converts the buffer segment to an AutoReleaseBuffer to use it in a local using statement. 
 
 ### [BufferSegment]() Slice([Int32](https://learn.microsoft.com/en-us/dotnet/api/System.Int32))

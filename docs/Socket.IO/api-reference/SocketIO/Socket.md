@@ -19,7 +19,7 @@ This class represents a Socket.IO namespace.
 ### Void Disconnect()
 : Disconnects this socket/namespace. 
 
-### [EmitBuilder](EmitBuilder.md) Volatile()
+### EmitBuilder Volatile()
 : By emitting a volatile event, if the transport isn't ready the event is going to be discarded. 
 
 ### Void Off()

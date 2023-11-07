@@ -41,19 +41,19 @@ How It Works:
 : Gets the logging context for the current EventSource instance. 
 ### **[HTTPRequest](../../../HTTP/api-reference/HTTP/HTTPRequest.md) InternalRequest**
 : Gets the internal [HTTPRequest](../../../HTTP/api-reference/HTTP/HTTPRequest.md) object used by the EventSource for communication. 
-### **[OnGeneralEventDelegate](OnGeneralEventDelegate.md) OnOpen**
+### **OnGeneralEventDelegate OnOpen**
 : Called when successfully connected to the server. 
-### **[OnMessageDelegate](OnMessageDelegate.md) OnMessage**
+### **OnMessageDelegate OnMessage**
 : Called on every message received from the server. 
-### **[OnErrorDelegate](OnErrorDelegate.md) OnError**
+### **OnErrorDelegate OnError**
 : Called when an error occurs. 
-### **[OnRetryDelegate](OnRetryDelegate.md) OnRetry**
+### **OnRetryDelegate OnRetry**
 : Called when the EventSource will try to do a retry attempt. If this function returns with false, it will cancel the attempt. 
-### **[OnCommentDelegate](OnCommentDelegate.md) OnComment**
+### **OnCommentDelegate OnComment**
 : This event is called for comments received from the server. 
-### **[OnGeneralEventDelegate](OnGeneralEventDelegate.md) OnClosed**
+### **OnGeneralEventDelegate OnClosed**
 : Called when the EventSource object closed. 
-### **[OnStateChangedDelegate](OnStateChangedDelegate.md) OnStateChanged**
+### **OnStateChangedDelegate OnStateChanged**
 : Called every time when the State property changed. 
 ## **Methods**:
 
@@ -63,7 +63,7 @@ How It Works:
 ### Void Close()
 : Start to close the connection. 
 
-### Void On([String](https://learn.microsoft.com/en-us/dotnet/api/System.String), [OnEventDelegate](OnEventDelegate.md))
+### Void On([String](https://learn.microsoft.com/en-us/dotnet/api/System.String), OnEventDelegate)
 : With this function an event handler can be subscribed for an event name. 
 
 ### Void Off([String](https://learn.microsoft.com/en-us/dotnet/api/System.String))

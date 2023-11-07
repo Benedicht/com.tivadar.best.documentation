@@ -6,7 +6,7 @@ comments: true
 Global entry point to access and manage main services of the plugin. 
 
 ## **Fields**:
-### **[OnSetupFinishedDelegate](OnSetupFinishedDelegate.md) `#!cs HTTPManager.OnSetupFinished`**
+### **OnSetupFinishedDelegate `#!cs HTTPManager.OnSetupFinished`**
 : Delegate for the setup finished event. 
 ### **[HostSettingsManager](../Settings/HostSettingsManager.md) `#!cs HTTPManager.PerHostSettings`**
 : Instance of the per-host settings manager. 

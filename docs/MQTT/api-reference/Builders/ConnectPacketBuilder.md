@@ -56,7 +56,7 @@ TODO: add detailed description
 		When neither the `WithClientID` or `WithSession` are used, first time connecting to the broker the plugin generates a unique id and will use it for consecutive connections.
 
 
-### [ConnectPacketBuilder]() WithSession([Session](../MQTT/Session.md))
+### [ConnectPacketBuilder]() WithSession(Session)
 : 
 	!!! note ""
 		When neither the `WithClientID` or `WithSession` are used, first time connecting to the broker the plugin generates a unique id and will use it for consecutive connections.

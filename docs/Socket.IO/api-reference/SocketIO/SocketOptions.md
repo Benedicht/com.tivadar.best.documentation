@@ -26,9 +26,9 @@ Contains settings for a [SocketManager](SocketManager.md).
 : Additional query parameters that will be passed for accessed uris. If the value is null, or an empty string it will be not appended to the query only the key. 
 ### **[Boolean](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean) QueryParamsOnlyForHandshake**
 : If it's false, the parameters in the AdditionalQueryParams will be passed for all HTTP requests. Its default value is true. 
-### **[HTTPRequestCallbackDelegate](HTTPRequestCallbackDelegate.md) HTTPRequestCustomizationCallback**
+### **HTTPRequestCallbackDelegate HTTPRequestCustomizationCallback**
 : A callback that called for every HTTPRequest the socket.io protocol sends out. It can be used to further customize (add additional request for example) requests. 
 ### **[Func](https://learn.microsoft.com/en-us/dotnet/api/System.Func-3)&lt;[SocketManager](SocketManager.md), [Socket](Socket.md), [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object)&gt; Auth**
 : Starting with Socket.IO v3, connecting to a namespace a client can send payload data. When the Auth callback function is set, the plugin going to call it when connecting to a namespace. Its return value must be a json string! 
-### **[WebsocketOptions](WebsocketOptions.md) WebsocketOptions**
+### **WebsocketOptions WebsocketOptions**
 : Customization options for the websocket transport. 

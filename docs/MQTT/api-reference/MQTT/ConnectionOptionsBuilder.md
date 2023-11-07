@@ -39,7 +39,7 @@ Builder class to help creating [ConnectionOptions](ConnectionOptions.md) instanc
 ### [ConnectionOptionsBuilder]() WithPath([String](https://learn.microsoft.com/en-us/dotnet/api/System.String))
 : Used by the WebSocket transport to connect to the given path. 
 
-### [ConnectionOptionsBuilder]() WithProtocolVersion([SupportedProtocolVersions](SupportedProtocolVersions.md))
+### [ConnectionOptionsBuilder]() WithProtocolVersion(SupportedProtocolVersions)
 : The protocol version that the plugin has to use to connect with to the server. 
 
 ### [MQTTClient](MQTTClient.md) CreateClient()

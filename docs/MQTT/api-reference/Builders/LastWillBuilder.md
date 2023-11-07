@@ -26,5 +26,5 @@ TODO:
 ### [LastWillBuilder]() WithDelayInterval([UInt32](https://learn.microsoft.com/en-us/dotnet/api/System.UInt32))
 : Delay before the broker will publish the last-will 
 
-### [LastWillBuilder]() WithPayloadFormatIndicator([PayloadTypes](../Packets/PayloadTypes.md))
+### [LastWillBuilder]() WithPayloadFormatIndicator(PayloadTypes)
 : Type of the payload, binary or textual. 

@@ -29,5 +29,5 @@ Connection related options to pass to the MQTTClient.
 : Selected transport to connect with. 
 ### **[String](https://learn.microsoft.com/en-us/dotnet/api/System.String) Path**
 : Optional path for websocket, its default is "/mqtt". 
-### **[SupportedProtocolVersions](SupportedProtocolVersions.md) ProtocolVersion**
+### **SupportedProtocolVersions ProtocolVersion**
 : The protocol version that the plugin has to use to connect with to the server. 

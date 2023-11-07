@@ -22,7 +22,7 @@ Represents the main entry point for a SignalR Core connection.
 : Called when an unexpected error happens and the connection is closed. 
 ### **[Action](https://learn.microsoft.com/en-us/dotnet/api/System.Action-1)&lt;[HubConnection]()&gt; OnClosed**
 : Called when the connection is gracefully terminated. 
-### **[Func](https://learn.microsoft.com/en-us/dotnet/api/System.Func-3)&lt;[HubConnection](), [Message](../Messages/Message.md), [Boolean](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean)&gt; OnMessage**
+### **[Func](https://learn.microsoft.com/en-us/dotnet/api/System.Func-3)&lt;[HubConnection](), `Message`, [Boolean](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean)&gt; OnMessage**
 : Called for every server-sent message. The return value determines further processing of the message. 
 ### **[Action](https://learn.microsoft.com/en-us/dotnet/api/System.Action-2)&lt;[HubConnection](), [String](https://learn.microsoft.com/en-us/dotnet/api/System.String)&gt; OnReconnecting**
 : Called when the HubConnection starts its reconnection process after losing its underlying connection. 

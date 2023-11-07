@@ -19,7 +19,7 @@ Interface for message encoding-decoding protocols used in a SignalR communicatio
 ### ParseMessages(BufferSegment, List)
 : Parses binary message representations into a list of messages. 
 
-### [BufferSegment](../../../HTTP/api-reference/Memory/BufferSegment.md) EncodeMessage([Message](../Messages/Message.md))
+### [BufferSegment](../../../HTTP/api-reference/Memory/BufferSegment.md) EncodeMessage(Message)
 : Encodes a message into its binary representation. 
 
 ### GetRealArguments(Type[], Object[])

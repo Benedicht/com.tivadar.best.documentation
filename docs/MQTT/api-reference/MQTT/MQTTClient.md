@@ -8,25 +8,25 @@ Represents an MQTT client, providing capabilities to connect to MQTT brokers, se
 ## **Fields**:
 ### **[ConnectionOptions](ConnectionOptions.md) Options**
 : Connection related options. 
-### **[OnConnectedDelegate](OnConnectedDelegate.md) OnConnected**
+### **OnConnectedDelegate OnConnected**
 : Called when the client successfully connected to the broker. 
-### **[OnServerConnectAckMessageDelegate](OnServerConnectAckMessageDelegate.md) OnServerConnectAckMessage**
+### **OnServerConnectAckMessageDelegate OnServerConnectAckMessage**
 : Called when the broker acknowledged the client's connect packet. 
-### **[OnApplicationMessageDelegate](OnApplicationMessageDelegate.md) OnApplicationMessage**
+### **OnApplicationMessageDelegate OnApplicationMessage**
 : Called for every application message sent by the broker. 
-### **[OnAuthenticationMessageDelegate](OnAuthenticationMessageDelegate.md) OnAuthenticationMessage**
+### **OnAuthenticationMessageDelegate OnAuthenticationMessage**
 : Called when an authentication packet is received from the broker as part of the extended authentication process. 
-### **[OnErrorDelegate](OnErrorDelegate.md) OnError**
+### **OnErrorDelegate OnError**
 : Called when an unexpected, unrecoverable error happens. After this event an OnDisconnect event is called too. 
-### **[OnDisconnectDelegate](OnDisconnectDelegate.md) OnDisconnect**
+### **OnDisconnectDelegate OnDisconnect**
 : Called after the client disconnects from the broker. 
-### **[OnStateChangedDelegate](OnStateChangedDelegate.md) OnStateChanged**
+### **OnStateChangedDelegate OnStateChanged**
 : Called for every internal state change of the client. 
 ### **[ClientStates](ClientStates.md) State**
 : Current state of the client. State changed events are emitted through the OnStateChanged event. 
 ### **[NegotiatedOptions](NegotiatedOptions.md) NegotiatedOptions**
 : Options negotiated with the broker. 
-### **[Session](Session.md) Session**
+### **Session Session**
 : Session instance to persist QoS data. 
 ### **[LoggingContext](../../../HTTP/api-reference/Logger/LoggingContext.md) Context**
 : Context of the MQTTClient and all child instances (like its transport, etc.) that can produce log outputs. 
@@ -47,13 +47,13 @@ Represents an MQTT client, providing capabilities to connect to MQTT brokers, se
 ### [ConnectPacketBuilder](../Builders/ConnectPacketBuilder.md) CreateConnectPacketBuilder()
 : Creates and returns with a ConnectPacketBuilder instance. 
 
-### Void BeginConnect([ConnectPacketBuilderDelegate](ConnectPacketBuilderDelegate.md), [CancellationToken](https://learn.microsoft.com/en-us/dotnet/api/System.Threading.CancellationToken))
+### Void BeginConnect(ConnectPacketBuilderDelegate, [CancellationToken](https://learn.microsoft.com/en-us/dotnet/api/System.Threading.CancellationToken))
 : Starts the connection process to the broker. It's a non-blocking method. ConnectPacketBuilderCallback is a function that will be called after a successfully transport connection to negotiate protocol details. 
 
-### [Task](https://learn.microsoft.com/en-us/dotnet/api/System.Threading.Tasks.Task-1)&lt;[MQTTClient]()&gt; ConnectAsync([ConnectPacketBuilderDelegate](ConnectPacketBuilderDelegate.md), [CancellationToken](https://learn.microsoft.com/en-us/dotnet/api/System.Threading.CancellationToken))
+### [Task](https://learn.microsoft.com/en-us/dotnet/api/System.Threading.Tasks.Task-1)&lt;[MQTTClient]()&gt; ConnectAsync(ConnectPacketBuilderDelegate, [CancellationToken](https://learn.microsoft.com/en-us/dotnet/api/System.Threading.CancellationToken))
 : Starts connecting to the broker.  
 
-### [DisconnectPacketBuilder](../Builders/DisconnectPacketBuilder.md) CreateDisconnectPacketBuilder()
+### DisconnectPacketBuilder CreateDisconnectPacketBuilder()
 : Creates and returns with a DisconnectPacketBuilder instance. 
 
 ### [SubscribePacketBuilder](../Builders/SubscribePacketBuilder.md) CreateSubscriptionBuilder([String](https://learn.microsoft.com/en-us/dotnet/api/System.String))
@@ -62,7 +62,7 @@ Represents an MQTT client, providing capabilities to connect to MQTT brokers, se
 ### [BulkSubscribePacketBuilder](../Builders/BulkSubscribePacketBuilder.md) CreateBulkSubscriptionBuilder()
 : Creates and returns with a BulkSubscribePacketBuilder instance. 
 
-### [UnsubscribePacketBuilder](../Builders/UnsubscribePacketBuilder.md) CreateUnsubscribePacketBuilder([String](https://learn.microsoft.com/en-us/dotnet/api/System.String))
+### UnsubscribePacketBuilder CreateUnsubscribePacketBuilder([String](https://learn.microsoft.com/en-us/dotnet/api/System.String))
 : Creates and returns with an UnsubscribePacketBuilder instance. 
 
 ### [BulkUnsubscribePacketBuilder](../Builders/BulkUnsubscribePacketBuilder.md) CreateBulkUnsubscribePacketBuilder()

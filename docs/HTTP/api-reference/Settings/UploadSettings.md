@@ -28,7 +28,7 @@ Options for sending the request headers and content, including upload progress m
 : Set to `false` if the plugin MUST NOT dispose [UploadStream](#stream-uploadstream) after the request is finished. 
 ### **[OnProgressDelegate](OnProgressDelegate.md) OnUploadProgress**
 : Called periodically when data sent to the server. 
-### **[OnHeadersSentDelegate](OnHeadersSentDelegate.md) OnHeadersSent**
+### **OnHeadersSentDelegate OnHeadersSent**
 : This event is fired after the headers are sent to the server. 
 ## **Methods**:
 

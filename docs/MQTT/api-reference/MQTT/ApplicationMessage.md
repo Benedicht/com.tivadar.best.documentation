@@ -14,7 +14,7 @@ https://docs.oasis-open.org/mqtt/mqtt/v5.0/os/mqtt-v5.0-os.html#_Toc3901106
 : Set to true if this is a retained application message. 
 ### **[String](https://learn.microsoft.com/en-us/dotnet/api/System.String) Topic**
 : The topic's name this application message is publish to. 
-### **[PayloadTypes](../Packets/PayloadTypes.md) PayloadFormat**
+### **PayloadTypes PayloadFormat**
 : Payload type (binary or text). 
 ### **[TimeSpan](https://learn.microsoft.com/en-us/dotnet/api/System.TimeSpan) ExpiryInterval**
 : Expiry interval of the application message. 
