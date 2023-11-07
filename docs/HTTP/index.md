@@ -112,8 +112,8 @@ Explore the following sections to learn how to harness the power of Best HTTP in
 
 - [Installation Guide](installation.md): Get started with Best HTTP by installing the package and configuring your project.
 - [Upgrade Guide](upgrade-guide.md): If you're transitioning from Best HTTP/2, this guide provides vital information on changes, improvements, and steps to upgrade seamlessly to the latest version.
-- [Getting Started](getting-started\index.md): Dive into the basics of making HTTP requests, handling responses, and configuring Best HTTP for your needs.
-- [Intermediate Topics](intermediate-topics\index.md): Take your skills to the next level with advanced topics, such as authentication, caching, upload/download streaming, and many more.
+- [Getting Started](getting-started/index.md): Dive into the basics of making HTTP requests, handling responses, and configuring Best HTTP for your needs.
+- [Intermediate Topics](intermediate-topics/index.md): Take your skills to the next level with advanced topics, such as authentication, caching, upload/download streaming, and many more.
 
 Whether you're a seasoned developer or just getting started with Unity, this documentation will guide you through the process of leveraging Best HTTP's capabilities to create efficient, feature-rich applications.
 
