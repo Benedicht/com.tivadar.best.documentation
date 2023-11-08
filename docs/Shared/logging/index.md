@@ -31,6 +31,7 @@ Available log levels:
 - `Loglevels.All`: All messages including detailed diagnostic logs.
 
 ## Unity and File Outputs
+
 ### Unity Output:
 
 By default, logs from the Best HTTP library are written to Unity's console.
@@ -40,6 +41,8 @@ If you set the Output to another one, you can switch back to default this way:
 ```cs
 HTTPManager.Logger.Output = new UnityOutput();
 ```
+
+!!! Tip "You can find Unity's log file placement from [Unity's Log files manual page](https://docs.unity3d.com/Manual/LogFiles.html)."
 
 ### File Output:
 

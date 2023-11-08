@@ -21,7 +21,7 @@ For a swift and effective resolution, we recommend the following steps when repo
     Best.HTTP.Shared.HTTPManager.Logger.Level = Best.HTTP.Shared.Logger.Loglevels.All;
     ```
     Further insights about logging can be located in the [logging topic](index.md).
-2. **Gather Logs:** Collect logs from Unity's console or your log file, depending on your configuration while replicating your issue.
+2. **Gather Logs:** Collect logs from Unity's console, [Log files](https://docs.unity3d.com/Manual/LogFiles.html) or your log file, depending on your configuration while replicating your issue.
 3. **Document Steps:** Write down the exact steps you took leading up to the issue.
 4. **Submit a Report:** Share the logs and the steps to reproduce through one of the [support channels](../support.md), providing as much detail as possible.
 
