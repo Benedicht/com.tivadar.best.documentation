@@ -4,6 +4,12 @@ comments: true
 
 # Changelog
 
+## 3.0.1 (2023-11-09)
+
+__Fixes__
+
+- Fixed case where the received data wasn't fully consumed but the array got recycled into the BufferPool
+
 ## 3.0.0 (2023-11-01)
 
 __Additions and improvements__
