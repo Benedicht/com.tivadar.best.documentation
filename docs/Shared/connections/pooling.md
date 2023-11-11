@@ -25,15 +25,30 @@ However, even synchronized settings present challenges. The server begins its co
 High network latency can skew this timing, increasing the risk of using a closed connection. 
 If leveraging connection pooling with a focus on safety, it's advisable to set the client’s timeout about a second shorter than the server's.
 
-## Configuration in Best HTTP:
+## Configuration Options in Best HTTP:
 
 To set the client's idle time:
 
-```cs
-// TODO: 
+```cs title="Change Global Maximum Idle Time"
+Best.HTTP.Shared.HTTPManager.PerHostSettings.Get("*")
+    .HTTP1ConnectionSettings.MaxConnectionIdleTime = TimeSpan.FromSeconds(10);
+```
+
+```cs title="Change Maximum Idle Time For a Concrete Host"
+Best.HTTP.Shared.HTTPManager.PerHostSettings.Get("www.example.com")
+    .HTTP1ConnectionSettings.MaxConnectionIdleTime = TimeSpan.FromSeconds(10);
 ```
 
 To disable connection pooling:
-```cs
-// TODO: 
+
+```cs title="Disable Connection Pooling For All Hosts"
+Best.HTTP.Shared.HTTPManager.PerHostSettings.Get("*")
+                .HTTP1ConnectionSettings.TryToReuseConnections = false;
 ```
+
+```cs title="Disable Connection Pooling Only For One Concrete Host"
+Best.HTTP.Shared.HTTPManager.PerHostSettings.Get("www.example.com")
+                .HTTP1ConnectionSettings.TryToReuseConnections = false;
+```
+
+!!! Tip "More about per-host settings in the [Per-Host Settings topic](per-host-settings.md)."
