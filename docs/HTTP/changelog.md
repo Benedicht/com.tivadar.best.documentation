@@ -1,5 +1,13 @@
 # Changelog
 
+## 3.0.1 (TBR)
+
+__Additions and improvements__
+
+- (#165) Use short-living threads for simple HTTP/1 GET requests
+- Added short and long-living thread counting for a possible threading profiler in the future
+- Log out exception in the HTTPCahe constructor only when diagnostic logging is enabled
+
 ## 3.0.0 (2023-11-01)
 
 __Additions and improvements__
