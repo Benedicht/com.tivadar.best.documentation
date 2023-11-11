@@ -9,9 +9,9 @@ Best MQTT is a premier Unity networking library, purpose-built for the seamless 
 Ideal for dynamic real-time experiences like IoT device communication, messaging systems, and live data streams.
 
 !!! Warning "**Dependency Alert**"
-    Best MQTT relies on the **Best HTTP** package!
-    Ensure you've installed and configured this package in your Unity project before diving into Best MQTT. 
-    Learn more about the [installation of Best HTTP](../HTTP/installation.md).
+    Best MQTT depends on both the **Best HTTP** and **Best WebSockets** packages! 
+    Ensure you've installed and configured both these packages in your Unity project before diving into Best MQTT. 
+    Explore more about the [installation of Best HTTP](../HTTP/installation.md) and [Best WebSockets](../WebSockets/installation.md).
 
 !!! Warning
     Keep in mind that Best MQTT here is a **client-side implementation**. If you're looking to set up the server-side or need server-specific details,  you'll need to explore server-side implementations and libraries specific to your programming language and platform.
