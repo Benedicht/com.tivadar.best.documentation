@@ -42,20 +42,39 @@ var options = new ConnectionOptionsBuilder()
     .Build();
 ```
 
-The `WithTCP("broker.emqx.io", 1883)` line tells the plugin to try to connect to the "broker.emqx.io" host with port 1883 using the TCP transport. If we want to use TLS to encrypt the server-client communication add the .WithTLS() call:
-```cs
-var options = new ConnectionOptionsBuilder()
-    .WithTCP("broker.emqx.io", 8883)
-    .Build();
-```
-
 In this guide i used [EMQ X's public broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker), but there are many others to [choose from](https://github.com/mqtt/mqtt.org/wiki/public_brokers).
-
-!!! Info "The server must support TLS v1.2 or newer and hosted on a different port!"
 
 To use Websocket as the transport protocol instead of `WithTCP` the `WithWebSocket` function must be used.
 
 !!! Warning "The TCP transport isn't available under WebGL!"
+
+## Secure Connections
+
+The code in the previous section creates an insecure connection, which can be easily eavesdropped on, redirected, or modified by an attacker.
+Always ensure that the broker supports secure (TLS) communication, or when using a third-party service, explore your options for connecting securely.
+
+Typically, both raw TCP and WebSocket transports use different ports for TLS.
+Here`s a quick guide on the common port numbers for secure and insecure connections, and the transports that can connect to each:
+
+| Transport | Insecure Port | Secure (TLS) Port |
+|:----------|:-------------:|:-----------------:|
+| TCP       | 1883          | 8883              |
+| WebSockets| 80            | 443               |
+
+!!! Note "These port numbers are not absolute; they can vary. Always refer to the documentation of the service you intend to use! If you're unsure or need assistance, feel free to reach out to me through one of the [support channels](../../Shared/support.md)."
+
+To modify the code in the previous section to use a secure connection, change the port number(`1883` -> `8883`) and add `.WithTLS()` to the builder:
+
+```cs hl_lines="2-3"
+var options = new ConnectionOptionsBuilder()
+    .WithTCP("broker.emqx.io", 8883)
+    .WithTLS()
+    .Build();
+```
+
+!!! Info "The server must support TLS v1.2 or newer and hosted on a different port!"
+
+*[TLS]: Transport Layer Security
 
 ## Creating the MQTTClient
 
@@ -64,6 +83,32 @@ With the newly created ConnectionOptions instance we can create the `MQTTClient`
 ```cs
 var client = new MQTTClient(options);
 ```
+
+??? Example 
+    The code should look something like this:
+
+    ```cs hl_lines="13-18"
+    using System.Collections;
+    using System.Collections.Generic;
+    using UnityEngine;
+
+    using Best.MQTT;
+    using Best.MQTT.Packets.Builders;
+
+    public class MQTT : MonoBehaviour
+    {
+        // Start is called before the first frame update
+        void Start()
+        {
+            var options = new ConnectionOptionsBuilder()
+                .WithTCP("broker.emqx.io", 8883)
+                .WithTLS()
+                .Build();
+
+            var client = new MQTTClient(options);
+        }
+    }
+    ```
 
 ## Add general events
 
@@ -125,7 +170,7 @@ private ConnectPacketBuilder ConnectPacketBuilderCallback(MQTTClient client, Con
 `BeginConnect` expects a function that returns with a connect packet builder. The builder is used to build the MQTT connect packet **after** the transport successfully connected to the server. Through this builder we can set up basic authentication, a will, customize negotiable values like keep alive intervals and many more. For now we can leave it as is, just returning the builder received in the second parameter.
 Now we can test it and when run in Unity the Console should show something like this:
 
-[Example Events](media/events_log.png)
+![Example Events](media/events_log.png)
 
 !!! Note "`BeginConnect` and other functions starting with 'Begin' are non-blocking! To execute code after connected, an `OnConnected` event handler must be added."
 
@@ -148,7 +193,8 @@ private void OnDestroy()
 The plugin heavily uses the builder pattern as there are a lot of optional fields that can be sent. This is the case with disconnection too. When `client.CreateDisconnectPacketBuilder().BeginDisconnect()` is used it's going to send a `DisconnectReasonCodes.NormalDisconnection` without any additional data.
 
 Now entering to and exiting from play mode in Unity should generate the following output in the console:
-[Example Events with Disconnect](media/disconnect_log.png)
+
+![Example Events with Disconnect](media/disconnect_log.png)
 
 ## Final code
 
@@ -170,7 +216,7 @@ public class MQTT : MonoBehaviour
     void Start()
     {
         client = new MQTTClientBuilder()
-                        .WithOptions(new ConnectionOptionsBuilder().WithTCP("broker.emqx.io", 1883))
+                        .WithOptions(new ConnectionOptionsBuilder().WithTCP("broker.emqx.io", 8883).WithTLS())
                         .WithEventHandler(OnDisconnected)
                         .WithEventHandler(OnStateChanged)
                         .WithEventHandler(OnError)
