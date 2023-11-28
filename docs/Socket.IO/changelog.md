@@ -4,6 +4,12 @@ comments: true
 
 # Changelog
 
+## 3.0.1 (2023-11-28)
+
+__Additions and improvements__
+
+- Added `[Preserve]` attribute to the `Error` class, and for the `MaxPayload` property in the `HandshakeData` class.
+
 ## 3.0.0 (2023-11-01)
 
 __Additions and improvements__
