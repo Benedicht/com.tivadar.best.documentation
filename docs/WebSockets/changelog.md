@@ -4,6 +4,12 @@ comments: true
 
 # Changelog
 
+## 3.0.1 (2023-12-04)
+
+__Fixes__
+
+- Fixed support of BESTHTTP_DISABLE_ALTERNATE_SSL
+
 ## 3.0.0 (2023-11-01)
 
 __Additions and improvements__
