@@ -1,5 +1,14 @@
 # Changelog
 
+## 3.0.2 (2023-12-04)
+
+__Fixes__
+
+- Fixed case where `TCPStreamer` would block indefinately if there's no sending in progress and receives more data to send than `MaxBufferedWriteAmount`
+- WebGL: Fixed case where if there was any content-encoding (gzip for example), the actual content accessible through XHR's response had different length (it's uncompressed) than what the server sent with the `content-length` header.
+- Fixed compile warning/error when building for WebGL
+- Typo fix in `ProxyDetectionMode`: renamed `Continouos` to `Continuous`
+
 ## 3.0.1 (2023-11-28)
 
 __Additions and improvements__
