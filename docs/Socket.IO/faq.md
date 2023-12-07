@@ -30,3 +30,16 @@ Below is a compatibility table for your reference, which includes compatibility 
 If you have specific licensing questions or concerns related to the Best Socket.IO plugin, please don't hesitate to reach out to our support.
 
 [^1]: The EULA itself can be found under Appendix 1
+
+## Q: **My Socket.IO servers are behind a load balancer (AWS ALB). How can I setup the asset to send the required cookies (AWSALB)?**
+
+**A:** The plugin handles necessary cookie management, so there's no need to set the cookies directly for every request. However, when built for the web (WebGL), cookies are managed by the underlying browser, and requests must be created by setting their `withCredentials` flag to true:
+
+```cs
+var options = new SocketOptions();
+#if UNITY_WEBGL && !UNITY_EDITOR
+options.HTTPRequestCustomizationCallback = (man, req) => req.WithCredentials = true;
+#endif
+
+var manager = new SocketManager(new Uri("https://myserver"), options);
+```
