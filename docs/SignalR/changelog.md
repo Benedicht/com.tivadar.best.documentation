@@ -4,6 +4,18 @@ comments: true
 
 # Changelog
 
+## 3.0.1 (2023-12-08)
+
+__Additions and improvements__
+
+- Updated package's author url
+
+__Removals__
+
+- Removed BESTHTTP_DISABLE_WEBSOCKET
+- Removed Burst package dependency.
+
+
 ## 3.0.0 (2023-11-01)
 
 __Additions and improvements__

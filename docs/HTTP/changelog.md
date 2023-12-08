@@ -1,10 +1,14 @@
 # Changelog
 
-## 3.0.3 (TBR)
+## 3.0.3 (2023-12-08)
+
+__Additions and improvements__
+
+- Updated `WithCredentials`' documentation.
 
 __Fixes__
 
-- Under Android (and possible under other non-windows platforms) when the network unreachable, Unity doesn't call the callback passed to BeginConnect. Have to handle it manually.
+- Under Android (and possible under other non-windows platforms) when the network is unreachable Unity doesn't call the callback passed to `BeginConnect`.
 
 ## 3.0.2 (2023-12-04)
 
