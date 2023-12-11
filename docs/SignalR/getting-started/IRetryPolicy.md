@@ -1,6 +1,6 @@
 # Retry
 
-!!! Note "Best SignalR, by default, uses [0, 2, 10, 30] seconds of delays before giving up and considering the SignalR hub connection as failed."
+In case of an unrecoverable error, if there's a retry policy set for the `HubConnection`, instead of calling the `OnError` event the hub will try to reconnect to the server.
 
 ## Automatic reconnection and the IRetryPolicy interface
 
@@ -85,3 +85,5 @@ To use it, an instance must be set to the HubConnection's `ReconnectPolicy` prop
         null
     });
     ```
+
+!!! Tip "As can be seen from the code above, Best SignalR, by default, uses [0, 2, 10, 30] seconds of delays before giving up and considering the SignalR hub connection as failed."

@@ -225,3 +225,41 @@ Server code that uses `InvokeAsync` and expects an `int` result:
 
 `hub.Send("SomeMethod");` calls `SomeMethod` on the server triggering the whole logic. The first callback for `GetResult` receives the three arguments(`description`, `min` and `max`) and must return with an `int` result
 When the server receives `result` it continues its execution and compares it its own `randomValue` calling `EndResult` on the client.
+
+## Disconnection and errors
+
+To disconnect from the server and close the connection gracefully, the `StartClose`/`CloseAsync` functions can be used:
+
+!!! Example
+    === "StartClose"
+        ```cs hl_lines="4"
+        var hub = new HubConnection(new Uri("https://server/hub"), new JsonProtocol(new LitJsonEncoder()));
+        hub.OnClosed = (hub) => Debug.Log("Closed!");
+
+        hub.OnConnected = (hub) => { 
+          Debug.Log("Connected!");
+
+          // Start to close the connection
+          hub.StartClose();
+        };
+
+        hub.StartConnect();
+        ```
+
+    === "ConnectAsync"
+        ```cs hl_lines="3"
+        var hub = new HubConnection(new Uri("https://server/hub"), new JsonProtocol(new LitJsonEncoder()));
+    
+        await hub.ConnectAsync();
+
+        Debug.Log("Connected!");
+
+        await hub.CloseAsync();
+
+        Debug.Log("Closed!");
+        ```
+
+Like `StartConnect()`/`ConnectAsync()` calles are paired with `OnConnected`, `StartClose()`/`CloseAsync()` are paired with the `OnClosed` event. 
+These events are called even if their' Async peer is used.
+
+!!! Note "`OnClosed` is called only when the server or client initiates the closure of the Hub connection and could terminate gracefully. If there's a network error, only the `OnError` event will be called as it always means that the client disconnected from the server!"
