@@ -8,8 +8,8 @@ comments: true
 
 __Additions and improvements__
 
-- Improved performance under WebGL by using BufferPool arrays from the JS side for textual and binary messages, and doing less data copy
-- Added support to send texts with NULL(\0) characters
+- [WebGL] Improved performance under WebGL by using BufferPool arrays from the JS side for textual and binary messages, and doing less data copy
+- [WebGL] Added support to send texts with NULL(\0) characters
 
 ## 3.0.1 (2023-12-04)
 
