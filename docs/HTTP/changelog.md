@@ -1,5 +1,17 @@
 # Changelog
 
+## 3.0.4 (TBR)
+
+__Additions and improvements__
+
+- Added a few more logging.
+
+__Fixes__
+
+- HTT2: Fix case where a request's `Processing` state isn't processed in time and as a result `HTTP2Stream` made decisions based on the old state and didn't finished the request.
+- HTTP Cache: Even with `DisableCache`, a failed request still checked the local cache whether the content can be loaded.
+- HTTP Cache: In some rare cases, the first read from the cache happened before `FileConnection` could register its callbacks and as a result the assigned request never finished.
+
 ## 3.0.3 (2023-12-08)
 
 __Additions and improvements__
