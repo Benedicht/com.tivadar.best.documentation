@@ -74,6 +74,7 @@ TLSSecurity.Setup();
 ## Setup Best MQTT
 
 After succesfully setting up the TLS Security Addon, connecting with Best MQTT requires the following steps:
+
 1. Use `#!cs .WithTLS` to ensure the plguin tries to connect using TLS.
 2. Use `#!cs .WithProtocolVersion(SupportedProtocolVersions.MQTT_3_1_1)` as Azure IoT Hub supports MQTT v3.1.1 only.
 3. Use the device name/id as the clientId in the `OnConnectPacketBuilder` callback (`#!cs .WithClientID(deviceId)` call in the code below).
