@@ -4,11 +4,15 @@
 
 __Additions and improvements__
 
+- Implemented a new algorithm to pre-establish connections. This primarily affects HTTP/2 connections, which can handle multiple requests simultaneously. Starting from this version, the plugin is capable of opening more than one HTTP/2 connection when a large number of requests are queued.
+- Added a new field MaxAssignedRequestsFactor to HostVariantSettings. This field aids in fine-tuning the creation of new connections based on the number of queued requests.
+- Moved the first local HTTP cache check to a background thread. In exchange of some slight delay to remove overhead from the main Unity thread.
 - Added a few more logging.
 
 __Fixes__
 
 - HTT2: Fix case where a request's `Processing` state isn't processed in time and as a result `HTTP2Stream` made decisions based on the old state and didn't finished the request.
+- HTTP Cache: `HTTPCache.CanServeWithoutValidation` wasn't thread-safe.
 - HTTP Cache: Even with `DisableCache`, a failed request still checked the local cache whether the content can be loaded.
 - HTTP Cache: In some rare cases, the first read from the cache happened before `FileConnection` could register its callbacks and as a result the assigned request never finished.
 
@@ -26,7 +30,7 @@ __Fixes__
 
 __Fixes__
 
-- Fixed case where `TCPStreamer` would block indefinately if there's no sending in progress and receives more data to send than `MaxBufferedWriteAmount`
+- Fixed case where `TCPStreamer` would block indefinitely if there's no sending in progress and receives more data to send than `MaxBufferedWriteAmount`
 - WebGL: Fixed case where if there was any content-encoding (gzip for example), the actual content accessible through XHR's response had different length (it's uncompressed) than what the server sent with the `content-length` header.
 - Fixed compile warning/error when building for WebGL
 - Typo fix in `ProxyDetectionMode`: renamed `Continouos` to `Continuous`
