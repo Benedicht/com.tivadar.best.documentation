@@ -4,6 +4,13 @@ comments: true
 
 # Changelog
 
+## 3.0.2 (TBR)
+
+__Additions and improvements__
+
+- Improved compatibility with AWS IoT by supporting cases where SubScription Identifiers aren't available.
+- Merged v3.1.1 and v5 application message creation.
+
 ## 3.0.1 (2023-11-09)
 
 __Fixes__
