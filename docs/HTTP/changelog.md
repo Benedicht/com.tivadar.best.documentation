@@ -11,6 +11,7 @@ __Additions and improvements__
 
 __Fixes__
 
+- (#183) Handle unrecognized `content-encoding` values gracefully and serve the content as-is.
 - HTT2: Fix case where a request's `Processing` state isn't processed in time and as a result `HTTP2Stream` made decisions based on the old state and didn't finished the request.
 - HTTP Cache: `HTTPCache.CanServeWithoutValidation` wasn't thread-safe.
 - HTTP Cache: Even with `DisableCache`, a failed request still checked the local cache whether the content can be loaded.
