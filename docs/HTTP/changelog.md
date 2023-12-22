@@ -1,6 +1,6 @@
 # Changelog
 
-## 3.0.4 (TBR)
+## 3.0.4 (2023-12-22)
 
 __Additions and improvements__
 
