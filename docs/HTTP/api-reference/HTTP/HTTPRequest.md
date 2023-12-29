@@ -72,7 +72,7 @@ Represents an HTTP request that allows you to send HTTP requests to remote serve
 		Out-of-the-box included authenticators are [CredentialAuthenticator](../Authenticators/CredentialAuthenticator.md) and [BearerTokenAuthenticator](../Authenticators/BearerTokenAuthenticator.md).
 
 ### **[Boolean](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean) WithCredentials**
-: Its value will be set to the XmlHTTPRequest's withCredentials field. Its default value is HTTPManager.IsCookiesEnabled's value. 
+: Its value will be set to the XmlHTTPRequest's withCredentials field, required to send 3rd party cookies with the request. 
 	!!! note ""
 		More details can be found here: 
 
