@@ -28,6 +28,11 @@ Represents an MQTT client, providing capabilities to connect to MQTT brokers, se
 : Options negotiated with the broker. 
 ### **Session Session**
 : Session instance to persist QoS data. 
+### **[List](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1)&lt;`Subscription`&gt; Subscriptions**
+: Get all the Subscriptions associated with the MQTT session. 
+	!!! note ""
+		This list will include all the pending subscriptions too (pending for subscribing or unsubscribing).
+
 ### **[LoggingContext](../../../HTTP/api-reference/Logger/LoggingContext.md) Context**
 : Context of the MQTTClient and all child instances (like its transport, etc.) that can produce log outputs. 
 ## **Methods**:

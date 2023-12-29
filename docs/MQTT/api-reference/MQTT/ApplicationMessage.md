@@ -7,7 +7,7 @@ https://docs.oasis-open.org/mqtt/mqtt/v5.0/os/mqtt-v5.0-os.html#_Toc3901106
 
 ## **Fields**:
 ### **[Boolean](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean) IsDuplicate**
-: Set to true if it's not the first ocassion the broker sent this application message. 
+: Set to true if it's not the first occasion the broker sent this application message. 
 ### **[QoSLevels](../Packets/QoSLevels.md) QoS**
 : QoS this application message sent with. 
 ### **[Boolean](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean) Retain**
