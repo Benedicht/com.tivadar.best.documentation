@@ -1,5 +1,15 @@
 # Changelog
 
+## 3.0.5 (TBR)
+
+__Additions and improvements__
+
+- Added constructor to the `MultipartFormDataStream` to allow setting custom boundaries.
+
+__Fixes__
+
+- Fixed boundary generation and sending for `MultipartFormDataStream`.
+
 ## 3.0.4 (2023-12-22)
 
 __Additions and improvements__
