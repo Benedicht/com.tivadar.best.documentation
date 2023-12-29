@@ -37,6 +37,12 @@ It focuses on providing robust messaging capabilities while maintaining a lightw
     - :fontawesome-solid-mobile:  **Mobile:** iOS, Android
     - :material-microsoft-windows: **Universal Windows Platform (UWP)**
     - :material-web: **Web Browsers:** WebGL
+	  - Furthermore, user reports suggest that Best STOMP also functions on the following platforms. However, due to the lack of testing capabilities, official support for these platforms is not provided:
+		  - :fontawesome-brands-xbox: Xbox
+		  - :fontawesome-brands-playstation: PlayStation
+		  - :simple-nintendoswitch: Nintendo Switch
+		
+		  Please note that while there is evidence of compatibility with these platforms, I'm unable to offer official support or guarantee full functionality due to testing limitations.
 
     Broad platform support makes Best STOMP ideal for diverse project requirements.
 

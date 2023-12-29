@@ -27,6 +27,12 @@ This central role ensures that when you invest in Best HTTP, you're not just get
     - :fontawesome-solid-mobile: **Mobile**: iOS, Android
     - :material-microsoft-windows: **Universal Windows Platform** (UWP)
     - :material-web: **Web Browsers**: WebGL
+	- Furthermore, user reports suggest that Best HTTP also functions on the following platforms. However, due to the lack of testing capabilities, official support for these platforms is not provided:
+		- :fontawesome-brands-xbox: Xbox
+		- :fontawesome-brands-playstation: PlayStation
+		- :simple-nintendoswitch: Nintendo Switch
+		
+		Please note that while there is evidence of compatibility with these platforms, I'm unable to offer official support or guarantee full functionality due to testing limitations.
 
 	This broad platform support means you can confidently use Best HTTP, regardless of your target audience or deployment strategy.
 

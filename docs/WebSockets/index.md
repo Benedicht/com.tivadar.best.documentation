@@ -33,6 +33,12 @@ Before diving into Best WebSockets, ensure the Best HTTP dependency is correctly
     - :fontawesome-solid-mobile:  **Mobile:** iOS, Android
     - :material-microsoft-windows: **Universal Windows Platform (UWP)**
     - :material-web: **Web Browsers:** WebGL
+	- Furthermore, user reports suggest that Best WebSockets also functions on the following platforms. However, due to the lack of testing capabilities, official support for these platforms is not provided:
+		- :fontawesome-brands-xbox: Xbox
+		- :fontawesome-brands-playstation: PlayStation
+		- :simple-nintendoswitch: Nintendo Switch
+		
+		Please note that while there is evidence of compatibility with these platforms, I'm unable to offer official support or guarantee full functionality due to testing limitations.
 
     This vast platform compatibility assures that Best WebSockets is an excellent choice for any project, regardless of your target platform or audience.
 
