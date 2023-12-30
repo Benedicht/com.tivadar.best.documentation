@@ -129,7 +129,7 @@ extra:
         MQTT_off: 44
         WebSockets_off: 50
         SSE_off: 40
-        Ultimate_off: 33
+        Ultimate_off: 25
         STOMP_off: 44
 
 # https://squidfunk.github.io/mkdocs-material/customization/#additional-css
