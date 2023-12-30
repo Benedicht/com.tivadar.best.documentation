@@ -133,7 +133,7 @@ Use it to implement STOMP-based communication in your applications, enabling eff
 </div>
 
 <div class="card-footer" markdown="block">
-<!--[Bundle Up and Save Big: Secure the Best STOMP Bundle now for {{ bundles.STOMP_off }}% less!](https://assetstore.unity.com/packages/slug/272040?aid=1101lfX8E){ .md-button .md-button--primary }-->
+[Bundle Up and Save Big: Secure the Best STOMP Bundle now for {{ bundles.STOMP_off }}% less!](https://assetstore.unity.com/packages/slug/272040?aid=1101lfX8E){ .md-button .md-button--primary }
 </div>
 
 </div>

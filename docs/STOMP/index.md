@@ -27,7 +27,7 @@ It's versatile and language-agnostic, making it ideal for diverse applications, 
 Best STOMP brings the power and simplicity of the STOMP protocol into your Unity projects with ease. 
 It focuses on providing robust messaging capabilities while maintaining a lightweight footprint, ensuring efficient real-time communication.
 
-<!--[Smart Choice: Get the Best STOMP Bundle now, available on the Unity Asset Store at {{ bundles.STOMP_off }}% off!](https://assetstore.unity.com/packages/slug/272040?aid=1101lfX8E){ .md-button .md-button--primary }-->
+[Smart Choice: Get the Best STOMP Bundle now, available on the Unity Asset Store at {{ bundles.STOMP_off }}% off!](https://assetstore.unity.com/packages/slug/272040?aid=1101lfX8E){ .md-button .md-button--primary }
 
 ## Key Features
 - **Unity Compatibility:** Works seamlessly with Unity versions :fontawesome-brands-unity: **2021.1 and newer**.
@@ -55,12 +55,11 @@ It focuses on providing robust messaging capabilities while maintaining a lightw
 - **Support for STOMP's Transactions:** Implement transactional messaging as defined in the STOMP protocol, providing reliable and consistent message handling and exchange.
 - **Versatile Acknowledgment Modes:** Supports **'auto'**, **'client'**, and **'client-individual'** acknowledgment modes, providing flexibility in message acknowledgment strategies to suit various application needs.
 - **Advanced Subscription Handling:** Manage topic subscriptions with ease, including support for multiple destination subscriptions.
-- **Heartbeat Mechanism:** Integrated heartbeat mechanism to maintain active connections and detect connectivity issues, enhancing reliability and stability.
 - **Comprehensive Profiler Integration:** Utilize the [Best HTTP profiler](../Shared/profiler/index.md) for in-depth analysis of memory and network performance.
 - **Customization Options:** Extensive configuration settings to tailor Best STOMP to your project's needs.
 - **Debugging and Logging Tools:** Advanced logging capabilities aid in development and troubleshooting.
 
-<!--[Unlock More for Less: Get the Best STOMP Bundle now and save {{ bundles.STOMP_off }}%!](https://assetstore.unity.com/packages/slug/272040?aid=1101lfX8E){ .md-button .md-button--primary }-->
+[Unlock More for Less: Get the Best STOMP Bundle now and save {{ bundles.STOMP_off }}%!](https://assetstore.unity.com/packages/slug/272040?aid=1101lfX8E){ .md-button .md-button--primary }
 
 ## Documentation Sections
 Explore the world of Best STOMP:
