@@ -14,9 +14,10 @@ Step-by-step getting started guide with Best STOMP in Unity.
 - Create a Script: In your Unity project, create a new C# script. You can name it like `STOMPPlayground`.
 - Namespace and Usings: Start by declaring the necessary namespaces:
 
-```cs hl_lines="1-2"
+```cs hl_lines="1-3"
 using Best.HTTP.Request.Authentication;
 using Best.STOMP;
+using Best.STOMP.Builders;
 
 using System;
 using UnityEngine;
@@ -31,6 +32,7 @@ Now it should look something like this:
 ```cs hl_lines="9"
 using Best.HTTP.Request.Authentication;
 using Best.STOMP;
+using Best.STOMP.Builders;
 
 using System;
 using UnityEngine;
@@ -90,6 +92,7 @@ With this setup our STOMP client is able to connect to a `RabbitMQ` broker using
     ```cs
     using Best.HTTP.Request.Authentication;
     using Best.STOMP;
+    using Best.STOMP.Builders;
 
     using System;
 
@@ -187,6 +190,7 @@ Most of the calls are optional, but setting the destination, content and calling
     ```cs
     using Best.HTTP.Request.Authentication;
     using Best.STOMP;
+    using Best.STOMP.Builders;
 
     using System;
 
@@ -254,6 +258,7 @@ This is the final, working code:
 ```cs
 using Best.HTTP.Request.Authentication;
 using Best.STOMP;
+using Best.STOMP.Builders;
 
 using System;
 

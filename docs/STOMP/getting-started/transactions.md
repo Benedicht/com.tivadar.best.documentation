@@ -106,6 +106,7 @@ Here's a complete example demonstrating the use of transactions in Best STOMP:
     ```cs hl_lines="53-54 63 70 79 85"
     using Best.HTTP.Request.Authentication;
     using Best.STOMP;
+    using Best.STOMP.Builders;
 
     using System;
     using System.Threading.Tasks;

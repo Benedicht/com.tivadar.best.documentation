@@ -3,7 +3,7 @@ comments: true
 ---
 # ConnectParametersBuilder
 
-Provides a builder for creating and configuring [ConnectParameters](ConnectParameters.md). 
+Provides a builder for creating and configuring [ConnectParameters](../STOMP/ConnectParameters.md). 
 
 
 ## **Methods**:
@@ -20,7 +20,7 @@ Provides a builder for creating and configuring [ConnectParameters](ConnectParam
 ### [ConnectParametersBuilder]() WithTLS([Boolean](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean))
 : Enables the use of TLS for the connection to open a secure communication channel between the client and broker. 
 
-### [ConnectParametersBuilder]() WithTransport([SupportedTransports](SupportedTransports.md))
+### [ConnectParametersBuilder]() WithTransport([SupportedTransports](../STOMP/SupportedTransports.md))
 : Sets the transport protocol for the connection. 
 
 ### [ConnectParametersBuilder]() WithPath([String](https://learn.microsoft.com/en-us/dotnet/api/System.String))
@@ -38,5 +38,5 @@ Provides a builder for creating and configuring [ConnectParameters](ConnectParam
 ### [ConnectParametersBuilder]() WithHeader([String](https://learn.microsoft.com/en-us/dotnet/api/System.String), [String](https://learn.microsoft.com/en-us/dotnet/api/System.String))
 : Adds a custom header to the connection parameters. 
 
-### [ConnectParameters](ConnectParameters.md) Build()
-: Builds and returns the configured [ConnectParameters](ConnectParameters.md) instance. 
+### [ConnectParameters](../STOMP/ConnectParameters.md) Build()
+: Builds and returns the configured [ConnectParameters](../STOMP/ConnectParameters.md) instance. 
