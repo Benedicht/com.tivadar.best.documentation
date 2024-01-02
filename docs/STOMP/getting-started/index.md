@@ -145,7 +145,7 @@ private void OnConnected(Client client, ServerParameters data, IncomingFrame fra
         .BeginSubscribe();
 }
 
-private void OnSubsriptionAck(Client client, Subscription subscription)
+private void OnSubsriptionAck(Client client, Subscription subscription, IncomingFrame frame)
     => Debug.Log($"Subscription created: {subscription.Destination}");
 
 private void OnTestQueueCallback(Client client, Subscription subscription, Message message)
@@ -223,7 +223,7 @@ Most of the calls are optional, but setting the destination, content and calling
                 .BeginSubscribe();
         }
 
-        private void OnSubsriptionAck(Client client, Subscription subscription)
+        private void OnSubsriptionAck(Client client, Subscription subscription, IncomingFrame frame)
             => Debug.Log($"Subscription created: {subscription.Destination}");
 
         private void OnTestQueueCallback(Client client, Subscription subscription, Message message)
@@ -290,7 +290,7 @@ public class STOMPPlayground : MonoBehaviour
             .BeginSubscribe();
     }
 
-    private void OnSubsriptionAck(Client client, Subscription subscription)
+    private void OnSubsriptionAck(Client client, Subscription subscription, IncomingFrame frame)
         => Debug.Log($"Subscription created: {subscription.Destination}");
 
     private void OnTestQueueCallback(Client client, Subscription subscription, Message message)

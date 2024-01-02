@@ -15,7 +15,7 @@ A new builder can be created by using the [CreateSubscriptionBuilder](../STOMP/C
 ### [SubscriptionBuilder]() WithAcknowledgmentMode([AcknowledgmentModes](../STOMP/AcknowledgmentModes.md))
 : Sets the [acknowledgment mode](../STOMP/AcknowledgmentModes.md) for the subscription. 
 
-### WithAcknowledgmentCallback(Client, Subscription})
+### WithAcknowledgmentCallback(Client, Subscription, IncomingFrame})
 : Sets a callback to be invoked upon acknowledgment of the subscription. 
 
 ### WithCallback(Client, Subscription, Message})
@@ -27,5 +27,5 @@ A new builder can be created by using the [CreateSubscriptionBuilder](../STOMP/C
 ### Void BeginSubscribe()
 : Begins the process of subscribing to the destination. 
 
-### [Task](https://learn.microsoft.com/en-us/dotnet/api/System.Threading.Tasks.Task-1)&lt;[Subscription](../STOMP/Subscription.md)&gt; SubscribeAsync()
+### [Task](https://learn.microsoft.com/en-us/dotnet/api/System.Threading.Tasks.Task-1)&lt;[ValueTuple](https://learn.microsoft.com/en-us/dotnet/api/System.ValueTuple-2)&lt;[Subscription](../STOMP/Subscription.md), [IncomingFrame](../STOMP/IncomingFrame.md)&gt;&gt; SubscribeAsync()
 : Begins the process of subscribing to the destination. 
