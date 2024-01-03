@@ -1,6 +1,6 @@
 # Changelog
 
-## 3.0.5 (TBR)
+## 3.0.5 (2024-01-03)
 
 __Additions and improvements__
 
@@ -9,6 +9,7 @@ __Additions and improvements__
 __Fixes__
 
 - Fixed boundary generation and sending for `MultipartFormDataStream`.
+- Fixed WebGL issue introduced in v3.0.4, where requests are stuck while checking the local HTTP cache.
 
 ## 3.0.4 (2023-12-22)
 
