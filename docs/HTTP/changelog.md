@@ -1,5 +1,11 @@
 # Changelog
 
+## 3.0.6 (TBR)
+
+__Fixes__
+
+- HTTP2: Fixed `NullReferenceException` when an UploadProgress event is defined for the request.
+
 ## 3.0.5 (2024-01-03)
 
 __Additions and improvements__
