@@ -4,6 +4,12 @@ comments: true
 
 # Changelog
 
+## 3.0.2 (TBR)
+
+__Fixes__
+
+- Fixed case where the HubConnection received transport state changes from an old, discarded transport no longer in use.
+
 ## 3.0.1 (2023-12-08)
 
 __Additions and improvements__
