@@ -4,18 +4,23 @@ comments: true
 
 # Changelog
 
-## 3.0.2 (TBR)
+## 3.0.2 (2024-02-14)
 
 __Additions and improvements__
 
-- [WebGL] Improved performance under WebGL by using BufferPool arrays from the JS side for textual and binary messages, and doing less data copy
-- [WebGL] Added support to send texts with NULL(\0) characters
+- Made ping sending independent from other messages.
+- [WebGL] Improved performance under WebGL by using BufferPool arrays from the JS side for textual and binary messages, and doing less data copy.
+- [WebGL] Added support to send texts with NULL(\0) characters.
+
+__Fixes__
+
+- Pings sent even if `SendPings` were set to `false`.
 
 ## 3.0.1 (2023-12-04)
 
 __Fixes__
 
-- Fixed support of BESTHTTP_DISABLE_ALTERNATE_SSL
+- Fixed support of BESTHTTP_DISABLE_ALTERNATE_SSL.
 
 ## 3.0.0 (2023-11-01)
 
