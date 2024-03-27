@@ -1,5 +1,19 @@
 # Changelog
 
+## 3.0.7 (2024-03-27)
+
+__Additions and improvements__
+
+- Merged two request events (`Queued` and `Resend`) into one.
+- If the response is with an unknown length (neither chunked or has a content-length header) and the tcp connection is closing, read all available data and serve the response as completed.
+
+__Fixes__
+
+- Fix for *Incorrect Brotli handling for AndroidMono* (#187) .
+- Continue download after displaying a warning about download content stream beeing full.
+- Fixed case where Database's `FindContentAndMetadataLocked` throws an exception. It will handle the exception, display it, but deletes the corrupted DB entry to not try to use it the next time.
+- Don't log an error if HTTPRequest's state changes and the threading mode isn't set to `UnityUpdate` (#188).
+
 ## 3.0.6 (2024-02-09)
 
 __Fixes__
@@ -23,7 +37,7 @@ __Fixes__
 __Additions and improvements__
 
 - Implemented a new algorithm to pre-establish connections. This primarily affects HTTP/2 connections, which can handle multiple requests simultaneously. Starting from this version, the plugin is capable of opening more than one HTTP/2 connection when a large number of requests are queued.
-- Added a new field MaxAssignedRequestsFactor to HostVariantSettings. This field aids in fine-tuning the creation of new connections based on the number of queued requests.
+- Added a new field `MaxAssignedRequestsFactor` to `HostVariantSettings`. This field aids in fine-tuning the creation of new connections based on the number of queued requests.
 - Moved the first local HTTP cache check to a background thread. In exchange of some slight delay to remove overhead from the main Unity thread.
 - Added a few more logging.
 
