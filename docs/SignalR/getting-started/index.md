@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Introduction
 
 This guide will walk you through setting up a basic Best SignalR connection, invoking methods, and handling real-time communication.

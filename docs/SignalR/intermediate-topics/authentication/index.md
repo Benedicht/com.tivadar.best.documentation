@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # The IAuthenticationProvider interface
 
 To authenticate a SignalR Core session an `IAuthenticationProvider` implementation can be set to the hub connection's `AuthenticationProvider` property. 

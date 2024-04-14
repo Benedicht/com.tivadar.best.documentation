@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Encoders
 
 SignalR Core can use different encodings to send and receive messages. Current supported encodings are `JSon` and `MessagePack`.

@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Retry
 
 In case of an unrecoverable error, if there's a retry policy set for the `HubConnection`, instead of calling the `OnError` event the hub will try to reconnect to the server.

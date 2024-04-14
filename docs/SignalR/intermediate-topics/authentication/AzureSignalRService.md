@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Azure SignalR Service
 
 The plugin can connect to the an Azure SignalR Service with its default authenticator.

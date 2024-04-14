@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Connect to PlayFab PubSub
 
 Authenticator implementation that can be used with PlayFab:
