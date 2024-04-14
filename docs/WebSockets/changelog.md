@@ -4,6 +4,17 @@ comments: true
 
 # Changelog
 
+## 3.0.3 (2024-04-12)
+
+__Additions and improvements__
+
+- Don't allow ping timeouts if messages are arriving from the server and pong is delayed.
+- Dispose an `AutoResetEvent`.
+
+__Fixes__
+
+- (#192) Fixed frame size calculation that resulted in malformed frame reads.
+
 ## 3.0.2 (2024-02-14)
 
 __Additions and improvements__
