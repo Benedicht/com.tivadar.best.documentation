@@ -4,6 +4,17 @@ comments: true
 
 To send already obtained JWT tokens in the `Authorization` header (or as query parameter on WebGL for WebSockets) the `HeaderAuthenticator` can be used.
 
+## Usage
+
+`HubConnection` has an `AuthenticationProvider` property and will use that authenticator through its lifetime. It's very advised to set it only once when the `HubConnection` is created:
+
+```cs
+hub = new HubConnection(new Uri("https://myurl"), protocol);
+hub.AuthenticationProvider = new HeaderAuthenticator("< token >");
+```
+
+## How/where to get it
+
 The `HeaderAuthenticator` is located in the samples that comes with the package and can be installed to the project through, but as a reference or to add only the `HeaderAuthenticator` to the project here's its source too:
 
 ```cs
