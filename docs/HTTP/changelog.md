@@ -1,5 +1,25 @@
 # Changelog
 
+## 3.0.8 (TBR)
+
+__Additions and improvements__
+
+- WebGL: Support added for [WebAssembly.Table language feature](https://docs.unity3d.com/6000.0/Documentation/Manual/wasm-2023-features.html#wasm-table).
+- [HTTP2] Added NO_RFC7540_PRIORITIES to the known settings.
+- [HTTP2] HTTP2SettingsRegistry will ignore unknown keys by handling them gracefully instead of throwing an exception.
+- `CookieJar` now has an `IsEnabled` field to be able to disable cookie handling completely.
+- Removed unused `BlockingTCPStream` implementation.
+
+__Fixes__
+
+- Save current uri before handling redirection, otherwise PerHostSettings might return with the wrong setting for the current connection.
+- Don't close the underlying connection when we just upgraded/switched protocols.
+- (#195) Fixed deadlock in `BlockingDownloadContentStream`.
+- (#189) Fixed warning in documentation under JetBrains Rider.
+- (#190) `HTTPRequest`'s Dispose is now an internal method.
+- HTTP/1 connection is closed when `HTTP1ConnectionSettings.TryToReuseConnections` set to `true` even if the connection is upgraded.
+- When checking for `TryToReuseConnections`, save current uri before handling redirection, otherwise `PerHostSettings` might return with the wrong setting for the current connection.
+
 ## 3.0.7 (2024-03-27)
 
 __Additions and improvements__

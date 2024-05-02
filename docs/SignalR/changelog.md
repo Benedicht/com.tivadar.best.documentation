@@ -6,9 +6,16 @@ comments: true
 
 ## 3.0.2 (TBR)
 
+__Additions and improvements__
+
+- (#193) Added support for stateful reconnect.
+- Added support for `DateTime` type parameters for the default `JsonProtocol`.
+
 __Fixes__
 
+- Fixed an xml documentation error
 - Fixed case where the HubConnection received transport state changes from an old, discarded transport no longer in use.
+- Fixed case where in some cases the transport is null when the hub enters the Closed state.
 
 ## 3.0.1 (2023-12-08)
 

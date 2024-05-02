@@ -4,6 +4,18 @@ comments: true
 
 # Changelog
 
+## 3.0.4 (TBR)
+
+__Additions and improvements__
+
+- WebGL: Support added for [WebAssembly.Table language feature](https://docs.unity3d.com/6000.0/Documentation/Manual/wasm-2023-features.html#wasm-table).
+- Properly dispose underlying `TCPStreamer` when the connection is closed by the server.
+- Logging: Added missing contexts.
+
+__Fixes__
+
+- Per-Message Compression: Fixed exception when `server_no_context_takeover` isn't supported by the server.
+
 ## 3.0.3 (2024-04-12)
 
 __Additions and improvements__

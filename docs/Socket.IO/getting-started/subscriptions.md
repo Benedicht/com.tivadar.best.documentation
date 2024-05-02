@@ -213,6 +213,43 @@ sequenceDiagram
 
 You can find Socket.IO's documentation about acknowledgements here: [emitting-events/acknowledgements](https://socket.io/docs/v4/emitting-events/#acknowledgements)
 
+## Server Acknowledgement Timeouts
+
+With the help of the `Timeout` function a hard limit can be defined for acknowledgements to arrive. When a timeout is added only one callback will be called, either the timeout's or the acknowledgement's one.
+
+!!! Example
+	```cs title="Client" hl_lines="7"
+    class AcknowledgementReturnVal
+    {
+        public string status;
+    }
+
+    manager.Socket
+		.Timeout(TimeSpan.FromSeconds(1), (socket) => Debug.Log("Ack TimeOut!"))
+		.ExpectAcknowledgement<AcknowledgementReturnVal>(OnAcknowledgements)
+        .Emit("update item", 1, new { name: "updated" });
+
+    private void OnAcknowledgements(AcknowledgementReturnVal value)
+    {
+        Debug.Log(value.status); // "ok"
+    }
+    ```
+
+    ```js title="Server"
+    io.on("connection", (socket) => {
+      socket.on('update item', (arg1, arg2, ack_callback) => {
+          // process event
+          console.log(arg1); // 1
+          console.log(arg2.name); // "updated"
+
+          // send back acknowledgement:
+          ack_callback({ status: "ok" });
+      });
+    });
+    ```
+
+The `Timeout` function expect a `TimeSpan` and an optional callback that's called in case of timing out.
+
 ## Client Acknowledgements
 
 Client acknowledgements are similar to the server acks, but the other way around: the client can trigger an acknowledgement callback on the server:

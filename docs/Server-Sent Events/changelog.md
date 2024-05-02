@@ -4,6 +4,17 @@ comments: true
 
 # Changelog
 
+## 3.0.1 (TBR)
+
+__Additions and improvements__
+
+- WebGL: Support added for [WebAssembly.Table language feature](https://docs.unity3d.com/6000.0/Documentation/Manual/wasm-2023-features.html#wasm-table).
+
+__Fixes__
+
+- Fixed issue where the `EventSource` got closed while the down stream still contained data to process.
+- Changed package author url to point to the new documentation page.
+
 ## 3.0.0 (2023-11-01)
 
 __Additions and improvements__
