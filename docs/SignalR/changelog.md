@@ -8,7 +8,7 @@ comments: true
 
 __Additions and improvements__
 
-- (#193) Added support for stateful reconnect.
+- (#193) Added support for [stateful reconnect](https://learn.microsoft.com/en-us/aspnet/core/signalr/configuration?view=aspnetcore-8.0&tabs=dotnet#configure-stateful-reconnect).
 - Added support for `DateTime` type parameters for the default `JsonProtocol`.
 
 __Fixes__
