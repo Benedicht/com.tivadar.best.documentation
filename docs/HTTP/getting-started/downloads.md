@@ -258,6 +258,26 @@ async void OnDownloadStarted(HTTPRequest req, HTTPResponse resp, DownloadContent
 }
 ```
 
+## `DownloadContentStream` lifecycle
+
+The `DownloadContentStream` plays a crucial role in handling streamed downloads within the plugin. Understanding its lifecycle is essential for proper resource management and avoiding potential issues.
+
+### Default Behavior
+By default, the `DownloadContentStream` is bound to the lifecycle of the associated request. When the request's callback is invoked, the stream is disposed of along with the request. However, complications can arise if the stream is still in use when the callback occurs.
+
+### Detachment Mechanism
+To address this issue, the plugin employs a detachment mechanism. If a read operation is detected from outside the plugin, the stream becomes detached from the request. This detachment allows the stream's lifetime to extend beyond the request's callback, preventing premature disposal.
+
+### Manual Disposal
+It's important to note that users are responsible for manually disposing of the `DownloadContentStream` once they have finished using it. Failure to do so can lead to resource leaks and unexpected behavior.
+
+### Best Practices
+When working with `DownloadContentStream`, consider the following best practices:
+
+- **Detachment Handling**: If you anticipate using the stream beyond the request callback, ensure it becomes detached either by initiating a read operation (`Read`, `TryTake`) within the `OnDownloadStarted` callback or by setting `DownloadContentStream`'s `IsDetached` property to true.
+- **Manual Disposal**: Always dispose the stream manually once you have finished using it to release any resources it holds. This can be done by calling the `Dispose()` method when you no longer need the stream.
+- **Error Handling**: Handle any exceptions that may occur during stream operations gracefully and call `Dispose()` to ensure proper cleanup.
+
 ## Progress Tracking
 
 No matter how `DownloadStream` is utilised or even used directly, progress tracking is an independent feature. 
