@@ -64,6 +64,7 @@ This enhancement is instrumental in understanding the performance and network be
 		- **DNS Cache Profiling:** With this feature, you can track DNS cache hits and misses, aiding in the fine-tuning of DNS cache strategies and understanding potential network resolution delays.
 
 		With the integration of this built-in profiler support, developers can not only ensure that their application's network activities are optimized but also make data-driven decisions that enhance both performance and user experience.
+
 - **Debugging and Logging:** Comprehensive logging options enable developers to get insights into the workings of the package and simplify the debugging process.
 
 <!--[Buy Now on :fontawesome-brands-unity: Asset Store](https://assetstore.unity.com/packages/slug/267636?aid=1101lfX8E){ .md-button .md-button--primary }-->
