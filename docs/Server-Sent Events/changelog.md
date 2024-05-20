@@ -4,7 +4,7 @@ comments: true
 
 # Changelog
 
-## 3.0.1 (TBR)
+## 3.0.1 (2024-05-20)
 
 __Additions and improvements__
 

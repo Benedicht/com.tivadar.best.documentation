@@ -4,12 +4,16 @@ comments: true
 
 # Changelog
 
-## 3.0.2 (TBR)
+## 3.0.2 (2024-05-20)
 
 __Additions and improvements__
 
 - Added [ExpectAcknowledgement timeouts](getting-started/subscriptions.md#server-acknowledgement-timeouts)
 - Added `SocketManager`'s logging context to the transport requests' context.
+
+__Fixes__
+
+- Remove the whole subscription if no more subscriber left.
 
 ## 3.0.1 (2023-11-28)
 

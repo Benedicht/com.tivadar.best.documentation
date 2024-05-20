@@ -4,17 +4,19 @@ comments: true
 
 # Changelog
 
-## 3.0.4 (TBR)
+## 3.0.4 (2024-05-20)
 
 __Additions and improvements__
 
 - WebGL: Support added for [WebAssembly.Table language feature](https://docs.unity3d.com/6000.0/Documentation/Manual/wasm-2023-features.html#wasm-table).
-- Properly dispose underlying `TCPStreamer` when the connection is closed by the server.
 - Logging: Added missing contexts.
 
 __Fixes__
 
+- Fixed case where websocket closed with pong timeout error even if it's received the pong frame.
 - Per-Message Compression: Fixed exception when `server_no_context_takeover` isn't supported by the server.
+- Properly dispose underlying `TCPStreamer` when the connection is closed by the server.
+- Fixed log level and message in `OnCancellationRequested` callback.
 
 ## 3.0.3 (2024-04-12)
 

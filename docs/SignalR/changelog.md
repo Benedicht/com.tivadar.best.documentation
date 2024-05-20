@@ -4,7 +4,7 @@ comments: true
 
 # Changelog
 
-## 3.0.2 (TBR)
+## 3.0.2 (2024-05-20)
 
 __Additions and improvements__
 
@@ -14,7 +14,7 @@ __Additions and improvements__
 __Fixes__
 
 - Fixed an xml documentation error
-- Fixed case where the HubConnection received transport state changes from an old, discarded transport no longer in use.
+- Fixed case where the `HubConnection` received transport state changes from an old, discarded transport no longer in use.
 - Fixed case where in some cases the transport is null when the hub enters the Closed state.
 
 ## 3.0.1 (2023-12-08)

@@ -1,14 +1,25 @@
 # Changelog
 
-## 3.0.8 (TBR)
+## 3.0.8 (2020-05-20)
 
 __Additions and improvements__
 
 - WebGL: Support added for [WebAssembly.Table language feature](https://docs.unity3d.com/6000.0/Documentation/Manual/wasm-2023-features.html#wasm-table).
+- New logging `IFilter` interface with `SingleDivisionFilter` and `MultiDivisionFilter` implementations
 - [HTTP2] Added NO_RFC7540_PRIORITIES to the known settings.
 - [HTTP2] HTTP2SettingsRegistry will ignore unknown keys by handling them gracefully instead of throwing an exception.
 - `CookieJar` now has an `IsEnabled` field to be able to disable cookie handling completely.
 - Removed unused `BlockingTCPStream` implementation.
+- `BufferPool` now accepts only power of two sized buffers only in its Release functions.
+- New per-host setting for HTTP/1 forced usage of ThreadPool through HTTP1ConnectionSettings.ForceUseThreadPool.
+- Prevent double-dispose of _currentSegment in `DownloadContentStream`.
+- `HTTPRequest`: `OnHeaderEnumerationDelegate`, `Response`'s setter and `EnumerateHeaders` are public now.
+- `DownloadContentStream`'s `EmergencyIncreaseMaxBuffered` is now public.
+- `TimingCollector`'s `StartNext` and `Finish` are public now.
+- `Retries`' setter is now public.
+- `Proxy`'s `GetRequestPath` is now public.
+- New Per-host Variant and Connection factory functions.
+- `Connection`'s `LogginContext` is now public.
 
 __Fixes__
 
@@ -19,6 +30,13 @@ __Fixes__
 - (#190) `HTTPRequest`'s Dispose is now an internal method.
 - HTTP/1 connection is closed when `HTTP1ConnectionSettings.TryToReuseConnections` set to `true` even if the connection is upgraded.
 - When checking for `TryToReuseConnections`, save current uri before handling redirection, otherwise `PerHostSettings` might return with the wrong setting for the current connection.
+- Fixed a possible null-reference exception in `NonBlockingTCPStream`.
+- Fixed proxy autodetector not checking for a proxy.
+- Fixed case where WebGL layer includes both content-length and chunked transfer encoding.
+- Set `TCPStreamer`'s `ContentConsumer` to not receive more callbacks after calling dispose in `NonBlockingTCPStream`.
+- Fixed race condition where not all content sent by the TCP streamer.
+- Set `ReuseAddress` to false on the socket to remove lingering sockets.
+
 
 ## 3.0.7 (2024-03-27)
 
