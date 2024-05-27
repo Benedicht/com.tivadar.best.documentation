@@ -1,6 +1,6 @@
 # Changelog
 
-## 3.0.8 (2020-05-20)
+## 3.0.8 (2024-05-20)
 
 __Additions and improvements__
 
