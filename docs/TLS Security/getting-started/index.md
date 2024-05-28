@@ -10,7 +10,7 @@ After importing the package call `#!cs TLSSecurity.Setup();` somewhere in your s
 ```cs
 /* (1)! */
 #if !UNITY_WEBGL || UNITY_EDITOR
-using BestHTTP.Addons.TLSSecurity;
+using Best.TLSSecurity;
 
 TLSSecurity.Setup();
 #endif
