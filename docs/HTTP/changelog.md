@@ -1,5 +1,16 @@
 # Changelog
 
+## 3.0.9 (TBR)
+
+__Additions and improvements__
+
+- `MultipartFormDataStream`: no additional `Content-Type` header is set if the mime-type parameter is set to `null`.
+
+__Fixes__
+
+- WebGL: Fixed compile error.
+- Fixed `ArgumentNullException` when a file uri is used.
+
 ## 3.0.8 (2024-05-20)
 
 __Additions and improvements__
