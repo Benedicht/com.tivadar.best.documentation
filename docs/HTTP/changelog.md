@@ -1,6 +1,6 @@
 # Changelog
 
-## 3.0.9 (TBR)
+## 3.0.9 (2024-05-30)
 
 __Additions and improvements__
 
@@ -9,7 +9,8 @@ __Additions and improvements__
 __Fixes__
 
 - WebGL: Fixed compile error.
-- Fixed `ArgumentNullException` when a file uri is used.
+- Fixed `ArgumentNullException` when a file Uri is used.
+- Fix compile error when building for Nintendo™ Switch.
 
 ## 3.0.8 (2024-05-20)
 
