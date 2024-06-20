@@ -1,5 +1,21 @@
 # Changelog
 
+## 3.0.10 (2024-06-20)
+
+__Additions and improvements__
+
+- Added `FindNext` function to `TimingCollector`.
+- Added `MaxBufferSize` property to the `ITCPStreamerContentConsumer` interface and to all implementers unifying them.
+- `HTTPRequest`: Track the serving connection's hash in the request's logging context.
+- Logging: Changed field ordering.
+- `TCPStreamer`: Properly dispose socket in all cases.
+
+__Fixes__
+
+- (#199) Fixed BlockingDownloadContentStream throwing InvalidOperationException.
+- `TCPStreamer`: Set `write in progress` to `0` when `SendFromQueue()` returns with `false`.
+- Clear `HostManager` on Unity reset.
+
 ## 3.0.9 (2024-05-30)
 
 __Additions and improvements__

@@ -4,6 +4,12 @@ comments: true
 
 # Changelog
 
+## 3.0.5 (2024-06-20)
+
+__Fixes__
+
+- Set the `MaxBufferSize` property (introduced in [Best HTTP v3.0.10](../HTTP/changelog.md#3010-2024-06-20)) of the underlying content provider to support larger than default size websocket frames.
+
 ## 3.0.4 (2024-05-20)
 
 __Additions and improvements__
