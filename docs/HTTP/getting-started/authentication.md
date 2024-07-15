@@ -8,18 +8,18 @@ Providing authentication information with requests are crucial to access otherwi
 This is why, starting with this version, changed the way how setting up authentication information for a request works. 
 Instead of just be able to set a username-password pair for a request, the `HTTPRequest` class now has a property that accepts an `IAuthenticator` implementation.
 
-The plugin ships with two, ready to use authenticators: `CrendetialAuthenticator` and `BearerTokenAuthenticator`.
+The plugin ships with two, ready to use authenticators: `CredentialAuthenticator` and `BearerTokenAuthenticator`.
 Both authenticator is located in the `Best.HTTP.Request.Authenticators` namespace.
 
-## CrendetialAuthenticator
+## CredentialAuthenticator
 
-The `CrendetialAuthenticator` is there to support Basic and Digest HTTP authentications. The authenticator accepts a `Crendetials` instance containing the username and password:
+The `CredentialAuthenticator` is there to support Basic and Digest HTTP authentications. The authenticator accepts a `Credentials` instance containing the username and password:
 
 ```cs hl_lines="3-4"
 var request = HTTPRequest.CreateGet("https://host/path/to/private/resource", callback);
 
 var credentials = new Credentials(AuthenticationTypes.Basic, "<user>", "<passwd>");
-request.Authenticator = new CrendetialAuthenticator(credentials);
+request.Authenticator = new CredentialAuthenticator(credentials);
 
 request.Send();
 ```
