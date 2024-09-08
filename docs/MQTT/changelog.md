@@ -4,6 +4,16 @@ comments: true
 
 # Changelog
 
+## 3.0.3 (2024-09-09)
+
+__Additions and improvements__
+
+- Switched to the new [UTC date&times](../HTTP/changelog.md)
+
+__Fixes__
+
+- Close underlying websocket when disconnected with an error.
+
 ## 3.0.2 (2023-12-22)
 
 __Additions and improvements__

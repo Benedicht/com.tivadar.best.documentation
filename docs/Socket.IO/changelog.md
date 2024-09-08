@@ -4,6 +4,12 @@ comments: true
 
 # Changelog
 
+## 3.0.3 (2024-09-09)
+
+__Additions and improvements__
+
+- Switched to the new [UTC date&times](../HTTP/changelog.md)
+
 ## 3.0.2 (2024-05-20)
 
 __Additions and improvements__

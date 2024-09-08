@@ -1,5 +1,18 @@
 # Changelog
 
+## 3.0.11 (2024-09-09)
+
+__Additions and improvements__
+
+- Improved performanse (both in terms of memory allocations and CPU usage) when hundreds of concurrent requests are sent.
+- `IHeartbeat`'s `OnHeartbeatUpdate` is now called with the current UTC date&time.
+
+__Fixes__
+
+- Reworked request timing handling. It's now more precise.
+- [WebGL] Fixed case where `document.cookie` might be `undefined`.
+- Call `RequestEventHelper.Clear()` on `RuntimeInitializeLoadType.SubsystemRegistration`.
+
 ## 3.0.10 (2024-06-20)
 
 __Additions and improvements__
