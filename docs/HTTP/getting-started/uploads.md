@@ -96,7 +96,7 @@ From the same namespace (`Best.HTTP.Request.Upload.Forms`) as the `UrlEncodedStr
 ```cs hl_lines="3-10"
 var request = HTTPRequest.CreatePost("https://server/post", callback);
 
-var formStream = new MultipartFormDataStream();
+var formStream = new MultipartFormDataStream()
                         .AddField("field 1", "value 1")
                         .AddField("field 2", "value 2", Encoding.UTF8);
 
