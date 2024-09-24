@@ -49,6 +49,7 @@ Here's the list of the available shortcut properties:
         ```
 
 - **`#!cs string DataAsText { get; }`:** This shortcut converts the raw content bytes to an utf-8 string.
+
     ??? example
         ```cs hl_lines="9"
         void TextCallback(HTTPRequest req, HTTPResponse resp)
@@ -73,6 +74,7 @@ Here's the list of the available shortcut properties:
         ```
 
 - **`#!cs Texture2D DataAsTexture2D { get; }`:** Uses [ImageConversion.LoadImage](https://docs.unity3d.com/ScriptReference/ImageConversion.LoadImage.html) to return with a [Texture2D](https://docs.unity3d.com/ScriptReference/Texture2D.html).
+
     ??? example
         ```cs hl_lines="9"
         void ImageCallback(HTTPRequest req, HTTPResponse resp)
