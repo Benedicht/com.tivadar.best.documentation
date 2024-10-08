@@ -271,7 +271,7 @@ The client can use the `Socket`'s `EmitAck` in a server-callable function to sen
     ```js title="Server"
     io.on("connection", (socket) => {
       var ack_callback = (p1, p2, p3) => {
-          console.log(`callback: ${p1}, ${p2}, ${p3}`); // 1, 2, 3
+          console.log(`callback: ${p1}, ${p2}, ${p3}`); // 3, 2, 1
       };
 
       socket.emit('wait_for_ack', 1, 2, 3, ack_callback);
