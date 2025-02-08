@@ -4,6 +4,16 @@ comments: true
 
 # Changelog
 
+## 3.0.4 (TBR)
+
+__Additions and improvements__
+
+- `GetSubscription` & `GetItemType` functions are now public.
+
+__Fixes__
+
+- Fixed query parameter generation.
+
 ## 3.0.3 (2024-09-09)
 
 __Additions and improvements__
@@ -12,7 +22,7 @@ __Additions and improvements__
 
 __Fixes__
 
-- (#200) Fixed NullReferenceException when SkipNegotiation is set to `true`.
+- (#200) Fixed `NullReferenceException` when `SkipNegotiation` is set to `true`.
 - Fixed websocket query parameter generation.
 
 ## 3.0.2 (2024-05-20)

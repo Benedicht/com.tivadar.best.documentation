@@ -4,6 +4,13 @@ comments: true
 
 # Changelog
 
+## 3.0.3 (TBR)
+
+__Additions and improvements__
+
+- Filter out expired certificates after certificate matching.
+- Updated certificates.
+
 ## 3.0.2 (2024-09-09)
 
 __Additions and improvements__

@@ -4,6 +4,16 @@ comments: true
 
 # Changelog
 
+## 3.0.7 (TBR)
+
+__Additions and improvements__
+
+- Added support for multiple subprotocols
+
+__Fixes__
+
+- Reworked dispatching of onclosed event to be handled on the same thread than other events.
+
 ## 3.0.6 (2024-09-09)
 
 __Additions and improvements__

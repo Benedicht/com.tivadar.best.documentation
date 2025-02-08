@@ -4,6 +4,12 @@ comments: true
 
 # Changelog
 
+## 3.0.4 (TBR)
+
+__Fixes__
+
+- Call `OnHeartbeatUpdate` manually when disconnecting in the Unity Editor while exiting playmode.
+
 ## 3.0.3 (2024-09-09)
 
 __Additions and improvements__
