@@ -1,5 +1,32 @@
 # Changelog
 
+## 3.0.12 (TBR)
+
+__Additions and improvements__
+
+- Rewrote `BufferPool` to remove locking, sped up getting from the cache and releasing memory.
+- Merge headers and body content into one network packet.
+- Multiple LitJson improvements to speed it up and to produce less GC allocations.
+- Improved `HTTP1ContentConsumer` to not block its thread while waiting for data from the `UploadStream`.
+- Dispatch DNS result on a background thread to avoid CPU spike in the calling thread.
+- Greatly improved speed of LitJson encoding and decoding.
+- Added string to enum support to LitJson decoding.
+- Handle network events when no request is assigned to a http/1 connection.
+- Removed locking in HeartbeatManager by using an event queue.
+
+__Fixes__
+
+- Fixed handling status code 407 during proxy negotiation.
+- Added a space to separate header names and values. Siemens PLCs can't parse websocket requests otherwise.
+- Fixed age-based caching.
+- Fixed: don't try to read the body of a response to a HEAD request.
+- HTTP/2 - not send Content-Length header if it would be equal or less then zero.
+- Fixed log level check in `DownloadContentStream`.
+- `HTTPRequest`: Added missing Trace method to the `MethodNames` array.
+- Handle exceptions during bundle loading in `GetAssetBundleAsync`.
+- WebGL: Fixed performance issue by allowing more than one connection.
+- Try to save database's content during Dispose and unsubscribe from heartbeat updates.
+
 ## 3.0.11 (2024-09-09)
 
 __Additions and improvements__
