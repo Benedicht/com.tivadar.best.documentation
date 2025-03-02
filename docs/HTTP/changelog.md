@@ -13,6 +13,7 @@ __Additions and improvements__
 - Added string to enum support to LitJson decoding.
 - Handle network events when no request is assigned to a http/1 connection.
 - Removed locking in HeartbeatManager by using an event queue.
+- Upped Burst version dependency to [v1.8.19](https://docs.unity3d.com/Packages/com.unity.burst@1.8/changelog/CHANGELOG.html#1819---2025-01-17).
 
 __Fixes__
 

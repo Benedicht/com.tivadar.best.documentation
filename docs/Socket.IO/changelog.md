@@ -4,6 +4,12 @@ comments: true
 
 # Changelog
 
+## 3.0.4 (2025-03-02)
+
+__Fixes__
+
+- Re-register internal connected event handler when subscriptions are cleared
+
 ## 3.0.3 (2024-09-09)
 
 __Additions and improvements__
