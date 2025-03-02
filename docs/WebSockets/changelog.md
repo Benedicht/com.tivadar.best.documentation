@@ -4,7 +4,7 @@ comments: true
 
 # Changelog
 
-## 3.0.7 (TBR)
+## 3.0.7 (2025-03-02)
 
 __Additions and improvements__
 

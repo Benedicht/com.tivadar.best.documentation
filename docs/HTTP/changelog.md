@@ -1,6 +1,6 @@
 # Changelog
 
-## 3.0.12 (TBR)
+## 3.0.12 (2025-03-02)
 
 __Additions and improvements__
 

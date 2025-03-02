@@ -4,7 +4,7 @@ comments: true
 
 # Changelog
 
-## 3.0.4 (TBR)
+## 3.0.4 (2025-03-02)
 
 __Fixes__
 
