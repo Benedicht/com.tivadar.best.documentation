@@ -1,5 +1,11 @@
 # Changelog
 
+## 3.0.13 (2025-03-04)
+
+__Fixes__
+
+- Fixed LitJson to use invariant version of chars during hascode generation to retrieve properties/fields.
+
 ## 3.0.12 (2025-03-02)
 
 __Additions and improvements__
