@@ -1,5 +1,11 @@
 # Changelog
 
+## 3.0.16 (2025-03-06)
+
+__Fixes__
+
+- Fixed Cookie sending
+
 ## 3.0.13 (2025-03-04)
 
 __Fixes__
