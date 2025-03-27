@@ -7,10 +7,13 @@ comments: true
 The ProxyDetector class coordinates automatic proxy detection in the Best HTTP package. This feature supports different modes of operation and can be customized with various detectors.
 
 ## Enabling and Configuring Proxy Detection
-To enable automatic proxy detection, instantiate a ProxyDetector and assign it to the `HTTPManager.ProxyDetector`. For example:
+
+Automatic proxy detection is on by default. 
+
+If you want to change the defaults, or add/remove detectors, instantiate a ProxyDetector and assign it to the `HTTPManager.ProxyDetector`. For example:
 
 ```cs title="Create and set a new Proxy Detector with default settings"
-Best.HTTP.Shared.HTTPManager.ProxyDetector = new Best.HTTP.Proxies.Autodetect.ProxyDetector();
+Best.HTTP.Shared.HTTPManager.ProxyDetector = new Best.HTTP.Proxies.Autodetect.ProxyDetector(Best.HTTP.Proxies.Autodetect.ProxyDetectionMode.CacheFirstFound);
 ```
 
 ## Proxy Detection Modes
