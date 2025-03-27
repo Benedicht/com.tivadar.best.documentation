@@ -1,6 +1,16 @@
 # Changelog
 
-## 3.0.16 (2025-03-06)
+## 3.0.15 (2025-03-27)
+
+__Fixes__
+
+- (#218) Fixed `IndexOutOfRangeException` in `TCPRingmaster`
+- Fixed proxy autodetection didn't run on request initialization
+- (#217) Removed `State.Set` error when called on an other thread
+- (#209) Fixed HTTP cache age calculation
+- Fixed issues when `LitJson` used with `JsonData` or with other `IJsonWrapper` implementation
+
+## 3.0.14 (2025-03-06)
 
 __Fixes__
 
