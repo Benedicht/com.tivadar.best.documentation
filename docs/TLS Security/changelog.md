@@ -4,6 +4,16 @@ comments: true
 
 # Changelog
 
+## 3.0.4 (2025-05-14)
+
+__Fixes__
+
+- Fixed failing requests when no OCSP endpoint is found in the certificate's AuthorityInformationAccess extension
+
+__Additions and improvements__
+
+- Updated Root and Intermediate certifications.
+
 ## 3.0.3 (2025-03-02)
 
 __Additions and improvements__
