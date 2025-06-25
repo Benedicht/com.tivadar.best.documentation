@@ -1,5 +1,23 @@
 # Changelog
 
+## 3.0.16 (2025-06-25)
+
+__Additions and improvements__
+
+- [Cache] Added documentation to `TryMergeHeaders`.
+- Upped Burst version requirement to *1.8.23*.
+
+__Fixes__
+
+- [Cache] Try acquiring write lock on cached entity to update headers.
+- [Cache] Do not try to delete cache entries while they are marked for writing.
+- Properly handle and cancel requests during and after a `HTTPManager.AbortAll()` call.
+- Do not retry requests when the application is quitting.
+- Fixed case where empty `BufferSegment` could be appended to the list in `BufferSegmentStream`'s `Write`.
+- [WebGL] Fixed case where no content received and `FinishedProcessing` called during header processing, and the `OnResponse` after that with a now `null` `_response`.
+- [WebGL] Fixed case where `getAllResponseHeaders` returns no headers and foreach still appends an empty kvp to the headers.
+- Added Unity [Preserve] attributes to LitJson's JsonData in order to work in a high code stripping environment.
+
 ## 3.0.15 (2025-03-27)
 
 __Fixes__
