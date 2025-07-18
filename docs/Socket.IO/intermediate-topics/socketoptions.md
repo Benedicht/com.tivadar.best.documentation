@@ -55,7 +55,7 @@ You can pass a SocketOptions instance to the SocketManager's constructor. You ca
     ??? Example
         ```cs hl_lines="2"
         SocketOptions options = new SocketOptions();
-        socketOptions.WebsocketOptions.PingIntervalOverride = TimeSpan.FromSeconds(10);
+        options.WebsocketOptions.PingIntervalOverride = TimeSpan.FromSeconds(10);
 
         var manager = new SocketManager(new Uri("http://localhost:3000"), options);
         ```
