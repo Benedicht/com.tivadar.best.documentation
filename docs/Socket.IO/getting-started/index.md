@@ -84,7 +84,7 @@ To put it together, here's a complete example.
     using System;
 
     using Best.SocketIO;
-
+    using Best.SocketIO.Events;
     using UnityEngine;
 
     namespace SocketIOExample
