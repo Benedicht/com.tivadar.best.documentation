@@ -4,6 +4,12 @@ comments: true
 
 # Changelog
 
+## 3.0.8 (2025-09-27)
+
+__Fixes__
+
+- Fixed error when the upgrade request is redirected
+
 ## 3.0.7 (2025-03-02)
 
 __Additions and improvements__
