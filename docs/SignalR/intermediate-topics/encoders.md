@@ -31,6 +31,7 @@ Steps to enable it and use it:
 	![Scrypting Define Symbols](media/JSONDotNet_ScriptingDefineSymbols-dark.png#only-dark)
 	
 3. Use the now-available `JsonDotNetEncoder` class:
+
 	!!! Example "`#!cs var hub = new HubConnection(new Uri("https://server/hub"), new JsonProtocol(new JsonDotNetEncoder()));`"
 
 !!! Warning "Event if newtonsoft-json is installed through the Package Manager and detected automatically, its usage isn't automatic, you have to use it as the parameter of the `JsonProtocol` constructor!"
