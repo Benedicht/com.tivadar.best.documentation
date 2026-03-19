@@ -4,7 +4,7 @@ comments: true
 
 # Changelog
 
-## 3.1.0 (2026-03-19)
+## 3.0.9 (2026-03-19)
 
 __Additions and improvements__
 
