@@ -4,6 +4,12 @@ comments: true
 
 # Changelog
 
+## 3.0.5 (2026-03-19)
+
+__Additions and improvements__
+
+- Added new ExpectAcknowledgement calls with more typed parameters.
+
 ## 3.0.4 (2025-03-02)
 
 __Fixes__
