@@ -4,6 +4,16 @@ comments: true
 
 # Changelog
 
+## 3.1.0 (2026-03-19)
+
+__Additions and improvements__
+
+- Follow parent handler renaming in Best HTTP
+
+__Fixes__
+
+- Fixed content sending when WebGL's `Enable Native C/C++ Multithreading` is enabled
+
 ## 3.0.8 (2025-09-27)
 
 __Fixes__
