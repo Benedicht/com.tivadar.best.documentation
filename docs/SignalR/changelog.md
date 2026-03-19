@@ -4,6 +4,12 @@ comments: true
 
 # Changelog
 
+## 3.0.5 (2026-03-19)
+
+__Fixes__
+
+- Fixed json field name encoding for ack and sequence messages
+
 ## 3.0.4 (2025-03-02)
 
 __Additions and improvements__
