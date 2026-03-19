@@ -1,17 +1,36 @@
 # Changelog
 
+## 3.1.0 (2026-03-19)
+
+__Additions and improvements__
+
+- Added option to enable TCP KeepAlive messages
+- Exclude texture and assetbundle related code from server builds
+- [HTTP/2] Added ForceSendContentLengthHeader implementation as a workaround for misbehaving servers
+- Made the raw `Headers` dictionary public
+- Every cleanup iteration remove only half of the unused buffers from the `BufferPool`
+- More support for mass-cancellation of requests through `HTTPManager.AbortAll()`
+
+__Fixes__
+
+- [PerHostSettings] Added missing wildcard check
+- Fixed case where a tcp connect attempt could fail synchronously
+- Fixed a json property parsing issue
+- Fixed request cancellation during TLS negotiation
+- Fixed content sending when WebGL's `Enable Native C/C++ Multithreading` is enabled
+
 ## 3.0.17 (2025-08-31)
 
 __Additions and improvements__
 
 - Smaller allocations in BC TLS stream by requesting large enough buffer that's available to read, instead of a possible much larger SendBufferSize
 - Proxy detector - Call Detach after the first check when detach mode is CacheFirstFound
-- [HTTP/2] - Use a stackalloc instead of accessing the BufferPool twice for writing frame headers
+- [HTTP/2] Use a stackalloc instead of accessing the BufferPool twice for writing frame headers
 - [BufferPool] Introduced a new StealLimit and fixed mem. stats when BESTHTTP_ENABLE_BUFFERPOOL_BUFFER_STEALING is enabled, disabled null and array bounds checkes
 
 __Fixes__
 
-- [HTTP/2] - Don't time out until there's incoming data frames
+- [HTTP/2] Don't time out until there's incoming data frames
 - Fixed LitJson enum conversion
 - [WebGL] (#224) Fixed condition that removed valid response headers too
 
