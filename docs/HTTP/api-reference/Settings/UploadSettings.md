@@ -7,7 +7,7 @@ Options for sending the request headers and content, including upload progress m
 
 **Remarks:**
 
-[SetupRequest](#void-setuprequesthttprequest,-boolean) might be called when redirected or retried!
+[SetupRequest](#void-setuprequesthttprequest-boolean) might be called when redirected or retried!
 
 ## **Fields**:
 ### **[Int32](https://learn.microsoft.com/en-us/dotnet/api/System.Int32) UploadChunkSize**

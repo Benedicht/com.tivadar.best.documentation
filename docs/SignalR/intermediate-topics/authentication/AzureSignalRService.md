@@ -23,7 +23,9 @@ conn.On<string>("newMessage", msg =>
 conn.StartConnect();
 ```
 
-When Azure SignalR Service is used with Functions, negotiating the protocol starts by getting the first connection information from Functions that contains both an access token and an url to redirect. The client will use these to connect to the SignalR Service.
+When Azure SignalR Service is used with Functions, negotiating the protocol starts by getting the first connection information from Functions that contains both an access token and a URL to redirect. The client will use these to connect to the SignalR Service.
+
+If that negotiate response includes `tokenLifetimeSeconds`, the client can ask the original hub for a new access token before the current one expires. The refresh request stays on the URI passed to `HubConnection`, and a returned `accessToken` replaces the token used for the service. See [Authentication Refresh](authentication-refresh.md).
 
 ## Azure SignalR Service with Azure Functions Authorization
 
@@ -36,7 +38,7 @@ using Best.SignalR;
 
 namespace Best.SignalR.Authentication
 {
-    public sealed class AccessTokenAuthenticatorWithAuzreFunctionAuthorization : IAuthenticationProvider
+    public sealed class AccessTokenAuthenticatorWithAzureFunctionAuthorization : IAuthenticationProvider
     {
         /// <summary>
         /// No pre-auth step required for this type of authentication
@@ -60,7 +62,7 @@ namespace Best.SignalR.Authentication
         private string _playFabId;
         private string _clientPrincipalId;
 
-        public AccessTokenAuthenticatorWithAuzreFunctionAuthorization(HubConnection connection, string playFabId, string clientPrincipalId)
+        public AccessTokenAuthenticatorWithAzureFunctionAuthorization(HubConnection connection, string playFabId, string clientPrincipalId)
         {
             this._connection = connection;
             this._playFabId = playFabId;
@@ -134,5 +136,5 @@ namespace Best.SignalR.Authentication
 And can be used like this:
 ```cs
 var hub = new HubConnection(URL, protocol);
-hub.AuthenticationProvider = new AccessTokenAuthenticatorWithAuzreFunctionAuthorization(hub, "<Play Fab ID>", "<Azure Functions Key>");
+hub.AuthenticationProvider = new AccessTokenAuthenticatorWithAzureFunctionAuthorization(hub, "<Play Fab ID>", "<Azure Functions Key>");
 ```

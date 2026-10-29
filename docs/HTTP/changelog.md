@@ -1,5 +1,31 @@
 # Changelog
 
+## 3.2.0 (2026-10-29)
+
+__Additions and improvements__
+
+- Added `TLSHandlers.Native`, a bundled AWS-LC TLS 1.3 handler. See [TLS Handlers](intermediate-topics/tls-handlers.md)
+- The AWS-LC TLS handler negotiates HTTP/2 through ALPN and offers the TLS 1.3 cipher suites `TLS_AES_128_GCM_SHA256`, `TLS_AES_256_GCM_SHA384`, and `TLS_CHACHA20_POLY1305_SHA256`
+- HTTP/2 and WebSocket over HTTP/2 stay available when `BESTHTTP_DISABLE_ALTERNATE_SSL` is defined. That build's default handler is .NET `SslStream`, which does not advertise ALPN; set `TLSHandlers.Native` to negotiate HTTP/2
+- `BouncyCastleSettings.EnableTls0Rtt` defaults to `true`. Idempotent requests (`GET`, `HEAD`, `OPTIONS`) may send TLS 1.3 early data when a resumable session ticket allows it
+- Session tickets are stored in `HTTPManager.TlsSessionTicketStore`. The default store is in memory; Best TLS Security replaces it with its on-disk database during setup
+- `DNSCache.Options.ResolverKind` can be set to `DnsResolverKind.HttpsSvcb` to query A/AAAA and HTTPS/SVCB records. The default remains the system resolver, and a failed wire query can fall back to it
+- (#227) `HTTPCacheOptions.Disabled` creates the cache with no disk I/O. Cache operations are no-ops
+- A proxy can assign `Proxy.OutStreamer` (`IStreamer`) for the connection. `Proxy`'s constructor, `BeginConnect`, and `SetupRequest` are public, and `INegotiationPeer.OnNegotiationFinished` receives an `IStreamer`
+- Android player builds use 512 KB as the default `LowLevelConnectionSettings.ReadBufferSize`
+- Updated the bundled Bouncy Castle library
+
+__Fixes__
+
+- (#229) In-memory database cache entries are removed when their disk offset is freed or overwritten
+- (#230) Fixed a Burst internal compiler error in the ChaCha20-Poly1305 helper
+- (#233) A WebSocket over HTTP/1 no longer reports `ClosedAbnormally` after a successful client-initiated close handshake. The .NET `SslStream` forwarder keeps TLS records that arrive while a read is already in progress
+- Fixed a race in `TCPStreamer` around receive buffering and send backpressure
+- Fixed a race where TLS negotiation could finish before its callback was assigned and the connection then waited until timeout
+- `TCPStreamer` honors `ReadBufferSize` when sizing the socket receive buffer ([documentation #23](https://github.com/Benedicht/com.tivadar.best.documentation/issues/23))
+- A TCP connect timeout is reported for that host and port
+- `Socket.NoDelay` is applied to connection attempts started by `TCPRingmaster`
+
 ## 3.1.0 (2026-03-19)
 
 __Additions and improvements__

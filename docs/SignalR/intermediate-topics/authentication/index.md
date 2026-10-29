@@ -9,6 +9,8 @@ The plugin implements a `DefaultAccessTokenAuthenticator` (in the `Best.SignalR.
 
 !!! Note "With the help of `DefaultAccessTokenAuthenticator`, the plugin can connect to Azure SignalR Service out-of-the-box."
 
+When the negotiate response includes `tokenLifetimeSeconds`, the connection can refresh that authentication without reconnecting. See [Authentication Refresh](authentication-refresh.md).
+
 The `IAuthenticationProvider` has the following properties and events:
 
 - **IsPreAuthRequired**: If returns `true`, the implementation **MUST** implement the `StartAuthentication` and `Cancel` methods and use the `OnAuthenticationSucceded` and `OnAuthenticationFailed` events!

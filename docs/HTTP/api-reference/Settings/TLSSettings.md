@@ -12,3 +12,5 @@ Settings for TLS.
 : Settings for Bouncy Castle. 
 ### **[FrameworkTLSSettings](FrameworkTLSSettings.md) FrameworkTLSSettings**
 : .NET's SslStream settings. 
+### **[NativeTlsSettings](NativeTlsSettings.md) NativeTlsSettings**
+: Platform-native TLS settings. 

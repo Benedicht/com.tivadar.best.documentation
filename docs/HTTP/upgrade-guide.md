@@ -161,7 +161,7 @@ like the plugin's own `JSonDataStream` or `DynamicUploadStream`. For examples ab
 cluttered, unorganized. In this version, most of the properties and callbacks are still there with the same behavior, but located under setting classes.
 
 ??? Example "Example with UploadStream"
-    So, for example the above mentioned [UploadStream](api-reference/Settings/UploadSettings.md#UploadStream) moved into the [UploadSettings](api-reference/Settings/UploadSettings.md) class and can be accessed through a field with the same name in [HTTPRequest](api-reference/HTTP/HTTPRequest.md):
+    So, for example the above mentioned [UploadStream](api-reference/Settings/UploadSettings.md#stream-uploadstream) moved into the [UploadSettings](api-reference/Settings/UploadSettings.md) class and can be accessed through a field with the same name in [HTTPRequest](api-reference/HTTP/HTTPRequest.md):
 
     === "Old"
         ```cs
@@ -217,7 +217,7 @@ More details can be found in the [Getting started/Authentication](getting-starte
 
 #### ^^Changed/Moved^^
 
-- **Downloaded data handling ([DownloadContentStream](api-reference/Response/DownloadContentStream.md) [DownStream](api-reference/HTTP/HTTPResponse.md#downstream))**: As already [mentioned](#removed), all downloads are streamed downloads downloading into a `DownloadContentStream` instance and its reference is stored int `HTTPResponse`'s `DownStream`.
+- **Downloaded data handling ([DownloadContentStream](api-reference/Response/DownloadContentStream.md) [DownStream](api-reference/HTTP/HTTPResponse.md#downloadcontentstream-downstream))**: As already [mentioned](#removed), all downloads are streamed downloads downloading into a `DownloadContentStream` instance and its reference is stored int `HTTPResponse`'s `DownStream`.
 Buffering, thread synchronization and memory management is all done by the `DownloadContentStream`. For smaller downloads, the `HTTPResponse` still maintains its shortcuts: `DataAsText`, `DataAsTexture2D` and the `Data` property became a shortcut too:
     
     ??? Example

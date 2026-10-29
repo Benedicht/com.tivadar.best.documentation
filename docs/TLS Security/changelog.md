@@ -4,6 +4,21 @@ comments: true
 
 # Changelog
 
+## 3.1.0 (2026-10-29)
+
+__Additions and improvements__
+
+- Session tickets are persisted in `TLSSecurity.SessionTickets` and assigned to `HTTPManager.TlsSessionTicketStore` during setup
+- `SecurityOptions.AdvertiseCertificateCompression` (default `true`) advertises zlib certificate compression in the ClientHello
+- `SecurityOptions.OfferPostHandshakeAuth` sends `post_handshake_auth` when the host has a client certificate
+- `SecurityOptions.CertificateStorePreference` (default `PluginFirst`) chooses which certificate store builds the server chain. `PluginOnly` and `SystemOnly` use a single store. `PluginFirst` and `SystemFirst` try that store first and fall back to the other when it cannot build a chain.
+- Updated Root and Intermediate certifications
+
+__Fixes__
+
+- (#229) In-memory database cache entries are removed when their disk offset is freed or overwritten
+- Updated the Certification Manager's Mozilla CCADB download URLs
+
 ## 3.0.4 (2025-05-14)
 
 __Fixes__

@@ -25,7 +25,7 @@ STOMP is a simple, text-based protocol offering an interoperable wire format tha
 ### **[ServerParameters](ServerParameters.md) ServerParameters**
 : Gets the parameters negotiated with the STOMP broker after a successful connection. 
 ### **[States](States.md) State**
-: Current state of the STOMP client. State changed events are emitted through the [OnStateChanged](#actionclient,-states,-states-onstatechanged) event. 
+: Current state of the STOMP client. State changed events are emitted through the [OnStateChanged](#actionclient-states-states-onstatechanged) event. 
 ### **[Action](https://learn.microsoft.com/en-us/dotnet/api/System.Action-3)&lt;[Client](), [ServerParameters](ServerParameters.md), [IncomingFrame](IncomingFrame.md)&gt; OnConnected**
 : Called when the client successfully connected to the broker. 
 ### **[Action](https://learn.microsoft.com/en-us/dotnet/api/System.Action-2)&lt;[Client](), [Error](Error.md)&gt; OnDisconnected**

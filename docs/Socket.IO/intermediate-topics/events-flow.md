@@ -8,7 +8,7 @@ This flow-chart represents a SocketManager's lifecycle and locally generated eve
 
  ![Events Flowchart](../media/events_flowchart.svg)
  
-As described both in the [Default events](../getting-started/index.md#default-events) and [Special Events](index.md#special-events) sections, `connect` and `error` are special events witch means they have concrete parameters.
+As described both in the [Default events](../getting-started/subscriptions.md#default-events) and [Special Events](index.md#special-events) sections, `connect` and `error` are special events witch means they have concrete parameters.
 Other emitted events have no parameters (other than the possibility of injecting `SocketManager` and `Socket` instances):
 
 !!! Example

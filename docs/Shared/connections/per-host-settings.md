@@ -29,7 +29,7 @@ This can be beneficial when interacting with multiple endpoints, each requiring 
 
 The manager instance is accessible through [HTTPManager.PerHostSettings](../../HTTP/api-reference/Shared/HTTPManager.md) with default settings for the root/fallback/default configuration (`*`).
 
-There are multiple ways to add new configurations, but the most straightforward is to use [AddDefault](../../HTTP/api-reference/Settings/HostSettingsManager.md#adddefault) and alter its fields:
+There are multiple ways to add new configurations, but the most straightforward is to use [AddDefault](../../HTTP/api-reference/Settings/HostSettingsManager.md#hostsettings-adddefaultstring) and alter its fields:
 ```cs
 var settings = HTTPManager.PerHostSettings.AddDefault("example.com");
 settings.RequestSettings.RequestTimeout = TimeSpan.FromSeconds(20);

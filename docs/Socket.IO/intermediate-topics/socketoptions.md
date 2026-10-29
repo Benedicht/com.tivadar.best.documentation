@@ -25,7 +25,7 @@ You can pass a SocketOptions instance to the SocketManager's constructor. You ca
 - **Timeout**: Connection timeout before a "connect_error" and "connect_timeout" events are emitted. It's not the underlying tcp socket's connection timeout, it's for the socket.io protocol. Its default value is is 20000ms.
 - **AutoConnect**: By setting this false, you have to call SocketManager's Open() whenever you decide it's appropriate.
 - **ConnectWith**: The SocketManager will try to connect with the transport set to this property. It can be TransportTypes.Polling or TransportTypes.WebSocket.
-- **HTTPRequestCustomizationCallback**: A callback that called for every `HTTPRequest` the socket.io protocol sends out. It can be used to further customize (add additional headers for example) requests. This callback is called for Websocket upgrade requests too on non-WebGL platforms.
+- <a id="httprequestcustomizationcallback"></a>**HTTPRequestCustomizationCallback**: A callback that called for every `HTTPRequest` the socket.io protocol sends out. It can be used to further customize (add additional headers for example) requests. This callback is called for Websocket upgrade requests too on non-WebGL platforms.
 
     ??? Example
         ```cs hl_lines="4"

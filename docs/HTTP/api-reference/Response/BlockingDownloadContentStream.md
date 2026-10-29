@@ -41,6 +41,6 @@ The BlockingDownloadContentStream is a specialized variant of the [DownloadConte
 ### Read(Byte[], Int32, Int32)
 : Reads a sequence of bytes from the current stream and advances the position within the stream by the number of bytes read. 
 	!!! note ""
-		This override of the [Read](#read(byte[],-int32,-int32)) method provides blocking behavior, meaning if there are no bytes available in the stream, the method will block until new data is downloaded or until the stream completes. Once data is available, or if the stream completes, the method will return with the number of bytes read. 
+		This override of the [Read](#readbyte-int32-int32) method provides blocking behavior, meaning if there are no bytes available in the stream, the method will block until new data is downloaded or until the stream completes. Once data is available, or if the stream completes, the method will return with the number of bytes read. 
 
 				 This behavior ensures that consumers of the stream can continue reading data sequentially, even if the stream's internal buffer is temporarily empty due to ongoing downloads. 

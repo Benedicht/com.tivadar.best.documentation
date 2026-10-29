@@ -22,11 +22,15 @@ These are the documentations compiled from this repository:
 
 ## Building Documentation Locally
 
-I would recommend to read through the [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) documentation, and when everything is set up you can run the following commands:
+Preview the site with Podman, without installing Python packages on the machine:
 
-1. Install dependencies with `pip install -r requirements.txt`.
-2. Use `mkdocs serve` to preview the documentation.
-3. Visit `http://127.0.0.1:8000/` in your browser to see the changes.
+```bash
+./serve.sh
+```
+
+Then open [http://127.0.0.1:8000/](http://127.0.0.1:8000/). Edits under `docs/` are rebuilt while the server is running. Stop it with Ctrl+C.
+
+`PORT` changes the host port (`PORT=8001 ./serve.sh`). `MKDOCS_IMAGE` overrides the container image.
 
 ## Reporting Issues
 

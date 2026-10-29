@@ -4,6 +4,19 @@ comments: true
 
 # Changelog
 
+## 3.0.10 (2026-10-29)
+
+__Additions and improvements__
+
+- WebSocket over HTTP/2 stays available when `BESTHTTP_DISABLE_ALTERNATE_SSL` is defined
+- When `HTTPManager.Proxy` is not an `HTTPProxy`, that proxy is used for the WebSocket connection
+
+__Fixes__
+
+- [WebSocket over HTTP/2] `BufferedAmount` decreases when a frame leaves the send queue
+- HTTP/1 client frames are always masked now
+- An HTTP/1 close keeps the close code and reason already stored
+
 ## 3.0.9 (2026-03-19)
 
 __Additions and improvements__

@@ -12,7 +12,7 @@ The HTTPCache stores and uses metadata in three layers:
 2. **Precision Layer:** The second layer contains more information about the caching values sent by the server (etag, max-age, etc.) and timing information to further increase age calculation precision.
 3. **Content Layer:** The third and last layer stores the received response itself. The headers and the content are in different files, updating the headers on refresh checks and serving the content is easer if they are separated.
 
-Every cached response gets a unique hash, which is calculated using the [HTTPCache.CalculateHash](../api-reference/Caching/HTTPCache.md#calculatehash) method based on the HTTP method and the uri of the resource.
+Every cached response gets a unique hash, which is calculated using the [HTTPCache.CalculateHash](../api-reference/Caching/HTTPCache.md#hash128-httpcachecalculatehashhttpmethods-uri) method based on the HTTP method and the uri of the resource.
 This hash acts as a unique identifier for cached content and it's maps 1:1 with the cached files. 
 `CalculateHash` is public, and can used with the combination of `HTTPCache`'s `GetHeaderPathFromHash` and `GetContentPathFromHash` it's possible to access the files directly.
 
@@ -85,7 +85,7 @@ If space is running low, the Maintain function gets called to free up space, if 
 
 The caching process is initiated with `BeginCache` and concluded with `EndCache`. These functions handle the caching of an HTTP response and take appropriate actions based on the status. 
 These can be used directly to put content to the cache manually.
-Users have the flexibility to manually control the caching process, with functionalities like [Delete](../api-reference/Caching/HTTPCache.md#delete) (to remove specific cache entries) and [Clear](../api-reference/Caching/HTTPCache.md#clear) (to remove all cache entries).
+Users have the flexibility to manually control the caching process, with functionalities like [Delete](../api-reference/Caching/HTTPCache.md#void-deletehash128-loggingcontext) (to remove specific cache entries) and [Clear](../api-reference/Caching/HTTPCache.md#void-clear) (to remove all cache entries).
 
 Furthermore, the CanServeWithoutValidation method ensures that the application can serve fresh content[^1] without having to validate it against the server, meaning that the content is available event while the device is offline.
 This scenario however, requires that the server is sent the content with the right caching headers: `cache-control` with a `max-age` directive, or an `expires` header with a date in the future.

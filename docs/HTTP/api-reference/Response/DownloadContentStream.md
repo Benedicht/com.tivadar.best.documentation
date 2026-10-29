@@ -31,7 +31,7 @@ The DownloadContentStream serves as a storage medium for content downloaded duri
 ### **[Exception](https://learn.microsoft.com/en-us/dotnet/api/System.Exception) CompletedWith**
 : Gets a reference to an exception if the download completed with an error. 
 ### **[Int64](https://learn.microsoft.com/en-us/dotnet/api/System.Int64) Length**
-: Gets the length of the buffered data. Because downloads happen in parallel, a [Read](#read(byte[],-int32,-int32)) call can return with more data after checking Length. 
+: Gets the length of the buffered data. Because downloads happen in parallel, a [Read](#readbyte-int32-int32) call can return with more data after checking Length. 
 ### **[Int64](https://learn.microsoft.com/en-us/dotnet/api/System.Int64) MaxBuffered**
 : Gets the maximum size of the internal buffer of this stream. 
 	!!! note ""
@@ -40,7 +40,7 @@ The DownloadContentStream serves as a storage medium for content downloaded duri
 ### **[Boolean](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean) IsFull**
 : Gets a value indicating whether the internal buffer holds at least the [MaxBuffered](#int64-maxbuffered) amount of data. 
 ### **[Boolean](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean) IsDetached**
-: Gets or sets whether the stream is detached from the [HTTPRequest](../HTTP/HTTPRequest.md)/[HTTPResponse](../HTTP/HTTPResponse.md) when [Read](#read(byte[],-int32,-int32)) is used before the request is finished. When the stream is detached from the response object, their lifetimes are not bound together, meaning that the stream isn't disposed automatically, and the client code is responsible for calling the stream's [Stream](https://learn.microsoft.com/en-us/dotnet/api/System.IO.Stream) function. 
+: Gets or sets whether the stream is detached from the [HTTPRequest](../HTTP/HTTPRequest.md)/[HTTPResponse](../HTTP/HTTPResponse.md) when [Read](#readbyte-int32-int32) is used before the request is finished. When the stream is detached from the response object, their lifetimes are not bound together, meaning that the stream isn't disposed automatically, and the client code is responsible for calling the stream's [Stream](https://learn.microsoft.com/en-us/dotnet/api/System.IO.Stream) function. 
 ## **Methods**:
 
 ### TryTake(BufferSegment@)

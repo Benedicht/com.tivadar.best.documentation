@@ -16,10 +16,27 @@ TLSSecurity.Setup();
 #endif
 ```
 
+`CertificateStorePreference` selects the store that builds the server certificate chain. The default is `PluginFirst`. Set another value before `TLSSecurity.Setup()`:
+
+```csharp
+#if !UNITY_WEBGL || UNITY_EDITOR
+using Best.TLSSecurity;
+
+SecurityOptions.CertificateStorePreference = CertificateStorePreference.SystemFirst;
+
+TLSSecurity.Setup();
+#endif
+```
+
 ## SecurityOptions
 
 Options of the addon can be accessed through the static `SecurityOptions` class:
 
+- **CertificateStorePreference**: Which certificate store builds the server certificate chain, and whether the other store is used when the first one fails. The default is `PluginFirst`. Fallback runs after any failure of the primary store, including an explicit trust rejection. On Android and Apple platforms the system store depends on the `X509Chain` backend of the selected Unity scripting runtime.
+    - **PluginOnly**: Use only the plugin's trusted root and intermediate databases.
+    - **SystemOnly**: Use only the operating system certificate store. A rejection from that store stays a rejection.
+    - **PluginFirst** (default): Try the plugin databases first. The system store is used only when the plugin cannot build a chain.
+    - **SystemFirst**: Try the system store first. The plugin databases are used only when the system store cannot build a chain.
 - **UseServerSentIntermediateCertificates**: If false, only certificates stored in the trusted intermediates database are used to reconstruct the certificate chain. When set to true (default), it improves compatibility but the addon going to use/accept certificates that not stored in its trusted database.
 - **FolderAndFileOptions**: Folder, file and extension options.
 - **OCSP**: OCSP and OCSP cache options.

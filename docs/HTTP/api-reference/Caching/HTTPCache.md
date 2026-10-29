@@ -31,7 +31,7 @@ The `HTTPCache` class provides a powerful caching mechanism for HTTP responses i
 ### **[Int64](https://learn.microsoft.com/en-us/dotnet/api/System.Int64) CacheSize**
 : Gets the current size of the HTTP cache in bytes. 
 ### **[OnBeforeBeginCacheDelegate](OnBeforeBeginCacheDelegate.md) OnBeforeBeginCache**
-: Called before the plugin calls [BeginCache](#begincache(httpmethods,-uri,-int32,-string,-list,-loggingcontext)) to decide whether the content will be cached or not. 
+: Called before the plugin calls [BeginCache](#begincachehttpmethods-uri-int32-string-list-loggingcontext) to decide whether the content will be cached or not. 
 ## **Methods**:
 
 ### [Hash128](https://docs.unity3d.com/ScriptReference/Hash128.html) HTTPCache.CalculateHash([HTTPMethods](../HTTP/HTTPMethods.md), [Uri](https://learn.microsoft.com/en-us/dotnet/api/System.Uri))

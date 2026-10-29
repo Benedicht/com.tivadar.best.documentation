@@ -43,6 +43,9 @@ Implements the WebSocket standard for duplex, two-way communications.
 : Logging context of this websocket instance. 
 ## **Methods**:
 
+### [IExtension[]](../Extensions/IExtension.md) WebSocket.GetDefaultExtensions()
+: Returns the default extensions the plugin negotiates: per-message compression. This method is not available in WebGL player builds.
+
 ### Void Open()
 : Start the opening process. 
 	!!! note ""

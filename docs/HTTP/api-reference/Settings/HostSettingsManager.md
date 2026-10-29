@@ -13,10 +13,10 @@ When host-specific settings are not found for a given host variant, the default 
 ## **Methods**:
 
 ### [HostSettings](HostSettings.md) AddDefault([Uri](https://learn.microsoft.com/en-us/dotnet/api/System.Uri))
-: Adds default settings for the host part of the specified URI. This is equivalent to calling [Add](#hostsettings-adduri,-hostsettings) with the a new [HostSettings](HostSettings.md). 
+: Adds default settings for the host part of the specified URI. This is equivalent to calling [Add](#hostsettings-adduri-hostsettings) with the a new [HostSettings](HostSettings.md). 
 
 ### [HostSettings](HostSettings.md) AddDefault([String](https://learn.microsoft.com/en-us/dotnet/api/System.String))
-: Adds default settings for the the specified host name. This is equivalent to calling [Add](#hostsettings-addstring,-hostsettings) with the a new [HostSettings](HostSettings.md). 
+: Adds default settings for the the specified host name. This is equivalent to calling [Add](#hostsettings-addstring-hostsettings) with the a new [HostSettings](HostSettings.md). 
 
 ### [HostSettings](HostSettings.md) Add([Uri](https://learn.microsoft.com/en-us/dotnet/api/System.Uri), [HostSettings](HostSettings.md))
 : Adds host-specific settings for the host part of the specified URI. 

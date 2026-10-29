@@ -4,6 +4,12 @@ comments: true
 
 # Changelog
 
+## 3.1.0 (2026-10-29)
+
+__Additions and improvements__
+
+- Added SignalR authentication refresh (requires a .NET 11 SignalR server): automatic scheduling from the server-reported token lifetime, manual `RefreshAuthenticationAsync`, refresh callbacks, and refreshed Azure SignalR access tokens. See [Authentication Refresh](intermediate-topics/authentication/authentication-refresh.md).
+
 ## 3.0.5 (2026-03-19)
 
 __Fixes__

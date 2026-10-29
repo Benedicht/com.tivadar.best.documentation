@@ -62,6 +62,7 @@ If WebSockets aren't availabe due to specific constraints, SignalR seamlessly fa
 - **Event-Driven Communication:** Harness event-based real-time communication, making your applications vibrant and user-centric.
 - **Auto-Reconnection:** Best SignalR adeptly handles reconnections, guaranteeing continuous user experiences even amidst unstable network scenarios.
 - **Secure Communications:** With encrypted connection support, Best SignalR ensures your application data remains confidential and shielded.
+- **Authentication Refresh:** When the server reports a token lifetime, Best SignalR refreshes authentication on the live connection, including Azure SignalR access tokens, without reconnecting. See [Authentication Refresh](intermediate-topics/authentication/authentication-refresh.md).
 - **Profiler Integration:** Unlock the potential of the in-depth [Best HTTP profiler](../Shared/profiler/index.md) integration:
     - **Memory Profiler:** Evaluate internal memory usages, enhance performance, and spot potential memory challenges.
     - **Network Profiler:** Keep a tab on your network dynamics, studying data flow, connection statuses, and more.
