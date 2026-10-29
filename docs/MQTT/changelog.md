@@ -4,6 +4,12 @@ comments: true
 
 # Changelog
 
+## 3.0.5 (2026-10-29)
+
+__Additions and improvements__
+
+- Use the new OnNegotiationFinished interface of Best HTTP.
+
 ## 3.0.4 (2025-03-02)
 
 __Fixes__
